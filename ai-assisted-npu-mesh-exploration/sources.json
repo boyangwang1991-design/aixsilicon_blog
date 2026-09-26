@@ -1,0 +1,240 @@
+{
+  "article": "ai-assisted-npu-mesh-exploration",
+  "date": "2026-09-26",
+  "files": [],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/README.md",
+      "sha256": "d0d7cc9167005dae077d6dfd2db168a58a0187e9f07a85ef31a71a0c7fd6ca93",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/docs/design.md",
+      "sha256": "82f84eec1c6cfe0b28d5f5e6f23b82f7eef610871d2c608636aff8ac2659c3a4",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/docs/interference.md",
+      "sha256": "b186c85e6405c07982c728ec756631a70e1229fa871fbf7e6666e7bf2d5c2449",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/docs/qos.md",
+      "sha256": "17870a90276cd8718282d4535361b5c77f668c5b5bc284b5eeb0a005cf03426b",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-interference/report.md",
+      "sha256": "5c2e57dee73b88ea101012124f51d3c285807e807c5b3a44afec17441835690d",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-interference/run_log.md",
+      "sha256": "df5d83018645bf801ea62b0ec6b05f4ad52e0f48495aeffd123cd79a14eeeefe",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-interference/baseline_config.json",
+      "sha256": "4ec1b98e491de69a2d30b67caf065d2aaa011c51d1e757b25b583b9ba7269c07",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-interference/interference.csv",
+      "sha256": "2852377c18bb6ddf72407b5472786a57210ef1fe31c33e5b512499e320ade36f",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-interference/interference_checks.json",
+      "sha256": "3960709c1295836b1696fc9b243e4c1d1cac522c52d95787c21dd87228744773",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-qos/report.md",
+      "sha256": "747187ea455b925a87747c57788f491cc949a78c1187dfd63ea17a51cfb8178b",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-qos/run_log.md",
+      "sha256": "30940786b2ad0a165aa19e2e2e7ea05dbce1ea39a924abbcefceccb28500c213",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-qos/qos.csv",
+      "sha256": "02603e5cd449d67240ae5ceeec5d0962a4debb2d5685bf9ecb25e0d5e08d7425",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-qos/qos_checks.json",
+      "sha256": "64b8f7fb29ceddcaef9f9ec0ec4e1a7b51400640343f86162b21cd3b2053daf1",
+      "access": "internal read-only"
+    }
+  ],
+  "data_extraction": {
+    "target": "assets/data/experiment-data.json",
+    "sha256": "b0bae011cb463dcdb4e7fa949d08ac78c0250bb3f1d28891d2c19db3758b275d",
+    "script": "notes/prepare-data.mjs",
+    "checks": [
+      "source PASS",
+      "matching Decode cohort hashes",
+      "matching full mixed QoS workload hashes",
+      "128 completed Decode requests",
+      "sum of stage means equals total mean"
+    ]
+  },
+  "assets": [
+    {
+      "target": "assets/generated/cover-en-4x3.png",
+      "sha256": "24bb1a7e3c18b8c3305e025d3625659e1f9c0ca745517f703171f03f381b567d",
+      "language": "en",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/cover-en-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/cover-en.png",
+      "sha256": "24bb1a7e3c18b8c3305e025d3625659e1f9c0ca745517f703171f03f381b567d",
+      "language": "en",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/cover-en-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/cover-zh.png",
+      "sha256": "ff6d3277bed16dd6e1b0f139c281a3994f03c8940bc08e7c4e8b47165b5840ab",
+      "language": "zh",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/cover-zh-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/system-en.png",
+      "sha256": "4fadf5ee570214458a682c6a88bfe35ae45284f084e4a8aef2e2aead0044409e",
+      "language": "en",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/system-en-prompt.md",
+      "revisions": [
+        "notes/system-revision.md",
+        "notes/system-revision-2.md"
+      ],
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/system-zh.png",
+      "sha256": "a7d8e4285406a7d3812f2333f9405527c85e90ce04c7c7343924157a9569d380",
+      "language": "zh",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/system-zh-prompt.md",
+      "revisions": [
+        "notes/system-revision.md",
+        "notes/system-revision-2.md"
+      ],
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/charts/link-tradeoff-en.png",
+      "sha256": "796f92c11f0fcef0e0dfe930671fcc0969200d708b33ed0f466cd612f7486aab",
+      "language": "en",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py",
+      "width": 2160,
+      "height": 990
+    },
+    {
+      "target": "assets/charts/link-tradeoff-en.svg",
+      "sha256": "483be3dfed09ab2bbcc5c89148e9e53410b3b17b4c4bc1a7f1d52b77b6290dc4",
+      "language": "en",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py"
+    },
+    {
+      "target": "assets/charts/link-tradeoff-zh.png",
+      "sha256": "912a3e8f33a5c3b9fa897084afab942dee16d27439fbb1300640bc18d189e087",
+      "language": "zh",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py",
+      "width": 2160,
+      "height": 990
+    },
+    {
+      "target": "assets/charts/link-tradeoff-zh.svg",
+      "sha256": "5658e40db6b388d57b3d100fcbb52324ddb16e442eb9ea5ba281578422eb1324",
+      "language": "zh",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py"
+    },
+    {
+      "target": "assets/charts/qos-tradeoff-en.png",
+      "sha256": "262b5bd9dc02b1ad118c15e8046507ad97cf50e1f15a21f122f50b3fbe371eb3",
+      "language": "en",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py",
+      "width": 1980,
+      "height": 1800
+    },
+    {
+      "target": "assets/charts/qos-tradeoff-en.svg",
+      "sha256": "69e000d10561fb089152852616946b8a1c6feca430eea834d2444e37506d4c50",
+      "language": "en",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py"
+    },
+    {
+      "target": "assets/charts/qos-tradeoff-zh.png",
+      "sha256": "32c8366455ad36992bd9e089adb4bfcb029c777c59f64cab898c045f58e54d70",
+      "language": "zh",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py",
+      "width": 1980,
+      "height": 1800
+    },
+    {
+      "target": "assets/charts/qos-tradeoff-zh.svg",
+      "sha256": "a9edd2a9663b8d53b4bb9fb26a9be04f44d7f008e60e0003d0962e0f66da199c",
+      "language": "zh",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py"
+    },
+    {
+      "target": "assets/charts/stage-means-en.png",
+      "sha256": "6955c70cc3167d1943cde26b17d2129406b79aa35fbcaf38a81dea5a2731ad65",
+      "language": "en",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py",
+      "width": 2160,
+      "height": 1080
+    },
+    {
+      "target": "assets/charts/stage-means-en.svg",
+      "sha256": "c2f654dba7eb1a414de28d33e7bdd3000c90c67f3fbc67c4b1585e8ad2689e92",
+      "language": "en",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py"
+    },
+    {
+      "target": "assets/charts/stage-means-zh.png",
+      "sha256": "eb1fcf1cd4a715fa22235f2614a097baa92a68898177e4dd576ca6191b3d9091",
+      "language": "zh",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py",
+      "width": 2160,
+      "height": 1080
+    },
+    {
+      "target": "assets/charts/stage-means-zh.svg",
+      "sha256": "b656e69f1d763bc9d7c82358874098c3b1af65f80cd37271b6eff829a26f741b",
+      "language": "zh",
+      "purpose": "data chart redrawn from archived evidence",
+      "generator": "Matplotlib; assets/plot-data.py"
+    }
+  ]
+}

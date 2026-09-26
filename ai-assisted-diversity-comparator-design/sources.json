@@ -1,0 +1,201 @@
+{
+  "article": "ai-assisted-diversity-comparator-design",
+  "date": "2026-09-26",
+  "kind": "original bilingual editorial",
+  "files": [],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/safety_reliability/diversity_comparator/diversity_comparator_contract.md",
+      "sha256": "45efd0cf2edf4e76a94c0d599b008d083924c565222008758174ecd305476eac",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/docs/design.md",
+      "sha256": "1fe66e19fe07c89595646d448efe34c19aacb1549c0d1aa81e1fb61836d9eb05",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/docs/cbb_spec.md",
+      "sha256": "a6e07cdf0106f9d38b3fc9bad0aad0b42c41cf9cd314c27fba552a311e9a0fa3",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/docs/integration.md",
+      "sha256": "d93c02cfea6d9bb3fd8e6ba23d6c844cce1c4c84a97e048c297f37b3c364fce7",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/docs/detail-design/impl_redundant.md",
+      "sha256": "39accf28e6bad2a081db9f5c8ebb523fecb6b34384ddbcd2a2a2b2c1ab5ac529",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/docs/intake.md",
+      "sha256": "1b90b57bd1b57c9411c485460fb1c76cde559e5df2bf85868ad67e51edc2e5aa",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/reports/verification-report.md",
+      "sha256": "406d2f0d14ee1d98afcd56e9e04edea7890604cade9a883d36fb3ff8563c0b90",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/reports/ppa-report.md",
+      "sha256": "b058dc2159aa970e4123038b43c8179bf35c206bbed3c14bc53d0d6c613dbe24",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/reports/ppa-summary.json",
+      "sha256": "03b070ce7b60599ebc227c6c070a9bdd07d536fdeb8c23e122e94b1403e6691f",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/reports/skill-result.yaml",
+      "sha256": "5252b77290425c8a5a98135e7e3a0559d82c66cc733cab9fc982401bf2d7b6ac",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/rtl/lockstep_comparator_logic.sv",
+      "sha256": "8b6f6c562f92706eeb491a3fd3348369b81c807e90e4a0a4af5b92317aa02838",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interrupt_safety/lockstep_comparator/CHANGELOG.md",
+      "sha256": "a7efd32524474cc24140371415d2f1145d2671590fab10e34fd9e04af0ccdbe6",
+      "access": "internal read-only; not a public article reference"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/cbb-development-suite/SKILL.md",
+      "sha256": "c45127fc48847aef0d36c71cf3a63e5f0dcd917064a1c1d03caba1f27137cebc",
+      "access": "internal read-only; not a public article reference"
+    }
+  ],
+  "public_sources": [
+    {
+      "url": "https://documentation.infineon.com/aurixtc3xx/docs/vln1745575913166",
+      "accessed": "2026-09-26",
+      "purpose": "functional safety introduction and comparison redundancy concepts"
+    },
+    {
+      "url": "https://developer.arm.com/community/arm-community-blogs/b/embedded-and-microcontrollers-blog/posts/comparing-lock-step-redundant-execution-versus-split-lock-technologies",
+      "accessed": "2026-09-26",
+      "purpose": "DCLS execution, resource trade-off, system-defined reaction"
+    },
+    {
+      "url": "https://documentation.infineon.com/aurixtc3xx/docs/ztz1745575952703",
+      "accessed": "2026-09-26",
+      "purpose": "Temporal separation, checker input and main observation delays, common infrastructure and system reaction"
+    }
+  ],
+  "generated_assets": [
+    {
+      "target": "assets/generated/checker-en.png",
+      "language": "en",
+      "purpose": "explanatory concept diagram",
+      "tool": "Codex built-in imagegen",
+      "sha256": "afb6e92c9e377fd6314b9b63172249d5accefd4f22ab5109d008eee2671f6417",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/checker-en-prompt.md",
+      "revisions": []
+    },
+    {
+      "target": "assets/generated/checker-zh.png",
+      "language": "zh",
+      "purpose": "explanatory concept diagram",
+      "tool": "Codex built-in imagegen",
+      "sha256": "2b0896647a4bad3cd4721bfc6e4fd0fabc05e029802efede7500ca657ca2f706",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/checker-zh-prompt.md",
+      "revisions": []
+    },
+    {
+      "target": "assets/generated/cover-en-4x3.png",
+      "language": "en",
+      "purpose": "concept cover",
+      "tool": "Codex built-in imagegen",
+      "sha256": "f3c07fcbd3c57ad904ae9353d906dd9151b38f2191d5de7b520824ce4e452df9",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/cover-en-prompt.md",
+      "revisions": [
+        "notes/cover-en-revision.md"
+      ]
+    },
+    {
+      "target": "assets/generated/cover-en.png",
+      "language": "en",
+      "purpose": "concept cover",
+      "tool": "Codex built-in imagegen",
+      "sha256": "f3c07fcbd3c57ad904ae9353d906dd9151b38f2191d5de7b520824ce4e452df9",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/cover-en-prompt.md",
+      "revisions": [
+        "notes/cover-en-revision.md"
+      ]
+    },
+    {
+      "target": "assets/generated/cover-zh.png",
+      "language": "zh",
+      "purpose": "concept cover",
+      "tool": "Codex built-in imagegen",
+      "sha256": "331aee7dc071ce6f716f6c9f8d29a654ab72fe1d8367a21890386b724f7ba86a",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/cover-zh-prompt.md",
+      "revisions": [
+        "notes/cover-zh-revision.md"
+      ]
+    },
+    {
+      "target": "assets/generated/lockstep-timing-en.png",
+      "language": "en",
+      "purpose": "explanatory concept diagram",
+      "tool": "Codex built-in imagegen",
+      "sha256": "1e26393bc7adeb31769abf47b9fcb83ffebf59fda9cc1cccbcca918484c15324",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/lockstep-timing-en-prompt.md",
+      "revisions": []
+    },
+    {
+      "target": "assets/generated/lockstep-timing-zh.png",
+      "language": "zh",
+      "purpose": "explanatory concept diagram",
+      "tool": "Codex built-in imagegen",
+      "sha256": "046e644d52f1e38b455eb6e55ae875b46a4e05ac96c47953eabc207903f5d294",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/lockstep-timing-zh-prompt.md",
+      "revisions": []
+    },
+    {
+      "target": "assets/generated/valid-comparison-en.png",
+      "language": "en",
+      "purpose": "explanatory concept diagram",
+      "tool": "Codex built-in imagegen",
+      "sha256": "652e4c5d3f225478971e4cf7df82b6cc1c1e498fdc103580512aaea7fba0b68b",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/valid-comparison-en-prompt.md",
+      "revisions": [
+        "notes/valid-comparison-en-revision-2.md",
+        "notes/valid-comparison-en-revision.md"
+      ]
+    },
+    {
+      "target": "assets/generated/valid-comparison-zh.png",
+      "language": "zh",
+      "purpose": "explanatory concept diagram",
+      "tool": "Codex built-in imagegen",
+      "sha256": "1f3ed66be08731062d45e5094a2e6b8651e46630d9db82aa57a62c6f5acaa3d9",
+      "width": 1448,
+      "height": 1086,
+      "prompt": "notes/valid-comparison-zh-prompt.md",
+      "revisions": []
+    }
+  ],
+  "review_notes": "notes/editorial-review.md"
+}

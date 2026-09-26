@@ -1,0 +1,99 @@
+{
+  "date": "2026-09-24",
+  "kind": "Uncalibrated SystemC synthetic bus-traffic experiment",
+  "units": {
+    "latency": "model cycles",
+    "batch_end": "model cycle from simulation origin",
+    "delivery": "logical B/cycle within [4096,12288)"
+  },
+  "interference": [
+    {
+      "case": "alone",
+      "p99": 43,
+      "mean": 43,
+      "batch_end": 12269,
+      "stages": {
+        "niu_before_injection": 1,
+        "request_transport": 7,
+        "target_queue_and_service": 20,
+        "response_transport": 15,
+        "admission": 0
+      }
+    },
+    {
+      "case": "mixed",
+      "p99": 53,
+      "mean": 45.3671875,
+      "batch_end": 24032,
+      "stages": {
+        "niu_before_injection": 1,
+        "request_transport": 7.5,
+        "target_queue_and_service": 21.8671875,
+        "response_transport": 15,
+        "admission": 0
+      }
+    },
+    {
+      "case": "mixed_link64",
+      "p99": 59,
+      "mean": 44.15625,
+      "batch_end": 14893,
+      "stages": {
+        "niu_before_injection": 1,
+        "request_transport": 7.5,
+        "target_queue_and_service": 24.359375,
+        "response_transport": 11.296875,
+        "admission": 0
+      }
+    },
+    {
+      "case": "mixed_bank_ii1",
+      "p99": 47,
+      "mean": 41.859375,
+      "batch_end": 24029,
+      "stages": {
+        "niu_before_injection": 1,
+        "request_transport": 7.5,
+        "target_queue_and_service": 18.359375,
+        "response_transport": 15,
+        "admission": 0
+      }
+    },
+    {
+      "case": "mixed_slots32",
+      "p99": 53,
+      "mean": 45.3671875,
+      "batch_end": 24032,
+      "stages": {
+        "niu_before_injection": 1,
+        "request_transport": 7.5,
+        "target_queue_and_service": 21.8671875,
+        "response_transport": 15,
+        "admission": 0
+      }
+    }
+  ],
+  "qos": [
+    {
+      "case": "mixed",
+      "p99": 53,
+      "batch_end": 24032,
+      "prefill": 14,
+      "kv": 13.5
+    },
+    {
+      "case": "shape8",
+      "p99": 44,
+      "batch_end": 76715,
+      "prefill": 8,
+      "kv": 4
+    },
+    {
+      "case": "shape16",
+      "p99": 52,
+      "batch_end": 39915,
+      "prefill": 16,
+      "kv": 8
+    }
+  ]
+}

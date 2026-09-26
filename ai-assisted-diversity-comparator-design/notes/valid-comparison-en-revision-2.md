@@ -1,0 +1,3 @@
+# Restore explicit alignment stage
+
+Preserve this infographic exactly except add the missing external alignment stage: in the whitespace between the two Implementation boxes and the dashed comparator boundary, add one wide shallow box labeled exactly "External alignment: same logical transaction". Both Implementation arrows must enter this new box. From this box, two short arrows must enter the comparator block below. Move existing blocks vertically slightly if needed to make room. This alignment box must be wholly OUTSIDE and ABOVE the dashed boundary. Keep ALL other existing text, outputs, bottom three cards unchanged. Do not add any other explanations.

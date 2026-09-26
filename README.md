@@ -6,12 +6,14 @@
 
 ## 文章索引
 
-目前从本地参考仓库整理出 **8 篇文章**。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
+目前共有 **10 篇文章**，包括参考材料整理稿与基于工程证据撰写的新稿。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
 
-8 篇文章均提供中文与英文全文，以及对应语言的独立封面。封面保存在各篇 `assets/generated/cover-zh.png` 和 `cover-en.png`；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
+10 篇文章均提供中文与英文全文，以及对应语言的独立封面。封面保存在各篇 `assets/generated/cover-zh.png` 和 `cover-en.png`；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
 
 | 主题 | 中文版 | 中文状态 | English edition | 英文状态 |
 | --- | --- | --- | --- | --- |
+| ESL / NPU Mesh / QoS | [链路加宽了，为什么 Decode 反而更慢？一次 AI 辅助 NPU Mesh 架构探索](ai-assisted-npu-mesh-exploration/README.md) | 图文齐备；待发布审阅 | [A Wider Link, a Slower Decode Tail: AI-Assisted NPU Mesh Exploration](ai-assisted-npu-mesh-exploration/README.en.md) | 图文齐备；待发布审阅 |
+| CBB / 功能安全 / PPA | [谁来检查比较器？AI 辅助多样性比较器设计与 PPA 取舍](ai-assisted-diversity-comparator-design/README.md) | 图文齐备；待发布审阅 | [Who Checks the Comparator? AI-Assisted Diversity Comparator Design and PPA Trade-offs](ai-assisted-diversity-comparator-design/README.en.md) | 图文齐备；待发布审阅 |
 | CBB / PPA | [让 AI 带着综合结果改 RTL：一次 CBB 设计与 PPA 探索](ai-assisted-cbb-and-ppa-exploration/README.md) | 图文齐备；待发布审阅 | [Let Synthesis Guide AI-Assisted RTL Design: A CBB and PPA Exploration](ai-assisted-cbb-and-ppa-exploration/README.en.md) | 图文齐备；待发布审阅 |
 | ESL / NPU SRAM | [让 AI 先跑一轮架构实验：NPU SRAM 的 ESL 建模实践](ai-accelerated-esl-modeling/README.md) | 图文齐备；待发布审阅 | [Explore Architecture Before RTL: AI-Assisted ESL Modeling of NPU SRAM](ai-accelerated-esl-modeling/README.en.md) | 图文齐备；待发布审阅 |
 | IP / Secure APB Demux | [AI 辅助设计外设访问控制 IP：从请求拦截到权限原子更新](ai-assisted-parameterized-ip-development/README.md) | 图文齐备；待发布审阅 | [AI-Assisted Peripheral Access Control: Request Filtering and Atomic Policy Updates](ai-assisted-parameterized-ip-development/README.en.md) | 图文齐备；待发布审阅 |

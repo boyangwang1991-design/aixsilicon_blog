@@ -1,0 +1,5 @@
+# system-en.png
+
+Tool: Codex built-in imagegen. Date: 2026-09-26. Purpose: system concept explanation. Language: en.
+
+Scientific educational infographic landscape 4:3, white background navy typography teal blue amber coral accents, polished clear engineering teaching diagram. Title "Where Does a Request Wait?". Three source cards left: "Decode: small reads", "Prefill: bulk writes", "KV: DDR-to-SRAM copies". Arrows to middle "NIU: fragment + inject", then "Mesh: routers + links", then two separate right boxes "SRAM: queue + bank service" and "DDR: bandwidth + latency model". Clear right-pointing request arrows. Separate dashed lower left-pointing arrow from target side toward source side labeled "Read data and completions return". Five numbered short labels below mainflow: "1 Admission" "2 Before injection" "3 Request transport" "4 Target queue / service" "5 Response transport". Footer "Concept illustration · Synthetic bus traffic, not model inference". Only supplied text, no invented metrics or extra explanations. High-level flow not physical topology. KV card is traffic generator not memory. Large clear text and generous spacing.
