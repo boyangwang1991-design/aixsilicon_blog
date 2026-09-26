@@ -1,0 +1,222 @@
+{
+  "imported_on": "2026-09-26",
+  "note": "Local reference paths are relative to the repository root. Destination paths are relative to this blog folder. source_sha256 and imported_sha256 describe the original import snapshot, before later link and content edits. Upstream URL availability was not checked.",
+  "articles": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/docs/blog/ai-assisted-parameterized-ip-development.md",
+      "filename": "README.md",
+      "title": "AI 辅助设计外设访问控制 IP：从请求拦截到权限原子更新",
+      "category": "IP / Secure APB Demux",
+      "status": "已优化正文；4 张中文讲解图配套；待发布审阅"
+    }
+  ],
+  "files": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/docs/blog/ai-assisted-parameterized-ip-development.md",
+      "destination": "README.md",
+      "source_sha256": "986810600d2472305206b2b65f07da3cfea0de320723c35f184a19ffce4f8684",
+      "imported_sha256": "986810600d2472305206b2b65f07da3cfea0de320723c35f184a19ffce4f8684"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/docs/blog/README.md",
+      "destination": "assets/README.md",
+      "source_sha256": "8e7dde722c9c619f13241052af5a2418e98de4272e500fa1d6011ee6550ab263",
+      "imported_sha256": "94b42202d2c656813a1f01a1c573e73104d0a798bb5b2dbab7a295338e75d440"
+    }
+  ],
+  "corrected_source_links": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/docs/blog/README.md",
+      "original": "../reports/report.md",
+      "resolved": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/reports/report.md"
+    }
+  ],
+  "upstream_links": [
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/infrastructure/apb/apb_secure_demux/reports/ppa/ppa_report.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/infrastructure/apb/apb_secure_demux/reports/report.md"
+  ],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/reports/report.md",
+      "sha256": "cc9adf4101b5368f5799c0e647069a073a3367ad7ba11eb39618f932a4005110"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/reports/ppa/ppa_report.md",
+      "sha256": "7ee6e229bd18090489c05afebe9155ef7f93a867348fab9b824242173e1c43fb"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/docs/lld/03_frontend.md",
+      "sha256": "4a0fb25189fba42c10c2012f9ce93b2514dcd786045201999017cc9baacd34f1"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/docs/lld/03_policy.md",
+      "sha256": "78321833ebbc2bc276a4169caf78f6e54d3baa3ba8bc8f3b5e5e39923eb164f5"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/docs/lld/06_register_generation_contract.md",
+      "sha256": "dcddb1f05ec29c83b83767afa7c639e991bfe0c1006a0dc1872f16b7fd2ab08b"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/docs/verification/test_matrix_parameter_campaign.md",
+      "sha256": "1b5b04c337b6e5dbf353e4f7f662d8032bfa4abbf1e36d2d4197a7879eaf20ef"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/rtl/apb_secure_demux.sv",
+      "sha256": "2a319f153eb9511e120bc53f4b6337bb4897dec9f412f4fabb00e7e2122f5acd"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/rtl/apb_secure_demux_policy.sv",
+      "sha256": "ce77751b58d430e48b6d7be7321ed14055467e2cc2428c982141761c7e3821b1"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/rtl/apb_secure_demux_events.sv",
+      "sha256": "238e949a5fd4f18126af4a8afa470a1d272403e5c32502b02b22a0bc51fb4136"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/scripts/check_configuration.py",
+      "sha256": "72bb8c273f143e97d97ed716271ceed9f7a6dd4d018133ef718ca45fa77bee12"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/scripts/materialize_configuration.py",
+      "sha256": "4effa17ba09eaa4bdf88b0f06d39f300bccfc68189f56a334ed15b304425c024"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/SKILL.md",
+      "sha256": "6fe891646f74bd42b57387de791ce25b484e7510bc8cbc8504c5263b9fab9312"
+    }
+  ],
+  "editorial_revision": {
+    "date": "2026-09-26",
+    "image_prompts": "notes/image-prompts.md",
+    "notes": "notes/editorial-review.md",
+    "purpose": "围绕事务一致性与原子策略更新优化技术博客，补充概念科普与中文机制图",
+    "simulation_rerun": false
+  },
+  "public_sources": [
+    {
+      "url": "https://documentation-service.arm.com/static/64257f64314e245d086bc8b7?token=",
+      "checked_on": "2026-09-26",
+      "title": "Arm AMBA APB Protocol Specification, IHI0024C"
+    }
+  ],
+  "generated_assets": [
+    {
+      "prompt_record": "notes/image-prompts.md",
+      "sha256": "dc6838be0196d68cf0bf7181ce27beb4b38f315a989192c579ab82eaf2e76f6f",
+      "date": "2026-09-26",
+      "kind": "conceptual explanatory diagram",
+      "file": "assets/generated/01-admission-before-routing-zh.png",
+      "tool": "Codex built-in imagegen"
+    },
+    {
+      "prompt_record": "notes/image-prompts.md",
+      "sha256": "9dd3affc5c0b0a998872973379f27795d5b8b3d015ff01cf0bda85c9dcf004d7",
+      "date": "2026-09-26",
+      "kind": "conceptual explanatory diagram",
+      "file": "assets/generated/02-frozen-transaction-context-zh.png",
+      "tool": "Codex built-in imagegen"
+    },
+    {
+      "prompt_record": "notes/image-prompts.md",
+      "sha256": "9a69a1e3e59637385db5c0722f22853881847a0a0a4207ebf5ebaaec901bfdaa",
+      "date": "2026-09-26",
+      "kind": "conceptual explanatory diagram",
+      "file": "assets/generated/03-atomic-policy-commit-zh.png",
+      "tool": "Codex built-in imagegen"
+    },
+    {
+      "prompt_record": "notes/image-prompts.md",
+      "sha256": "19182d19b490d165b5f209c0bd24c98d259b26654f0a10491b3ee6cfb1360fa6",
+      "date": "2026-09-26",
+      "kind": "conceptual explanatory diagram",
+      "file": "assets/generated/04-parameterized-instance-zh.png",
+      "tool": "Codex built-in imagegen"
+    }
+  ],
+  "cover_asset": {
+    "tool": "Codex built-in imagegen",
+    "kind": "conceptual editorial cover",
+    "sha256": "9fde9bb953514a0d187436a4b880f8b7176b86931c1af4dcb5f35d7f5a2ab522",
+    "file": "assets/generated/cover-zh.png",
+    "prompt_record": "notes/cover-prompt.md",
+    "date": "2026-09-26"
+  },
+  "english_edition": {
+    "date": "2026-09-26",
+    "source": "ai-assisted-parameterized-ip-development/README.md",
+    "source_sha256": "8243d43b25f6cd1b129e030e0852729e3777ec5ae560e7b1f8054318cb9b4aa2",
+    "destination": "README.en.md",
+    "sha256": "b840e2f36af6ad7017b195723d9d577eb9458d75723e1a1a4e3e7d7b149abdd5",
+    "status": "complete text and localized figures; pending publication review",
+    "assets": [
+      {
+        "purpose": "cover",
+        "language": "en",
+        "destination": "assets/generated/cover-en.png",
+        "sha256": "4f6e14f608b68f5fa4a3678c5e84ed8b9637b74cc3b939145cce5f1867f7aa0b",
+        "source": "ai-assisted-parameterized-ip-development/assets/generated/cover-zh.png",
+        "source_sha256": "9fde9bb953514a0d187436a4b880f8b7176b86931c1af4dcb5f35d7f5a2ab522",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/01-admission-before-routing-en.png",
+        "sha256": "23ecd8a38ba28b0cc62e8903e6fa96f785d508379d18c8e7948b3af4506d9bfd",
+        "source": "ai-assisted-parameterized-ip-development/assets/generated/01-admission-before-routing-zh.png",
+        "source_sha256": "dc6838be0196d68cf0bf7181ce27beb4b38f315a989192c579ab82eaf2e76f6f",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/02-frozen-transaction-context-en.png",
+        "sha256": "b59c666baa07af93774e06ef0301e9717312a54ba177373d344013403bdfb068",
+        "source": "ai-assisted-parameterized-ip-development/assets/generated/02-frozen-transaction-context-zh.png",
+        "source_sha256": "9dd3affc5c0b0a998872973379f27795d5b8b3d015ff01cf0bda85c9dcf004d7",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/03-atomic-policy-commit-en.png",
+        "sha256": "590a75a90e9b5d533f38af8809bf2e47351bf01894f681a409e0a16fbd3b4619",
+        "source": "ai-assisted-parameterized-ip-development/assets/generated/03-atomic-policy-commit-zh.png",
+        "source_sha256": "9a69a1e3e59637385db5c0722f22853881847a0a0a4207ebf5ebaaec901bfdaa",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/04-parameterized-instance-en.png",
+        "sha256": "6ce7be79517ce67dc67ee6d0a82d64a45321843b3eeb5b9528c76bf5ed4e0e93",
+        "source": "ai-assisted-parameterized-ip-development/assets/generated/04-parameterized-instance-zh.png",
+        "source_sha256": "19182d19b490d165b5f209c0bd24c98d259b26654f0a10491b3ee6cfb1360fa6",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      }
+    ],
+    "prompt_record": "notes/english-image-prompts.md",
+    "review_record": "notes/english-review.md"
+  },
+  "cover_variants": [
+    {
+      "purpose": "alternate article cover",
+      "language": "en",
+      "aspect_ratio": "4:3",
+      "width": 1448,
+      "height": 1086,
+      "destination": "assets/generated/cover-en-4x3.png",
+      "sha256": "a8716fb23ed7feca4a13c6bf19f51900585ac8fce2bbe7c279c0500e4e4ed79e",
+      "source": "ai-assisted-parameterized-ip-development/assets/generated/cover-en.png",
+      "source_sha256": "4f6e14f608b68f5fa4a3678c5e84ed8b9637b74cc3b939145cce5f1867f7aa0b",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/cover-en-4x3-prompt.md"
+    }
+  ]
+}

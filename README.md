@@ -1,5 +1,69 @@
 # AixSilicon Blog
 
-用于构建和维护 AixSilicon 相关博客的项目仓库。
+面向微信公众号及其他公开平台的技术博客写作仓库，核心主线是 **AI 辅助芯片研发**。
 
-`reference/` 存放本地参考资料，已通过 `.gitignore` 排除，不提交到 GitHub。
+通过具体工程实践讲清 AI 怎样参与需求、架构、实现、调试和验证，以及人怎样判断结果。文章应有吸引力、技术扎实、行文自然：用真实问题、设计取舍和证据吸引读者，保留工程师的判断，减少套话、口号与模板化表达。详细写作标准见 [AGENTS.md](AGENTS.md)。
+
+## 文章索引
+
+目前从本地参考仓库整理出 **8 篇文章**。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
+
+8 篇文章均提供中文与英文全文，以及对应语言的独立封面。封面保存在各篇 `assets/generated/cover-zh.png` 和 `cover-en.png`；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
+
+| 主题 | 中文版 | 中文状态 | English edition | 英文状态 |
+| --- | --- | --- | --- | --- |
+| CBB / PPA | [让 AI 带着综合结果改 RTL：一次 CBB 设计与 PPA 探索](ai-assisted-cbb-and-ppa-exploration/README.md) | 图文齐备；待发布审阅 | [Let Synthesis Guide AI-Assisted RTL Design: A CBB and PPA Exploration](ai-assisted-cbb-and-ppa-exploration/README.en.md) | 图文齐备；待发布审阅 |
+| ESL / NPU SRAM | [让 AI 先跑一轮架构实验：NPU SRAM 的 ESL 建模实践](ai-accelerated-esl-modeling/README.md) | 图文齐备；待发布审阅 | [Explore Architecture Before RTL: AI-Assisted ESL Modeling of NPU SRAM](ai-accelerated-esl-modeling/README.en.md) | 图文齐备；待发布审阅 |
+| IP / Secure APB Demux | [AI 辅助设计外设访问控制 IP：从请求拦截到权限原子更新](ai-assisted-parameterized-ip-development/README.md) | 图文齐备；待发布审阅 | [AI-Assisted Peripheral Access Control: Request Filtering and Atomic Policy Updates](ai-assisted-parameterized-ip-development/README.en.md) | 图文齐备；待发布审阅 |
+| IP / AXI MPU | [给片上内存加一道权限检查：AI 辅助 AXI MPU 研发实践](ai-assisted-generator-ip-development-v2/README.md) | 图文齐备；待发布审阅 | [Checking Access to On-Chip Memory: AI-Assisted AXI MPU Development](ai-assisted-generator-ip-development-v2/README.en.md) | 图文齐备；待发布审阅 |
+| IP / SPI2APB | [用一条 SPI 链路访问片内外设：AI 辅助 SPI2APB 设计与验证](ai-assisted-spi2apb-ip-development/README.md) | 图文齐备；待发布审阅 | [Reaching On-Chip Peripherals over SPI: AI-Assisted SPI2APB Design and Verification](ai-assisted-spi2apb-ip-development/README.en.md) | 图文齐备；待发布审阅 |
+| IP / PQC | [我让 AI 设计后量子密码加速器：从一条命令，到可验证的电路](ai-pqc-rtl/README.md) | 图文齐备；待发布审阅 | [Designing a Post-Quantum Cryptographic Accelerator with AI: From Commands to Verified RTL](ai-pqc-rtl/README.en.md) | 图文齐备；待发布审阅 |
+| VIP / AXI4 | [AI 辅助开发 AXI4 VIP：让验证代码成为可复用的工程资产](ai-assisted-vip-development-and-reuse/README.md) | 图文齐备；待发布审阅 | [AI-Assisted AXI4 VIP Development: Making Verification Code Reusable](ai-assisted-vip-development-and-reuse/README.en.md) | 图文齐备；待发布审阅 |
+| SoC Studio | [SoC Studio：让芯片设计，走出文件的孤岛](soc-studio-from-diagram-to-design/README.md) | 草稿；待补 5 组真实截图 | [SoC Studio: Bringing the Whole Chip Design Together](soc-studio-from-diagram-to-design/README.en.md) | 草稿；待补 5 组真实截图 |
+
+英文封面另备 [4:3 版本预览与下载](notes/covers-en-4x3.md)，文件名统一为各篇 `assets/generated/cover-en-4x3.png`。
+
+## 目录约定
+
+- 根目录 `README.md` 是总索引，每篇博客在根目录下拥有一个独立文件夹，中文正文为 `README.md`，英文正文为 `README.en.md`，文首相互切换。
+- 每篇的 `assets/` 保存配图、绘图源文件和原编辑说明，`sources.json` 保存逐文件来源、导入时 SHA-256 和修复的原始链接。
+- [AGENTS.md](AGENTS.md) 记录本项目的编辑与协作规则，也是 Agent 自动发现入口。
+- `reference/` 是本地只读参考资料，已忽略，不提交 GitHub。
+- 参考工程的 GitHub 仓库不会公开。发布正文须自包含，不链接私有仓库、`reference/` 或内部编辑资料；`sources.json` 与 `notes/` 用于内部追溯，不随文章导出。
+
+```text
+aixsilicon_blog/
+├── README.md                    # 全部博客的索引
+├── AGENTS.md                    # 写作与协作规范
+├── ai-pqc-rtl/                  # 一篇博客一个文件夹
+│   ├── README.md                # 中文正文
+│   ├── README.en.md             # 英文全文
+│   ├── assets/                  # 图片与配套资料
+│   └── sources.json             # 来源记录
+├── …/                          # 其他博客，结构相同
+├── scripts/check-content.mjs    # 内容检查
+└── reference/                  # 其他仓库，只读且不上传
+```
+
+## 后续写作
+
+1. 在根目录创建英文小写连字符命名的文章文件夹，例如 `ai-chip-design-notes/`，中文与英文全文分别写入 `README.md` 和 `README.en.md`。
+2. 配图与图源放在该篇 `assets/`，正文使用相对路径。需要时增加 `notes/` 保存笔记、`exports/` 保存导出文件，不必预先创建空目录。
+3. 在上方索引添加主题、双语标题链接及各自状态（如草稿、待校对、已发布）。参考已有资料时记录来源；原创文章不要求导入哈希。
+4. 完成修改后运行 `node scripts/check-content.mjs`。HTML 等导出不是正文的编辑入口，正文修改后应重新生成相应导出。
+
+## 整理范围与待办
+
+初始迁移保留了原文及相关配图，后续按篇优化。历史稿件仍含上游工程链接和内部编辑资料入口；由于这些工程不会公开，发布前须将必要说明融入正文，并清理这些引用。内部来源记录继续保留，不能把当前迁移状态视为已满足发布要求。
+
+SoC Studio 中英文稿均保留 5 组真实截图待补标记；拍摄指导已移入内部 notes。文章中的测试、PPA 数据与功能状态均对应原稿快照，发布前应重新核对，保留模型、估算和未验证能力的限制说明。
+
+本次检索了 7 个已解压参考仓库；`aixsilicon_skill_repo` 和 `wenwang-edgenpu` 未发现独立博客稿。其余 README、需求、设计和报告未作为博客收录。外层仓库 ZIP 包不重复导入；PQC 博客单独封装在工程内的 `docs/ai-pqc-blog-publish.zip`，已补充提取，其压缩包路径、内部条目及哈希记录在 [PQC 来源记录](ai-pqc-rtl/sources.json)。后续检索也需检查嵌套发布包。
+
+PQC 的 [原 HTML 发布版本](ai-pqc-rtl/assets/ai-pqc-rtl.html) 按原样保留，后续编辑以该篇 README 为准。
+
+## 内容检查
+
+执行 `node scripts/check-content.mjs` 检查本地 Markdown 链接、图片、文章索引和参考目录忽略状态。
+
+旧布局的一次性导入脚本已移除。后续直接在各篇文件夹内写作，来源记录保留在对应文章旁。

@@ -1,0 +1,21 @@
+digraph G {
+ graph [rankdir=LR, bgcolor="#f7fafc", pad="0.35", nodesep="0.45", ranksep="0.6", fontname="Noto Sans CJK SC", label="SPI2APB 在系统中的位置（集成示意）", labelloc=t, fontsize=22];
+ node [shape=box, style="rounded,filled", fillcolor="#ffffff", color="#9bb1c6", fontname="Noto Sans CJK SC", fontsize=14, margin="0.20,0.15"];
+ edge [color="#2275ad", penwidth=2, fontname="Noto Sans CJK SC", fontsize=11];
+ host [label="外部主机 / 调试控制器\nSPI master"];
+ subgraph cluster_soc {
+  label="目标 SoC（外设仅为示例）"; color="#aec4d5"; style=rounded;
+  bridge [label="spi2apb_bridge\nSPI target → APB requester", fillcolor="#dcefff", penwidth=2];
+  fabric [label="APB 地址译码 / 互联\n由 SoC 提供"];
+  peripherals [label="可访问的外设寄存器\n配置 / 状态 / 控制"];
+  policy [label="可信控制逻辑\n访问使能 / test / scan", fillcolor="#f0e9fa"];
+  crg [label="时钟与复位\nPCLK / POR / 局部复位", fillcolor="#edf5ed"];
+  bridge -> fabric [label="APB3 / APB4\n32-bit data", dir=both];
+  fabric -> peripherals [dir=both];
+  policy -> bridge [label="许可", color="#8650a2"];
+  bridge -> policy [label="status[31:0] / IRQ", color="#bd682e", constraint=false];
+  crg -> bridge [style=dashed, color="#488b5a"];
+ }
+ host -> bridge [label="SCLK / CSn / MOSI"];
+ bridge -> host [label="MISO + 输出使能", constraint=false];
+}

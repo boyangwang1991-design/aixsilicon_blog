@@ -1,0 +1,215 @@
+{
+  "imported_on": "2026-09-26",
+  "note": "Local reference paths are relative to the repository root. Destination paths are relative to this blog folder. source_sha256 and imported_sha256 describe the original import snapshot, before later link and content edits. Upstream URL availability was not checked.",
+  "articles": [
+    {
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/docs/blog/ai-assisted-vip-development-and-reuse.md",
+      "filename": "README.md",
+      "title": "AI 辅助开发 AXI4 VIP：让验证代码成为可复用的工程资产",
+      "category": "VIP / AXI4",
+      "status": "已优化正文；封面与 4 张中文讲解图配套；待发布审阅"
+    }
+  ],
+  "files": [
+    {
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/docs/blog/ai-assisted-vip-development-and-reuse.md",
+      "destination": "README.md",
+      "source_sha256": "dd92d478e25a8588f2af4236c8103ac86bfa6bff11240b3df31c96ef7d8b14ab",
+      "imported_sha256": "2f29ec7bfa040f5d5e91a4258566b97324c671317cd5d773d3a24015c2e555df"
+    }
+  ],
+  "corrected_source_links": [
+    {
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/docs/blog/ai-assisted-vip-development-and-reuse.md",
+      "original": "../../../../../../aixsilicon_ip_repo/ips/security/firewall/memory_protection_controller",
+      "resolved": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/docs/blog/ai-assisted-vip-development-and-reuse.md",
+      "original": "../../../../../../aixsilicon_ip_repo/ips/security/firewall/memory_protection_controller/verification/env/axi_mpu_env_pkg.sv",
+      "resolved": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/verification/env/axi_mpu_env_pkg.sv"
+    }
+  ],
+  "upstream_links": [
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/security/firewall/memory_protection_controller/verification/env/axi_mpu_env_pkg.sv",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/tree/main/ips/security/firewall/memory_protection_controller",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/README.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/aixsilicon_vip_axi4_1.0.0.core",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/docs/architecture.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/docs/requirement.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/docs/user-guide.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/reports/gate_status.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/reports/mutation/mutation_report.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/reports/run_log.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/src/axi4_configuration.sv",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/blob/main/vip/amba/axi4/src/axi4_if.sv",
+    "https://github.com/boyangwang1991-design/aixsilicon_vip_repo/tree/main/vip/amba/axi4/src"
+  ],
+  "cover_asset": {
+    "tool": "Codex built-in imagegen",
+    "kind": "conceptual editorial cover",
+    "sha256": "2f29da52cc670943d2a8840315156bff9dca1114348cab41e24d3e21a0599ef6",
+    "file": "assets/generated/cover-zh.png",
+    "prompt_record": "notes/cover-prompt.md",
+    "date": "2026-09-26"
+  },
+  "editorial_sources": [
+    {
+      "sha256": "27cb85bb0c33993e90619aaf502b28fcf5f162b6753e41439a875f90665e955b",
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/reports/run_log.md"
+    },
+    {
+      "sha256": "dfdc684391a6c69ec1024360a00d53c1abc7f4e65fd9ce742cba9f0234073944",
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/reports/gate_status.md"
+    },
+    {
+      "sha256": "f6c586500814aca4ffc95347783553c69af795f25ce662f42e7cac41996ba4e4",
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/reports/mutation/mutation_report.md"
+    },
+    {
+      "sha256": "1291b7a7731ffa679828b4a542c6d70b3f87665a41da8a198f3c5ade070a65cb",
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/docs/architecture.md"
+    },
+    {
+      "sha256": "22e992c0a8387291eb7d8459b9a84512ddacd7e75729e15c985a57c56014d970",
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/docs/user-guide.md"
+    },
+    {
+      "sha256": "cc85ec26969c6852ca108f96b8e2395dd0b8330f045421734c75a9802fa9bda5",
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/src/axi4_memory.sv"
+    },
+    {
+      "sha256": "9c081dde82cdf578b330c02c6f80ddbb3f9bd7dd59a9e39c5ee6fcea227b3c37",
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/unit_test/axi4_unit_memory.sv"
+    },
+    {
+      "sha256": "ebe5af943d1c13371c9da70b4df37bc1dbebbd8a573048c281f7ab5863ae74e4",
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/defects.md"
+    },
+    {
+      "sha256": "5e6f8ad87ef4994524a81119850cd55e5fa6975859a7695b45b80fff5e02e541",
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/vip-development-suite/SKILL.md"
+    },
+    {
+      "sha256": "f95d08eab80d03dcef41fd5358e44b8d10e97cbea8ead8fc991dc6aaa27f498e",
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/verification/env/axi_mpu_env_pkg.sv"
+    }
+  ],
+  "editorial_revision": {
+    "engineering_rerun": false,
+    "date": "2026-09-26",
+    "record": "notes/editorial-review.md"
+  },
+  "generated_assets": [
+    {
+      "kind": "conceptual explanatory diagram",
+      "date": "2026-09-26",
+      "prompt_record": "notes/image-prompts.md",
+      "tool": "Codex built-in imagegen",
+      "sha256": "4d9b9eccdebb2bc1aef889cbe5727ef0b052c57e804cbaeafdeb0d9e275a1990",
+      "file": "assets/generated/01-vip-role-zh.png"
+    },
+    {
+      "kind": "conceptual explanatory diagram",
+      "date": "2026-09-26",
+      "prompt_record": "notes/image-prompts.md",
+      "tool": "Codex built-in imagegen",
+      "sha256": "d34f5e56ba4adffb2bdc7d4367df91e44f12ad343318557a01b309d8a208acf3",
+      "file": "assets/generated/02-common-error-oracle-zh.png"
+    },
+    {
+      "kind": "conceptual explanatory diagram",
+      "date": "2026-09-26",
+      "prompt_record": "notes/image-prompts.md",
+      "tool": "Codex built-in imagegen",
+      "sha256": "fbf5b11562a41775381fa48c2af526ed6be2d5165dcfb93a94768eed97587f04",
+      "file": "assets/generated/03-test-the-checker-zh.png"
+    },
+    {
+      "kind": "conceptual explanatory diagram",
+      "date": "2026-09-26",
+      "prompt_record": "notes/image-prompts.md",
+      "tool": "Codex built-in imagegen",
+      "sha256": "07c3f7b6a5cc8d45e4fb75a12709433b817c7dec2473879044b5f38ba7a383fe",
+      "file": "assets/generated/04-reuse-boundary-zh.png"
+    }
+  ],
+  "english_edition": {
+    "date": "2026-09-26",
+    "source": "ai-assisted-vip-development-and-reuse/README.md",
+    "source_sha256": "fea1289e3aad7b1557e04a64aadb38a66a3fc2851ddda2212a071b7ca47c3267",
+    "destination": "README.en.md",
+    "sha256": "153023e8632cc830fad9e74aee3551ec84114824ce21325be6f5623001d2bbcf",
+    "status": "complete text and localized figures; pending publication review",
+    "assets": [
+      {
+        "purpose": "cover",
+        "language": "en",
+        "destination": "assets/generated/cover-en.png",
+        "sha256": "b9ef8667ccb0a64ecff0436a83a79dc14605cd9a59264bd4cee156584f5df9b2",
+        "source": "ai-assisted-vip-development-and-reuse/assets/generated/cover-zh.png",
+        "source_sha256": "2f29da52cc670943d2a8840315156bff9dca1114348cab41e24d3e21a0599ef6",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/01-vip-role-en.png",
+        "sha256": "2c857a2027a35f6b2f8e616a966d5beca9c5ea9c4c41d9159ea9a1569238c93f",
+        "source": "ai-assisted-vip-development-and-reuse/assets/generated/01-vip-role-zh.png",
+        "source_sha256": "4d9b9eccdebb2bc1aef889cbe5727ef0b052c57e804cbaeafdeb0d9e275a1990",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/02-common-error-oracle-en.png",
+        "sha256": "459f8cb4a8104ac436dc9d3aeaba955d24b10162e76e20f45f517b86cdfedd10",
+        "source": "ai-assisted-vip-development-and-reuse/assets/generated/02-common-error-oracle-zh.png",
+        "source_sha256": "d34f5e56ba4adffb2bdc7d4367df91e44f12ad343318557a01b309d8a208acf3",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/03-test-the-checker-en.png",
+        "sha256": "fa06a665ddda32cfee0e73ced7fb4e8b9be5b6a2dc440b4046c7783a0f9d8b6d",
+        "source": "ai-assisted-vip-development-and-reuse/assets/generated/03-test-the-checker-zh.png",
+        "source_sha256": "fbf5b11562a41775381fa48c2af526ed6be2d5165dcfb93a94768eed97587f04",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/04-reuse-boundary-en.png",
+        "sha256": "d9e6b4ad04a383caac6e78297033f1eeb5a30938b1660368ea75f468f2512af8",
+        "source": "ai-assisted-vip-development-and-reuse/assets/generated/04-reuse-boundary-zh.png",
+        "source_sha256": "07c3f7b6a5cc8d45e4fb75a12709433b817c7dec2473879044b5f38ba7a383fe",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      }
+    ],
+    "prompt_record": "notes/english-image-prompts.md",
+    "review_record": "notes/english-review.md"
+  },
+  "cover_variants": [
+    {
+      "purpose": "alternate article cover",
+      "language": "en",
+      "aspect_ratio": "4:3",
+      "width": 1448,
+      "height": 1086,
+      "destination": "assets/generated/cover-en-4x3.png",
+      "sha256": "7b8192eb01dfafd5b80a0b038411986bac2b640528cd4972a124bdf20a1358b4",
+      "source": "ai-assisted-vip-development-and-reuse/assets/generated/cover-en.png",
+      "source_sha256": "b9ef8667ccb0a64ecff0436a83a79dc14605cd9a59264bd4cee156584f5df9b2",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/cover-en-4x3-prompt.md"
+    }
+  ]
+}

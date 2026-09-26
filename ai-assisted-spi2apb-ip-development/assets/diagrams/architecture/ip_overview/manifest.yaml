@@ -1,0 +1,39 @@
+manifest_version: '1.0'
+model_file: model.normalized.yaml
+blocked: false
+status: draft
+diagram_id: spi2apb-blog-architecture
+design_version: closure_final05 / explanatory view
+model_hash: sha256:57d234c38dbd7d7cffc1efeb14b7d93068c20d2a542c71d31eb09e0caa9ecbe1
+source_files:
+- path: repos/aixsilicon_ip_repo/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture.yaml
+  role: ssot
+  sha256: a023aa7aad354d6480f370164b14c71efbdd1264aa43d46be4ac5e024014ea24
+- path: ../../../rtl/spi2apb_bridge_top.sv
+- path: ../../../rtl/spi2apb_spi.sv
+- path: ../../../rtl/spi2apb_engine.sv
+- path: /home/eda/workspace/aixsilicon_workflow/repos/aixsilicon_ip_repo/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture.yaml
+  role: ssot
+  sha256: a023aa7aad354d6480f370164b14c71efbdd1264aa43d46be4ac5e024014ea24
+artifacts:
+- path: repos/aixsilicon_ip_repo/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/diagram.drawio
+  format: drawio
+  kind: editable
+  sha256: 47a9aaff3762ebf0f454e758abf1f0f67c54c99059348acd3c37d2242db4087d
+- path: repos/aixsilicon_ip_repo/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/diagram.png
+  format: png
+  kind: rendered
+  renderer: graphviz
+  sha256: c0238eb4743fae03062919363a6b4d4717152aa3f23f30ed5675da912d6932e9
+statistics:
+  modules: 8
+  ports: 3
+  artifacts: 2
+quality:
+  ERROR: 0
+  WARNING: 1
+  INFO: 0
+assumptions: []
+versions:
+  generator: 1.0.0
+  schema: '1.0'

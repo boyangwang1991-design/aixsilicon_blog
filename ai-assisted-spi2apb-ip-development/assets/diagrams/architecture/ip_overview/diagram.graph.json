@@ -1,0 +1,188 @@
+{
+  "direction": "LR",
+  "nodes": [
+    {
+      "id": "phy",
+      "label": "SPI PHY\nShift / mode edges",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;;",
+      "width": 140,
+      "height": 76,
+      "group": "SPI sampling domain"
+    },
+    {
+      "id": "rx",
+      "label": "Request parser + buffer\nHeader / CRC / payload parity",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;;",
+      "width": 140,
+      "height": 76,
+      "group": "SPI sampling domain"
+    },
+    {
+      "id": "tx",
+      "label": "Response serializer\nWAIT / START / CRC16\nOutput via PHY",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;;",
+      "width": 140,
+      "height": 96,
+      "group": "SPI sampling domain"
+    },
+    {
+      "id": "mb",
+      "label": "Mailbox\nDescriptor + ownership",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;;",
+      "width": 140,
+      "height": 76,
+      "group": "CDC ownership handshake"
+    },
+    {
+      "id": "eng",
+      "label": "Transaction engine\nValidate / address / lanes\nResponse storage",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;;",
+      "width": 140,
+      "height": 96,
+      "group": "APB PCLK domain"
+    },
+    {
+      "id": "apb",
+      "label": "APB requester\nSETUP / ACCESS / wait",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;;",
+      "width": 140,
+      "height": 76,
+      "group": "APB PCLK domain"
+    },
+    {
+      "id": "diag",
+      "label": "Diagnostics\nStatus / counters / IRQ",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;;",
+      "width": 140,
+      "height": 76,
+      "group": "APB PCLK domain"
+    },
+    {
+      "id": "session",
+      "label": "Session guard\nAbort / reset poison",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;;",
+      "width": 140,
+      "height": 76,
+      "group": "SPI / PCLK / CS event domains"
+    },
+    {
+      "id": "spi_in",
+      "label": "MOSI",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;;",
+      "width": 140,
+      "height": 56,
+      "group": ""
+    },
+    {
+      "id": "spi_out",
+      "label": "MISO + OE",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;;",
+      "width": 140,
+      "height": 56,
+      "group": ""
+    },
+    {
+      "id": "apb_out",
+      "label": "APB3 / APB4\n32-bit data",
+      "style": "rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;;",
+      "width": 140,
+      "height": 76,
+      "group": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "spi_in",
+      "target": "phy",
+      "label": "1b",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1e77b4;strokeWidth=3;",
+      "kind": "datapath"
+    },
+    {
+      "source": "phy",
+      "target": "rx",
+      "label": "8b",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1e77b4;strokeWidth=3;",
+      "kind": "datapath"
+    },
+    {
+      "source": "rx",
+      "target": "eng",
+      "label": "32b",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1e77b4;strokeWidth=3;",
+      "kind": "datapath"
+    },
+    {
+      "source": "eng",
+      "target": "apb",
+      "label": "32b",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1e77b4;strokeWidth=3;",
+      "kind": "datapath"
+    },
+    {
+      "source": "apb",
+      "target": "apb_out",
+      "label": "32b",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1e77b4;strokeWidth=3;",
+      "kind": "datapath"
+    },
+    {
+      "source": "eng",
+      "target": "tx",
+      "label": "32b",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1e77b4;strokeWidth=3;",
+      "kind": "datapath"
+    },
+    {
+      "source": "tx",
+      "target": "spi_out",
+      "label": "1b",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1e77b4;strokeWidth=3;",
+      "kind": "datapath"
+    },
+    {
+      "source": "rx",
+      "target": "mb",
+      "label": "",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7b3fa0;strokeWidth=1;",
+      "kind": "control"
+    },
+    {
+      "source": "mb",
+      "target": "eng",
+      "label": "",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7b3fa0;strokeWidth=1;",
+      "kind": "control"
+    },
+    {
+      "source": "mb",
+      "target": "rx",
+      "label": "",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7b3fa0;strokeWidth=1;",
+      "kind": "control"
+    },
+    {
+      "source": "session",
+      "target": "rx",
+      "label": "",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7b3fa0;strokeWidth=1;",
+      "kind": "control"
+    },
+    {
+      "source": "session",
+      "target": "diag",
+      "label": "",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7b3fa0;strokeWidth=1;",
+      "kind": "control"
+    },
+    {
+      "source": "eng",
+      "target": "diag",
+      "label": "",
+      "style": "edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7b3fa0;strokeWidth=1;",
+      "kind": "control"
+    }
+  ],
+  "title": "SPI2APB / validated requests, explicit ownership",
+  "subtitle": "IP OVERVIEW"
+}

@@ -1,0 +1,176 @@
+{
+  "imported_on": "2026-09-26",
+  "note": "Local reference paths are relative to the repository root. Destination paths are relative to this blog folder. source_sha256 and imported_sha256 describe the original import snapshot, before later link and content edits. Upstream URL availability was not checked.",
+  "articles": [
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interconnect/parallel_data_fetch/docs/blog/ai-assisted-cbb-and-ppa-exploration.md",
+      "filename": "README.md",
+      "title": "让 AI 带着综合结果改 RTL：一次 CBB 设计与 PPA 探索",
+      "category": "CBB / PPA",
+      "status": "已优化正文；4 张中文讲解图配套；待发布审阅"
+    }
+  ],
+  "files": [
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interconnect/parallel_data_fetch/docs/blog/ai-assisted-cbb-and-ppa-exploration.md",
+      "destination": "README.md",
+      "source_sha256": "b78734e098aeca63fa96f848afe8d66126a96657e6c70d67a050ec7557876556",
+      "imported_sha256": "b78734e098aeca63fa96f848afe8d66126a96657e6c70d67a050ec7557876556"
+    }
+  ],
+  "corrected_source_links": [],
+  "upstream_links": [],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interconnect/parallel_data_fetch/reports/ppa-report.md",
+      "sha256": "c811368e75c36694b07b038aafbd6adca7e5f034b6af3af8250df2109bc6f3db"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interconnect/parallel_data_fetch/reports/qualification-report.md",
+      "sha256": "86ca4b37cea145bbeda162cbc0e7dd35fb6ead2ea0701a988bfa7f2382501a76"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interconnect/parallel_data_fetch/reports/slice-impl-review.md",
+      "sha256": "2b8fe3093140efd5aaea203c2bc231c1262f2e7a74ada52adccc4f30991a7984"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/components/interconnect/parallel_data_fetch/docs/design.md",
+      "sha256": "900808ffac85267f18110930d7c5771cf87e560ff83b185ad1d774115bac9809"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/cbb-development-suite/SKILL.md",
+      "sha256": "c45127fc48847aef0d36c71cf3a63e5f0dcd917064a1c1d03caba1f27137cebc"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/cbb-development-suite/skills/optimize-cbb-ppa/SKILL.md",
+      "sha256": "7d8594edb5a53e816885f22a3795b0b016b77fb2b724872dae892b7ab980a8b6"
+    }
+  ],
+  "editorial_revision": {
+    "simulation_rerun": false,
+    "notes": "notes/editorial-review.md",
+    "date": "2026-09-26",
+    "purpose": "统一综合数据口径，优化公开博客叙事，配中文原理图",
+    "image_prompts": "notes/image-prompts.md"
+  },
+  "generated_assets": [
+    {
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "file": "assets/generated/01-wide-to-narrow-zh.png",
+      "date": "2026-09-26",
+      "tool": "Codex built-in imagegen",
+      "sha256": "4c07d2914aef3dab63d81877e9ada89d066f0cf706aaaab669ec8e740933dc5e"
+    },
+    {
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "file": "assets/generated/02-slice-implementations-zh.png",
+      "date": "2026-09-26",
+      "tool": "Codex built-in imagegen",
+      "sha256": "b820c577026870af0dd3c02ea4e54b772fd3e105335e3aaa24c7cf21f43d2d1b"
+    },
+    {
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "file": "assets/generated/03-frame-reservation-zh.png",
+      "date": "2026-09-26",
+      "tool": "Codex built-in imagegen",
+      "sha256": "987ec5f93b753d227b1a5a31bc39c5912d385f8b306f710b7a63d67bcf09cbbc"
+    },
+    {
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "file": "assets/generated/04-ai-ppa-workflow-zh.png",
+      "date": "2026-09-26",
+      "tool": "Codex built-in imagegen",
+      "sha256": "0938311bfde2f43181cfc5d72e7de8330cb65f133d1e0bfebaad6b469d2b6d3d"
+    }
+  ],
+  "cover_asset": {
+    "tool": "Codex built-in imagegen",
+    "kind": "conceptual editorial cover",
+    "sha256": "de807a15cb87ef95793f928258b293a4bd72669fba9bc589e760fc985b8e683f",
+    "file": "assets/generated/cover-zh.png",
+    "prompt_record": "notes/cover-prompt.md",
+    "date": "2026-09-26"
+  },
+  "english_edition": {
+    "date": "2026-09-26",
+    "source": "ai-assisted-cbb-and-ppa-exploration/README.md",
+    "source_sha256": "4c3b26cae8a53107c21f00ff3b177f52487c72d51dd40daec9fb35c78166c2a9",
+    "destination": "README.en.md",
+    "sha256": "36c31aea927013b49758586915590c46ba12d75413570e7fa1b3a3f11f9cadf8",
+    "status": "complete text and localized figures; pending publication review",
+    "assets": [
+      {
+        "purpose": "cover",
+        "language": "en",
+        "destination": "assets/generated/cover-en.png",
+        "sha256": "ee9b4dc07fff1ae9c9d5a44fd357f40eec679512c3c3d719086984c87cef5c9f",
+        "source": "ai-assisted-cbb-and-ppa-exploration/assets/generated/cover-zh.png",
+        "source_sha256": "de807a15cb87ef95793f928258b293a4bd72669fba9bc589e760fc985b8e683f",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/01-wide-to-narrow-en.png",
+        "sha256": "4d7a1077f97a4f9832d4748403e65622cd97832fdeb07474c312c1e021cb914f",
+        "source": "ai-assisted-cbb-and-ppa-exploration/assets/generated/01-wide-to-narrow-zh.png",
+        "source_sha256": "4c07d2914aef3dab63d81877e9ada89d066f0cf706aaaab669ec8e740933dc5e",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/04-ai-ppa-workflow-en.png",
+        "sha256": "cf40da7ac936440ed7ce3fadc222b718e21868c8ca0f8f8d2b4a1517bc7b9a7c",
+        "source": "ai-assisted-cbb-and-ppa-exploration/assets/generated/04-ai-ppa-workflow-zh.png",
+        "source_sha256": "0938311bfde2f43181cfc5d72e7de8330cb65f133d1e0bfebaad6b469d2b6d3d",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/03-frame-reservation-en.png",
+        "sha256": "80449ddd858d9b0350b916b85a72a744007f775ce2f7ea136cfefeaa1d7680a5",
+        "source": "ai-assisted-cbb-and-ppa-exploration/assets/generated/03-frame-reservation-zh.png",
+        "source_sha256": "987ec5f93b753d227b1a5a31bc39c5912d385f8b306f710b7a63d67bcf09cbbc",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/02-slice-implementations-en.png",
+        "sha256": "34cf54d5a79d19414bffe86d2f6cd6bf95983a858bff7ca3d52f9af1e0d1ce9b",
+        "source": "ai-assisted-cbb-and-ppa-exploration/assets/generated/02-slice-implementations-zh.png",
+        "source_sha256": "b820c577026870af0dd3c02ea4e54b772fd3e105335e3aaa24c7cf21f43d2d1b",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      }
+    ],
+    "prompt_record": "notes/english-image-prompts.md",
+    "review_record": "notes/english-review.md"
+  },
+  "cover_variants": [
+    {
+      "purpose": "alternate article cover",
+      "language": "en",
+      "aspect_ratio": "4:3",
+      "width": 1448,
+      "height": 1086,
+      "destination": "assets/generated/cover-en-4x3.png",
+      "sha256": "77a07c9dd77af3e51379b408c7494e34a5090760063324f3b36a1aea1510f015",
+      "source": "ai-assisted-cbb-and-ppa-exploration/assets/generated/cover-en.png",
+      "source_sha256": "ee9b4dc07fff1ae9c9d5a44fd357f40eec679512c3c3d719086984c87cef5c9f",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/cover-en-4x3-prompt.md"
+    }
+  ]
+}

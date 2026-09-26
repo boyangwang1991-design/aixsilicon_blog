@@ -1,0 +1,245 @@
+{
+  "imported_on": "2026-09-26",
+  "note": "Local reference paths are relative to the repository root. Destination paths are relative to this blog folder. source_sha256 and imported_sha256 describe the original import snapshot, before later link and content edits. Upstream URL availability was not checked.",
+  "articles": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/docs/blog/ai-assisted-generator-ip-development-v2.md",
+      "filename": "README.md",
+      "title": "给片上内存加一道权限检查：AI 辅助 AXI MPU 研发实践",
+      "category": "IP / AXI MPU",
+      "status": "已优化正文；4 张中文讲解图配套；待发布审阅"
+    }
+  ],
+  "files": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/docs/blog/ai-assisted-generator-ip-development-v2.md",
+      "destination": "README.md",
+      "source_sha256": "9bc09bcad7e40791e9d48cc0d97714c0cd6cd3c26c494d4619d7a17f223531ce",
+      "imported_sha256": "9bc09bcad7e40791e9d48cc0d97714c0cd6cd3c26c494d4619d7a17f223531ce"
+    }
+  ],
+  "corrected_source_links": [],
+  "upstream_links": [],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/quality/review_findings.yaml",
+      "sha256": "ffaf09809dba297b0f4b6336af31b1d893ec7de56a7d251234a52fb631b4e8b4"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/quality/gate_report.md",
+      "sha256": "4d43b5aa0f3a031ac27bebd99bbbd0aa808604bfb4f5cf3fb92137e68fc9a48f"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/quality/module_ut_summary.md",
+      "sha256": "ff47c51f8778ee5180f5cb4118215f25940235f6f7b2d6e40a9b7f0907f8ce50"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/quality/trace_matrix.md",
+      "sha256": "700c2235ecf5a2272384bae8f3bcb10f5e1bd202a6c827673df9bb9a914662e0"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/regression/junit.xml",
+      "sha256": "2679f7e39621a72bef1f756c8c16aa5633ec61316f3814b93e48ef8fac6c7694"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/regression/regression_summary.md",
+      "sha256": "eceb47591a7784fd6cce373e2d9eb537ca7548b0a793b7997550e4abeacd4966"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/ppa-report.md",
+      "sha256": "f4a97562cd8ca42225e6533a2362fd097dcd6206fca9d2550692a2299d67c78b"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/ppa/summary_CFG_R16_P0_200M_200MHz.yaml",
+      "sha256": "752b16467d49852c3a7537f663b80f9654870f87d23a3b831e140900f73af6af"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/ppa/summary_CFG_R16_P0_400M_400MHz.yaml",
+      "sha256": "b3e190909911c7aaac319f1eb8c0db82d240d3d44550b75ed7626f412480b18f"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/ppa/summary_CFG_R16_P0_500M_500MHz.yaml",
+      "sha256": "a240881b0dcc3ab65f7310d4d70c4fe72dccf68d7861401af1061b71bef3c5ce"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/rtl/axi_mpu.sv",
+      "sha256": "710921e65968a6139fb883b036dc04c38e2fd967645e95b37634a651c7fb0bb1"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/rtl/axi_mpu_read.sv",
+      "sha256": "98e44d9264d51524df99aaef7c6ba877db09e7846364b17edfecaef849b5fe11"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/rtl/axi_mpu_write.sv",
+      "sha256": "92b949deb2161132f23294fe9bb11d926ab523b64fb62aa70d05ad5f6a9c8cd4"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/rtl/axi_mpu_permission.sv",
+      "sha256": "402821fb65ad90bc5f953a5682c04813af06f893f04920d9fa0947a9b34e4749"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/regs/axi_mpu.rdl",
+      "sha256": "f7cac5296e922c4b5ffa87757e5106ab22167c6fe43188bccb5c7c2cbb286dde"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/verification/tc/tc_local_decerr.sv",
+      "sha256": "9e43b9239ee531c1b6357e7a9cd52fc04fdb8b26b29c27f7427bf67525ae3e5e"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/verification/tc/tc_config_lock.sv",
+      "sha256": "c006b56070c097828822693435f4ebdc4335d955c8ca21890b429103f128f509"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/verification/tc/tc_security_permission.sv",
+      "sha256": "debbef48dab094119d5f8169d7004fa0c4ac86340ef76496b0bb2812e17d2fce"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/verification/tc/tc_default_deny.sv",
+      "sha256": "96c382a4fd5430c8ca3feaa4471defa23011945d584f8ba0b38e19aeb512578c"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/SKILL.md",
+      "sha256": "6fe891646f74bd42b57387de791ce25b484e7510bc8cbc8504c5263b9fab9312"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/02-reg-model/SKILL.md",
+      "sha256": "ab11e7499ba580c7d19c4ba31afd106ca238f42289de7da6387a3ea42c79bea2"
+    }
+  ],
+  "editorial_revision": {
+    "image_prompts": "notes/image-prompts.md",
+    "purpose": "以访问保护场景引入AI辅助IP工程，补充概念科普，核对协议和工程结果",
+    "date": "2026-09-26",
+    "simulation_rerun": false,
+    "notes": "notes/editorial-review.md"
+  },
+  "public_sources": [
+    {
+      "url": "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/IHI0022H_amba_axi_protocol_spec.pdf",
+      "title": "Arm AMBA AXI and ACE Protocol Specification, IHI 0022H",
+      "sections": "A3.4; A4.7",
+      "checked_on": "2026-09-26"
+    }
+  ],
+  "generated_assets": [
+    {
+      "file": "assets/generated/01-mpu-access-control-zh.png",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "sha256": "218ce1da725ec86dbb9b9e17a9e20d1804ebad116e8f3e55700ffc258e729e5a"
+    },
+    {
+      "file": "assets/generated/02-denied-burst-response-zh.png",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "sha256": "9f9d44b0c27481a3e0dd26ec93260ab7ae7cdeb9babacea9bd6d228eafef9295"
+    },
+    {
+      "file": "assets/generated/03-register-single-source-zh.png",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "sha256": "8f5c821589f79315d85a1a52c1c398d62c44e30906cd926c198eed463222c7b8"
+    },
+    {
+      "file": "assets/generated/04-requirement-to-evidence-zh.png",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "sha256": "46259fd236b51702ae5b676424083a0acef122bfd35a11134bb91612c5b6cd83"
+    }
+  ],
+  "cover_asset": {
+    "tool": "Codex built-in imagegen",
+    "kind": "conceptual editorial cover",
+    "sha256": "72367c697c6f16206d5cda36da7fe3eaaef7b961132ed5573344a143617368cc",
+    "file": "assets/generated/cover-zh.png",
+    "prompt_record": "notes/cover-prompt.md",
+    "date": "2026-09-26"
+  },
+  "english_edition": {
+    "date": "2026-09-26",
+    "source": "ai-assisted-generator-ip-development-v2/README.md",
+    "source_sha256": "6471a1b053fb3de9304a7073be27edb6913b67ba4264d7e3e5d94bf8c53669c6",
+    "destination": "README.en.md",
+    "sha256": "21d2200171e56fd9e04d615d5cd12cf6b424261934c1ba4ee5dcf78b8f2cd4d1",
+    "status": "complete text and localized figures; pending publication review",
+    "assets": [
+      {
+        "purpose": "cover",
+        "language": "en",
+        "destination": "assets/generated/cover-en.png",
+        "sha256": "a39cbdc434532eb95bf4c7a64f08bb8d198b733d0db301133958c54f3274bb2a",
+        "source": "ai-assisted-generator-ip-development-v2/assets/generated/cover-zh.png",
+        "source_sha256": "72367c697c6f16206d5cda36da7fe3eaaef7b961132ed5573344a143617368cc",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/01-mpu-access-control-en.png",
+        "sha256": "6bfcc9ed8e2f6ce3d0f3af0050b81776e514290476845c48518de205126feab0",
+        "source": "ai-assisted-generator-ip-development-v2/assets/generated/01-mpu-access-control-zh.png",
+        "source_sha256": "218ce1da725ec86dbb9b9e17a9e20d1804ebad116e8f3e55700ffc258e729e5a",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/04-requirement-to-evidence-en.png",
+        "sha256": "f0a74167391b3512db69ce8b371ae6446ff62e232e2b038d0d55d19c8aa5afe9",
+        "source": "ai-assisted-generator-ip-development-v2/assets/generated/04-requirement-to-evidence-zh.png",
+        "source_sha256": "46259fd236b51702ae5b676424083a0acef122bfd35a11134bb91612c5b6cd83",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/02-denied-burst-response-en.png",
+        "sha256": "8ab8836ba28003ee2bf6910420575adfdd369f0b83217bdd86c515ce225a327d",
+        "source": "ai-assisted-generator-ip-development-v2/assets/generated/02-denied-burst-response-zh.png",
+        "source_sha256": "9f9d44b0c27481a3e0dd26ec93260ab7ae7cdeb9babacea9bd6d228eafef9295",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/03-register-single-source-en.png",
+        "sha256": "cb17dba0d0ca01e4975c941c1832772166ba491eb063cccfa0c374665fa8223f",
+        "source": "ai-assisted-generator-ip-development-v2/assets/generated/03-register-single-source-zh.png",
+        "source_sha256": "8f5c821589f79315d85a1a52c1c398d62c44e30906cd926c198eed463222c7b8",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      }
+    ],
+    "prompt_record": "notes/english-image-prompts.md",
+    "review_record": "notes/english-review.md",
+    "correction_record": "notes/english-image-corrections.md"
+  },
+  "cover_variants": [
+    {
+      "purpose": "alternate article cover",
+      "language": "en",
+      "aspect_ratio": "4:3",
+      "width": 1448,
+      "height": 1086,
+      "destination": "assets/generated/cover-en-4x3.png",
+      "sha256": "0539937f03f3330f7a974357254904590eff223da2de107e7a05af070c382946",
+      "source": "ai-assisted-generator-ip-development-v2/assets/generated/cover-en.png",
+      "source_sha256": "a39cbdc434532eb95bf4c7a64f08bb8d198b733d0db301133958c54f3274bb2a",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/cover-en-4x3-prompt.md"
+    }
+  ]
+}

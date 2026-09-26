@@ -1,0 +1,188 @@
+schema_version: '1.0'
+diagram:
+  id: spi2apb-blog-architecture
+  type: ip_architecture
+  title: SPI2APB / validated requests, explicit ownership
+  abstraction: ip
+  language: en-US
+  status: draft
+provenance:
+  sources:
+  - path: ../../../rtl/spi2apb_bridge_top.sv
+  - path: ../../../rtl/spi2apb_spi.sv
+  - path: ../../../rtl/spi2apb_engine.sv
+  generator: chipdiagram
+style:
+  theme: aixsilicon-light
+  page: '16:9'
+  colorblind_safe: true
+layout:
+  direction: left_to_right
+  detail_level: architecture
+  max_visible_blocks: 16
+  groups:
+    phy: SPI sampling domain
+    rx: SPI sampling domain
+    tx: SPI sampling domain
+    mb: CDC ownership handshake
+    eng: APB PCLK domain
+    apb: APB PCLK domain
+    diag: APB PCLK domain
+    session: SPI / PCLK / CS event domains
+traceability:
+  design_version: closure_final05 / explanatory view
+ip:
+  modules:
+  - id: phy
+    name: 'SPI PHY
+
+      Shift / mode edges'
+    kind: converter
+  - id: rx
+    name: 'Request parser + buffer
+
+      Header / CRC / payload parity'
+    kind: buffer
+  - id: tx
+    name: 'Response serializer
+
+      WAIT / START / CRC16
+
+      Output via PHY'
+    kind: converter
+  - id: mb
+    name: 'Mailbox
+
+      Descriptor + ownership'
+    kind: synchronizer
+  - id: eng
+    name: 'Transaction engine
+
+      Validate / address / lanes
+
+      Response storage'
+    kind: control
+  - id: apb
+    name: 'APB requester
+
+      SETUP / ACCESS / wait'
+    kind: datapath
+  - id: diag
+    name: 'Diagnostics
+
+      Status / counters / IRQ'
+    kind: control
+  - id: session
+    name: 'Session guard
+
+      Abort / reset poison'
+    kind: control
+  ports:
+  - id: spi_in
+    name: MOSI
+    direction: input
+    width: 1
+    kind: data
+  - id: spi_out
+    name: MISO + OE
+    direction: output
+    kind: interface
+  - id: apb_out
+    name: 'APB3 / APB4
+
+      32-bit data'
+    direction: output
+    kind: interface
+  datapaths:
+  - id: spi_rx
+    from: spi_in
+    to: phy
+    width: 1
+  - id: bytes
+    from: phy
+    to: rx
+    width: 8
+  - id: payload
+    from: rx
+    to: eng
+    name: stable payload + mask
+    width: 32
+  - id: command
+    from: eng
+    to: apb
+    name: command / return data
+    width: 32
+  - id: bus
+    from: apb
+    to: apb_out
+    name: request / response
+    width: 32
+  - id: response
+    from: eng
+    to: tx
+    name: stable response / index
+    width: 32
+  - id: serial_tx
+    from: tx
+    to: spi_out
+    name: via PHY
+    width: 1
+  control_paths:
+  - id: publish
+    from: rx
+    to: mb
+    name: publish descriptor
+  - id: request
+    from: mb
+    to: eng
+    name: valid / accept / finish
+  - id: busy
+    from: mb
+    to: rx
+    name: buffer ownership
+  - id: poison
+    from: session
+    to: rx
+    name: poison via SPI wrapper
+  - id: abort
+    from: session
+    to: diag
+    name: abort event / count
+  - id: status
+    from: eng
+    to: diag
+    name: completion / error
+  cdc_paths:
+  - id: request_cdc
+    from_domain: SPI
+    to_domain: PCLK
+    mechanism: handshake
+  - id: response_cdc
+    from_domain: PCLK
+    to_domain: SPI
+    mechanism: handshake
+  rtl_bindings:
+  - id: phy_rtl
+    module: phy
+    rtl_path: ../../../rtl/spi2apb_spi_phy.sv
+  - id: rx_rtl
+    module: rx
+    rtl_path: ../../../rtl/spi2apb_request_parser.sv
+  - id: tx_rtl
+    module: tx
+    rtl_path: ../../../rtl/spi2apb_response_serializer.sv
+  - id: mb_rtl
+    module: mb
+    rtl_path: ../../../rtl/spi2apb_mailbox.sv
+  - id: eng_rtl
+    module: eng
+    rtl_path: ../../../rtl/spi2apb_engine.sv
+  - id: apb_rtl
+    module: apb
+    rtl_path: ../../../rtl/spi2apb_apb_master.sv
+  - id: diag_rtl
+    module: diag
+    rtl_path: ../../../rtl/spi2apb_diagnostics.sv
+  - id: session_rtl
+    module: session
+    rtl_path: ../../../rtl/spi2apb_session_guard.sv

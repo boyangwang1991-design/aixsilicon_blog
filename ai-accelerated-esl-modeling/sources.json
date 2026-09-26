@@ -1,0 +1,229 @@
+{
+  "imported_on": "2026-09-26",
+  "note": "Local reference paths are relative to the repository root. Destination paths are relative to this blog folder. source_sha256 and imported_sha256 describe the original import snapshot, before later link and content edits. Upstream URL availability was not checked.",
+  "articles": [
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/docs/blog/ai-accelerated-esl-modeling.md",
+      "filename": "README.md",
+      "title": "让 AI 先跑一轮架构实验：NPU SRAM 的 ESL 建模实践",
+      "category": "ESL / NPU SRAM",
+      "status": "已优化正文；中文讲解图配套；待发布审阅"
+    }
+  ],
+  "files": [
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/docs/blog/ai-accelerated-esl-modeling.md",
+      "destination": "README.md",
+      "source_sha256": "1d9a2e9f2e63ce53ef66270ed5313982631c2f2e901012acacde912d631f7c42",
+      "imported_sha256": "282cbb13edcf51e11914a1edeacb7df8549e7e44e78e6798d1c77159d744eb2a"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/docs/blog/figures/addresses_holdout_B32_G32_xor0.png",
+      "destination": "assets/figures/addresses_holdout_B32_G32_xor0.png",
+      "source_sha256": "567b83619840746f2f06718529067fe66095cb845c81b0d5628181fddee4ad62",
+      "imported_sha256": "567b83619840746f2f06718529067fe66095cb845c81b0d5628181fddee4ad62"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/docs/blog/figures/banks_holdout_B32_G32_xor0.png",
+      "destination": "assets/figures/banks_holdout_B32_G32_xor0.png",
+      "source_sha256": "f882bc330b7ecb3908a45c632597e0a1aa66f1863e910fa39acbd60daf6001c1",
+      "imported_sha256": "f882bc330b7ecb3908a45c632597e0a1aa66f1863e910fa39acbd60daf6001c1"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/reports/20260918/figures/gemm_evidence.png",
+      "destination": "assets/figures/gemm_evidence.png",
+      "source_sha256": "30d738ab8eb40013121b899d15c7893393df18b67022834f8ca13e0108703861",
+      "imported_sha256": "30d738ab8eb40013121b899d15c7893393df18b67022834f8ca13e0108703861"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/reports/20260918/figures/npu_timeline.png",
+      "destination": "assets/figures/npu_timeline.png",
+      "source_sha256": "8328650140c88018c3818b7fc7a276fd9bee1d4ef4977a81da8b14a5f591c0be",
+      "imported_sha256": "8328650140c88018c3818b7fc7a276fd9bee1d4ef4977a81da8b14a5f591c0be"
+    }
+  ],
+  "corrected_source_links": [],
+  "upstream_links": [
+    "https://github.com/boyangwang1991-design/aixsilicon_esl_repo/blob/main/models/npu_sram_controller/reports/20260918/report.md"
+  ],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/README.md",
+      "sha256": "6ea3e98f10ec2ed9443401bc45fb6e2d2d817c8744d253300807ab6c051c2d33"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/docs/design.md",
+      "sha256": "faf9760d2a9a3f65e2b1f6c52a5533dcc5cd5eda0d5aff6f83532ef928eb0480"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/docs/verification.md",
+      "sha256": "8275eb8cb2f5b9fd6af4e9f9892cb061e41081f8ab43b5b92d3028d6c28f2187"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_sram_controller/reports/20260918/report.md",
+      "sha256": "8cacb093fc34044531789accfa5a2f9d0471ff49fdf3d356509af96b48994c25"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/esl-development-suite/SKILL.md",
+      "sha256": "1d931432e0db18c0b49808714a85e0c2fc19e049ceaefba321d3abdb15763199"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/esl-development-suite/skills/esl-performance-analysis/SKILL.md",
+      "sha256": "3c76fec8711630fa6bfcc73c0f59be91421c28d5337fd8fd48a0fe8d96c8f87e"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/esl-development-suite/skills/esl-performance-analysis/references/reporting.md",
+      "sha256": "4cb2491833a6375c6f7f48fdd75b958ac0c6735121bb2cbd612fb0b81dfd5f77"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/esl-development-suite/skills/esl-verification/SKILL.md",
+      "sha256": "b1ea147e6d09694381124110cdc8379ae3cec339d7501a19adf34e9855453f37"
+    }
+  ],
+  "editorial_revision": {
+    "date": "2026-09-26",
+    "purpose": "面向公开平台展示 AI 辅助 ESL 建模与架构探索的工程价值",
+    "notes": "notes/evidence.md",
+    "image_prompts": "notes/image-prompts.md",
+    "simulation_rerun": false,
+    "original_data_figures_preserved": true
+  },
+  "generated_assets": [
+    {
+      "destination": "assets/generated/01-ai-esl-workflow-zh.png",
+      "tool": "Codex built-in imagegen",
+      "generated_on": "2026-09-26",
+      "purpose": "AI 与工程师协作的 ESL 架构实验流程",
+      "prompts": "notes/image-prompts.md",
+      "kind": "中文概念讲解图，非仿真输出",
+      "sha256": "54e73093a66435a746c07aea134492f09b1742430bf5386f2a73e86d716328ba"
+    },
+    {
+      "destination": "assets/generated/02-npu-sram-model-zh.png",
+      "tool": "Codex built-in imagegen",
+      "generated_on": "2026-09-26",
+      "purpose": "NPU 任务依赖与资源模型的反馈关系",
+      "prompts": "notes/image-prompts.md",
+      "kind": "中文概念讲解图，非仿真输出",
+      "sha256": "2838524ac8c58edd07c1d390c78494de6dac865672a10a88b7e1066d48b39f62"
+    },
+    {
+      "destination": "assets/generated/03-evidence-to-decision-zh.png",
+      "tool": "Codex built-in imagegen",
+      "generated_on": "2026-09-26",
+      "purpose": "从局部性能指标到系统关键路径与下一轮实验",
+      "prompts": "notes/image-prompts.md",
+      "kind": "中文概念讲解图，非仿真输出",
+      "sha256": "4c2bea12959ae3337747b2c41255f853b3674c5062e510273fe8daa008215f42",
+      "status": "superseded",
+      "replaced_by": "assets/generated/03-evidence-to-decision-zh-v2.png"
+    },
+    {
+      "destination": "assets/generated/03-evidence-to-decision-zh-v2.png",
+      "tool": "Codex built-in imagegen",
+      "generated_on": "2026-09-26",
+      "purpose": "保留 GEMM 指标对照与 port 0 后续 tile 的定性解释",
+      "prompts": "notes/figure-5-revision.md",
+      "kind": "指标摘录与概念示意，非原始仿真波形",
+      "status": "current",
+      "sha256": "1b361548b398a79314ea78358d186423abab1c411083769544992a57035f7d83"
+    }
+  ],
+  "cover_asset": {
+    "tool": "Codex built-in imagegen",
+    "kind": "conceptual editorial cover",
+    "sha256": "e4193be70c5c7c6e77bc4fc0ca73fc08852212ab71df6fff10d4f6d79ca1de2b",
+    "file": "assets/generated/cover-zh.png",
+    "prompt_record": "notes/cover-prompt.md",
+    "date": "2026-09-26"
+  },
+  "english_edition": {
+    "date": "2026-09-26",
+    "source": "ai-accelerated-esl-modeling/README.md",
+    "source_sha256": "d99ead8df9335d3cc873d665cd828641898fd6412f2bf054919c5b0c280026a0",
+    "destination": "README.en.md",
+    "sha256": "64f088bc69b3a889edeb3e6521e6392b8ee703099663fe15306b002f2fa6ae60",
+    "status": "complete text and localized figures; pending publication review",
+    "assets": [
+      {
+        "purpose": "cover",
+        "language": "en",
+        "destination": "assets/generated/cover-en.png",
+        "sha256": "64cb2eaa37af7039e2325ccaf34cf46c13c366f61f8b226e855665cb04cf1981",
+        "source": "ai-accelerated-esl-modeling/assets/generated/cover-zh.png",
+        "source_sha256": "e4193be70c5c7c6e77bc4fc0ca73fc08852212ab71df6fff10d4f6d79ca1de2b",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/01-ai-esl-workflow-en.png",
+        "sha256": "c7f947b6f69b3c62582f0d9bd0c92078f17ea496339d8a0815069c954701f264",
+        "source": "ai-accelerated-esl-modeling/assets/generated/01-ai-esl-workflow-zh.png",
+        "source_sha256": "54e73093a66435a746c07aea134492f09b1742430bf5386f2a73e86d716328ba",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/02-npu-sram-model-en.png",
+        "sha256": "7e3bae2bc8af8021be6d7f1463e85631501d563984287d5cd4ce78cfa8968ce9",
+        "source": "ai-accelerated-esl-modeling/assets/generated/02-npu-sram-model-zh.png",
+        "source_sha256": "2838524ac8c58edd07c1d390c78494de6dac865672a10a88b7e1066d48b39f62",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "shared existing English figure",
+        "language": "en",
+        "destination": "assets/figures/gemm_evidence.png",
+        "sha256": "30d738ab8eb40013121b899d15c7893393df18b67022834f8ca13e0108703861",
+        "source": "ai-accelerated-esl-modeling/assets/figures/gemm_evidence.png",
+        "source_sha256": "30d738ab8eb40013121b899d15c7893393df18b67022834f8ca13e0108703861",
+        "tool": "Unchanged original",
+        "prompt_record": null
+      },
+      {
+        "purpose": "shared existing English figure",
+        "language": "en",
+        "destination": "assets/figures/npu_timeline.png",
+        "sha256": "8328650140c88018c3818b7fc7a276fd9bee1d4ef4977a81da8b14a5f591c0be",
+        "source": "ai-accelerated-esl-modeling/assets/figures/npu_timeline.png",
+        "source_sha256": "8328650140c88018c3818b7fc7a276fd9bee1d4ef4977a81da8b14a5f591c0be",
+        "tool": "Unchanged original",
+        "prompt_record": null
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/03-evidence-to-decision-en.png",
+        "sha256": "ef967c41f709ed5a201fce95259e8ca134241a8a4942808ab8ac8930503c7721",
+        "source": "ai-accelerated-esl-modeling/assets/generated/03-evidence-to-decision-zh-v2.png",
+        "source_sha256": "1b361548b398a79314ea78358d186423abab1c411083769544992a57035f7d83",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      }
+    ],
+    "prompt_record": "notes/english-image-prompts.md",
+    "review_record": "notes/english-review.md",
+    "correction_record": "notes/english-image-corrections.md"
+  },
+  "cover_variants": [
+    {
+      "purpose": "alternate article cover",
+      "language": "en",
+      "aspect_ratio": "4:3",
+      "width": 1448,
+      "height": 1086,
+      "destination": "assets/generated/cover-en-4x3.png",
+      "sha256": "15c179b3ead69ad05a3d12a51fb50e646c79670bf2d1f6b4dece28d22d9969c7",
+      "source": "ai-accelerated-esl-modeling/assets/generated/cover-en.png",
+      "source_sha256": "64cb2eaa37af7039e2325ccaf34cf46c13c366f61f8b226e855665cb04cf1981",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/cover-en-4x3-prompt.md"
+    }
+  ]
+}

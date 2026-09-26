@@ -1,0 +1,4 @@
+diagram_id: spi2apb-blog-architecture
+views:
+- id: ip_overview
+  manifest: ip_overview/manifest.yaml

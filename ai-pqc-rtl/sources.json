@@ -1,0 +1,230 @@
+{
+  "imported_on": "2026-09-26",
+  "note": "Local reference paths are relative to the repository root. Destination paths are relative to this blog folder. source_sha256 and imported_sha256 describe the original import snapshot, before later link and content edits. Upstream URL availability was not checked.",
+  "articles": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "ai-pqc-rtl.md",
+      "filename": "README.md",
+      "title": "我让 AI 设计后量子密码加速器：从一条命令，到可验证的电路",
+      "category": "IP / PQC",
+      "status": "正文已轻度润色；保留封面与 8 张配图；原 HTML 为历史版本"
+    }
+  ],
+  "files": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "ai-pqc-rtl.md",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "README.md",
+      "source_sha256": "4c8cd951c98358cdc20740e5c54f622611fe8efcc5b6a0a47540f4c1ef1ed951",
+      "imported_sha256": "f2832e8238db05d479d0245666592bc008e93d59188191ba54f99f7ea74960af"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "ai-pqc-rtl.html",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/ai-pqc-rtl.html",
+      "source_sha256": "f5820266e003f2a74afe473374391bd888ecefb7f8527d7c53b5b0961ff83b02",
+      "imported_sha256": "f5820266e003f2a74afe473374391bd888ecefb7f8527d7c53b5b0961ff83b02"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "assets/lattice-quantum-intuition.png",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/lattice-quantum-intuition.png",
+      "source_sha256": "05da1dc8a1521cda542b8ccd22efd8b6c3a4a796008d03fc3faf5180837f3632",
+      "imported_sha256": "05da1dc8a1521cda542b8ccd22efd8b6c3a4a796008d03fc3faf5180837f3632"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "assets/learning-01-kem-exchange.png",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/learning-01-kem-exchange.png",
+      "source_sha256": "2559badae8b3a8f1dd6cca4a33280ddb0520a4da3a6203e001def88f3acc9781",
+      "imported_sha256": "2559badae8b3a8f1dd6cca4a33280ddb0520a4da3a6203e001def88f3acc9781"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "assets/rtl-01-overview.png",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/rtl-01-overview.png",
+      "source_sha256": "1ae8372c307fcf5b82382c596708be1c6bcf835a4fd239128a480ac5e7fa79d0",
+      "imported_sha256": "1ae8372c307fcf5b82382c596708be1c6bcf835a4fd239128a480ac5e7fa79d0"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "assets/rtl-02-command-control.png",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/rtl-02-command-control.png",
+      "source_sha256": "77a41d3261f886ede166eca3ee11f1f0018c36841a69a0225670043e4d90acce",
+      "imported_sha256": "77a41d3261f886ede166eca3ee11f1f0018c36841a69a0225670043e4d90acce"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "assets/rtl-03-compute-datapath.png",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/rtl-03-compute-datapath.png",
+      "source_sha256": "623d32f375c36187a5483e91c45e5fe1b791b64283bc622a7f29cfcb8472aa0a",
+      "imported_sha256": "623d32f375c36187a5483e91c45e5fe1b791b64283bc622a7f29cfcb8472aa0a"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "assets/rtl-04-memory-dma.png",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/rtl-04-memory-dma.png",
+      "source_sha256": "6811b2981cfffced8e99009289dfb09fde741a3b2fb345a177b80ea6b495633d",
+      "imported_sha256": "6811b2981cfffced8e99009289dfb09fde741a3b2fb345a177b80ea6b495633d"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "assets/learning-06-dsa-sign-flow.png",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/learning-06-dsa-sign-flow.png",
+      "source_sha256": "70e53f6a8d4641ef1699f8d9b063abfefeb9acb0708af235789838516725b460",
+      "imported_sha256": "70e53f6a8d4641ef1699f8d9b063abfefeb9acb0708af235789838516725b460"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+      "archive_entry": "assets/rtl-05-key-security.png",
+      "archive_sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+      "destination": "assets/rtl-05-key-security.png",
+      "source_sha256": "3b8f81a2f6918c7533b4930e9e07dba505a15766b255b9bf8bd09a65fe569cd7",
+      "imported_sha256": "3b8f81a2f6918c7533b4930e9e07dba505a15766b255b9bf8bd09a65fe569cd7"
+    }
+  ],
+  "corrected_source_links": [],
+  "upstream_links": [],
+  "cover_asset": {
+    "tool": "Codex built-in imagegen",
+    "kind": "conceptual editorial cover",
+    "sha256": "7b5b29cf18f7ca7b8c125eb25f18f2ae40eaf304ebdf07a8e7b0bd4a0aee6b27",
+    "file": "assets/generated/cover-zh.png",
+    "prompt_record": "notes/cover-prompt.md",
+    "date": "2026-09-26"
+  },
+  "light_edit_revision": {
+    "date": "2026-09-26",
+    "record": "notes/editorial-review.md",
+    "scope": "prose only; existing figures and engineering values retained"
+  },
+  "english_edition": {
+    "date": "2026-09-26",
+    "source": "ai-pqc-rtl/README.md",
+    "source_sha256": "8984be0702114d90b024b9caba5042097846ba1b5bfcb96ef0caaf8a510d9ff3",
+    "destination": "README.en.md",
+    "sha256": "ba1366673333dbe7c18b36c1687153a761ccae9a219d2ddfedcf649ca583798a",
+    "status": "complete text and localized figures; pending publication review",
+    "assets": [
+      {
+        "purpose": "cover",
+        "language": "en",
+        "destination": "assets/generated/cover-en.png",
+        "sha256": "22b8eeb32d6f75259bb4edeb4b6d835da75d45831e47536bf7e2ed031146ac7d",
+        "source": "ai-pqc-rtl/assets/generated/cover-zh.png",
+        "source_sha256": "7b5b29cf18f7ca7b8c125eb25f18f2ae40eaf304ebdf07a8e7b0bd4a0aee6b27",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/lattice-quantum-intuition-en.png",
+        "sha256": "e1e657c4d1bb22421bf8a8131c241de003b413b2fcefd139ae0d0df496b931f7",
+        "source": "ai-pqc-rtl/assets/lattice-quantum-intuition.png",
+        "source_sha256": "05da1dc8a1521cda542b8ccd22efd8b6c3a4a796008d03fc3faf5180837f3632",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "shared existing English figure",
+        "language": "en",
+        "destination": "assets/learning-01-kem-exchange.png",
+        "sha256": "2559badae8b3a8f1dd6cca4a33280ddb0520a4da3a6203e001def88f3acc9781",
+        "source": "ai-pqc-rtl/assets/learning-01-kem-exchange.png",
+        "source_sha256": "2559badae8b3a8f1dd6cca4a33280ddb0520a4da3a6203e001def88f3acc9781",
+        "tool": "Unchanged original",
+        "prompt_record": null
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/rtl-01-overview-en.png",
+        "sha256": "a754cb55ef79639d2b91ae6c9af430441d957c7f15333074f70a74bf691c03dd",
+        "source": "ai-pqc-rtl/assets/rtl-01-overview.png",
+        "source_sha256": "1ae8372c307fcf5b82382c596708be1c6bcf835a4fd239128a480ac5e7fa79d0",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/rtl-02-command-control-en.png",
+        "sha256": "bf3ba63e980d19edd585174dc3dd82ab092f983f6cc7a3bf8f6dbf04c5266466",
+        "source": "ai-pqc-rtl/assets/rtl-02-command-control.png",
+        "source_sha256": "77a41d3261f886ede166eca3ee11f1f0018c36841a69a0225670043e4d90acce",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/rtl-03-compute-datapath-en.png",
+        "sha256": "2943982f47f38f620ab3652ce65edb4bd75ca1953e053a6e0f04e28fd948adb7",
+        "source": "ai-pqc-rtl/assets/rtl-03-compute-datapath.png",
+        "source_sha256": "623d32f375c36187a5483e91c45e5fe1b791b64283bc622a7f29cfcb8472aa0a",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/rtl-04-memory-dma-en.png",
+        "sha256": "4d51f733e3f698da58ce5326ebc13ba11f4addcf4e613f9e4766b8fd61548ce9",
+        "source": "ai-pqc-rtl/assets/rtl-04-memory-dma.png",
+        "source_sha256": "6811b2981cfffced8e99009289dfb09fde741a3b2fb345a177b80ea6b495633d",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "shared existing English figure",
+        "language": "en",
+        "destination": "assets/learning-06-dsa-sign-flow.png",
+        "sha256": "70e53f6a8d4641ef1699f8d9b063abfefeb9acb0708af235789838516725b460",
+        "source": "ai-pqc-rtl/assets/learning-06-dsa-sign-flow.png",
+        "source_sha256": "70e53f6a8d4641ef1699f8d9b063abfefeb9acb0708af235789838516725b460",
+        "tool": "Unchanged original",
+        "prompt_record": null
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/rtl-05-key-security-en.png",
+        "sha256": "148012c837c0d0a195c2ac2db385e39682f9f18d18633bce38cc67caede4ae5b",
+        "source": "ai-pqc-rtl/assets/rtl-05-key-security.png",
+        "source_sha256": "3b8f81a2f6918c7533b4930e9e07dba505a15766b255b9bf8bd09a65fe569cd7",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      }
+    ],
+    "prompt_record": "notes/english-image-prompts.md",
+    "review_record": "notes/english-review.md",
+    "correction_record": "notes/english-image-corrections.md"
+  },
+  "cover_variants": [
+    {
+      "purpose": "alternate article cover",
+      "language": "en",
+      "aspect_ratio": "4:3",
+      "width": 1448,
+      "height": 1086,
+      "destination": "assets/generated/cover-en-4x3.png",
+      "sha256": "02e3279d0a420e180d94a01cb225fb5b7515228fd707b973145e90e308f798ce",
+      "source": "ai-pqc-rtl/assets/generated/cover-en.png",
+      "source_sha256": "22b8eeb32d6f75259bb4edeb4b6d835da75d45831e47536bf7e2ed031146ac7d",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/cover-en-4x3-prompt.md"
+    }
+  ]
+}

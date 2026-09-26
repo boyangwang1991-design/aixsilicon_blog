@@ -1,0 +1,336 @@
+{
+  "imported_on": "2026-09-26",
+  "note": "Local reference paths are relative to the repository root. Destination paths are relative to this blog folder. source_sha256 and imported_sha256 describe the original import snapshot, before later link and content edits. Upstream URL availability was not checked.",
+  "articles": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/README.md",
+      "filename": "README.md",
+      "title": "用一条 SPI 链路访问片内外设：AI 辅助 SPI2APB 设计与验证",
+      "category": "IP / SPI2APB",
+      "status": "已优化正文；封面与 4 张中文讲解图配套；待发布审阅"
+    }
+  ],
+  "files": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/README.md",
+      "destination": "README.md",
+      "source_sha256": "fed4a2a8fc59ea0a6cd2c64fe23ca8516e3a193adb6c706ac811197e8abf90ce",
+      "imported_sha256": "99cacca98eaf9b07ff5e471bec7e61dc3d286f55d4b0dbec3cce6ef5ed444861"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/diagram-set.yaml",
+      "destination": "assets/diagrams/architecture/diagram-set.yaml",
+      "source_sha256": "d79ce3e11a4956da0e99792a2f4affc88729b7c0320c54a0e93777bbf9be83d2",
+      "imported_sha256": "d79ce3e11a4956da0e99792a2f4affc88729b7c0320c54a0e93777bbf9be83d2"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/index.md",
+      "destination": "assets/diagrams/architecture/index.md",
+      "source_sha256": "ba14e466f3774b4861864742f8cbe1df3ccabdd437638d6a0367fe4b3307d778",
+      "imported_sha256": "ba14e466f3774b4861864742f8cbe1df3ccabdd437638d6a0367fe4b3307d778"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/diagram.drawio",
+      "destination": "assets/diagrams/architecture/ip_overview/diagram.drawio",
+      "source_sha256": "47a9aaff3762ebf0f454e758abf1f0f67c54c99059348acd3c37d2242db4087d",
+      "imported_sha256": "47a9aaff3762ebf0f454e758abf1f0f67c54c99059348acd3c37d2242db4087d"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/diagram.graph.json",
+      "destination": "assets/diagrams/architecture/ip_overview/diagram.graph.json",
+      "source_sha256": "1a32093c5811b753fb7ee4620c4d020edb0b0b33c78db2231e455144496b6c35",
+      "imported_sha256": "1a32093c5811b753fb7ee4620c4d020edb0b0b33c78db2231e455144496b6c35"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/diagram.png",
+      "destination": "assets/diagrams/architecture/ip_overview/diagram.png",
+      "source_sha256": "c0238eb4743fae03062919363a6b4d4717152aa3f23f30ed5675da912d6932e9",
+      "imported_sha256": "c0238eb4743fae03062919363a6b4d4717152aa3f23f30ed5675da912d6932e9"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/edit-url.txt",
+      "destination": "assets/diagrams/architecture/ip_overview/edit-url.txt",
+      "source_sha256": "cf8836451d7f8b66f8509fd90194ab96255f0cd0e31ad1ce7a1d5fbd88e81379",
+      "imported_sha256": "cf8836451d7f8b66f8509fd90194ab96255f0cd0e31ad1ce7a1d5fbd88e81379"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/manifest.yaml",
+      "destination": "assets/diagrams/architecture/ip_overview/manifest.yaml",
+      "source_sha256": "458bea48ffd22e1a6483e9cf224c5308ec99173744cf15d21ad59694e14f6292",
+      "imported_sha256": "458bea48ffd22e1a6483e9cf224c5308ec99173744cf15d21ad59694e14f6292"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/model.normalized.yaml",
+      "destination": "assets/diagrams/architecture/ip_overview/model.normalized.yaml",
+      "source_sha256": "a7618843e2cc3786a46d00e22f0e5d3cc7444cfba74c8c4fa4d993831d957fc5",
+      "imported_sha256": "a7618843e2cc3786a46d00e22f0e5d3cc7444cfba74c8c4fa4d993831d957fc5"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/validation.json",
+      "destination": "assets/diagrams/architecture/ip_overview/validation.json",
+      "source_sha256": "eb4b4a99ec9ecfbd0dbfcd006157bab26c6aa575fd02d38d6753a67b18077a8a",
+      "imported_sha256": "eb4b4a99ec9ecfbd0dbfcd006157bab26c6aa575fd02d38d6753a67b18077a8a"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/validation.md",
+      "destination": "assets/diagrams/architecture/ip_overview/validation.md",
+      "source_sha256": "fc52663de6403562f2efe782a1f3ecb264dfe2b69a4fb8f035e99d5296809fd0",
+      "imported_sha256": "fc52663de6403562f2efe782a1f3ecb264dfe2b69a4fb8f035e99d5296809fd0"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/manifest.yaml",
+      "destination": "assets/diagrams/architecture/manifest.yaml",
+      "source_sha256": "458bea48ffd22e1a6483e9cf224c5308ec99173744cf15d21ad59694e14f6292",
+      "imported_sha256": "458bea48ffd22e1a6483e9cf224c5308ec99173744cf15d21ad59694e14f6292"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/model.normalized.yaml",
+      "destination": "assets/diagrams/architecture/model.normalized.yaml",
+      "source_sha256": "a7618843e2cc3786a46d00e22f0e5d3cc7444cfba74c8c4fa4d993831d957fc5",
+      "imported_sha256": "a7618843e2cc3786a46d00e22f0e5d3cc7444cfba74c8c4fa4d993831d957fc5"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/validation-summary.md",
+      "destination": "assets/diagrams/architecture/validation-summary.md",
+      "source_sha256": "fc52663de6403562f2efe782a1f3ecb264dfe2b69a4fb8f035e99d5296809fd0",
+      "imported_sha256": "fc52663de6403562f2efe782a1f3ecb264dfe2b69a4fb8f035e99d5296809fd0"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/validation.json",
+      "destination": "assets/diagrams/architecture/validation.json",
+      "source_sha256": "eb4b4a99ec9ecfbd0dbfcd006157bab26c6aa575fd02d38d6753a67b18077a8a",
+      "imported_sha256": "eb4b4a99ec9ecfbd0dbfcd006157bab26c6aa575fd02d38d6753a67b18077a8a"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/validation.md",
+      "destination": "assets/diagrams/architecture/validation.md",
+      "source_sha256": "fc52663de6403562f2efe782a1f3ecb264dfe2b69a4fb8f035e99d5296809fd0",
+      "imported_sha256": "fc52663de6403562f2efe782a1f3ecb264dfe2b69a4fb8f035e99d5296809fd0"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture.yaml",
+      "destination": "assets/diagrams/architecture.yaml",
+      "source_sha256": "a023aa7aad354d6480f370164b14c71efbdd1264aa43d46be4ac5e024014ea24",
+      "imported_sha256": "a023aa7aad354d6480f370164b14c71efbdd1264aa43d46be4ac5e024014ea24"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/system.dot",
+      "destination": "assets/diagrams/system.dot",
+      "source_sha256": "eeca884097e2e0da9363c292dd380ce8a8e6b297eeae95d991b821b94e8c77c6",
+      "imported_sha256": "eeca884097e2e0da9363c292dd380ce8a8e6b297eeae95d991b821b94e8c77c6"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/workflow.dot",
+      "destination": "assets/diagrams/workflow.dot",
+      "source_sha256": "85a75776469d6a0f7c1a871f04e10c174e71685e48a9332254c2bce848cb6be5",
+      "imported_sha256": "85a75776469d6a0f7c1a871f04e10c174e71685e48a9332254c2bce848cb6be5"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/images/ppa-area-power.png",
+      "destination": "assets/images/ppa-area-power.png",
+      "source_sha256": "8a53d82c76a2856fb10faec4d8c1c0db64b90ef779879991000c39723ed5cf79",
+      "imported_sha256": "8a53d82c76a2856fb10faec4d8c1c0db64b90ef779879991000c39723ed5cf79"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/images/README.md",
+      "destination": "assets/images/README.md",
+      "source_sha256": "1acf3e9bb12e7b5fcd2f3574e067b3ab362d22fe667ad342ab718807cf797a38",
+      "imported_sha256": "1acf3e9bb12e7b5fcd2f3574e067b3ab362d22fe667ad342ab718807cf797a38"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/images/system.png",
+      "destination": "assets/images/system.png",
+      "source_sha256": "96065d3449c3c46588e851b2b77b64ac6dd871ec7cf8ec64a592fad98f9f7d90",
+      "imported_sha256": "96065d3449c3c46588e851b2b77b64ac6dd871ec7cf8ec64a592fad98f9f7d90"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/images/system.svg",
+      "destination": "assets/images/system.svg",
+      "source_sha256": "3809bebee42c3af48f0d4fdc1c517e92a7eef5ac30ccc199b5147f7dd1fc45d1",
+      "imported_sha256": "3809bebee42c3af48f0d4fdc1c517e92a7eef5ac30ccc199b5147f7dd1fc45d1"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/images/workflow.png",
+      "destination": "assets/images/workflow.png",
+      "source_sha256": "62f78224f4dfa09616c2c986bd13227d12d6c5a715544f93e9477050410138db",
+      "imported_sha256": "62f78224f4dfa09616c2c986bd13227d12d6c5a715544f93e9477050410138db"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/blog/images/workflow.svg",
+      "destination": "assets/images/workflow.svg",
+      "source_sha256": "00c915f3a6f8d2c748dd822aad5cb678f882554e6a1f7bd1f0d8f54d1fbe45e1",
+      "imported_sha256": "00c915f3a6f8d2c748dd822aad5cb678f882554e6a1f7bd1f0d8f54d1fbe45e1"
+    }
+  ],
+  "corrected_source_links": [],
+  "upstream_links": [
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/README.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/docs/hld/index.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/docs/integration/spi2apb_bridge_integration_guide.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/docs/lld/index.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/docs/reviews/cdc_reset_review.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/docs/reviews/coverage_continuation_authorization.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/docs/reviews/ip_closure_scope.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/docs/user_manual/spi_protocol.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/docs/verification/index.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/reports/ppa/ppa_report.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/reports/report.md",
+    "https://github.com/boyangwang1991-design/aixsilicon_ip_repo/blob/main/ips/external_bus/bridge/spi2apb_bridge/verification/env/spi2apb_bridge_env.sv"
+  ],
+  "cover_asset": {
+    "tool": "Codex built-in imagegen",
+    "kind": "conceptual editorial cover",
+    "sha256": "0ca1bc5bc1c1994fcd75dc272b89260e51938d637899be0476d76976b3273401",
+    "file": "assets/generated/cover-zh.png",
+    "prompt_record": "notes/cover-prompt.md",
+    "date": "2026-09-26"
+  },
+  "editorial_sources": [
+    {
+      "sha256": "29b3a234bfb7da248982f4d2d70afca6f17441e98c7ec73ca1890df69d18bf9d",
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/reports/report.md"
+    },
+    {
+      "sha256": "ea41cf650101527242ecb7f11ec63e1cd8cb44b8c892268eefbfb01ab9ad8ca0",
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/reports/ppa/ppa_report.md"
+    },
+    {
+      "sha256": "3847bc9d7a6abd9090e288f6159908dfcef6f34c141d6ba889a9a60b452600de",
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/user_manual/spi_protocol.md"
+    },
+    {
+      "sha256": "6fc28fdefe60131619209f73791bfe035dea466e76c680f4834dc36051a855c0",
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/hld/01_architecture.md"
+    },
+    {
+      "sha256": "3fc001879d99cc14922061fdee4efba696cf3d97a667d8c2d8aad03d8859a20c",
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/lld/03_spi2apb_session_guard.md"
+    },
+    {
+      "sha256": "6f236bd88275ab51f31be953c93004973d58b99e6bc58db6fcf30197d3e80db4",
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/rtl/spi2apb_engine.sv"
+    },
+    {
+      "sha256": "6fe891646f74bd42b57387de791ce25b484e7510bc8cbc8504c5263b9fab9312",
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/SKILL.md"
+    }
+  ],
+  "editorial_revision": {
+    "engineering_rerun": false,
+    "record": "notes/editorial-review.md",
+    "date": "2026-09-26"
+  },
+  "generated_assets": [
+    {
+      "sha256": "1b62bc6a3fb4ba132e02bd897d8902b8b0a0f66a7492dd2767614df1b2453986",
+      "file": "assets/generated/01-request-before-access-zh.png",
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "date": "2026-09-26",
+      "tool": "Codex built-in imagegen"
+    },
+    {
+      "sha256": "f3fe00ff7a6213f5b9ddc6c6c846b196df148f9aaa7955aad385f2a6e25c6305",
+      "file": "assets/generated/02-clock-domain-ownership-zh.png",
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "date": "2026-09-26",
+      "tool": "Codex built-in imagegen"
+    },
+    {
+      "sha256": "e9c83e508e0bbc57ba46f60abfc2b11970442d2f85c8254fabf171342e07cc80",
+      "file": "assets/generated/03-revoke-at-transaction-boundary-zh.png",
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "date": "2026-09-26",
+      "tool": "Codex built-in imagegen"
+    },
+    {
+      "sha256": "dd98e1578866d3001add102648c13309c8c95d5e9d5e69379d7161a0015798f4",
+      "file": "assets/generated/04-first-read-debug-zh.png",
+      "prompt_record": "notes/image-prompts.md",
+      "kind": "conceptual explanatory diagram",
+      "date": "2026-09-26",
+      "tool": "Codex built-in imagegen"
+    }
+  ],
+  "english_edition": {
+    "date": "2026-09-26",
+    "source": "ai-assisted-spi2apb-ip-development/README.md",
+    "source_sha256": "16ddabb8be6bf9e7650355d7fccdbc1b3a1dd72a7a2529c92c58a3b9304b187b",
+    "destination": "README.en.md",
+    "sha256": "3187762c927c1a7225814b4b6ff099ee7da1fb7b192b18e6bf1409fa2f7b5129",
+    "status": "complete text and localized figures; pending publication review",
+    "assets": [
+      {
+        "purpose": "cover",
+        "language": "en",
+        "destination": "assets/generated/cover-en.png",
+        "sha256": "ca1980b5436db2efbab595d8a165f99e37f8435469c6402ee59f09c05e4f67b4",
+        "source": "ai-assisted-spi2apb-ip-development/assets/generated/cover-zh.png",
+        "source_sha256": "0ca1bc5bc1c1994fcd75dc272b89260e51938d637899be0476d76976b3273401",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/01-request-before-access-en.png",
+        "sha256": "418bb407f0e83eca10997b1afccb179851a0c24eff37370cb2ae03a764946239",
+        "source": "ai-assisted-spi2apb-ip-development/assets/generated/01-request-before-access-zh.png",
+        "source_sha256": "1b62bc6a3fb4ba132e02bd897d8902b8b0a0f66a7492dd2767614df1b2453986",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/02-clock-domain-ownership-en.png",
+        "sha256": "cb2b6da3bcb59c9e941e2159079883e80546054dab68d40420bab8c2d5b685c5",
+        "source": "ai-assisted-spi2apb-ip-development/assets/generated/02-clock-domain-ownership-zh.png",
+        "source_sha256": "f3fe00ff7a6213f5b9ddc6c6c846b196df148f9aaa7955aad385f2a6e25c6305",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/03-revoke-at-transaction-boundary-en.png",
+        "sha256": "5edddae5b1307cb74a1aadb3a92e22c3afcc31ed4809794b6952e232c632eff1",
+        "source": "ai-assisted-spi2apb-ip-development/assets/generated/03-revoke-at-transaction-boundary-zh.png",
+        "source_sha256": "e9c83e508e0bbc57ba46f60abfc2b11970442d2f85c8254fabf171342e07cc80",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      },
+      {
+        "purpose": "explanatory diagram",
+        "language": "en",
+        "destination": "assets/generated/04-first-read-debug-en.png",
+        "sha256": "6494aa656a0ea6fb929abe81a673aa5af9e3f11747e48ea14415f7ebace187fe",
+        "source": "ai-assisted-spi2apb-ip-development/assets/generated/04-first-read-debug-zh.png",
+        "source_sha256": "dd98e1578866d3001add102648c13309c8c95d5e9d5e69379d7161a0015798f4",
+        "tool": "Codex built-in imagegen",
+        "prompt_record": "notes/english-image-prompts.md"
+      }
+    ],
+    "prompt_record": "notes/english-image-prompts.md",
+    "review_record": "notes/english-review.md",
+    "correction_record": "notes/english-image-corrections.md"
+  },
+  "cover_variants": [
+    {
+      "purpose": "alternate article cover",
+      "language": "en",
+      "aspect_ratio": "4:3",
+      "width": 1448,
+      "height": 1086,
+      "destination": "assets/generated/cover-en-4x3.png",
+      "sha256": "8ccdd05b7e258a1ee4403cbd253e69bdb7a3e5a869e05be719b56b99af6d3f8a",
+      "source": "ai-assisted-spi2apb-ip-development/assets/generated/cover-en.png",
+      "source_sha256": "ca1980b5436db2efbab595d8a165f99e37f8435469c6402ee59f09c05e4f67b4",
+      "tool": "Codex built-in imagegen",
+      "date": "2026-09-26",
+      "prompt_record": "notes/cover-en-4x3-prompt.md"
+    }
+  ]
+}

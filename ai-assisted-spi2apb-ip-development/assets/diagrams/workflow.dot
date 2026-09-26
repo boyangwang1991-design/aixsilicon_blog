@@ -1,0 +1,16 @@
+digraph G {
+ graph [rankdir=TB, bgcolor="#f7fafc", pad="0.30", nodesep="0.45", ranksep="0.48", fontname="Noto Sans CJK SC", label="AI 辅助研发：每一阶段都留下可检查的产物", labelloc=t, fontsize=22];
+ node [shape=box, style="rounded,filled", fillcolor="white", color="#aec4d5", fontname="Noto Sans CJK SC", fontsize=14, margin="0.22,0.13"];
+ edge [color="#357aa5", penwidth=1.8, fontname="Noto Sans CJK SC", fontsize=11];
+ scope [label="人：确定产品范围与接受条件\nIP 级闭环 / 单比特故障模型", fillcolor="#f0e9fa"];
+ req [label="需求 → 架构 → 微架构\nLRS / HLD / LLD / 接口与所有权"];
+ impl [label="实现与构建\nRTL / C 驱动 / FuseSoC / 约束"];
+ check [label="分层检查\nLint · 展开 · 模块 UT · UVM 回归\n参数空间 · 故障注入 · 覆盖率", fillcolor="#e3f1fc"];
+ debug [label="AI：定位反例 → 修改 → 复验\n同步受影响的代码、测试和文档", fillcolor="#fff2d6"];
+ ppa [label="真实标准库综合\n面积 / 时序 / 功耗估算"];
+ evidence [label="证据绑定与质量门禁\n输入指纹 / 日志 / 追踪 / 候选包", fillcolor="#e4f3ed"];
+ open [label="本轮结果：IP 级条件闭环\n保留覆盖率、许可证和物理签核待办", fillcolor="#fff2d6"];
+ scope -> req -> impl -> check -> ppa -> evidence -> open;
+ check -> debug [label="失败 / 缺口", color="#bd682e"];
+ debug -> impl [label="更新后重跑", color="#bd682e"];
+}

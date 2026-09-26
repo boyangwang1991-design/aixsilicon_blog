@@ -1,0 +1,23 @@
+{
+  "diagram_id": "spi2apb-blog-architecture",
+  "schema_version": "1.0",
+  "generator": "chip-design-diagram-suite",
+  "generated_at": "2026-09-24T08:43:33+00:00",
+  "quality": {
+    "ERROR": 0,
+    "WARNING": 1,
+    "INFO": 0
+  },
+  "issues": [
+    {
+      "code": "QA_DRAWIO_STRUCTURE",
+      "severity": "WARNING",
+      "message": "warning: edges 'e1' and 'e5' cross\nwarning: edges 'e5' and 'e7' cross\nwarning: edges 'e6' and 'e10' cross\nwarning: edges 'e7' and 'e9' cross\n0 error(s), 4 warning(s)",
+      "path": "repos/aixsilicon_ip_repo/ips/external_bus/bridge/spi2apb_bridge/docs/blog/diagrams/architecture/ip_overview/diagram.drawio",
+      "object_id": "",
+      "rule": "qa.structure",
+      "data": {}
+    }
+  ],
+  "blocked": false
+}
