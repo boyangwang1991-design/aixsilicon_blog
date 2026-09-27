@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-27",
+  "purpose": "Internal planning sources; reference read-only, no EDA rerun",
+  "files": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/reports/report.md",
+      "sha256": "29b3a234bfb7da248982f4d2d70afca6f17441e98c7ec73ca1890df69d18bf9d"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/integration/spi2apb_bridge_integration_guide.md",
+      "sha256": "941e106c454924208bea9f8a49c14d0e803ca173833078dd34ce51bc952a922d"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/integration/watchdog_integration_guide.md",
+      "sha256": "d0b95fe7b60f139bee4d25de42499b6988bb622624cec018e6ad0e63f4c73296"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/18-release-packager/SKILL.md",
+      "sha256": "957d98e8936c9dc25f5c22a191bde67104ffbc32aadbb7550d3809079a444f1b"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/19-param-space-verification/SKILL.md",
+      "sha256": "f7755b62c257c1bfbb40c926b5f5db1ea2fc527067167d86bfdece01c244eb5d"
+    },
+    {
+      "source": "ai-assisted-spi2apb-ip-development/README.md",
+      "sha256": "16ddabb8be6bf9e7650355d7fccdbc1b3a1dd72a7a2529c92c58a3b9304b187b"
+    },
+    {
+      "source": "spec-to-rtl-ai-native-ip-workflow/README.md",
+      "sha256": "90928f594f37c30e1d42c4b285dd988c695b4b122aeabd3f6edd63bb83b838ab"
+    }
+  ]
+}

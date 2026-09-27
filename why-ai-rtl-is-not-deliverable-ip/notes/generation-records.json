@@ -1,0 +1,88 @@
+[
+  {
+    "key": "cover-zh",
+    "lang": "zh",
+    "prompt": "Use case: stylized-concept. A premium editorial cover for an engineering blog on why an RTL implementation needs explicit integration assumptions and verification before IP handoff. Wide 16:9 landscape, navy midnight background, precise teal linework and restrained warm amber accent; polished dimensional paper illustration. One central focal object: an open engineering delivery case holding a translucent logic module, with a folded RTL source sheet attached. The case is positioned beside a receiving system backplane: several clearly delineated connectors face their matching sockets, suggesting the care needed for integration. No generic microchip pedestal, no robots, no real UI, no actual layout, no fake measurements or statistics, no progress percentages. Only headline text; other illustrative objects have no legible text or numbers. Headline large and mobile-readable, with safe crop margins of 10 percent. Thoughtful technical editorial mood, coherent with navy/teal/amber engineering covers. Exact Simplified Chinese headline in two lines: \"RTL 写完，\" and \"IP 就能交付？\". Place headline upper left, focal delivery case and matching system connectors in lower center-right. No extra text.",
+    "revision": 1,
+    "selected": true,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-04493db2-aa78-48d6-9419-fc892b8b42e6.png",
+    "destination": "assets/generated/cover-zh.png"
+  },
+  {
+    "key": "cover-en",
+    "lang": "en",
+    "prompt": "Use case: stylized-concept. A premium editorial cover for an engineering blog on why an RTL implementation needs explicit integration assumptions and verification before IP handoff. Wide 16:9 landscape, navy midnight background, precise teal linework and restrained warm amber accent; polished dimensional paper illustration. One central focal object: an open engineering delivery case holding a translucent logic module, with a folded RTL source sheet attached. The case is positioned beside a receiving system backplane: several clearly delineated connectors face their matching sockets, suggesting the care needed for integration. No generic microchip pedestal, no robots, no real UI, no actual layout, no fake measurements or statistics, no progress percentages. Only headline text; other illustrative objects have no legible text or numbers. Headline large and mobile-readable, with safe crop margins of 10 percent. Thoughtful technical editorial mood, coherent with navy/teal/amber engineering covers. Exact English headline in two lines: \"RTL Is Written.\" and \"Is the IP Ready?\". Place headline upper left, focal delivery case and matching system connectors in lower center-right. No extra text.",
+    "revision": 1,
+    "selected": true,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-efcef3a4-9c76-449e-beea-b3eca9e722c2.png",
+    "destination": "assets/generated/cover-en.png"
+  },
+  {
+    "key": "01-first-read-zh",
+    "lang": "zh",
+    "prompt": "Use case: scientific-educational. Premium technical teaching infographic, landscape 4:3, off-white canvas, navy sans-serif text, teal connections and amber warning accents. Clear geometric cards and subtle dimensional document/buffer icons, generous whitespace, large mobile-readable labels. Two horizontal panels showing before and after a READ command preparation fix. Conceptual mechanism only; no invented register addresses, no bus waveforms, no actual simulation screenshots. Strict technical rule: READ uses no write payload. Before fix an uninitialized write buffer supplies an irrelevant data field X to the command and its parity generation/checking, causing an unknown dependency. After fix READ command data and the data input to parity generation both use 0; the write buffer remains unreset and is not used for READ. X is a simulation unknown, NOT a detected bit flip or certain parity mismatch. Do not draw logic gates or bit equations. All text exactly as supplied, no extra slogans or values. All explanatory text Simplified Chinese, keep READ and X. Title \"首条 READ，为何依赖写缓存？\". Top panel title \"修正前：无关数据进入校验\". A left rectangle \"未初始化写缓存\" and \"X\" flows to a central branching junction labelled \"READ 数据字段\", then branches to two rectangles \"命令数据\" and \"校验输入\", both marked X. Far right amber note \"未知值影响命令发出\". Bottom panel title \"修正后：READ 使用确定值\". A left grey buffer rectangle \"写缓存\" and beneath it \"READ 不使用\", no connecting arrow from that buffer. Next to it a teal source circle \"0\" flows to the same branching junction labelled \"READ 数据字段\", branching to \"命令数据\" and \"校验输入\", both marked 0. Far right note \"同步修改数据与校验输入\". Footer \"原理示意 · X 表示四态仿真中的未知值\". Make both branches clear; do not imply parity of all command fields is zero, only its data input is zero.",
+    "revision": 2,
+    "selected": true,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-3a0d9fd4-1a1f-40c8-9c71-37f3be8aa19d.png",
+    "destination": "assets/generated/01-first-read-zh.png",
+    "revisionPrompt": {
+      "key": "01-first-read-zh",
+      "lang": "zh",
+      "prompt": "Edit this teaching diagram preserving layout, all arrows, colors and all other text. In BOTH panels change the box label 校验输入 to 校验的数据输入, so it is explicit that only the data portion of the parity calculation is shown. In the bottom corrected panel only, replace the orange warning-triangle icon by a neutral navy document icon (the repair is not an error). Keep top warning icon. Keep 0 and X values unchanged; never imply whole command parity equals zero. Render crisp Simplified Chinese. No other changes.",
+      "input": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-1bcc957c-bc82-4a11-b05c-628dad1e7ea3.png"
+    }
+  },
+  {
+    "key": "01-first-read-en",
+    "lang": "en",
+    "prompt": "Use case: scientific-educational. Premium technical teaching infographic, landscape 4:3, off-white canvas, navy sans-serif text, teal connections and amber warning accents. Clear geometric cards and subtle dimensional document/buffer icons, generous whitespace, large mobile-readable labels. Two horizontal panels showing before and after a READ command preparation fix. Conceptual mechanism only; no invented register addresses, no bus waveforms, no actual simulation screenshots. Strict technical rule: READ uses no write payload. Before fix an uninitialized write buffer supplies an irrelevant data field X to the command and its parity generation/checking, causing an unknown dependency. After fix READ command data and the data input to parity generation both use 0; the write buffer remains unreset and is not used for READ. X is a simulation unknown, NOT a detected bit flip or certain parity mismatch. Do not draw logic gates or bit equations. All text exactly as supplied, no extra slogans or values. All explanatory text English. Title \"Why did the first READ depend on the write buffer?\". Top panel title \"Before: irrelevant data enters the check\". Left rectangle \"Uninitialized write buffer\" and \"X\" flows to a central branching junction labelled \"READ data field\", then branches to two rectangles \"Command data\" and \"Data input to parity\", both marked X. Far right amber note \"Unknown value affects command issue\". Bottom panel title \"After: READ uses a defined value\". Left grey buffer rectangle \"Write buffer\" and beneath it \"Not used by READ\", no connecting arrow from that buffer. Next to it teal source circle \"0\" flows to the same branching junction labelled \"READ data field\", branching to \"Command data\" and \"Data input to parity\", both marked 0. Far right note \"Update data and parity input together\". Footer \"Conceptual illustration · X denotes an unknown in four-state simulation\". Both branches clear; do not imply parity of all command fields is zero, only its data input is zero.",
+    "revision": 1,
+    "selected": true,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-61757f2a-2d64-41e5-9b5f-8a49a0704d30.png",
+    "destination": "assets/generated/01-first-read-en.png"
+  },
+  {
+    "key": "02-check-scope-zh",
+    "lang": "zh",
+    "prompt": "Use case: scientific-educational. Polished engineering teaching infographic, 4:3 landscape, warm off-white canvas, navy sans-serif, teal lines and amber scope notes, restrained dimensional cards. Very legible mobile typography, generous whitespace. Three independent horizontal rows, NOT a waterfall and no arrow between rows. Each row shows inputs on the left, the question in a central large card, and output on the right. No checkmarks, no numeric scores, no graphs or fictitious measurements. Only exact text supplied. This is an explanation of check types, not a report of completed runs. All text Simplified Chinese except RTL. Title \"检查通过，究竟通过了什么？\". Row 1 left \"RTL + 参数\", center heading \"展开检查\", question \"参数展开后，结构是否合法？\", right \"结构检查结果\". Row 2 left \"设计 + 激励 + 预期\", center heading \"功能仿真\", question \"施加场景下，行为是否符合预期？\", right \"场景执行结果\". Row 3 left \"RTL + 库 + 约束\", center heading \"综合表征\", question \"给定条件下，电路如何映射？\", right \"面积与时序估计\". Each row arrows strictly left → center → right. Footer amber band \"检查范围不同，结果不可互换\". No counts or data from any project.",
+    "revision": 1,
+    "selected": true,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-27462f70-1329-4a7a-b14f-ee853f1a65ef.png",
+    "destination": "assets/generated/02-check-scope-zh.png"
+  },
+  {
+    "key": "02-check-scope-en",
+    "lang": "en",
+    "prompt": "Use case: scientific-educational. Polished engineering teaching infographic, 4:3 landscape, warm off-white canvas, navy sans-serif, teal lines and amber scope notes, restrained dimensional cards. Very legible mobile typography, generous whitespace. Three independent horizontal rows, NOT a waterfall and no arrow between rows. Each row shows inputs on the left, the question in a central large card, and output on the right. No checkmarks, no numeric scores, no graphs or fictitious measurements. Only exact text supplied. This is an explanation of check types, not a report of completed runs. All text English. Title \"A check passed. What did it establish?\". Row 1 left \"RTL + Parameters\", center heading \"Elaboration\", question \"Is the expanded structure legal?\", right \"Structural check results\". Row 2 left \"Design + Stimulus + Expectations\", center heading \"Functional simulation\", question \"Does behavior match in applied scenarios?\", right \"Scenario execution results\". Row 3 left \"RTL + Library + Constraints\", center heading \"Synthesis characterization\", question \"How does the circuit map under these conditions?\", right \"Area and timing estimates\". Arrows strictly left → center → right within each row. Footer amber band \"Different scopes · Results are not interchangeable\". No project counts or data.",
+    "revision": 1,
+    "selected": true,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-7794f674-edc9-4646-ac15-1a170f6897a4.png",
+    "destination": "assets/generated/02-check-scope-en.png"
+  },
+  {
+    "key": "03-handoff-zh",
+    "lang": "zh",
+    "prompt": "Use case: scientific-educational. Professional teaching infographic, 4:3 landscape, warm off-white, navy sans-serif text, teal completed progress, amber intervention, light gray not-started actions. Large mobile-readable labels, clean three-stage transaction timeline in upper half and responsibility cards in lower half. Conceptual illustration ONLY; no measured times, no cycle counts, no actual simulation waveform, no extra data or slogans. Critical semantics: ordinary SPI abort with APB NOT in reset. Past APB transfers retain effects; the already active APB transfer is allowed to finish; no new transfers start afterward. The abort is NOT a rollback. Software uses available status and peripheral semantics to determine recovery; do NOT imply same aborted SPI frame delivers a response. System provides clocks resets and implementation constraints. All explanatory text Simplified Chinese except SPI, APB, IP. Title \"中止一笔写入，谁负责接下来的事？\". Upper subheading \"普通 SPI 中止 · APB 未复位\". Timeline left to right: teal block \"已完成的拍\" with subtitle \"副作用保留\"; center block \"当前 APB 拍\" subtitle \"按协议完成\"; gray right block \"后续拍\" subtitle \"不再启动\". An amber downward event arrow labelled \"SPI 中止\" points INTO the center block before its right boundary. No arrow that terminates current APB halfway. Lower half three large cards: \"IP\" text \"处理当前拍与停止边界\"; \"软件\" text \"结合可用状态和外设语义恢复\"; \"系统\" text \"提供时钟、复位与实现约束\". Separate thin arrows from 系统 to IP labelled \"集成条件\", and from IP to 软件 labelled \"状态语义\". Footer \"中止不回滚已完成写入 · APB 复位另有边界\". Do not draw a direct readback response in the aborted frame.",
+    "revision": 1,
+    "selected": true,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-dc87c9ae-4c14-4ed3-bc5e-d110ab202e7f.png",
+    "destination": "assets/generated/03-handoff-zh.png"
+  },
+  {
+    "key": "03-handoff-en",
+    "lang": "en",
+    "prompt": "Use case: scientific-educational. Professional teaching infographic, 4:3 landscape, warm off-white, navy sans-serif text, teal completed progress, amber intervention, light gray not-started actions. Large mobile-readable labels, clean three-stage transaction timeline in upper half and responsibility cards in lower half. Conceptual illustration ONLY; no measured times, no cycle counts, no actual simulation waveform, no extra data or slogans. Critical semantics: ordinary SPI abort with APB NOT in reset. Past APB transfers retain effects; the already active APB transfer is allowed to finish; no new transfers start afterward. The abort is NOT a rollback. Software uses available status and peripheral semantics to determine recovery; do NOT imply same aborted SPI frame delivers a response. System provides clocks resets and implementation constraints. All explanatory text English. Title \"A write is interrupted. Who handles what follows?\". Upper subheading \"Ordinary SPI abort · APB is not in reset\". Timeline left to right: teal block \"Completed transfers\" subtitle \"Effects remain\"; center block \"Active APB transfer\" subtitle \"Completes by protocol\"; gray right block \"Later transfers\" subtitle \"Do not start\". Amber downward event arrow labelled \"SPI abort\" points INTO the center block before its right boundary. Never stop the active APB transfer halfway. Lower half three large cards: \"IP\" text \"Finish the active transfer; stop new ones\"; \"Software\" text \"Recover using available status and peripheral semantics\"; \"System\" text \"Supply clocks, resets and implementation constraints\". Separate thin arrows from System to IP labelled \"Integration conditions\", and IP to Software labelled \"Status semantics\". Footer \"Abort does not undo completed writes · APB reset has a different boundary\". Do not draw a direct response within the aborted frame.",
+    "revision": 1,
+    "selected": true,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-1be407af-0563-4915-a3c9-845443613edb.png",
+    "destination": "assets/generated/03-handoff-en.png"
+  },
+  {
+    "key": "01-first-read-zh",
+    "lang": "zh",
+    "prompt": "Use case: scientific-educational. Premium technical teaching infographic, landscape 4:3, off-white canvas, navy sans-serif text, teal connections and amber warning accents. Clear geometric cards and subtle dimensional document/buffer icons, generous whitespace, large mobile-readable labels. Two horizontal panels showing before and after a READ command preparation fix. Conceptual mechanism only; no invented register addresses, no bus waveforms, no actual simulation screenshots. Strict technical rule: READ uses no write payload. Before fix an uninitialized write buffer supplies an irrelevant data field X to the command and its parity generation/checking, causing an unknown dependency. After fix READ command data and the data input to parity generation both use 0; the write buffer remains unreset and is not used for READ. X is a simulation unknown, NOT a detected bit flip or certain parity mismatch. Do not draw logic gates or bit equations. All text exactly as supplied, no extra slogans or values. All explanatory text Simplified Chinese, keep READ and X. Title \"首条 READ，为何依赖写缓存？\". Top panel title \"修正前：无关数据进入校验\". A left rectangle \"未初始化写缓存\" and \"X\" flows to a central branching junction labelled \"READ 数据字段\", then branches to two rectangles \"命令数据\" and \"校验输入\", both marked X. Far right amber note \"未知值影响命令发出\". Bottom panel title \"修正后：READ 使用确定值\". A left grey buffer rectangle \"写缓存\" and beneath it \"READ 不使用\", no connecting arrow from that buffer. Next to it a teal source circle \"0\" flows to the same branching junction labelled \"READ 数据字段\", branching to \"命令数据\" and \"校验输入\", both marked 0. Far right note \"同步修改数据与校验输入\". Footer \"原理示意 · X 表示四态仿真中的未知值\". Make both branches clear; do not imply parity of all command fields is zero, only its data input is zero.",
+    "revision": 1,
+    "selected": false,
+    "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-1bcc957c-bc82-4a11-b05c-628dad1e7ea3.png"
+  }
+]

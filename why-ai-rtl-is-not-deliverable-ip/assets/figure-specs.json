@@ -1,0 +1,92 @@
+{
+  "type": "editable semantic source for AI illustrations; not a layered vector file",
+  "date": "2026-09-27",
+  "palette": [
+    "navy",
+    "teal",
+    "amber",
+    "off-white"
+  ],
+  "figures": [
+    {
+      "id": "cover",
+      "question": {
+        "zh": "RTL 写完，IP 就能交付？",
+        "en": "RTL Is Written. Is the IP Ready?"
+      },
+      "concept": "Circuit implementation handed to receiving system; conceptual not real product"
+    },
+    {
+      "id": "01-first-read",
+      "question": {
+        "zh": "首条 READ，为何依赖写缓存？",
+        "en": "Why did the first READ depend on the write buffer?"
+      },
+      "nodes": {
+        "zh": [
+          "未初始化写缓存",
+          "READ 数据字段",
+          "命令数据",
+          "校验的数据输入"
+        ],
+        "en": [
+          "Uninitialized write buffer",
+          "READ data field",
+          "Command data",
+          "Data input to parity"
+        ]
+      },
+      "edges": [
+        "Before: buffer X -> READ data -> command data X AND parity data input X",
+        "After: 0 -> READ data -> command data 0 AND parity data input 0; buffer disconnected"
+      ],
+      "invariants": [
+        "X means simulation unknown, not proven bit flip",
+        "Only DATA portion of parity input is zero, not full command parity",
+        "Wide write buffer remains unreset"
+      ]
+    },
+    {
+      "id": "02-check-scope",
+      "rows": [
+        [
+          "RTL + parameters",
+          "Elaboration",
+          "Structural check results"
+        ],
+        [
+          "Design + stimulus + expectations",
+          "Functional simulation",
+          "Scenario execution results"
+        ],
+        [
+          "RTL + library + constraints",
+          "Synthesis characterization",
+          "Area and timing estimates"
+        ]
+      ],
+      "invariants": [
+        "Three independent scopes; no arrow between rows",
+        "No execution counts or measured plots in conceptual figure"
+      ]
+    },
+    {
+      "id": "03-handoff",
+      "timeline": [
+        "Completed APB writes retain effects",
+        "Ordinary SPI abort during active APB transfer: allow finish",
+        "No later transfers start"
+      ],
+      "edges": [
+        "System -> IP: integration conditions",
+        "IP -> Software: status semantics"
+      ],
+      "invariants": [
+        "APB is not reset in pictured timeline",
+        "APB reset is a separate boundary",
+        "No promise of response in aborted SPI frame",
+        "Abort does not roll back completed writes"
+      ]
+    }
+  ]
+}

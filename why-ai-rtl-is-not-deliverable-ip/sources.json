@@ -1,0 +1,252 @@
+{
+  "type": "original bilingual article",
+  "date": "2026-09-27",
+  "files": [],
+  "evidenceBoundary": "Saved engineering reports checked against source and scripts; no EDA rerun; raw build logs absent from supplied snapshot. Reference material remains private.",
+  "sources": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/reports/report.md",
+      "sha256": "29b3a234bfb7da248982f4d2d70afca6f17441e98c7ec73ca1890df69d18bf9d",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/docs/integration/spi2apb_bridge_integration_guide.md",
+      "sha256": "941e106c454924208bea9f8a49c14d0e803ca173833078dd34ce51bc952a922d",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/integration/watchdog_integration_guide.md",
+      "sha256": "d0b95fe7b60f139bee4d25de42499b6988bb622624cec018e6ad0e63f4c73296",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/18-release-packager/SKILL.md",
+      "sha256": "957d98e8936c9dc25f5c22a191bde67104ffbc32aadbb7550d3809079a444f1b",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/19-param-space-verification/SKILL.md",
+      "sha256": "f7755b62c257c1bfbb40c926b5f5db1ea2fc527067167d86bfdece01c244eb5d",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "ai-assisted-spi2apb-ip-development/README.md",
+      "sha256": "16ddabb8be6bf9e7650355d7fccdbc1b3a1dd72a7a2529c92c58a3b9304b187b",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "spec-to-rtl-ai-native-ip-workflow/README.md",
+      "sha256": "90928f594f37c30e1d42c4b285dd988c695b4b122aeabd3f6edd63bb83b838ab",
+      "use": "Editorial context; distinguish from previous article"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/rtl/spi2apb_engine.sv",
+      "sha256": "6f236bd88275ab51f31be953c93004973d58b99e6bc58db6fcf30197d3e80db4",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/verification/parameters/parameter_elab.sv",
+      "sha256": "62ea152b0c73b8cca3f6dd63f1d5dda29df1adc2f2d29ad5b03ecd653765e48b",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/scripts/parameter_check.py",
+      "sha256": "2d4a8b56e7a8d17b9072b89bc32da399ddb8f4ae737d79281a7592d1a480b302",
+      "use": "Read-only factual or method reference"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/external_bus/bridge/spi2apb_bridge/scripts/regress.py",
+      "sha256": "fe5f8cef634d56dab91804c80a971b21498dca6a29034b2e154149df35360bde",
+      "use": "Read-only factual or method reference"
+    }
+  ],
+  "articles": [
+    {
+      "path": "README.md",
+      "sha256": "cfbe6d78a0f7fbdc69026faf39bc084a11a54f59af453e5df0f456bb21a54a7e"
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "e1d8b51d3bc99f3fb4377f5b9819cde9e63d5a019a71c40e51c2ba6e442acee0"
+    }
+  ],
+  "generatedAssets": [
+    {
+      "purpose": "conceptual cover",
+      "language": "zh",
+      "path": "assets/generated/cover-zh.png",
+      "sha256": "d91a2097f1047bf58acbbd3fcbd0d1be55210c12070a471cb7499de8902532ec",
+      "width": 1672,
+      "height": 941,
+      "tool": "imagegen",
+      "revision": 1,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-04493db2-aa78-48d6-9419-fc892b8b42e6.png",
+      "promptPath": "notes/cover-prompt.md",
+      "promptSha256": "f0193868bc0d28f289323332494de2f5beeabd4c0b0429085544a056477834a0",
+      "semanticSource": "assets/figure-specs.json"
+    },
+    {
+      "purpose": "conceptual cover",
+      "language": "en",
+      "path": "assets/generated/cover-en.png",
+      "sha256": "d47a1b4e87caa0b8887747cebdc9cb6a1a75d50f62ff6d1b60cd7ee56a588a12",
+      "width": 1672,
+      "height": 941,
+      "tool": "imagegen",
+      "revision": 1,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-efcef3a4-9c76-449e-beea-b3eca9e722c2.png",
+      "promptPath": "notes/cover-prompt.md",
+      "promptSha256": "f0193868bc0d28f289323332494de2f5beeabd4c0b0429085544a056477834a0",
+      "semanticSource": "assets/figure-specs.json"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "zh",
+      "path": "assets/generated/01-first-read-zh.png",
+      "sha256": "41309ddbaa57b3c73ecc2faabf323108ee892c81f52fd2e0cec1ca9d02bb951f",
+      "width": 1448,
+      "height": 1086,
+      "tool": "imagegen",
+      "revision": 2,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-3a0d9fd4-1a1f-40c8-9c71-37f3be8aa19d.png",
+      "promptPath": "notes/illustration-prompts.md",
+      "promptSha256": "5c8218e9c9c2886525354944a2c1d2b6db136ddd95f28d48ffbfa0905cfee7e9",
+      "semanticSource": "assets/figure-specs.json"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "en",
+      "path": "assets/generated/01-first-read-en.png",
+      "sha256": "f6fc7adfb5b3ff720088aab68faa71dc3325d36c5daff6a0a1500a43de143e51",
+      "width": 1448,
+      "height": 1086,
+      "tool": "imagegen",
+      "revision": 1,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-61757f2a-2d64-41e5-9b5f-8a49a0704d30.png",
+      "promptPath": "notes/illustration-prompts.md",
+      "promptSha256": "5c8218e9c9c2886525354944a2c1d2b6db136ddd95f28d48ffbfa0905cfee7e9",
+      "semanticSource": "assets/figure-specs.json"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "zh",
+      "path": "assets/generated/02-check-scope-zh.png",
+      "sha256": "5853adc358bfe1769966aef1d08c1d962f4f56ce68491c7d2aa44a9ecdaec47f",
+      "width": 1448,
+      "height": 1086,
+      "tool": "imagegen",
+      "revision": 1,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-27462f70-1329-4a7a-b14f-ee853f1a65ef.png",
+      "promptPath": "notes/illustration-prompts.md",
+      "promptSha256": "5c8218e9c9c2886525354944a2c1d2b6db136ddd95f28d48ffbfa0905cfee7e9",
+      "semanticSource": "assets/figure-specs.json"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "en",
+      "path": "assets/generated/02-check-scope-en.png",
+      "sha256": "194a155ac30495b79691d4eedfc26c0d4d837c27fc7b32c939a5c3161e760186",
+      "width": 1448,
+      "height": 1086,
+      "tool": "imagegen",
+      "revision": 1,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-7794f674-edc9-4646-ac15-1a170f6897a4.png",
+      "promptPath": "notes/illustration-prompts.md",
+      "promptSha256": "5c8218e9c9c2886525354944a2c1d2b6db136ddd95f28d48ffbfa0905cfee7e9",
+      "semanticSource": "assets/figure-specs.json"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "zh",
+      "path": "assets/generated/03-handoff-zh.png",
+      "sha256": "6562f500c7bbdd97fa8f6807b541729007f22cf9d2174500ea94ae8818c420ff",
+      "width": 1448,
+      "height": 1086,
+      "tool": "imagegen",
+      "revision": 1,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-dc87c9ae-4c14-4ed3-bc5e-d110ab202e7f.png",
+      "promptPath": "notes/illustration-prompts.md",
+      "promptSha256": "5c8218e9c9c2886525354944a2c1d2b6db136ddd95f28d48ffbfa0905cfee7e9",
+      "semanticSource": "assets/figure-specs.json"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "en",
+      "path": "assets/generated/03-handoff-en.png",
+      "sha256": "760495dac5b29d33f8294df5d4a4e8bfe359b222d749eee48c942f0149ade43b",
+      "width": 1448,
+      "height": 1086,
+      "tool": "imagegen",
+      "revision": 1,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-1be407af-0563-4915-a3c9-845443613edb.png",
+      "promptPath": "notes/illustration-prompts.md",
+      "promptSha256": "5c8218e9c9c2886525354944a2c1d2b6db136ddd95f28d48ffbfa0905cfee7e9",
+      "semanticSource": "assets/figure-specs.json"
+    }
+  ],
+  "generationHistory": [
+    {
+      "key": "cover-zh",
+      "revision": 1,
+      "selected": true,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-04493db2-aa78-48d6-9419-fc892b8b42e6.png",
+      "sha256": "d91a2097f1047bf58acbbd3fcbd0d1be55210c12070a471cb7499de8902532ec"
+    },
+    {
+      "key": "cover-en",
+      "revision": 1,
+      "selected": true,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-efcef3a4-9c76-449e-beea-b3eca9e722c2.png",
+      "sha256": "d47a1b4e87caa0b8887747cebdc9cb6a1a75d50f62ff6d1b60cd7ee56a588a12"
+    },
+    {
+      "key": "01-first-read-zh",
+      "revision": 2,
+      "selected": true,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-3a0d9fd4-1a1f-40c8-9c71-37f3be8aa19d.png",
+      "sha256": "41309ddbaa57b3c73ecc2faabf323108ee892c81f52fd2e0cec1ca9d02bb951f"
+    },
+    {
+      "key": "01-first-read-en",
+      "revision": 1,
+      "selected": true,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-61757f2a-2d64-41e5-9b5f-8a49a0704d30.png",
+      "sha256": "f6fc7adfb5b3ff720088aab68faa71dc3325d36c5daff6a0a1500a43de143e51"
+    },
+    {
+      "key": "02-check-scope-zh",
+      "revision": 1,
+      "selected": true,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-27462f70-1329-4a7a-b14f-ee853f1a65ef.png",
+      "sha256": "5853adc358bfe1769966aef1d08c1d962f4f56ce68491c7d2aa44a9ecdaec47f"
+    },
+    {
+      "key": "02-check-scope-en",
+      "revision": 1,
+      "selected": true,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-7794f674-edc9-4646-ac15-1a170f6897a4.png",
+      "sha256": "194a155ac30495b79691d4eedfc26c0d4d837c27fc7b32c939a5c3161e760186"
+    },
+    {
+      "key": "03-handoff-zh",
+      "revision": 1,
+      "selected": true,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-dc87c9ae-4c14-4ed3-bc5e-d110ab202e7f.png",
+      "sha256": "6562f500c7bbdd97fa8f6807b541729007f22cf9d2174500ea94ae8818c420ff"
+    },
+    {
+      "key": "03-handoff-en",
+      "revision": 1,
+      "selected": true,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-1be407af-0563-4915-a3c9-845443613edb.png",
+      "sha256": "760495dac5b29d33f8294df5d4a4e8bfe359b222d749eee48c942f0149ade43b"
+    },
+    {
+      "key": "01-first-read-zh",
+      "revision": 1,
+      "selected": false,
+      "output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-1bcc957c-bc82-4a11-b05c-628dad1e7ea3.png",
+      "sha256": "8589f95112dfeb66184337eaa7894782f7bb3e8f5529420e7039e8c8ef9c370a"
+    }
+  ]
+}
