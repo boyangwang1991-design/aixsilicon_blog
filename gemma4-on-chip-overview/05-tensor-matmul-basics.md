@@ -1,4 +1,4 @@
-# Decoder 里的 Linear 在算什么？
+# Linear 与 MLP：矩阵乘如何重组特征
 
 ![输入特征经过权重矩阵形成新特征的概念封面](assets/generated/cover-04-zh.png)
 

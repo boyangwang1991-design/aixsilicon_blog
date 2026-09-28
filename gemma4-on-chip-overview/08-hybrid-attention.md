@@ -1,4 +1,4 @@
-# 五层看近处，一层看全局：E4B 如何分配注意力
+# Hybrid Attention：局部层、全局层与 KV 共享如何分工
 
 ![五层局部与一层全局交错的概念封面](assets/generated/cover-08-zh.png)
 

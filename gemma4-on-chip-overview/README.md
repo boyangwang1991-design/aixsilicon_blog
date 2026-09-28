@@ -8,24 +8,24 @@
 
 | 期 | 中文章节 | 状态 |
 | --- | --- | --- |
-| 01 | [Gemma 4 怎样把文字、图片和声音变成回答](01-input-to-next-token.md) | 中文总览稿；封面与两张概念图已配 |
-| 02 | [一句提问，怎么变成 15 个 Token？](02-tokenizer.md) | 中文稿；封面与两张讲解图已配 |
-| 03 | [一个 ID，为什么能变成 2560 个数？](03-embedding.md) | 中文稿；封面与双用途讲解图已配 |
-| 04 | [42 层里的这一层：Gemma 4 怎样更新一个向量？](04-decoder-layer.md) | 中文总览改稿；封面、主干图与 torchview 核对图已配 |
-| 05 | [Decoder 里的 Linear 在算什么？](05-tensor-matmul-basics.md) | 中文改稿；封面、两张讲解图及 MLP 局部图已配；英文待补 |
-| 06 | [“它”指向谁：沿着 Q、K、V 看一次注意力](06-attention-tensors.md) | 中文改稿；封面、torchview 局部图和原理图已配 |
-| 07 | [词序怎么进入注意力：Gemma 4 的 RoPE 旋转](07-rope-position.md) | 中文改稿；封面与草稿讲解图已配 |
-| 08 | [五层看近处，一层看全局：E4B 如何分配注意力](08-hybrid-attention.md) | 中文改稿；封面与草稿讲解图已配 |
-| 09 | [同一个词，42 次提醒：E4B 的额外参数藏在哪](09-ple.md) | 中文改稿；封面与草稿讲解图已配 |
+| 01 | [Gemma 4 E4B 推理全景：多模态输入如何生成文本](01-input-to-next-token.md) | 中文总览稿；封面与两张概念图已配 |
+| 02 | [聊天模板与 Tokenizer：一句提问如何变成模型输入](02-tokenizer.md) | 中文稿；封面与两张讲解图已配 |
+| 03 | [Embedding：Token ID 如何变成 2560 维向量](03-embedding.md) | 中文稿；封面与双用途讲解图已配 |
+| 04 | [Decoder Layer：Attention、MLP 与 PLE 如何更新状态](04-decoder-layer.md) | 中文总览改稿；封面、主干图与 torchview 核对图已配 |
+| 05 | [Linear 与 MLP：矩阵乘如何重组特征](05-tensor-matmul-basics.md) | 中文改稿；封面、两张讲解图及 MLP 局部图已配；英文待补 |
+| 06 | [Attention：Q、K、V 如何读取上下文](06-attention-tensors.md) | 中文改稿；封面、torchview 局部图和原理图已配 |
+| 07 | [RoPE 与 p-RoPE：位置信息如何改变注意力分数](07-rope-position.md) | 中文改稿；封面与草稿讲解图已配 |
+| 08 | [Hybrid Attention：局部层、全局层与 KV 共享如何分工](08-hybrid-attention.md) | 中文改稿；封面与草稿讲解图已配 |
+| 09 | [PLE：逐层嵌入如何注入 Decoder](09-ple.md) | 中文改稿；封面与草稿讲解图已配 |
 | 10 | [Prefill 与 Decode：同一模型的两种计算形态](10-prefill-decode.md) | 中文改稿；封面与讲解图已配 |
-| 11 | [回答越长，模型随身带的“笔记”越厚](11-kv-cache.md) | 中文改稿；封面与讲解图已配 |
-| 12 | [叫作 E4B，为什么不能按 4B 装权重](12-weights-ple-quantization.md) | 中文改稿；封面与讲解图已配 |
-| 13 | [不写下整张注意力表，还能算出同一个答案吗](13-attention-acceleration.md) | 中文改稿；封面与讲解图已配 |
-| 14 | [乘加阵列跑得快，数据为什么还在路上](14-compute-and-data-movement.md) | 中文改稿；封面与讲解图已配 |
-| 15 | [一张照片进入问题后，模型多走了哪段路](15-vision-path.md) | 中文改稿；封面与草稿讲解图已配 |
-| 16 | [听到一句话之前，Gemma 4 先处理了什么](16-audio-path.md) | 中文改稿；封面与草稿讲解图已配 |
-| 17 | [从峰值到持续输出：功耗和供电给推理划了什么边界](17-power-thermal-pi.md) | 中文改稿；封面与讲解图已配 |
-| 18 | [换个 Gemma 4 型号，前面的账还算数吗](18-family-and-next-steps.md) | 中文改稿；封面与草稿讲解图已配 |
+| 11 | [KV Cache：保存什么，容量如何增长](11-kv-cache.md) | 中文改稿；封面与讲解图已配 |
+| 12 | [E4B 权重容量：为什么不能按有效参数估算](12-weights-ple-quantization.md) | 中文改稿；封面与讲解图已配 |
+| 13 | [分块 Attention：Online Softmax 如何减少中间访存](13-attention-acceleration.md) | 中文改稿；封面与讲解图已配 |
+| 14 | [数据搬运与 Roofline：权重复用如何改变瓶颈](14-compute-and-data-movement.md) | 中文改稿；封面与讲解图已配 |
+| 15 | [视觉输入：照片如何变成软 Token](15-vision-path.md) | 中文改稿；封面与草稿讲解图已配 |
+| 16 | [音频输入：波形如何变成软 Token](16-audio-path.md) | 中文改稿；封面与草稿讲解图已配 |
+| 17 | [功耗、散热与供电：端侧推理能否持续输出](17-power-thermal-pi.md) | 中文改稿；封面与讲解图已配 |
+| 18 | [Gemma 4 型号比较：结构变化怎样重算资源需求](18-family-and-next-steps.md) | 中文改稿；封面与草稿讲解图已配 |
 
 ## 读图约定
 

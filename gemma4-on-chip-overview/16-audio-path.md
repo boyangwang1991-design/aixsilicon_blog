@@ -1,4 +1,4 @@
-# 听到一句话之前，Gemma 4 先处理了什么
+# 音频输入：波形如何变成软 Token
 
 ![语音变为特征与软 token 后输出文字的概念封面](assets/generated/cover-16-zh.png)
 

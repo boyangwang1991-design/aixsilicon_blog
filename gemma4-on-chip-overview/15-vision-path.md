@@ -1,4 +1,4 @@
-# 一张照片进入问题后，模型多走了哪段路
+# 视觉输入：照片如何变成软 Token
 
 ![图片拆成 patch 后与文字一起进入语言主干的概念封面](assets/generated/cover-15-zh.png)
 

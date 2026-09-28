@@ -1,4 +1,4 @@
-# Gemma 4 怎样把文字、图片和声音变成回答
+# Gemma 4 E4B 推理全景：多模态输入如何生成文本
 
 ![Gemma 4 从多模态输入到逐 token 生成的概念封面](assets/generated/cover-zh.png)
 

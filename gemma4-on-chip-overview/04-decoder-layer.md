@@ -1,4 +1,4 @@
-# 42 层里的这一层：Gemma 4 怎样更新一个向量？
+# Decoder Layer：Attention、MLP 与 PLE 如何更新状态
 
 ![Decoder 一层的三次更新概念封面](assets/generated/cover-decoder-04-zh.png)
 

@@ -1,4 +1,4 @@
-# 回答越长，模型随身带的“笔记”越厚
+# KV Cache：保存什么，容量如何增长
 
 ![生成过程中 KV Cache 历史状态增长的概念封面](assets/generated/cover-11-zh.png)
 

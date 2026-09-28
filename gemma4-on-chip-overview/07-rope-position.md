@@ -1,4 +1,4 @@
-# 词序怎么进入注意力：Gemma 4 的 RoPE 旋转
+# RoPE 与 p-RoPE：位置信息如何改变注意力分数
 
 ![位置怎样改变 Q/K 匹配的概念封面](assets/generated/cover-07-zh.png)
 

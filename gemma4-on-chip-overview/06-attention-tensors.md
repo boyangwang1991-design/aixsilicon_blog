@@ -1,4 +1,4 @@
-# “它”指向谁：沿着 Q、K、V 看一次注意力
+# Attention：Q、K、V 如何读取上下文
 
 ![Q、K、V 如何找到关联的概念封面](assets/generated/cover-06-zh.png)
 

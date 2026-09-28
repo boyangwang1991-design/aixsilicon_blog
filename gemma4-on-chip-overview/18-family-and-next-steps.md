@@ -1,4 +1,4 @@
-# 换个 Gemma 4 型号，前面的账还算数吗
+# Gemma 4 型号比较：结构变化怎样重算资源需求
 
 ![不同 Gemma 4 型号需要重新计算资源账的概念封面](assets/generated/cover-18-zh.png)
 

@@ -1,4 +1,4 @@
-# 同一个词，42 次提醒：E4B 的额外参数藏在哪
+# PLE：逐层嵌入如何注入 Decoder
 
 ![PLE 为不同 Decoder 层提供逐层输入的概念封面](assets/generated/cover-09-zh.png)
 

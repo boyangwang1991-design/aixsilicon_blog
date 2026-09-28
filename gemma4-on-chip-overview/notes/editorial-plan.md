@@ -21,24 +21,24 @@
 
 | 期 | 中文章节 | 本章追踪的输入 → 输出 | 触发的硬件问题 | 状态 |
 | --- | --- | --- | --- | --- |
-| 01 | [Gemma 4 怎样把文字、图片和声音变成回答](../01-input-to-next-token.md) | `文本/媒体 → 向量 → logits → token` | 完整推理链路 | 中文内部改稿 |
-| 02 | [一句提问，怎么变成 15 个 Token？](../02-tokenizer.md) | `消息/模板 → token 字符串与 ID` | 输入长度与上下文预算 | 中文内部改稿 |
-| 03 | [一个 ID，为什么能变成 2560 个数？](../03-embedding.md) | `ID → 主 embedding 向量` | 词表容量与索引访问 | 中文内部改稿 |
-| 04 | [42 层里的这一层：Gemma 4 怎样更新一个向量？](../04-decoder-layer.md) | `[B,S,D] → Attention/MLP/PLE 三段更新` | 主路形状、顺序与残差 | 中文内部改稿 |
-| 05 | [Decoder 里的 Linear 在算什么？](../05-tensor-matmul-basics.md) | `向量/权重 → MLP 门控结果` | 特征组合、张量形状与权重规模 | 中文内部改稿 |
-| 06 | [“它”指向谁：沿着 Q、K、V 看一次注意力](../06-attention-tensors.md) | `Q/K/V → 分数 → 概率 → 输出` | 头、轴与归约 | 中文内部改稿 |
-| 07 | [词序怎么进入注意力：Gemma 4 的 RoPE 旋转](../07-rope-position.md) | `位置 → Q/K 旋转 → 分数` | 位置计算与维度 | 中文内部改稿 |
-| 08 | [五层看近处，一层看全局：E4B 如何分配注意力](../08-hybrid-attention.md) | `层类型/可见范围 → KV 共享` | 长上下文状态 | 中文内部改稿 |
-| 09 | [同一个词，42 次提醒：E4B 的额外参数藏在哪](../09-ple.md) | `token 身份/当前内容 → 逐层注入` | 嵌入表与索引 | 中文内部改稿 |
+| 01 | [Gemma 4 E4B 推理全景：多模态输入如何生成文本](../01-input-to-next-token.md) | `文本/媒体 → 向量 → logits → token` | 完整推理链路 | 中文内部改稿 |
+| 02 | [聊天模板与 Tokenizer：一句提问如何变成模型输入](../02-tokenizer.md) | `消息/模板 → token 字符串与 ID` | 输入长度与上下文预算 | 中文内部改稿 |
+| 03 | [Embedding：Token ID 如何变成 2560 维向量](../03-embedding.md) | `ID → 主 embedding 向量` | 词表容量与索引访问 | 中文内部改稿 |
+| 04 | [Decoder Layer：Attention、MLP 与 PLE 如何更新状态](../04-decoder-layer.md) | `[B,S,D] → Attention/MLP/PLE 三段更新` | 主路形状、顺序与残差 | 中文内部改稿 |
+| 05 | [Linear 与 MLP：矩阵乘如何重组特征](../05-tensor-matmul-basics.md) | `向量/权重 → MLP 门控结果` | 特征组合、张量形状与权重规模 | 中文内部改稿 |
+| 06 | [Attention：Q、K、V 如何读取上下文](../06-attention-tensors.md) | `Q/K/V → 分数 → 概率 → 输出` | 头、轴与归约 | 中文内部改稿 |
+| 07 | [RoPE 与 p-RoPE：位置信息如何改变注意力分数](../07-rope-position.md) | `位置 → Q/K 旋转 → 分数` | 位置计算与维度 | 中文内部改稿 |
+| 08 | [Hybrid Attention：局部层、全局层与 KV 共享如何分工](../08-hybrid-attention.md) | `层类型/可见范围 → KV 共享` | 长上下文状态 | 中文内部改稿 |
+| 09 | [PLE：逐层嵌入如何注入 Decoder](../09-ple.md) | `token 身份/当前内容 → 逐层注入` | 嵌入表与索引 | 中文内部改稿 |
 | 10 | [Prefill 与 Decode：同一模型的两种计算形态](../10-prefill-decode.md) | `整段提示词 → 逐 token 生成` | 两种负载与延迟 | 中文内部改稿 |
-| 11 | [回答越长，模型随身带的“笔记”越厚](../11-kv-cache.md) | `新 K/V → 缓存 → 下一步读取` | KV 生命周期与容量 | 中文内部改稿 |
-| 12 | [叫作 E4B，为什么不能按 4B 装权重](../12-weights-ple-quantization.md) | `参数/位宽 → 容量预算` | DRAM/SRAM 与量化 | 中文内部改稿 |
-| 13 | [不写下整张注意力表，还能算出同一个答案吗](../13-attention-acceleration.md) | `分块 Q/K/V → 在线 softmax → 输出` | Attention 中间 IO | 中文内部改稿 |
-| 14 | [乘加阵列跑得快，数据为什么还在路上](../14-compute-and-data-movement.md) | `算子形状 → 运算量/字节量` | 带宽与 Roofline | 中文内部改稿 |
-| 15 | [一张照片进入问题后，模型多走了哪段路](../15-vision-path.md) | `图像 → 特征 → 软 token` | 视觉工作区与上下文 | 中文内部改稿 |
-| 16 | [听到一句话之前，Gemma 4 先处理了什么](../16-audio-path.md) | `音频 → 特征 → 软 token` | 时间长度与状态 | 中文内部改稿 |
-| 17 | [从峰值到持续输出：功耗和供电给推理划了什么边界](../17-power-thermal-pi.md) | `执行时间线 → 电流/温度` | 持续性能与供电 | 中文内部改稿 |
-| 18 | [换个 Gemma 4 型号，前面的账还算数吗](../18-family-and-next-steps.md) | `家族型号 → 各自负载` | MoE 与推测解码 | 中文内部改稿 |
+| 11 | [KV Cache：保存什么，容量如何增长](../11-kv-cache.md) | `新 K/V → 缓存 → 下一步读取` | KV 生命周期与容量 | 中文内部改稿 |
+| 12 | [E4B 权重容量：为什么不能按有效参数估算](../12-weights-ple-quantization.md) | `参数/位宽 → 容量预算` | DRAM/SRAM 与量化 | 中文内部改稿 |
+| 13 | [分块 Attention：Online Softmax 如何减少中间访存](../13-attention-acceleration.md) | `分块 Q/K/V → 在线 softmax → 输出` | Attention 中间 IO | 中文内部改稿 |
+| 14 | [数据搬运与 Roofline：权重复用如何改变瓶颈](../14-compute-and-data-movement.md) | `算子形状 → 运算量/字节量` | 带宽与 Roofline | 中文内部改稿 |
+| 15 | [视觉输入：照片如何变成软 Token](../15-vision-path.md) | `图像 → 特征 → 软 token` | 视觉工作区与上下文 | 中文内部改稿 |
+| 16 | [音频输入：波形如何变成软 Token](../16-audio-path.md) | `音频 → 特征 → 软 token` | 时间长度与状态 | 中文内部改稿 |
+| 17 | [功耗、散热与供电：端侧推理能否持续输出](../17-power-thermal-pi.md) | `执行时间线 → 电流/温度` | 持续性能与供电 | 中文内部改稿 |
+| 18 | [Gemma 4 型号比较：结构变化怎样重算资源需求](../18-family-and-next-steps.md) | `家族型号 → 各自负载` | MoE 与推测解码 | 中文内部改稿 |
 
 前三期建立整体推理、Tokenizer 与 Embedding 的基础，第 04 期进入 Decoder，第 05 期再拆解层内反复出现的线性投影。每期先讲清**算法输入、变换、输出和张量形状**，再讲它为什么产生特定硬件诉求。第 01 期保留完整旅程的简图；后续逐处打开。RoPE 与 Attention 加速单独讲透：前者要让读者看懂旋转如何改变分数，后者要算清分块、在线 softmax、局部窗口和 KV 共享各自节省的是什么。篇数不是交付上限；若一章无法让读者独立理解关键机制，继续拆分，而不为凑固定期数压缩推导。第 17 期的功耗与供电是负载推导出的设计约束，不把示意波形说成 E4B 实测。
 

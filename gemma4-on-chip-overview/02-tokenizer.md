@@ -1,4 +1,4 @@
-# 一句提问，怎么变成 15 个 Token？
+# 聊天模板与 Tokenizer：一句提问如何变成模型输入
 
 ![一句提问经过分词与聊天模板后变成模型输入的概念封面](assets/generated/cover-02-zh.png)
 

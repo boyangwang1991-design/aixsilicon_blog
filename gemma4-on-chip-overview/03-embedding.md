@@ -1,4 +1,4 @@
-# 一个 ID，为什么能变成 2560 个数？
+# Embedding：Token ID 如何变成 2560 维向量
 
 ![Gemma 4 的同一张主 Embedding 参数表连接输入查表与输出打分的概念封面](assets/generated/cover-03-zh.png)
 
