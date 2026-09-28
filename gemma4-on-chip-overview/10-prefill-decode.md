@@ -1,4 +1,4 @@
-# 第一个回答还没出口，计算节奏已经变了
+# Prefill 与 Decode：同一模型的两种计算形态
 
 ![Prefill 与 Decode 两种节奏的概念封面](assets/generated/cover-10-zh.png)
 
