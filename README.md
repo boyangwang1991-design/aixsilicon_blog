@@ -6,12 +6,13 @@
 
 ## 文章索引
 
-目前共有 **11 篇文章**，包括参考材料整理稿与基于工程证据撰写的新稿。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
+目前索引包含 **11 篇文章和 1 个 Gemma 4 系列中文改稿**。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
 
-11 篇文章均提供中文与英文全文，以及对应语言的独立封面。封面保存在各篇 `assets/generated/cover-zh.png` 和 `cover-en.png`；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
+原有 11 篇文章均提供中文与英文全文，以及对应语言的独立封面。Gemma 4 系列已有 18 章中文稿和两张局部 torchview 图；第 01、02 期各有封面及两张讲解图，第 03 期已有封面和双用途讲解图，其余概念图与英文版待补。已有封面保存在各篇 `assets/generated/` 中；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
 
 | 主题 | 中文版 | 中文状态 | English edition | 英文状态 |
 | --- | --- | --- | --- | --- |
+| Gemma 4 / 端侧芯片 / 系列中文稿 | [Gemma 4 从算法到端侧芯片](gemma4-on-chip-overview/README.md) | 18 章中文稿；两张 torchview 图；第 01–03 期封面和讲解图已配，其余图待补 | 待补 | 待补 |
 | IP / 工程交付 / AI | [为什么 AI 写 RTL 容易，做一个真正可交付的 IP 很难？](why-ai-rtl-is-not-deliverable-ip/README.md) | 图文齐备；待发布审阅 | [Why Is Generating RTL with AI Easier Than Delivering a Reusable IP?](why-ai-rtl-is-not-deliverable-ip/README.en.md) | 图文齐备；待发布审阅 |
 | ESL / NPU Mesh / QoS | [链路加宽了，为什么 Decode 反而更慢？一次 AI 辅助 NPU Mesh 架构探索](ai-assisted-npu-mesh-exploration/README.md) | 图文齐备；待发布审阅 | [A Wider Link, a Slower Decode Tail: AI-Assisted NPU Mesh Exploration](ai-assisted-npu-mesh-exploration/README.en.md) | 图文齐备；待发布审阅 |
 | CBB / 功能安全 / PPA | [谁来检查比较器？AI 辅助多样性比较器设计与 PPA 取舍](ai-assisted-diversity-comparator-design/README.md) | 图文齐备；待发布审阅 | [Who Checks the Comparator? AI-Assisted Diversity Comparator Design and PPA Trade-offs](ai-assisted-diversity-comparator-design/README.en.md) | 图文齐备；待发布审阅 |
