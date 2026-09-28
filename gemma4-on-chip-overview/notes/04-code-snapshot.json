@@ -1,0 +1,68 @@
+{
+  "scope": "Complete src/transformers/models/gemma4 directory (10 source files), upstream LICENSE, pinned E4B config; not a runnable standalone Transformers installation",
+  "downloaded_at": "2026-09-28T22:20:18.7510403+08:00",
+  "files": [
+    {
+      "path": "reference/transformers-gemma4-8445b13/__init__.py",
+      "sha256": "bba85c452b6583f9c841b209da86903d8f09247ac9d54eaa0d9168b59b26df71",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/__init__.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/configuration_gemma4.py",
+      "sha256": "978758d43e44fa2b7a786453b5520a5c639d89837d8495f22b6a7a6d281afec4",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/configuration_gemma4.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/convert_gemma4_weights.py",
+      "sha256": "aaba2770c41865b413833a045fe8e26eca1de6c3a4c9a035b6f9091649cc7a48",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/convert_gemma4_weights.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/feature_extraction_gemma4.py",
+      "sha256": "40545340a144aad4d74c6cedb4eae5daa4efd54ae432649583e19b5d756c02c7",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/feature_extraction_gemma4.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/image_processing_gemma4.py",
+      "sha256": "5d280d5448b1c219183a27e95b6aa7178b350275772d07881c91c65f13fa815e",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/image_processing_gemma4.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/image_processing_pil_gemma4.py",
+      "sha256": "11f657adb22479fd5dc2652dbeb221a1b20e1237599608d0152305b8896e3480",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/image_processing_pil_gemma4.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/modeling_gemma4.py",
+      "sha256": "ed5794973ee39b0216e1a0ff0d9db5b2be84078a18a88a70d8c301130dc21c79",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/modeling_gemma4.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/modular_gemma4.py",
+      "sha256": "c2f1d4ee65bbf219aa07a315b84811205881c9331e6adedf630f8605295eada8",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/modular_gemma4.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/processing_gemma4.py",
+      "sha256": "504d0edc6477731f825efb9bc077e0c99d9ae5cadc94f574bdee094f310d45eb",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/processing_gemma4.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/video_processing_gemma4.py",
+      "sha256": "92272b85df51ad20faf2eb2276a33169961a5d0300cff8935565bb423758549e",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/video_processing_gemma4.py"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/LICENSE",
+      "sha256": "77fd4710def9ec3c0f6225800e0235f15a425abd4a8b03559127fcd782612049",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/8445b13cd24961e47f25a649fb113580f71a8d11/LICENSE"
+    },
+    {
+      "path": "reference/transformers-gemma4-8445b13/e4b-config.json",
+      "sha256": "33b10c02df3c2e8536cf323d29d53262aaa2f4d11dbe19bc729373fbe90295d4",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it/resolve/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json"
+    }
+  ],
+  "revision": "8445b13cd24961e47f25a649fb113580f71a8d11",
+  "verification": "All 10 source files match the Git blob SHA reported by GitHub contents API at the pinned revision. Root NOTICE does not exist at this revision (HTTP 404); original file headers and LICENSE preserved."
+}

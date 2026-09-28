@@ -12,7 +12,7 @@ const { instance } = require(resolve(packageDir, '@viz-js/viz'));
 const sharp = require(resolve(packageDir, 'sharp'));
 const viz = await instance();
 const out = dirname(fileURLToPath(import.meta.url));
-for (const name of ['mlp', 'local_qkv']) {
+for (const name of ['mlp', 'local_qkv', 'decoder_layer_0_depth_2']) {
   const dot = (await readFile(resolve(out, `${name}.dot`), 'utf8'))
     .replace(/size="[^"]+"/, 'pad="0.45" nodesep="0.35"')
     .replaceAll('fontname="Linux libertine"', 'fontname="Arial"');

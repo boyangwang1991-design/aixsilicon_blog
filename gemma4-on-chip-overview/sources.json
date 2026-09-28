@@ -4,6 +4,41 @@
   "files": [],
   "generated_assets": [
     {
+      "path": "assets/diagrams/decoder-portrait-study.png",
+      "sha256": "73b31b3df78da7a171ef0d5f84aec87eddc1631dcce9ca3bea3fceae9ecf07f4",
+      "language": "zh",
+      "purpose": "第04期 Decoder 中文主图；已用于正文",
+      "generation": "Hand-laid SVG from official Gemma4TextDecoderLayer.forward, cross-checked against torchview depth-2 trace; rendered with sharp"
+    },
+    {
+      "path": "assets/diagrams/decoder-portrait-study.svg",
+      "sha256": "906ab3eaeb62246249b276c97038b2f38f3f34a6bbe504b68c355ee582ba6233",
+      "language": "zh",
+      "purpose": "第04期 Decoder 中文主图的可编辑 SVG；已用于正文",
+      "generation": "assets/diagrams/generate-decoder-portrait-study.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder_layer_0_depth_2.png",
+      "sha256": "07b8fed40d76e51ec98066a22bf7f047ebd2bf7c5b322d59ed3ee69caeac5864",
+      "language": "zh",
+      "purpose": "第04期 E4B 第0层 Decoder 主干、三次残差和 PLE 支路",
+      "generation": "torchview 0.2.7 of official Transformers 5.17.0 Gemma4TextDecoderLayer; meta tensors B=1 S=2; depth=2; hidden tensors omitted; no checkpoint; assets/diagrams/generate_decoder_torchview.py"
+    },
+    {
+      "path": "assets/diagrams/decoder_layer_0_depth_2.svg",
+      "sha256": "1af9226f54410e0bba17f65f4cf1ef84fdd27961371cf9c2c3e12579fceae660",
+      "language": "zh",
+      "purpose": "第04期 Decoder 单层结构图的可缩放成图",
+      "generation": "rendered from torchview DOT with @viz-js/viz; assets/diagrams/render-dot.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder_layer_0_depth_2.dot",
+      "sha256": "149af299d59652ec248294ef4b1a3ae19babaa8add1d9e51297b53d40d7c25ad",
+      "language": "zh",
+      "purpose": "第04期 Decoder 单层结构图的可编辑 torchview DOT",
+      "generation": "assets/diagrams/generate_decoder_torchview.py"
+    },
+    {
       "path": "assets/diagrams/mlp.png",
       "sha256": "8491c796d2bbecc09332e6495015ea55a80f9e8c7a83444724ad01efef0b2ebb",
       "language": "zh",
@@ -12,7 +47,7 @@
     },
     {
       "path": "assets/diagrams/mlp.svg",
-      "sha256": "7ea47b14abacf1c0a50e13119f40633b417b4c6932062e498661b412b39bfe74",
+      "sha256": "b3f4d6cfab56ff6ba2e438e3557ea34ddaf6c4ffd39a52bf8deef48a27002b92",
       "language": "zh",
       "purpose": "第05期第0层门控 MLP",
       "generation": "torchview official Transformers module; meta tensors; no checkpoint"
@@ -33,7 +68,7 @@
     },
     {
       "path": "assets/diagrams/local_qkv.svg",
-      "sha256": "50edda1ea005bc595b32fbd9e7555d4c4288ac940cfc4d5542d85193dc0b794b",
+      "sha256": "bb70c6bd61856272163419bf8b5f7cdddbc6ada6db296d5239b38ec25cb5dfe7",
       "language": "zh",
       "purpose": "第06期局部层 Q/K/V 投影与按头重排",
       "generation": "torchview official Transformers module; meta tensors; no checkpoint"
@@ -75,7 +110,7 @@
     },
     {
       "purpose": "第02期官方 Tokenizer 原始文本六段切分教学图源",
-      "sha256": "d8f3e12ad5eae4629e448271506f30815f94c89381b5a6abd2580a3b80e9b752",
+      "sha256": "7666c6e1f84a5dc3d2cda1596e823a2d305f08df71661131c9b318d2d7b6f9eb",
       "language": "zh",
       "path": "assets/generated/token-split-zh.svg",
       "generation": "deterministic SVG from official tokenizer output; assets/diagrams/generate-tokenizer-figures.mjs"
@@ -89,7 +124,7 @@
     },
     {
       "purpose": "第02期聊天模板 15 个位置教学图源",
-      "sha256": "1bf1ddff5acdbdec2189d563b50d23664cd29fa070dd9c561d7c22a41b780395",
+      "sha256": "b97ede3ecbf71b17cf3da0392229373ea5ffcd94e66670185476fc231060a43d",
       "language": "zh",
       "path": "assets/generated/chat-template-zh.svg",
       "generation": "deterministic SVG from official tokenizer output; assets/diagrams/generate-tokenizer-figures.mjs"
@@ -114,9 +149,217 @@
       "purpose": "第03期主 Embedding 表输入查行与输出候选打分机制图",
       "sha256": "d369e167f58211a45634018f02424a18608b9c38b70a3db220e4d6d7eb461f2a",
       "language": "zh"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/04-image-prompts.md",
+      "path": "assets/generated/cover-04-zh.png",
+      "sha256": "0df75236c9b206ff0e0062490abd16b5ad6832e10a53033fa958262b3505aa0d",
+      "purpose": "第05期独立封面；特征经矩阵重组"
+    },
+    {
+      "language": "zh",
+      "generation": "Deterministic editable SVG and sharp PNG; assets/diagrams/generate-matmul-figures.mjs",
+      "path": "assets/generated/projection-role-04-zh.svg",
+      "sha256": "dc838b47672c4c5b813641c18f18745f5204d0fad4b5b850bfb55c909e5f8b5a",
+      "purpose": "第05期备选概念图；正文未引用"
+    },
+    {
+      "language": "zh",
+      "generation": "Deterministic editable SVG and sharp PNG; assets/diagrams/generate-matmul-figures.mjs",
+      "path": "assets/generated/projection-role-04-zh.png",
+      "sha256": "d0e6c5bb7df2cd19052d3ea2e22f12975b6a92a457b79ce070bf0484b2c56d2b",
+      "purpose": "第05期备选概念图；正文未引用"
+    },
+    {
+      "language": "zh",
+      "generation": "Deterministic editable SVG and sharp PNG; assets/diagrams/generate-matmul-figures.mjs",
+      "path": "assets/generated/matmul-04-zh.svg",
+      "sha256": "9d668164dd623bfb32ec775cfa9d112b3c7c0ccd905ae60954f5c6629dc7f128",
+      "purpose": "第05期矩阵乘原理讲解图；构造数字非模型权重"
+    },
+    {
+      "language": "zh",
+      "generation": "Deterministic editable SVG and sharp PNG; assets/diagrams/generate-matmul-figures.mjs",
+      "path": "assets/generated/matmul-04-zh.png",
+      "sha256": "da7e298bbdda1f509fd6f77c4b186aaf0087e8c304113c1a711f77d9ff04d56f",
+      "purpose": "第05期矩阵乘原理讲解图；构造数字非模型权重"
+    },
+    {
+      "language": "zh",
+      "generation": "Deterministic editable SVG and sharp PNG; assets/diagrams/generate-matmul-figures.mjs",
+      "path": "assets/generated/shared-weights-04-zh.svg",
+      "sha256": "86ca6848ec051f66d465671ca1f5d0dae804c1054f7a68c53030f4e78a5b4236",
+      "purpose": "第05期矩阵乘原理讲解图；构造数字非模型权重"
+    },
+    {
+      "language": "zh",
+      "generation": "Deterministic editable SVG and sharp PNG; assets/diagrams/generate-matmul-figures.mjs",
+      "path": "assets/generated/shared-weights-04-zh.png",
+      "sha256": "b92af2306484a61fd3e07c0570c60a8bd47ff73d177afb956f351e1ba4010511",
+      "purpose": "第05期矩阵乘原理讲解图；构造数字非模型权重"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
+      "path": "assets/generated/attention-flow-zh.png",
+      "sha256": "a1b15b7cc9057547d85546ca6ec2827dcb25453fe71bb38899b5ca0cd1608a7a",
+      "purpose": "第06期单个查询位置 Attention 原理示意"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
+      "path": "assets/generated/prefill-decode-hardware-zh.png",
+      "sha256": "ff3c854d61afd6a7b17998538e3a16f8bc80b90d886d829199286d386ccac6b5",
+      "purpose": "第10期 Prefill 与 Decode 时间线示意"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
+      "path": "assets/generated/kv-lifecycle-zh.png",
+      "sha256": "6dcfbbacfec2c0ab3fe8250cb5782d143c59fec6f9f5aba935ecb6b2ed504deb",
+      "purpose": "第11期 KV Cache 读写与局部全局状态示意"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
+      "path": "assets/generated/weight-budget-zh.png",
+      "sha256": "06339f016430cb679dbf583f1bb2fb7c629bf77fa4d0a235d6261b59260498b7",
+      "purpose": "第12期参数口径与运行时内存对照"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
+      "path": "assets/generated/online-softmax-zh.png",
+      "sha256": "a8c6b1630f4055e2556e67eb0f5a54455e1cb1e7cc4b78a9107774f39cd69c6b",
+      "purpose": "第13期 online softmax 分块状态示意"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
+      "path": "assets/generated/weight-reuse-zh.png",
+      "sha256": "2c1d131272f81bbcac36eeef799a819d0345cad559ff38d7bc698894b2e6501b",
+      "purpose": "第14期 Prefill 与 Decode 权重瓦片复用示意"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
+      "path": "assets/generated/power-thermal-timeline-zh.png",
+      "sha256": "a09ba991454d5b22e01ff511559be83e189b489945e2c987166b3262271582bc",
+      "purpose": "第17期计算活动、功率电流与温度概念时间线"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-decoder-04-zh.png",
+      "sha256": "e5c17835ff17eca24872a09cebd75accf3780aa8049af162479601d3b37cbbbb",
+      "purpose": "第04期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-06-zh.png",
+      "sha256": "191e4614f2b60098b191f9dcfd2bfbb1728ecd7635b18e309b0b5444aacbd7f1",
+      "purpose": "第06期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-07-zh.png",
+      "sha256": "cdd16b01ce94ae2db5a2c951756981414e7d1d0085cb907599771e1ec80f94e4",
+      "purpose": "第07期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-08-zh.png",
+      "sha256": "3cd0d2686bbb33e799a80d367756459e8e408ba8457f8bd2ae7df6da7262136e",
+      "purpose": "第08期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-09-zh.png",
+      "sha256": "f9dc4d36da087837ed816bfa09e3fbb703dedef52a01a201b781f6b3ede380e7",
+      "purpose": "第09期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-10-zh.png",
+      "sha256": "7c4317ad11d199a935f3976915c23752aa4d6c4a3bd3775594d5ec796004efa6",
+      "purpose": "第10期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-11-zh.png",
+      "sha256": "231d2614096a7e648b488189d1e7e67e0f3d58428f70f9c667346f3b15e6458a",
+      "purpose": "第11期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-12-zh.png",
+      "sha256": "5806b4992f21d41f8a1e760e6ceb3a10bf33b4d1b5d5c6428cd418153ca76d8a",
+      "purpose": "第12期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-13-zh.png",
+      "sha256": "d4dd7f8a2497d4f80355f4d08ca041b3a6ed86239c31a255e8ddf6824920d4fc",
+      "purpose": "第13期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-14-zh.png",
+      "sha256": "9c81d08da882aed03b7ecf9579af1215a6748e6559f7131d2f83414928995cc1",
+      "purpose": "第14期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-15-zh.png",
+      "sha256": "53d9403c4158daee1a39b9b8ba483fdcf97a32e8b81c2a7e45edeaa6476c719b",
+      "purpose": "第15期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-16-zh.png",
+      "sha256": "33209150b8ffe98a85b83678ce48edeee714dcb95aeb76ccc62d6033a359b348",
+      "purpose": "第16期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-17-zh.png",
+      "sha256": "42258b8e2da482150ccab12a45ee3e62c3be4bca1278cb50ec821d05af8479d4",
+      "purpose": "第17期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-18-zh.png",
+      "sha256": "377814e4473532dad02d25007a3247927619741730324aaa9dbadded1ac85550",
+      "purpose": "第18期中文独立概念封面"
     }
   ],
   "public_sources": [
+    {
+      "url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "purpose": "visual explanation and editorial comparison; source illustrations retained only in private reference"
+    },
+    {
+      "url": "https://ai.google.dev/gemma/docs/capabilities/vision",
+      "purpose": "official vision token budgets and 3x3 patch pooling"
+    },
+    {
+      "url": "https://ai.google.dev/gemma/docs/mtp/overview",
+      "purpose": "official Gemma 4 MTP behavior and drafter limitations"
+    },
     {
       "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
       "purpose": "model family and parameter counts"
@@ -129,5 +372,14 @@
       "url": "https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4",
       "purpose": "Gemma 4 implementation traced for diagrams"
     }
-  ]
+  ],
+  "reference_snapshots": [
+    {
+      "manifest": "notes/04-code-snapshot.json",
+      "revision": "8445b13cd24961e47f25a649fb113580f71a8d11",
+      "purpose": "第05期本地源码逐项核对",
+      "review": "notes/04-fact-check.md"
+    }
+  ],
+  "draft_asset_manifest": "notes/draft-newsletter-manifest.json"
 }

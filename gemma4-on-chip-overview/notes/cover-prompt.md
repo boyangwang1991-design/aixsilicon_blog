@@ -31,3 +31,28 @@ Use case: infographic-diagram. Asset type: Chinese educational figure inside a t
 ```text
 Use case: scientific-educational. Asset type: final Chinese technical explainer diagram for Gemma 4 chapter 01. Recreate a rigorous prefill/decode timeline from scratch, 16:9 wide, no decorative imagery. Top half: heading exactly “Prefill：处理整段已知输入”. Four teal prompt tiles labeled P1 P2 P3 P4 enter one box labeled “同一个 Decoder”; right side one amber tile labeled O1 with caption “首个输出”. A small accurate four-by-four lower-triangular causal visibility grid may appear under the input, clearly separated from output; omit it if it risks confusion. Bottom half: heading exactly “Decode：逐步生成”. Three left-to-right decoder steps using the same model: O1 goes into step 1 and produces O2; O2 goes into step 2 and produces O3; O3 goes into step 3 and produces O4. Put all step boxes under a small caption “同一套模型权重”. Below, one shared box labeled “KV Cache：历史 K/V”, with clear upward arrows labeled “读取” from cache to each step and downward arrows labeled “写入” from each step to cache. Inputs teal, outputs amber. Exact labels only as specified; no Chinese sentence fragments, no arbitrary extra token letters, no invented benchmark numbers. Precise arrow directions and sequence are more important than decoration. Large legible type, white background, navy outlines, calm teal/amber palette, clean editorial vector infographic. Conceptual algorithm diagram, not a real runtime screenshot.
 ```
+
+## 第 05 期（原第 04 期制作）
+
+中文封面采用版本化文件名 assets/generated/cover-04-zh.png；完整提示词与图文核对记录见 [第04期配图记录](04-image-prompts.md)。按用户要求英文暂不制作。
+
+## 第 04、06–18 期中文封面（2026-09-29）
+
+工具：Codex 内置 imagegen，每期独立生成一张 16:9 中文概念封面。通用提示词约束：深蓝、青、紫的系列视觉语言；单一焦点、宽幅构图、裁切安全边距；只写下表指定的醒目短标题，不加小字、虚构性能数字或真实产品/测试截图。封面用于识别主题，不承担正文机制图的精确数据流职责。图内标题与主题已逐张人工检查；图片路径及 SHA-256 见 `sources.json`。
+
+| 期 | 路径 | 封面短标题 | 独立主题提示词 |
+| --- | --- | --- | --- |
+| 04 | `assets/generated/cover-decoder-04-zh.png` | Decoder 一层的三次更新 | Attention 取上下文、MLP 加工特征、PLE 从侧支路补入逐层信息；不要将 PLE 画在 Embedding 与 Decoder 之间。 |
+| 06 | `assets/generated/cover-06-zh.png` | Q、K、V 如何找到关联 | 一个当前位置向可见历史发出查询，Q/K 决定关联、V 携带内容。 |
+| 07 | `assets/generated/cover-07-zh.png` | 位置怎样改变匹配 | 二维坐标中的 Q/K 按位置旋转并形成相对角度；V 不旋转。 |
+| 08 | `assets/generated/cover-08-zh.png` | 五层局部，一层全局 | 五段近处窗口后接一段全局视野，表达混合注意力节奏。 |
+| 09 | `assets/generated/cover-09-zh.png` | PLE：每层的一份输入 | 一枚 token 的身份从参数表取出不同分层向量，作为 decoder 侧支路输入。 |
+| 10 | `assets/generated/cover-10-zh.png` | Prefill 与 Decode | 已知提示词成批处理，回答逐 token 接续生成；两阶段使用同一模型。 |
+| 11 | `assets/generated/cover-11-zh.png` | KV Cache 的增长 | K/V 历史状态随生成延续；局部窗口有界，全局历史可增长。 |
+| 12 | `assets/generated/cover-12-zh.png` | E4B 不只 4B | 有效参数、总参数和运行时资源是不同口径，不写额外数字。 |
+| 13 | `assets/generated/cover-13-zh.png` | Attention 不落地整张表 | 分块处理 K/V，中间状态靠近计算，完整分数表无需落地；仍要读取 K/V。 |
+| 14 | `assets/generated/cover-14-zh.png` | 算力之外是搬运 | 同一权重瓦片被多行复用，与单行复用机会少形成对照。 |
+| 15 | `assets/generated/cover-15-zh.png` | 一张照片的输入路径 | 照片经 patch 与视觉编码变成软 token，与文字问题汇合。 |
+| 16 | `assets/generated/cover-16-zh.png` | 一段语音的输入路径 | 波形经特征帧与音频编码变成软 token，与文字汇合，最后输出文字。 |
+| 17 | `assets/generated/cover-17-zh.png` | 持续输出的电力边界 | Prefill 与 Decode 活动节奏、概念热趋势与供电路径；无实测曲线。 |
+| 18 | `assets/generated/cover-18-zh.png` | 换型号，重算资源账 | 稠密、MoE、多模态路径各异，切换型号要重新填写资源账。 |

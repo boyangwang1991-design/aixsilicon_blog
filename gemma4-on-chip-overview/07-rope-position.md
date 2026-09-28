@@ -1,14 +1,20 @@
 # 词序怎么进入注意力：Gemma 4 的 RoPE 旋转
 
+![位置怎样改变 Q/K 匹配的概念封面](assets/generated/cover-07-zh.png)
+
 [系列索引](README.md) · 第 07 期
 
 上一章的 `Q·K` 让当前位置找到相关内容，却留下一个问题：相同词出现在句首和句尾，原始词义可能相近，模型怎样知道它们的位置不同？Gemma 4 在 Q 和 K 点积前使用旋转位置编码（RoPE）。它把特征维度中的坐标成对看作二维平面，按 token 位置旋转；V 不走这条旋转路径。位置由此改变“谁与谁匹配”的分数，而不需要在词表里添加一个“位置词”。
 
+![将 Q/K 的相邻坐标看成二维向量，随 token 位置旋转](assets/draft-newsletter/image-13-d981478a.png)
+
+*图 13：将 Q/K 的相邻坐标看成二维向量，随 token 位置旋转。*
+
 对一个坐标对 `(x_0,x_1)`，位置 `m` 的旋转是 `(x_0 cos θ_m − x_1 sin θ_m, x_0 sin θ_m + x_1 cos θ_m)`。Q 在位置 `m`、K 在位置 `n` 各自旋转后再点积。二维旋转保持长度，且两次旋转的相对角度与 `m−n` 有关，所以分数能体现相对位移。不同坐标对使用不同频率，组合起来才能覆盖不同尺度的位置关系。这里说的是机制，不是“模型必然理解距离”的质量保证。
 
-E4B 不把所有层做成同一种 RoPE。局部注意力层的 head dim 是 256，采用默认 RoPE 参数，基数为 10,000；全局层 head dim 是 512，采用 proportional RoPE，基数为 1,000,000，并只对部分维度施加旋转（配置中的 `partial_rotary_factor=0.25`）。该比例作用到具体频率维度的方式要按官方 Transformers 的 `Gemma4TextRotaryEmbedding` 和相应旋转实现理解，不能直接把“25%”误画成 K/V 头数或可见 token 数。位置编码决定分数怎样感知位移；因果与滑窗 mask 则决定**哪些位置可以参与比较**。
+![不同坐标对采用不同的旋转频率](assets/draft-newsletter/image-14-d2ef73d6.png)
 
-<!-- 配图提示词｜图 07-A：中文教学图，仅画 Q_m 与 K_n 的一对二维坐标。先画原始向量，再画按位置 m/n 旋转后的坐标，最后画点积；每条线标 [2]、float dtype 和旋转角。旁边用两个长度条区分 E4B 局部 head_dim=256 与全局 head_dim=512 的旋转范围。概念示意，不能伪装官方运行波形。 -->
+*图 14：不同坐标对采用不同的旋转频率。*
 
 ## 相对位置从哪里出现
 
@@ -22,8 +28,24 @@ E4B 不把所有层做成同一种 RoPE。局部注意力层的 head dim 是 256
 
 对第 `i` 对坐标，一种标准写法是逆频率 `ω_i=θ^{−2i/d_rot}`，位置 `m` 的角度为 `mω_i`。低编号维度转得快，高编号维度转得慢；多种频率叠在一起，为短距离和长距离的位移提供不同的数值信号。源码先用 `position_ids` 与逆频率求角，再算 `cos/sin`，最后对 Q/K 应用旋转。它先以 FP32 形成三角函数值，再转到输入 dtype；这里有明确的精度边界，而非“用整数位置直接加到每个 token 上”。
 
+![高低频坐标对位置变化的敏感程度不同；图中的语义分工是设计直觉](assets/draft-newsletter/image-15-ce6aa947.png)
+
+*图 15：高低频坐标对位置变化的敏感程度不同；图中的语义分工是设计直觉。*
+
+## 全局层为什么只旋转部分维度
+
+E4B 不把所有层做成同一种 RoPE。局部注意力层的 head dim 是 256，采用默认 RoPE 参数，基数为 10,000；全局层 head dim 是 512，采用 proportional RoPE，基数为 1,000,000，并只对部分维度施加旋转（配置中的 `partial_rotary_factor=0.25`）。该比例作用到具体频率维度的方式要按官方 Transformers 的 `Gemma4TextRotaryEmbedding` 和相应旋转实现理解，不能直接把“25%”误画成 K/V 头数或可见 token 数。位置编码决定分数怎样感知位移；因果与滑窗 mask 则决定**哪些位置可以参与比较**。
+
+原文用一个有用的直觉解释 p-RoPE：低频坐标转动较慢，在局部位置差上变化很小；让部分维度不承担旋转，可给内容匹配保留更直接的数值通道，并减少长上下文中小角度不断累积带来的位置干扰。这个说法解释**设计动机**，不能据此断言每一维在训练后分别负责“语义”或“位置”。在固定 E4B 配置中，p-RoPE 用于全局层，局部层使用默认 RoPE；是否允许比较某个历史位置仍由 mask 决定。
+
+![p-RoPE 只旋转部分特征维度；图示比例按 E4B 全局层配置核对](assets/draft-newsletter/image-16-c204db00.png)
+
+*图 16：p-RoPE 只旋转部分特征维度；图示比例按 E4B 全局层配置核对。*
+
 把 RoPE 放错地方会造成可检查的错误。对 V 也旋转，会改变被汇聚的内容；在缓存中保存未旋转 K、下一步却按已旋转 K 使用，也会改变 QK 分数；窗口淘汰后重置绝对位置，则会使原本相同的一对位置获得不同相对角度。部署时应分别对照**位置 ID、Q/K 旋转、缓存中的 K 语义、mask**，不能只检查最终 shape 相同。
 
 在硬件上，RoPE 带来位置相关系数和逐元素乘加；但一次注意力是否主要受它限制，不能从公式直接判定。接下来要看 E4B 的层如何分配“近处”与“全局”。
+
+图源：[Maarten Grootendorst，《A Visual Guide to Gemma 4》](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4)。
 
 资料：[Google Gemma 4 模型卡](https://ai.google.dev/gemma/docs/core/model_card_4) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers Gemma 4 源码](https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4)

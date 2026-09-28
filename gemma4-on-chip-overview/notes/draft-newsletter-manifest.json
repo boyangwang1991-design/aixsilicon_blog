@@ -1,0 +1,318 @@
+{
+  "article": "gemma4-on-chip-overview",
+  "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+  "assets": [
+    {
+      "path": "assets/draft-newsletter/image-01-37fe0e0b.png",
+      "sha256": "737eec7dc4bfce847ed3351c357efd64e919645b689fc9b963d616c697611423",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-02-107a0d7b.png",
+      "sha256": "a4119a8986e022799405074550a78c22502f1ccde7254e03b9a04d540db57c79",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-03-4c6e4126.png",
+      "sha256": "28e2c6f29ad9667cd2ee997eb303c5d2a887962be34d206351f170af348e447a",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-04-46450e20.png",
+      "sha256": "65da585b6cca71f79ff673d86d4cddda6fffc066fffd4293dd8efb79f6736bb1",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-05-fea15481.png",
+      "sha256": "c5f3550ae4941f147d50c95a30cfb09836961bffc74ffbf4f048c7eb1c45183a",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-06-39531efc.png",
+      "sha256": "3b777fbc8fb79e7235bc2b84cb7fa8dcdfe036b5aa183ce82bc8280104600b98",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-07-3015e48f.png",
+      "sha256": "165c81941a1e91a30c99772e573b8cbffe3c66ca9de8c15dd104dbf3579a7541",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-08-f26153b1.png",
+      "sha256": "c08128a1acf3d7ce8844f0581ecc807a747fc7cf146bb71025f28bf437d4d7cb",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-09-eb2f917c.png",
+      "sha256": "fdc21be7558af8eb3aa109eedf4e9730eea8b4e1407fac3ab0b5ce0d18f9dc7d",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-10-3253caa8.png",
+      "sha256": "0920d477ee02502ab75441469df0c56718f17b98a9824174bba34f59548cef4c",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-11-be2618d8.png",
+      "sha256": "c575a4e83a21c9e74a1c0464b207a494eb68738290d7fc812d36c36015fa0264",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-12-fc081644.png",
+      "sha256": "4473a5b30b3225cc04faec62f047f90cb55807fee9a6f181bfbef2b39a3eaae0",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-13-d981478a.png",
+      "sha256": "21867181a46a3f2fadc37f69f7fdfbc13ad60bfdae2a22b1668a220387d25f28",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-14-d2ef73d6.png",
+      "sha256": "e1ee1b93708fd73f76a20153ed85607c1437f59740be2d3a044d858452fa6e54",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-15-ce6aa947.png",
+      "sha256": "e60d38d0ae69f555b81220560504bc6d5d067befc3df51213f5be96cfbb522d5",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-16-c204db00.png",
+      "sha256": "a00cd1225d9833c0632d9f25d601301468b069bf268fede06b19b9af05138efb",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-17-79da2845.png",
+      "sha256": "3ea1201a1df5ad839822460f5962797d7e1a62a841b992b2b24799ad212216d3",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-18-be6b733c.png",
+      "sha256": "c096b3a5c30abcf8fa310f1780a04a0a0709df7481a99adb17e395280ce6fdfe",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-19-987e3dda.png",
+      "sha256": "cfec35cb479de08a584b5f7a638a98c892fcabeda0786d6916f901f6f75698b9",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-20-1991ddef.png",
+      "sha256": "f80b44b15e54c61142fb326c8a99b4ba67e0bd0958ebb76576f98441b1d76d59",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-21-08bd6389.png",
+      "sha256": "43f7e5853a7738f061289f2e987da0eb36c99c77926eef2008253791dd44c27f",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-22-63325403.png",
+      "sha256": "9d9a651ff020851cf64120afe8e393237ab5dbe6e8a3134e97898b50c14b03a0",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-23-63b9b1b6.png",
+      "sha256": "f30258cf7f48a681a22be0f3c8ef69379833a599569b6f9f9eb801a57f0b433d",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-24-46207f33.png",
+      "sha256": "90d58c32edcd611efc8af2283af15fa1e7fb74a69b05ea16f0ae53987573a82e",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-25-61ce0dd5.png",
+      "sha256": "b32194f0dc0d2648e5289a9f3f65b8e29be5a31e22ae75438d41c4fe2f4f1086",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-26-20e856f9.png",
+      "sha256": "7b933c87edc6e1b2a35d2f0a0e361a6f644a72f0456f8912e8e5be28f7972a1a",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-27-ecba0193.png",
+      "sha256": "5bc4d128634fc687d4d6af05045bf30ebaebe4e6033c32105fd2399ef50d0330",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-28-be1a0781.png",
+      "sha256": "03c21d5eec37640da77b18eca32ce07d6b0d206d4be7a0193fe583c379abe898",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-29-8869694f.png",
+      "sha256": "415214ecd2a876485f82c97426d2d0b1914948208ba77b1e47632493772eee5a",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-30-32e57db5.png",
+      "sha256": "f3cb0c8b90ec7deab8f6abec148a434fa603afb8991cfcee5dd07837872ce55a",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-31-b7b3eb2f.png",
+      "sha256": "43e25f4dcffab8bfa9ef002bf8e948a7aca31daa3df16f0dc0be12199a71a2ae",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-32-af9da40e.png",
+      "sha256": "f3e3dbfbe95f6302db76f97ac854d630e4df5f53ce22a824d897d61797cd2b84",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-33-faff88e2.png",
+      "sha256": "6cb5858be578e9bf08c394edff3b3f8c34f6b51bf00b825af3de9338d4071072",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-34-ea5dd72c.png",
+      "sha256": "ad0b265f004a9714f0a77eb324c0170678c5734fa57386f5bf810c4309b743f8",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-35-e6c18411.png",
+      "sha256": "f4b206a2d4d038edbf2bb9d4762053c4b6e2d2981be7704242a2d0c96678aeb8",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-36-a820d8bb.png",
+      "sha256": "0bfad4399af083db14a258af27b3cf0a7272c6cb3df6715423b3270036fcfcaf",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-37-2e78b43b.png",
+      "sha256": "b9384572d1bb5dee3dbabbd1b21d5ad83e50b8f2bfd4f1b88400d574096dec14",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-38-93de9d19.png",
+      "sha256": "462b4e650e22f5f8af3a5a18abd6a1e0ba024bb91283fab1b4dc59ecc573d56d",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-39-7f598397.png",
+      "sha256": "5dad3e9261c1f8fe6eed4148741b79911432c54eea0fe8a4a845b47d40833a10",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-40-0f6fd442.png",
+      "sha256": "14c04fc5af37e830a85dbb72ddf68aebc6f85ba5bfad9675c0422e9aa75b7389",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-41-8c3bcafd.png",
+      "sha256": "dbd1dfaf0dfe6945ee2e95fa51e43db0e5c5d7da42f79aefecc0152588917ad9",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-42-370343ee.png",
+      "sha256": "b492706fb3d3a61403ff390bac15abe8750aa24c21d29e131a3b4118b9128462",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-43-b9b7b2a2.png",
+      "sha256": "c7bae46b1b84037dc9dfb57096c97e41eed63af45e985fec16206a5a9c53ad09",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-44-6e33b067.png",
+      "sha256": "8c2a59af4953a787659ca9f614c5cffbea18020fa3e8ff79209fe1a97ec581a5",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-45-882747df.png",
+      "sha256": "4ac1891854a19e304cf8f927ca4c924daf0d027e553e27db86ddb7b7640159f4",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-46-6cacdb5a.png",
+      "sha256": "bddd831fce727bdad11062d6bf2cdb592452bdf32e08798d9db066937e5aa547",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-47-5c74db32.png",
+      "sha256": "6eb1563b0b1348e6d4d3dcb0d1dd0b71b3290a2c04d394eee55fe3eb0792dd96",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-48-a10e62de.png",
+      "sha256": "0193f91cb5f01334429d18d3918eed1c95cc34c6340850beebea9007b24b5bf9",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-49-85f7bad4.png",
+      "sha256": "0b139718ae1387d288d2d128c49aa4984daf27d1e4ce6b8fe447dc9e48b7088e",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-50-9da3f327.png",
+      "sha256": "81c2df06b72d1c7f45934baef79e97e603ce80f6b43623cac97eeb67cece5ad1",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-51-f6716388.png",
+      "sha256": "95da994b218c59034ecd841e22078f50bc493a0a63e1c5da706f45bd24274842",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    },
+    {
+      "path": "assets/draft-newsletter/image-52-755089fb.png",
+      "sha256": "18daa77528787f8a19fe1b5107c4ebc1314022b5923798691ccb0516c6fc6e57",
+      "source_url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4",
+      "status": "draft; author permission or replacement required before formal publication"
+    }
+  ]
+}
