@@ -1,12 +1,24 @@
 # English Covers — 4:3 / 英文封面 4:3 版本
 
-10 篇文章的英文 4:3 封面，使用 Codex 内置 imagegen 生成。前 8 篇另备独立封面变体；多样性比较器与 NPU Mesh 新稿直接采用 4:3 英文封面。完整提示词入口见各图，尺寸和哈希保存在各篇 `sources.json`。
+12 篇文章的英文 4:3 封面，使用 Codex 内置 imagegen 生成。前 8 篇另备独立封面变体；多样性比较器、NPU Mesh、WDT 与 GPIO 新稿直接采用 4:3 英文封面。完整提示词入口见各图，尺寸和哈希保存在各篇 `sources.json`。
 
-## A Wider Link, a Slower Decode Tail
+## Designing a GPIO from Scratch with AI
 
-[PNG](../ai-assisted-npu-mesh-exploration/assets/generated/cover-en-4x3.png) · [Prompt](../ai-assisted-npu-mesh-exploration/notes/cover-en-prompt.md)
+[PNG](../ai-assisted-gpio-development/assets/generated/cover-en-4x3.png) · [Prompt](../ai-assisted-gpio-development/notes/cover-en-prompt.md)
 
-![A Wider Link. Who Still Waits?](../ai-assisted-npu-mesh-exploration/assets/generated/cover-en-4x3.png)
+![Designing a GPIO from Scratch with AI](../ai-assisted-gpio-development/assets/generated/cover-en-4x3.png)
+
+## Designing a Watchdog from Scratch with AI
+
+[PNG](../ai-assisted-watchdog-development/assets/generated/cover-en-4x3.png) · [Prompt](../ai-assisted-watchdog-development/notes/cover-en-prompt.md)
+
+![Designing a Watchdog from Scratch with AI](../ai-assisted-watchdog-development/assets/generated/cover-en-4x3.png)
+
+## How Does Data Move Inside an AI Core?
+
+[PNG](../ai-assisted-npu-mesh-exploration/assets/generated/cover-en-4x3.png) · [Prompt](../ai-assisted-npu-mesh-exploration/notes/cover-architecture-en-prompt.md)
+
+![How Does Data Move Inside an AI Core?](../ai-assisted-npu-mesh-exploration/assets/generated/cover-en-4x3.png)
 
 ## Explore Architecture Before RTL: AI-Assisted ESL Modeling of NPU SRAM
 

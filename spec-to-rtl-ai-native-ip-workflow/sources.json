@@ -1,0 +1,283 @@
+{
+  "written_on": "2026-09-27",
+  "kind": "original bilingual article based on local engineering records",
+  "note": "Internal provenance only. Source paths are relative to repository root; output paths are relative to this article. No reference files were modified. No EDA runs were performed for this article. Historical records do not certify current full-system qualification.",
+  "files": [],
+  "articles": [
+    {
+      "filename": "README.md",
+      "language": "zh",
+      "status": "图文齐备；待发布审阅"
+    },
+    {
+      "filename": "README.en.md",
+      "language": "en",
+      "status": "Complete text and illustrations; pending publication review"
+    }
+  ],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/SKILL.md",
+      "sha256": "6fe891646f74bd42b57387de791ce25b484e7510bc8cbc8504c5263b9fab9312"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/07-rtl-code-generator/SKILL.md",
+      "sha256": "9ddcb39b912dc0dd2e97aa420f5c6c99e2ad4d938b0707230858c2995d2c4306"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/19-param-space-verification/SKILL.md",
+      "sha256": "f7755b62c257c1bfbb40c926b5f5db1ea2fc527067167d86bfdece01c244eb5d"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/20-ppa-optimization/SKILL.md",
+      "sha256": "fa0177e79707f9ab97c43f57a6d25b8b2a6b6a43c77eb95bfca2463729fa8615"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/references/gate-evidence-retention.md",
+      "sha256": "2673c4c6775c0d56831e60a02bebeefd0b1111bcb7f62b6014d3a3dc7700ea8c"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/vip-development-suite/skills/vip-test/SKILL.md",
+      "sha256": "3b873abf1630a8e10b1375e56bf889740a2dcb8a65b1342c6fa86dadb736594f"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/docs/lrs/03b_transaction.md",
+      "sha256": "dcab3232011e9efb67f7bcb163ad6250d91c335cf8250099f2b0172713a380eb"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/quality/review_findings.yaml",
+      "sha256": "ffaf09809dba297b0f4b6336af31b1d893ec7de56a7d251234a52fb631b4e8b4"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/regression/regression_summary.md",
+      "sha256": "eceb47591a7784fd6cce373e2d9eb537ca7548b0a793b7997550e4abeacd4966"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/regs/axi_mpu.rdl",
+      "sha256": "f7cac5296e922c4b5ffa87757e5106ab22167c6fe43188bccb5c7c2cbb286dde"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/rtl/axi_mpu.sv",
+      "sha256": "710921e65968a6139fb883b036dc04c38e2fd967645e95b37634a651c7fb0bb1"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/verification/tc/tc_config_lock.sv",
+      "sha256": "c006b56070c097828822693435f4ebdc4335d955c8ca21890b429103f128f509"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/reports/run_log.md",
+      "sha256": "27cb85bb0c33993e90619aaf502b28fcf5f162b6753e41439a875f90665e955b"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/README.md",
+      "sha256": "59ca52df2bdf6f19dfb5a5e713dce2937f63ea5891e69f61fe5b22142e6e6de6"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/README.md",
+      "sha256": "ee6b44be814f5dd191466349f245226b8edaf3c0425f1ba0c861922c7d468bec"
+    },
+    {
+      "source": "reference/aixsilicon_socstudio-main/aixsilicon_socstudio-main/docs/planning/acceptance-ledger.md",
+      "sha256": "aa44a9186a42c284b15880ba5fdf4349714626122e0a8365a051b3d10562035b"
+    },
+    {
+      "source": "reference/wenwang-edgenpu-main/wenwang-edgenpu-main/README.md",
+      "sha256": "f66774c4014c88c76ce64eb1d17d7c1d38a95c79b56bc8018595bdce9f4cd8e9"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/regression/junit.xml",
+      "sha256": "2679f7e39621a72bef1f756c8c16aa5633ec61316f3814b93e48ef8fac6c7694"
+    },
+    {
+      "source": "ai-assisted-gpio-development/README.md",
+      "sha256": "fd5f9ea08a09503cde772c2e2a1803a83aa7ad3e3988fbd505a3cd1e80593393"
+    }
+  ],
+  "supplementary_package_inventory": {
+    "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+    "sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+    "entries": [
+      {
+        "entry": "ai-pqc-rtl.md",
+        "bytes": 44435,
+        "sha256": "4c8cd951c98358cdc20740e5c54f622611fe8efcc5b6a0a47540f4c1ef1ed951",
+        "inspection": "entry inventory and hash only; content not extracted or analyzed this turn"
+      },
+      {
+        "entry": "ai-pqc-rtl.html",
+        "bytes": 15196984,
+        "sha256": "f5820266e003f2a74afe473374391bd888ecefb7f8527d7c53b5b0961ff83b02",
+        "inspection": "entry inventory and hash only; content not extracted or analyzed this turn"
+      }
+    ]
+  },
+  "claim_evidence": [
+    {
+      "claim": "Configuration write suppression omission and correction",
+      "evidence": [
+        "review_findings.yaml / FIND.AXI_MPU.004",
+        "regs/axi_mpu.rdl",
+        "rtl/axi_mpu.sv",
+        "verification/tc/tc_config_lock.sv",
+        "reports/regression/junit.xml"
+      ],
+      "boundary": "Shared write-enable implementation; no claim of independent region locking or fresh rerun."
+    },
+    {
+      "claim": "VIP symmetric address-mapping error and semantic testing",
+      "evidence": [
+        "AXI4 reports/run_log.md / 2026-09-02 S08"
+      ],
+      "boundary": "No aggregate coverage or general protocol qualification claim."
+    },
+    {
+      "claim": "Testing method recorded in Skills and templates",
+      "evidence": [
+        "AXI4 reports/run_log.md / 2026-09-02 S08"
+      ],
+      "boundary": "Same-round adoption, not an invented precise causal timeline."
+    },
+    {
+      "claim": "Usable configuration defaults without randomization",
+      "evidence": [
+        "AXI4 reports/run_log.md / 2026-09-04 P1/P2 fixes"
+      ],
+      "boundary": "Specific component fix, not a universal all-IP requirement."
+    },
+    {
+      "claim": "Markdown design source and derived canonical models",
+      "evidence": [
+        "IP Development Suite / SKILL.md"
+      ],
+      "boundary": "Current IP method; not every repository or historical project."
+    }
+  ],
+  "generated_assets": [
+    {
+      "purpose": "conceptual editorial cover",
+      "language": "zh",
+      "path": "assets/generated/cover-zh.png",
+      "sha256": "ad3369f3d8b95a09fb5477f9a3e9e110b60ba56424f117f1a6b62d6c42915cb1",
+      "width": 1672,
+      "height": 941,
+      "tool": "Codex built-in imagegen",
+      "prompt_record": "notes/cover-prompt.md",
+      "prompt_record_sha256": "52e40123c4a8acdde115e79df7028f2c89d72f541d4f9c7e100c04e1f82cded2",
+      "generation_output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-8a746e34-f452-4363-99bd-2610b752f2b4.png",
+      "revision": 1,
+      "visual_review": "Text, relationships and arrows inspected; illustrative, not EDA evidence"
+    },
+    {
+      "purpose": "conceptual editorial cover",
+      "language": "en",
+      "path": "assets/generated/cover-en.png",
+      "sha256": "526c0f401c4b769b017b77c037bd6a6b7efa1dfd1a95979594648a6945c72bbe",
+      "width": 1672,
+      "height": 941,
+      "tool": "Codex built-in imagegen",
+      "prompt_record": "notes/cover-prompt.md",
+      "prompt_record_sha256": "52e40123c4a8acdde115e79df7028f2c89d72f541d4f9c7e100c04e1f82cded2",
+      "generation_output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-f2a1126d-261e-4b4e-96d9-75893ddd819a.png",
+      "revision": 1,
+      "visual_review": "Text, relationships and arrows inspected; illustrative, not EDA evidence"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "zh",
+      "path": "assets/generated/01-requirement-zh.png",
+      "sha256": "cdfce4ae10b3c3d06db17651f6ceac680d636ca05b4fce5dff715c6caf877072",
+      "width": 1448,
+      "height": 1086,
+      "tool": "Codex built-in imagegen",
+      "prompt_record": "notes/illustration-prompts.md",
+      "prompt_record_sha256": "22038d05ab9f223b953f81d2946cb3dd51ddec97d1dc02ec1fcb4f3480f8dec4",
+      "generation_output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-04e03206-a102-4617-b9b2-b27504d621d7.png",
+      "revision": 2,
+      "visual_review": "Text, relationships and arrows inspected; illustrative, not EDA evidence"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "en",
+      "path": "assets/generated/01-requirement-en.png",
+      "sha256": "2e8ee296d7e428789137c1488355a229005837a9ef843043b88bea97f0d9c425",
+      "width": 1448,
+      "height": 1086,
+      "tool": "Codex built-in imagegen",
+      "prompt_record": "notes/illustration-prompts.md",
+      "prompt_record_sha256": "22038d05ab9f223b953f81d2946cb3dd51ddec97d1dc02ec1fcb4f3480f8dec4",
+      "generation_output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-a8c2115f-167e-4db8-afb5-c80acd7b1224.png",
+      "revision": 2,
+      "visual_review": "Text, relationships and arrows inspected; illustrative, not EDA evidence"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "zh",
+      "path": "assets/generated/02-collaboration-zh.png",
+      "sha256": "c0572c262016baad7068a94a9a132009c54ced7f31b01538375575b106282e0d",
+      "width": 1448,
+      "height": 1086,
+      "tool": "Codex built-in imagegen",
+      "prompt_record": "notes/illustration-prompts.md",
+      "prompt_record_sha256": "22038d05ab9f223b953f81d2946cb3dd51ddec97d1dc02ec1fcb4f3480f8dec4",
+      "generation_output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-bd36e22d-941a-44f9-8456-1d82409a54cf.png",
+      "revision": 2,
+      "visual_review": "Text, relationships and arrows inspected; illustrative, not EDA evidence"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "en",
+      "path": "assets/generated/02-collaboration-en.png",
+      "sha256": "214d67e16ef4d66678ef47a3c2cc281e52fbbd80015af02553a7c99ea525b39f",
+      "width": 1448,
+      "height": 1086,
+      "tool": "Codex built-in imagegen",
+      "prompt_record": "notes/illustration-prompts.md",
+      "prompt_record_sha256": "22038d05ab9f223b953f81d2946cb3dd51ddec97d1dc02ec1fcb4f3480f8dec4",
+      "generation_output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-f7aa5135-f450-4776-bf54-82941049b774.png",
+      "revision": 2,
+      "visual_review": "Text, relationships and arrows inspected; illustrative, not EDA evidence"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "zh",
+      "path": "assets/generated/03-independent-check-zh.png",
+      "sha256": "fc0695bca5df8f2e629adfada39c0cf3521fa04cfcd5c49275de19bcb67f5d60",
+      "width": 1448,
+      "height": 1086,
+      "tool": "Codex built-in imagegen",
+      "prompt_record": "notes/illustration-prompts.md",
+      "prompt_record_sha256": "22038d05ab9f223b953f81d2946cb3dd51ddec97d1dc02ec1fcb4f3480f8dec4",
+      "generation_output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-276b9b4f-294f-4693-a100-1bcdc22fc99a.png",
+      "revision": 1,
+      "visual_review": "Text, relationships and arrows inspected; illustrative, not EDA evidence"
+    },
+    {
+      "purpose": "conceptual teaching illustration",
+      "language": "en",
+      "path": "assets/generated/03-independent-check-en.png",
+      "sha256": "90aa85c0b21cc30dc41597d563c68090d1b628b209309369d45207739cbdd074",
+      "width": 1448,
+      "height": 1086,
+      "tool": "Codex built-in imagegen",
+      "prompt_record": "notes/illustration-prompts.md",
+      "prompt_record_sha256": "22038d05ab9f223b953f81d2946cb3dd51ddec97d1dc02ec1fcb4f3480f8dec4",
+      "generation_output": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-ca11779d-1728-4b6d-81ec-278ba196e6c6.png",
+      "revision": 1,
+      "visual_review": "Text, relationships and arrows inspected; illustrative, not EDA evidence"
+    }
+  ],
+  "editable_figure_specification": {
+    "path": "assets/figure-specs.json",
+    "sha256": "3cd5b758d32665a4221f2edf9d885c572176623287bd0fafd1293ec8f93da463"
+  },
+  "deliverable_hashes": [
+    {
+      "filename": "README.md",
+      "sha256": "90928f594f37c30e1d42c4b285dd988c695b4b122aeabd3f6edd63bb83b838ab"
+    },
+    {
+      "filename": "README.en.md",
+      "sha256": "21aa62f29739728685b221a1865977f7b96ac3ad0dad9c0d77a57d3a9e09113c"
+    }
+  ]
+}

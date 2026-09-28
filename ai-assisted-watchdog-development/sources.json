@@ -1,0 +1,189 @@
+{
+  "article": "ai-assisted-watchdog-development",
+  "date": "2026-09-27",
+  "kind": "Original bilingual article based on archived candidate-design evidence",
+  "files": [],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/reuse_plan.md",
+      "sha256": "9c4d165546093a1b41dbc8f7abd4ea55639e9ed331c722e0b8e29e9988d67833",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/reviews/lrs_recovery_review.md",
+      "sha256": "f9ccb057b38c2dfad9cfbc37dbb26e65a541ef0fc6489736bc32316516397095",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/reviews/lld_recovery_review.md",
+      "sha256": "fb96a9699d7cbfe31352ece09d3a759ea1187698f5786d020b3b1a62a256333a",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/hld/08_decisions.md",
+      "sha256": "0c36f52065a5c798207134dac5edc4ad3aad1fe90a7dfaf5e5ea3b3893c82451",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/README.md",
+      "sha256": "f55e672860233c72a892a939bb37891e91c4ce63cdebd2bab2606f49b95e1e43",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/watchdog_contract.md",
+      "sha256": "9bbb88115193928f73fe13e899f4713a677bc4a6be1c78a5153299619769f302",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/reports/report.md",
+      "sha256": "831988138ba387f0baf45835fdfc6367b0f3fe41c78f4a2d498ce7b98670c9d5",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/reports/ppa/ppa_report.md",
+      "sha256": "e8ef1c654c5377e5e0e4ed4eb20f5ababeb5d210b73cfaf1162cac40b5a660de",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/hld/01_architecture.md",
+      "sha256": "14a4249b73d178d7c499883875f4d529ef386df5955a220f0bc2fc7f7da2d477",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/user_manual/watchdog_user_guide.md",
+      "sha256": "4a839c02e7578be19856f0dbd9651106fdd4e31fe3b5bdb1b2e12b7bfd72d2f9",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/integration/watchdog_integration_guide.md",
+      "sha256": "d0b95fe7b60f139bee4d25de42499b6988bb622624cec018e6ad0e63f4c73296",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/lrs/03_functional_timing.md",
+      "sha256": "92ec30f80ca7efaca80d7af2629b131436147410f9c00cb80b48e02d6730d67d",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/lrs/03_functional_service_1.md",
+      "sha256": "b785786b79281e953e85d1390697a9c6cd43c3a242cdbbdc585f1b34389b25e0",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/lrs/03_functional_supervision_1.md",
+      "sha256": "09d8ab11a5f51233a987aa447e47019c26dcff67275e32655eb2137a38952cd6",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/lrs/03_functional_escalation.md",
+      "sha256": "997201505415ded2f01f6eb60f2b1ffe37d541efa8dccf7e391e0fb32887991c",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/docs/skill_improvements.md",
+      "sha256": "a8ed67568cdd287b7b274d0066486517a4ca61727742158f3151a55ec8205c7c",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/rtl/watchdog_channel.sv",
+      "sha256": "71a7f77773031cb1444233f1b5f41be266c893770cfb133dd903b12acf23b9c4",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/rtl/watchdog_top.sv",
+      "sha256": "fb7826de3b404c71d6e40323bb66c8c7bbb40e8caa1b04b51dfa4491b3a90182",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/sw/watchdog.c",
+      "sha256": "f77f1b9219047cd151cd64a4b1928bd132e2b379cbcdf639b05aab7c714afee5",
+      "access": "internal read-only"
+    }
+  ],
+  "public_sources": [
+    {
+      "url": "https://www.st.com/resource/en/product_training/STM32WB-WDG_TIMERS-System-Window-Watchdog-WWDG.pdf",
+      "purpose": "General early/late refresh concept only",
+      "verified": "2026-09-27"
+    }
+  ],
+  "assets": [
+    {
+      "target": "assets/generated/architecture-en.png",
+      "language": "en",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "3c351ff24fc43c69b78ef9c23e13b1e6b5e61bd395bb41f24559b8efe2451b45",
+      "prompt": "notes/architecture-en-prompt.md",
+      "prompt_sha256": "329d217aab394e57803e1da5d10cd8ae28d054acd4098906ae08adead21726e9"
+    },
+    {
+      "target": "assets/generated/architecture-zh.png",
+      "language": "zh",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "8b5c34caef37b46dca267912c1cec2457b5bd430d7269599ca908ea78aadec6a",
+      "prompt": "notes/architecture-zh-prompt.md",
+      "prompt_sha256": "d229149537841b1b8f4ab321d97f5ebeeef026484e27f94f6637800f2e8d8723"
+    },
+    {
+      "target": "assets/generated/cover-en-4x3.png",
+      "language": "en",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "0f6ea0486a2e195b90bd9f85f7616eab4aa03fbf48d35a2362ba930836dd750d",
+      "prompt": "notes/cover-en-prompt.md",
+      "prompt_sha256": "1eb669aa828f939f4ce01b1cb9781edbf61517e0ff11c0745f4a6bdf3bab0976"
+    },
+    {
+      "target": "assets/generated/cover-en.png",
+      "language": "en",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "0f6ea0486a2e195b90bd9f85f7616eab4aa03fbf48d35a2362ba930836dd750d",
+      "prompt": "notes/cover-en-prompt.md",
+      "prompt_sha256": "1eb669aa828f939f4ce01b1cb9781edbf61517e0ff11c0745f4a6bdf3bab0976"
+    },
+    {
+      "target": "assets/generated/cover-zh.png",
+      "language": "zh",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "b7d4b6d880e7b6ca6986904c720f7abc68744828e34ea6d59c5648b70d55a43f",
+      "prompt": "notes/cover-zh-prompt.md",
+      "prompt_sha256": "b977fc23061e67d6c1b699733dff101c893a4406ad640fe6ea795e55ea65f449"
+    },
+    {
+      "target": "assets/generated/window-en.png",
+      "language": "en",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "6dd7e9dc92c299d1070f22d43d79ad16e3d35e3980f4f069bc39783401bc76b9",
+      "prompt": "notes/window-en-prompt.md",
+      "prompt_sha256": "ff2563aa8c52fd3fe84c4921b8d3713af18859f74833b8879c403d527e95fb9d"
+    },
+    {
+      "target": "assets/generated/window-zh.png",
+      "language": "zh",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "bd8ff1194b4be0087308d39405b6323d4f79b0a2cd609571063d241fd7d405bd",
+      "prompt": "notes/window-zh-prompt.md",
+      "prompt_sha256": "96c8eb97ed447db35fd940e7bdbeca8ce26804b1ad6d76aea2971ebfc5bcefd1"
+    }
+  ]
+}

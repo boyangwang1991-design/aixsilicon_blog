@@ -23,3 +23,21 @@
 模型自洽与RTL校准明确区分；访问替身与真实推理明确区分。AI参与定位在实现、实验组织、检查和纠错，未虚构对话、时间节省或自主冻结架构。阶段图为实际统计重绘，不是AI生成实验结果。无PPA模型，不声称位宽变化等成本。
 
 数据重绘只需本篇assets/data/experiment-data.json与assets/plot-data.py以及Matplotlib，不依赖reference。中文图使用系统微软雅黑字体；生成环境Matplotlib 3.11.2，成图已逐张检查。
+
+## 2026-09-26 架构主线改稿
+
+两版重写为 AI 辅助 ESL 探索 AI 核内 Mesh。先架构与搬运语义，再模型、探索空间，最后三组发现。候选契约 v0.1 与已建模能力明确分开：4×2 是路由位置，未声称八个计算 Tile 或完整推理；图中调度/计算为集成方向。NIU/Router/存储仲裁职责、三通路、源端 fanout 与路由组播边界已核对。
+
+新增窗口数据核对 memory/report.md 与 sweep.csv：196608B 固定逻辑访问量；8074/6331/5883/5883 cycles，对应24.351/31.055/33.420/33.420。吞吐含初始化/验证/fill/drain，不是有效算力；DMA2→4无收益受两个源块限制。
+
+内置imagegen生成版本化中英文封面和架构图各一张。架构图修复DMA连线并统一双语拓扑；检查8路由、6横向及4纵向连接、独立命令事件和目的可见完成。封面概念插画不承诺具体Tile数量。旧配图保留作版本记录，正文仅引用新封面、新架构图和原位宽数据图。英文4:3别名已更新。没有新跑上游仿真，没有修改reference。
+
+## 2026-09-27 每 Router 一个 Tile 与实现核对
+
+用户纠正了目标架构：每个 Router 都连接一个 Tile。双语图改为8 Router+8 NIU+8 Tile；旧图仅显示两 Tile 不再使用。目标架构不等同于已实例化8个计算模型。
+
+逐项读取 systemc/src/network.cpp、model.cpp、include/npu_mesh/config.hpp、docs/design.md、integration.md 和 configs/sram_ddr.yaml。确认5方向索引E/W/S/N/Local、source作为注入节点、地址映射决定目的端、行优先router编号、先X后Y、输入VC归属、RR、每物理通道每周期1flit、credit守恒。R3→R4与反向路径是按实现推导的示例，不是归档实验的新trace。256B无mask数据+16B头在32B链路为9flit，也是编码规则推导。
+
+正文明确：本文实验配置仅R0 SRAM和R7 DDR；完整八Tile本地复用需额外端点和计算访问流。局部图为可选硬件接入示意，未声称ESL已有对应RTL mux。DMA窗口和NIU窗口分别控制块/片段；8KB→2×4KB→各16×256B例子限定对齐。当前命令队列/事件与管理direct API均未写成完整scheduler或管理总线RTL。
+
+两版同步修改，未运行上游仿真，未修改reference。

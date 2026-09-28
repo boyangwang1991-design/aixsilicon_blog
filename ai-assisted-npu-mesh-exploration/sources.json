@@ -4,6 +4,56 @@
   "files": [],
   "editorial_sources": [
     {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/systemc/src/network.cpp",
+      "sha256": "847477ffed62bdb7ba8c99070f29aba8d91a0c18d5b08c8ca99ce21abb94e196",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/systemc/src/model.cpp",
+      "sha256": "5399a876ec1bcca4c0d363c28c2006813655be1a8ce5c1d00463798533cc8996",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/systemc/include/npu_mesh/config.hpp",
+      "sha256": "79bdc223b5f99feacf819e25be1658c77964dee3d2c0ce959955c091b303dc83",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/contracts/npu_mesh_axi_bus.md",
+      "sha256": "b69596170d2fa3c5c7a8185d852495b2a3372fb11119fd97b86dfb4dd04c74a7",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/docs/integration.md",
+      "sha256": "d860d6699c5fa82e3e21bd12f9f3c681e9f6fe14991f1669adf7882960e558be",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/docs/memory.md",
+      "sha256": "0e6ecaf01fb0d32c9d929f4e80b83c6de07bc11b2e92065b92a04ab3f07d0dc6",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/docs/bm.md",
+      "sha256": "8169be77f3202500c2d6e143c4ad189bce2612b017fd6a94db0ace17b883c689",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/configs/sram_ddr.yaml",
+      "sha256": "b81ce1b3f64fa81d28ae1bb23c48980ba15019f71b151972217345d9d7047bdb",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-memory/report.md",
+      "sha256": "4312bc22d80e11f2eb8f11e3c3702c8fe2e7c83dd102ea4897792971b9010bb6",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/reports/20260924-memory/sweep.csv",
+      "sha256": "351a3249aa7688e0cb8bb27f45d3dd7fc1c05de83d5bee5e309287803b9d2b37",
+      "access": "internal read-only"
+    },
+    {
       "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/models/npu_mesh/README.md",
       "sha256": "d0d7cc9167005dae077d6dfd2db168a58a0187e9f07a85ef31a71a0c7fd6ca93",
       "access": "internal read-only"
@@ -83,18 +133,78 @@
   },
   "assets": [
     {
-      "target": "assets/generated/cover-en-4x3.png",
+      "target": "assets/generated/architecture-en.png",
+      "sha256": "305730b2e9f725ceac1d90d27a0d199fff2ea10e9a9bf97befe13bb7daf35113",
+      "language": "en",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/architecture-tile-en-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/architecture-zh.png",
+      "sha256": "7397e9f39eca30738bb78db6d0fe6be5596ce4bb70cf39a8027f4b0feced1e78",
+      "language": "zh",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/architecture-tile-zh-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/cover-architecture-en.png",
+      "sha256": "466e249b84ba8bcd93e139f19f54cb115eaa63ba9b3cb6104d1ef33698fda625",
+      "language": "en",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/cover-architecture-en-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/cover-architecture-zh.png",
+      "sha256": "9d9ac5bd5f4967598e6047cdc64d0239a0e1ff31c7022e961599d117e2574538",
+      "language": "zh",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/cover-architecture-zh-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/cover-bandwidth-en.png",
       "sha256": "24bb1a7e3c18b8c3305e025d3625659e1f9c0ca745517f703171f03f381b567d",
       "language": "en",
       "purpose": "concept cover",
       "generator": "Codex built-in imagegen",
-      "prompt": "notes/cover-en-prompt.md",
+      "prompt": "notes/cover-bandwidth-en-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/cover-bandwidth-zh.png",
+      "sha256": "ff6d3277bed16dd6e1b0f139c281a3994f03c8940bc08e7c4e8b47165b5840ab",
+      "language": "zh",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/cover-bandwidth-zh-prompt.md",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "target": "assets/generated/cover-en-4x3.png",
+      "sha256": "466e249b84ba8bcd93e139f19f54cb115eaa63ba9b3cb6104d1ef33698fda625",
+      "language": "en",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "prompt": "notes/cover-architecture-en-prompt.md",
       "width": 1448,
       "height": 1086
     },
     {
       "target": "assets/generated/cover-en.png",
-      "sha256": "24bb1a7e3c18b8c3305e025d3625659e1f9c0ca745517f703171f03f381b567d",
+      "sha256": "466e249b84ba8bcd93e139f19f54cb115eaa63ba9b3cb6104d1ef33698fda625",
       "language": "en",
       "purpose": "concept cover",
       "generator": "Codex built-in imagegen",
@@ -104,7 +214,7 @@
     },
     {
       "target": "assets/generated/cover-zh.png",
-      "sha256": "ff6d3277bed16dd6e1b0f139c281a3994f03c8940bc08e7c4e8b47165b5840ab",
+      "sha256": "9d9ac5bd5f4967598e6047cdc64d0239a0e1ff31c7022e961599d117e2574538",
       "language": "zh",
       "purpose": "concept cover",
       "generator": "Codex built-in imagegen",

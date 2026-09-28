@@ -1,0 +1,10 @@
+# architecture-zh
+
+Final generated source: C:\Users\wangb\.codex\generated_images\01a0db57-6e0e-7dc1-957a-ec6b32c34f1d\exec-8ed46c6f-960e-41c8-80e4-52c2730457a4.png
+
+Final prompt / revision: Translate this exact English diagram into Simplified Chinese while preserving all modules, connections and spacing. Title "CPU 停了，监督不能一起停". Independent always-on timebase "独立常开监督时基". APB domain · pclk "APB 域 · pclk". Watchdog domain · wdt_clk "监督域 · wdt_clk". Software health checks "软件健康检查". APB interface / staging "APB 接口 / 配置暂存". Command record "命令记录". CDC mailbox "跨域邮箱". Stable payload · request "负载稳定 · 请求". Stable payload · acknowledge "负载稳定 · 完成确认". Command checks / config commit "命令检查 / 配置提交". Window and service checks "窗口与服务判定". Timing / fault escalation "计时 / 故障升级". Held request "保持型请求". System reset / safety manager "系统复位 / 安全管理器". Three cards "APB 写入完成 ≠ 喂狗完成", "接口复位 ≠ 清除监督故障", "最终期限到达，恢复不能撤销". Footer "概念示意：WDT 发出请求，系统管理器执行动作；监督时钟停振需独立时基检测". Use ONLY these labels, add no slogans, guarantees, extra explanations or bullets. No guarantee of system safety. Professional legible Chinese.
+
+
+2026-09-27. Codex built-in imagegen. Concept explanation, not measured hardware or a simulation screenshot. Destination: assets/generated/architecture-zh.png.
+
+Use case: scientific-educational. Chinese teaching infographic landscape4:3 white navy teal amber. Title "CPU 停了，监督不能一起停". Top main diagram two clearly separated clock domain panels. Left labelled "APB 域 · pclk": "软件健康检查"→"APB 接口 / 配置暂存"→"命令记录". Center between domains labelled "跨域邮箱" with request arrow right and completion arrow left, tiny concise note "负载保持稳定 · 请求 / 确认". Right larger panel "监督域 · wdt_clk": "命令检查 / 配置提交"→"窗口与服务判定"→"计时 / 故障升级". Independent clock icon entering right labelled "独立常开监督时基". Arrow from right fault block exits to separate external box "系统复位 / 安全管理器" label "保持型请求". Bottom three teaching cards: "APB 写入完成 ≠ 喂狗完成" "接口复位 ≠ 清除监督故障" "最终期限到达，恢复不能撤销". Footer "概念示意；WDT 输出请求，系统管理器执行动作；监督时钟停振需独立检测". No direct gated clock connection between domains no imaginary PPA. Professional clear architecture not fake schematic.

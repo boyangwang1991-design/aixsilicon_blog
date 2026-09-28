@@ -1,0 +1,87 @@
+{
+  "purpose": "Editable semantic specifications for regenerating conceptual teaching figures; not EDA evidence or vector artwork.",
+  "date": "2026-09-27",
+  "figures": [
+    {
+      "key": "01-requirement",
+      "question": {
+        "zh": "一句需求怎样变成可检查的实现？",
+        "en": "How does a requirement become a checkable implementation?"
+      },
+      "stages": [
+        {
+          "zh": "行为要求",
+          "en": "Define behavior"
+        },
+        {
+          "zh": "写使能设计",
+          "en": "Design write control"
+        },
+        {
+          "zh": "生成与连接",
+          "en": "Generate and connect"
+        },
+        {
+          "zh": "定向检查",
+          "en": "Check behavior"
+        }
+      ],
+      "flow": [
+        "requirement -> write control -> generation and connection -> directed check",
+        "check -> diagnose and revise -> write control"
+      ],
+      "invariants": [
+        "Locked state inhibits configuration writes.",
+        "SystemRDL generates CSR RTL; top-level control connects to CSR RTL.",
+        "Readback is compared with the original protected value.",
+        "No invented addresses, measurements or gates."
+      ]
+    },
+    {
+      "key": "02-collaboration",
+      "question": {
+        "zh": "人、AI、工具、方法和资产各自负责什么？",
+        "en": "How do engineers, AI, tools, methods and assets contribute?"
+      },
+      "edges": [
+        "Engineers -> Design basis",
+        "Engineers -> AI develops",
+        "Engineers -> Tools execute",
+        "Design basis -> AI develops",
+        "AI develops -> Tools execute",
+        "Tools execute -> AI develops [results and diagnostics]",
+        "Skills -> AI develops",
+        "Asset repositories -> AI develops",
+        "Optional ESL -> Design basis"
+      ],
+      "invariants": [
+        "Conceptual responsibilities, not proof of an integrated orchestrator.",
+        "Execution results come from actual tool runs.",
+        "Skills supply methods; repositories supply assets."
+      ]
+    },
+    {
+      "key": "03-independent-check",
+      "question": {
+        "zh": "读写共享错误映射为何仍能通过回环？",
+        "en": "Why can loopback pass when reads and writes share an incorrect mapping?"
+      },
+      "symbols": {
+        "A": "intended location, not written in this example",
+        "B": "wrong location where V is stored",
+        "V": "symbolic data"
+      },
+      "edges": [
+        "Write V -> B [incorrect mapping]",
+        "B -> Read V [same incorrect mapping]",
+        "Read V -> comparison V=V [loopback passes]",
+        "Independent expectation: V belongs at A -> observed A not written [location mismatch]"
+      ],
+      "invariants": [
+        "Both panels depict the same stored state.",
+        "The independent check is not a new write.",
+        "Symbols are pedagogical, not original bus addresses or timing."
+      ]
+    }
+  ]
+}

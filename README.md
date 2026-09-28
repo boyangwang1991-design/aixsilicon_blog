@@ -6,14 +6,17 @@
 
 ## 文章索引
 
-目前共有 **11 篇文章**，包括参考材料整理稿与基于工程证据撰写的新稿。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
+目前共有 **14 篇文章**，包括参考材料整理稿与基于工程证据撰写的新稿。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
 
-11 篇文章均提供中文与英文全文，以及对应语言的独立封面。封面保存在各篇 `assets/generated/cover-zh.png` 和 `cover-en.png`；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
+14 篇文章均提供中文与英文全文，以及对应语言的独立封面。封面保存在各篇 `assets/generated/cover-zh.png` 和 `cover-en.png`；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
 
 | 主题 | 中文版 | 中文状态 | English edition | 英文状态 |
 | --- | --- | --- | --- | --- |
 | IP / 工程交付 / AI | [为什么 AI 写 RTL 容易，做一个真正可交付的 IP 很难？](why-ai-rtl-is-not-deliverable-ip/README.md) | 图文齐备；待发布审阅 | [Why Is Generating RTL with AI Easier Than Delivering a Reusable IP?](why-ai-rtl-is-not-deliverable-ip/README.en.md) | 图文齐备；待发布审阅 |
-| ESL / NPU Mesh / QoS | [链路加宽了，为什么 Decode 反而更慢？一次 AI 辅助 NPU Mesh 架构探索](ai-assisted-npu-mesh-exploration/README.md) | 图文齐备；待发布审阅 | [A Wider Link, a Slower Decode Tail: AI-Assisted NPU Mesh Exploration](ai-assisted-npu-mesh-exploration/README.en.md) | 图文齐备；待发布审阅 |
+| IP / AI-Native / 研发方法 | [从 Spec 到 RTL：我正在尝试一种 AI-Native IP 研发流程](spec-to-rtl-ai-native-ip-workflow/README.md) | 图文齐备；待发布审阅 | [From Spec to RTL: Building an AI-Native IP Development Workflow](spec-to-rtl-ai-native-ip-workflow/README.en.md) | 图文齐备；待发布审阅 |
+| IP / GPIO / AI 辅助研发 | [用 AI 从头开始设计一款 GPIO](ai-assisted-gpio-development/README.md) | 图文齐备；待发布审阅 | [Designing a GPIO from Scratch with AI](ai-assisted-gpio-development/README.en.md) | 图文齐备；待发布审阅 |
+| IP / WDT / AI 辅助研发 | [用 AI 从头开始设计一款 WDT](ai-assisted-watchdog-development/README.md) | 图文齐备；待发布审阅 | [Designing a Watchdog from Scratch with AI](ai-assisted-watchdog-development/README.en.md) | 图文齐备；待发布审阅 |
+| AI / ESL / NPU Mesh | [AI 核里的数据怎样流动？用 AI 辅助 ESL 探索 Mesh 架构](ai-assisted-npu-mesh-exploration/README.md) | 图文齐备；待发布审阅 | [How Does Data Move Inside an AI Core? Exploring Mesh Architecture with AI-Assisted ESL](ai-assisted-npu-mesh-exploration/README.en.md) | 图文齐备；待发布审阅 |
 | CBB / 功能安全 / PPA | [谁来检查比较器？AI 辅助多样性比较器设计与 PPA 取舍](ai-assisted-diversity-comparator-design/README.md) | 图文齐备；待发布审阅 | [Who Checks the Comparator? AI-Assisted Diversity Comparator Design and PPA Trade-offs](ai-assisted-diversity-comparator-design/README.en.md) | 图文齐备；待发布审阅 |
 | CBB / PPA | [让 AI 带着综合结果改 RTL：一次 CBB 设计与 PPA 探索](ai-assisted-cbb-and-ppa-exploration/README.md) | 图文齐备；待发布审阅 | [Let Synthesis Guide AI-Assisted RTL Design: A CBB and PPA Exploration](ai-assisted-cbb-and-ppa-exploration/README.en.md) | 图文齐备；待发布审阅 |
 | ESL / NPU SRAM | [让 AI 先跑一轮架构实验：NPU SRAM 的 ESL 建模实践](ai-accelerated-esl-modeling/README.md) | 图文齐备；待发布审阅 | [Explore Architecture Before RTL: AI-Assisted ESL Modeling of NPU SRAM](ai-accelerated-esl-modeling/README.en.md) | 图文齐备；待发布审阅 |
@@ -24,7 +27,7 @@
 | VIP / AXI4 | [AI 辅助开发 AXI4 VIP：让验证代码成为可复用的工程资产](ai-assisted-vip-development-and-reuse/README.md) | 图文齐备；待发布审阅 | [AI-Assisted AXI4 VIP Development: Making Verification Code Reusable](ai-assisted-vip-development-and-reuse/README.en.md) | 图文齐备；待发布审阅 |
 | SoC Studio | [SoC Studio：让芯片设计，走出文件的孤岛](soc-studio-from-diagram-to-design/README.md) | 草稿；待补 5 组真实截图 | [SoC Studio: Bringing the Whole Chip Design Together](soc-studio-from-diagram-to-design/README.en.md) | 草稿；待补 5 组真实截图 |
 
-英文封面另备 [4:3 版本预览与下载](notes/covers-en-4x3.md)，文件名统一为各篇 `assets/generated/cover-en-4x3.png`。
+既有 12 篇文章的英文封面另备 [4:3 版本预览与下载](notes/covers-en-4x3.md)，文件名统一为各篇 `assets/generated/cover-en-4x3.png`。
 
 ## 目录约定
 

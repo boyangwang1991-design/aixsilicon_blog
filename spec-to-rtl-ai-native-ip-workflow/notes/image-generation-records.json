@@ -1,0 +1,122 @@
+[
+  {
+    "key": "cover-zh",
+    "language": "zh",
+    "revision": 1,
+    "selected": true,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/cover-prompt.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-8a746e34-f452-4363-99bd-2610b752f2b4.png",
+    "input_file": null
+  },
+  {
+    "key": "cover-en",
+    "language": "en",
+    "revision": 1,
+    "selected": true,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/cover-prompt.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-f2a1126d-261e-4b4e-96d9-75893ddd819a.png",
+    "input_file": null
+  },
+  {
+    "key": "01-requirement-zh",
+    "language": "zh",
+    "revision": 1,
+    "selected": false,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-236e1091-8062-48ab-b0d7-d3572640e8f5.png",
+    "input_file": null
+  },
+  {
+    "key": "01-requirement-en",
+    "language": "en",
+    "revision": 1,
+    "selected": false,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-10b16a9c-29aa-4fa8-941e-d910ede01d9d.png",
+    "input_file": null
+  },
+  {
+    "key": "01-requirement-zh",
+    "language": "zh",
+    "revision": 2,
+    "selected": true,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-04e03206-a102-4617-b9b2-b27504d621d7.png",
+    "input_file": "C:/Users/wangb/.codex/generated_images/01a0e1e9-5658-70b2-8753-bbbaf425eff0/exec-236e1091-8062-48ab-b0d7-d3572640e8f5.png"
+  },
+  {
+    "key": "01-requirement-en",
+    "language": "en",
+    "revision": 2,
+    "selected": true,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-a8c2115f-167e-4db8-afb5-c80acd7b1224.png",
+    "input_file": "C:/Users/wangb/.codex/generated_images/01a0e1e9-5658-70b2-8753-bbbaf425eff0/exec-10b16a9c-29aa-4fa8-941e-d910ede01d9d.png"
+  },
+  {
+    "key": "02-collaboration-zh",
+    "language": "zh",
+    "revision": 1,
+    "selected": false,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-03d0af58-6186-4f23-ae7d-c879eb7ab506.png",
+    "input_file": null
+  },
+  {
+    "key": "02-collaboration-en",
+    "language": "en",
+    "revision": 1,
+    "selected": false,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-b4b2c5bf-86a8-4d66-913c-e1a6de0df38b.png",
+    "input_file": null
+  },
+  {
+    "key": "02-collaboration-zh",
+    "language": "zh",
+    "revision": 2,
+    "selected": true,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-bd36e22d-941a-44f9-8456-1d82409a54cf.png",
+    "input_file": "C:/Users/wangb/.codex/generated_images/01a0e1e9-5658-70b2-8753-bbbaf425eff0/exec-03d0af58-6186-4f23-ae7d-c879eb7ab506.png"
+  },
+  {
+    "key": "02-collaboration-en",
+    "language": "en",
+    "revision": 2,
+    "selected": true,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-f7aa5135-f450-4776-bf54-82941049b774.png",
+    "input_file": "C:/Users/wangb/.codex/generated_images/01a0e1e9-5658-70b2-8753-bbbaf425eff0/exec-b4b2c5bf-86a8-4d66-913c-e1a6de0df38b.png"
+  },
+  {
+    "key": "03-independent-check-zh",
+    "language": "zh",
+    "revision": 1,
+    "selected": true,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-276b9b4f-294f-4693-a100-1bcdc22fc99a.png",
+    "input_file": null
+  },
+  {
+    "key": "03-independent-check-en",
+    "language": "en",
+    "revision": 1,
+    "selected": true,
+    "tool": "Codex built-in imagegen",
+    "prompt_record": "notes/illustration-prompts.md",
+    "output_file": "C:\\Users\\wangb\\.codex\\generated_images\\01a0e1e9-5658-70b2-8753-bbbaf425eff0\\exec-ca11779d-1728-4b6d-81ec-278ba196e6c6.png",
+    "input_file": null
+  }
+]

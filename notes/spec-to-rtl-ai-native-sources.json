@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-27",
+  "purpose": "Internal source snapshot for article planning, not public citations or fresh EDA evidence",
+  "files": [
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/SKILL.md",
+      "sha256": "6fe891646f74bd42b57387de791ce25b484e7510bc8cbc8504c5263b9fab9312"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/07-rtl-code-generator/SKILL.md",
+      "sha256": "9ddcb39b912dc0dd2e97aa420f5c6c99e2ad4d938b0707230858c2995d2c4306"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/19-param-space-verification/SKILL.md",
+      "sha256": "f7755b62c257c1bfbb40c926b5f5db1ea2fc527067167d86bfdece01c244eb5d"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/skills/20-ppa-optimization/SKILL.md",
+      "sha256": "fa0177e79707f9ab97c43f57a6d25b8b2a6b6a43c77eb95bfca2463729fa8615"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/ip-development-suite/references/gate-evidence-retention.md",
+      "sha256": "2673c4c6775c0d56831e60a02bebeefd0b1111bcb7f62b6014d3a3dc7700ea8c"
+    },
+    {
+      "source": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/vip-development-suite/skills/vip-test/SKILL.md",
+      "sha256": "3b873abf1630a8e10b1375e56bf889740a2dcb8a65b1342c6fa86dadb736594f"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/docs/lrs/03b_transaction.md",
+      "sha256": "dcab3232011e9efb67f7bcb163ad6250d91c335cf8250099f2b0172713a380eb"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/quality/review_findings.yaml",
+      "sha256": "ffaf09809dba297b0f4b6336af31b1d893ec7de56a7d251234a52fb631b4e8b4"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/reports/regression/regression_summary.md",
+      "sha256": "eceb47591a7784fd6cce373e2d9eb537ca7548b0a793b7997550e4abeacd4966"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/regs/axi_mpu.rdl",
+      "sha256": "f7cac5296e922c4b5ffa87757e5106ab22167c6fe43188bccb5c7c2cbb286dde"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/rtl/axi_mpu.sv",
+      "sha256": "710921e65968a6139fb883b036dc04c38e2fd967645e95b37634a651c7fb0bb1"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/firewall/memory_protection_controller/verification/tc/tc_config_lock.sv",
+      "sha256": "c006b56070c097828822693435f4ebdc4335d955c8ca21890b429103f128f509"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/aixsilicon_vip_repo-main/vip/amba/axi4/reports/run_log.md",
+      "sha256": "27cb85bb0c33993e90619aaf502b28fcf5f162b6753e41439a875f90665e955b"
+    },
+    {
+      "source": "reference/aixsilicon_cbb_repo-main/aixsilicon_cbb_repo-main/README.md",
+      "sha256": "59ca52df2bdf6f19dfb5a5e713dce2937f63ea5891e69f61fe5b22142e6e6de6"
+    },
+    {
+      "source": "reference/aixsilicon_esl_repo-main/aixsilicon_esl_repo-main/README.md",
+      "sha256": "ee6b44be814f5dd191466349f245226b8edaf3c0425f1ba0c861922c7d468bec"
+    },
+    {
+      "source": "reference/aixsilicon_socstudio-main/aixsilicon_socstudio-main/docs/planning/acceptance-ledger.md",
+      "sha256": "aa44a9186a42c284b15880ba5fdf4349714626122e0a8365a051b3d10562035b"
+    },
+    {
+      "source": "reference/wenwang-edgenpu-main/wenwang-edgenpu-main/README.md",
+      "sha256": "f66774c4014c88c76ce64eb1d17d7c1d38a95c79b56bc8018595bdce9f4cd8e9"
+    }
+  ],
+  "package": {
+    "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+    "sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+    "entries": [
+      {
+        "entry": "ai-pqc-rtl.md",
+        "bytes": 44435,
+        "sha256": "4c8cd951c98358cdc20740e5c54f622611fe8efcc5b6a0a47540f4c1ef1ed951",
+        "inspection": "entry inventory and hash only; content not extracted or analyzed this turn"
+      },
+      {
+        "entry": "ai-pqc-rtl.html",
+        "bytes": 15196984,
+        "sha256": "f5820266e003f2a74afe473374391bd888ecefb7f8527d7c53b5b0961ff83b02",
+        "inspection": "entry inventory and hash only; content not extracted or analyzed this turn"
+      }
+    ]
+  }
+}

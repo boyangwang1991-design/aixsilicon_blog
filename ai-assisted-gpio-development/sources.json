@@ -1,0 +1,157 @@
+{
+  "article": "ai-assisted-gpio-development",
+  "date": "2026-09-27",
+  "kind": "Original bilingual article based on archived candidate-design evidence; no upstream runs performed",
+  "files": [],
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/README.md",
+      "sha256": "c65fb1641bcfb140a1074a21920438980cbaa4dd2b7063834ed0a1666dcef057",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/reports/quality/full_process.md",
+      "sha256": "64bb52e8038c68e5c826f6890efcc28330dfe41355228b0df9959a923898da85",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/reports/ppa-report.md",
+      "sha256": "a70553261d1c4285f3f98cf7b519cf5d27ef0dd90a808a16fd511d2e069d64db",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/docs/user_manual/gpio_user_guide.md",
+      "sha256": "b55010af09c91429481e34b4d474b951334f66b818f1a0822c5c04ead72d3b26",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/docs/integration/gpio_integration_guide.md",
+      "sha256": "99d1d17277af8c4a21ab10447ed8ab9999230079e6983be9db9657fbbc6e3bb0",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/docs/reuse_plan.md",
+      "sha256": "415785b89e3ed9867ae3f9f19cf7232643baa766d0efcdab1ac0e9645e742562",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/docs/lld/03_gpio_apb_if.md",
+      "sha256": "77f47d0e2ce98b6ac55a25503c1cd1acd4c868c7ce9a06a3d959f1aed2882071",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/docs/hld/02_policy_reconfig.md",
+      "sha256": "3b3c481f2b93c0b3a79c7e5a8990f92791650bedb6c251ef8ee7ea44b60fbe6d",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/docs/hld/02_policy_fifo_concurrent.md",
+      "sha256": "fafa48875ebd8179772430e048fc9eeb39eb06ab1ffdded7e7c40232afa9d8e4",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/rtl/gpio_output.sv",
+      "sha256": "6010ecb13e88eb779dc16a84e60b9ef9e48cf8b8763d38fb3746e52772a727f5",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/rtl/gpio_input.sv",
+      "sha256": "16ba407e14681dbb68154f9a290e7e351ac07afb395325a918d8d4dbc3e99d6b",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/rtl/gpio_irq.sv",
+      "sha256": "01d96f140262d58b530348830274a0789d1cbe9016977d48f403609f611f2556",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/rtl/gpio_event_fifo.sv",
+      "sha256": "791832b98dc7e7675bae96a53c01fa114562660fe536ec315f4e40f554b9cd7c",
+      "access": "internal read-only"
+    },
+    {
+      "source": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/io/gpio/rtl/gpio_aon_mailbox.sv",
+      "sha256": "cca9516e4ecf017b548c059407036feb71dc9ebfa46b655d440cd4bc02fd50b9",
+      "access": "internal read-only"
+    }
+  ],
+  "assets": [
+    {
+      "target": "assets/generated/cover-en-4x3.png",
+      "language": "en",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "9f895fde736db792e52696bae3c992e9d27c23f9f56e827c9b5df86960018236",
+      "prompt": "notes/cover-en-prompt.md",
+      "prompt_sha256": "a88d296785f94d70bb332c6281c9e1b849ca8ee8aa465ba10ff2ec8430ab5bbc"
+    },
+    {
+      "target": "assets/generated/cover-en.png",
+      "language": "en",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "9f895fde736db792e52696bae3c992e9d27c23f9f56e827c9b5df86960018236",
+      "prompt": "notes/cover-en-prompt.md",
+      "prompt_sha256": "a88d296785f94d70bb332c6281c9e1b849ca8ee8aa465ba10ff2ec8430ab5bbc"
+    },
+    {
+      "target": "assets/generated/cover-zh.png",
+      "language": "zh",
+      "purpose": "concept cover",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "3a617452a24d814626ca3924992fbff153490cb12d48a2a7667afb7566344efe",
+      "prompt": "notes/cover-zh-prompt.md",
+      "prompt_sha256": "47e1b370187079e4ec64f01717ec74aea7319f9ae9dd13a4ee46fd217fe22263"
+    },
+    {
+      "target": "assets/generated/input-en.png",
+      "language": "en",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "d7264c6bbc2738319a45e9d6d3c413473c30b4b3973edf9d62aa24b477cb3917",
+      "prompt": "notes/input-en-prompt.md",
+      "prompt_sha256": "ea9b728c23d21d162cb2a96047079367f3cb00215f534522fca483a132f4cc70"
+    },
+    {
+      "target": "assets/generated/input-zh.png",
+      "language": "zh",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "0149f13f4ea20b8b32f9908e25fd544ecc9a2bc365f5059b8dfe977cbfc3c5aa",
+      "prompt": "notes/input-zh-prompt.md",
+      "prompt_sha256": "33b7891ca5e343672d1f552ff2be63c5ed3833a4ebf1ea0aeb7a4922bbaba800"
+    },
+    {
+      "target": "assets/generated/output-en.png",
+      "language": "en",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "1572b49bfc7f2bbad76d1f094f7eee44f4bb3007e15a6e56e42f9e761498cd48",
+      "prompt": "notes/output-en-prompt.md",
+      "prompt_sha256": "7dac42534edf6ff0ae8ac736cc40d02b49c292e618b9ec39cab749d527c84d57"
+    },
+    {
+      "target": "assets/generated/output-zh.png",
+      "language": "zh",
+      "purpose": "concept explanation",
+      "generator": "Codex built-in imagegen",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "a92f53d6b9ba6b78d50a22390b261a5f23f83ab699a0503c96c3ec110ddbc5fe",
+      "prompt": "notes/output-zh-prompt.md",
+      "prompt_sha256": "afb5dc79565ccffacccaee7ec507ee2265f9eaed5483371d2f71cdccf22c7864"
+    }
+  ]
+}
