@@ -6,12 +6,13 @@
 
 ## 文章索引
 
-目前共有 **14 篇文章**，包括参考材料整理稿与基于工程证据撰写的新稿。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
+目前索引包含 **14 篇文章和 1 个 Gemma 4 系列中文改稿**。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
 
-14 篇文章均提供中文与英文全文，以及对应语言的独立封面。封面保存在各篇 `assets/generated/cover-zh.png` 和 `cover-en.png`；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
+原有 14 篇文章均提供中文与英文全文，以及对应语言的独立封面。Gemma 4 系列已有 18 章中文稿和两张局部 torchview 图；第 01、02 期各有封面及两张讲解图，第 03 期已有封面和双用途讲解图，其余概念图与英文版待补。已有封面保存在各篇 `assets/generated/` 中；英文讲解图分别保存，原本已使用英文的图可共用。封面采用概念插画，具体机制与工程证据见正文。
 
 | 主题 | 中文版 | 中文状态 | English edition | 英文状态 |
 | --- | --- | --- | --- | --- |
+| Gemma 4 / 端侧芯片 / 系列中文稿 | [Gemma 4 从算法到端侧芯片](gemma4-on-chip-overview/README.md) | 18 章中文稿；两张 torchview 图；第 01–03 期封面和讲解图已配，其余图待补 | 待补 | 待补 |
 | IP / 工程交付 / AI | [为什么 AI 写 RTL 容易，做一个真正可交付的 IP 很难？](why-ai-rtl-is-not-deliverable-ip/README.md) | 图文齐备；待发布审阅 | [Why Is Generating RTL with AI Easier Than Delivering a Reusable IP?](why-ai-rtl-is-not-deliverable-ip/README.en.md) | 图文齐备；待发布审阅 |
 | IP / AI-Native / 研发方法 | [从 Spec 到 RTL：我正在尝试一种 AI-Native IP 研发流程](spec-to-rtl-ai-native-ip-workflow/README.md) | 图文齐备；待发布审阅 | [From Spec to RTL: Building an AI-Native IP Development Workflow](spec-to-rtl-ai-native-ip-workflow/README.en.md) | 图文齐备；待发布审阅 |
 | IP / GPIO / AI 辅助研发 | [用 AI 从头开始设计一款 GPIO](ai-assisted-gpio-development/README.md) | 图文齐备；待发布审阅 | [Designing a GPIO from Scratch with AI](ai-assisted-gpio-development/README.en.md) | 图文齐备；待发布审阅 |

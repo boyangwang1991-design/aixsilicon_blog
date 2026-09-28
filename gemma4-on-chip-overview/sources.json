@@ -1,0 +1,133 @@
+{
+  "article": "gemma4-on-chip-overview",
+  "date": "2026-09-28",
+  "files": [],
+  "generated_assets": [
+    {
+      "path": "assets/diagrams/mlp.png",
+      "sha256": "8491c796d2bbecc09332e6495015ea55a80f9e8c7a83444724ad01efef0b2ebb",
+      "language": "zh",
+      "purpose": "第05期第0层门控 MLP",
+      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+    },
+    {
+      "path": "assets/diagrams/mlp.svg",
+      "sha256": "7ea47b14abacf1c0a50e13119f40633b417b4c6932062e498661b412b39bfe74",
+      "language": "zh",
+      "purpose": "第05期第0层门控 MLP",
+      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+    },
+    {
+      "path": "assets/diagrams/mlp.dot",
+      "sha256": "53a8bd39c06c104c2fc463f7e1cc064d88e4ba3a7817004322681d13dba0af28",
+      "language": "zh",
+      "purpose": "第05期第0层门控 MLP",
+      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+    },
+    {
+      "path": "assets/diagrams/local_qkv.png",
+      "sha256": "9faac9db621cf1df61afaebe610fe1913319a58f1a7793dbc0e402d74cdb5afa",
+      "language": "zh",
+      "purpose": "第06期局部层 Q/K/V 投影与按头重排",
+      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+    },
+    {
+      "path": "assets/diagrams/local_qkv.svg",
+      "sha256": "50edda1ea005bc595b32fbd9e7555d4c4288ac940cfc4d5542d85193dc0b794b",
+      "language": "zh",
+      "purpose": "第06期局部层 Q/K/V 投影与按头重排",
+      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+    },
+    {
+      "path": "assets/diagrams/local_qkv.dot",
+      "sha256": "f66041b289f1d4a67a537145ab76f11f7643a5ff2cc20b1d77a17db0765b22bc",
+      "language": "zh",
+      "purpose": "第06期局部层 Q/K/V 投影与按头重排",
+      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+    },
+    {
+      "sha256": "b78fe1130b2e09080ad5b5de75e2b5374b10d02d0d6271ea6be50e7ece300d49",
+      "purpose": "第01期独立封面；多模态输入到逐 token 文本生成",
+      "generation": "Codex built-in imagegen; concept illustration; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/cover-zh.png",
+      "language": "zh"
+    },
+    {
+      "sha256": "6d5150b64d5737182bb6aaf912ac44cf9e73bcb63f4004395d5f04c7e5450a79",
+      "purpose": "第01期文字、图片、音频输入全景概念图",
+      "generation": "Codex built-in imagegen; concept diagram; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/multimodal-overview-zh.png",
+      "language": "zh"
+    },
+    {
+      "sha256": "b0140b02bd8bb442d3a7144e06ff68e528cac33647fe748bc71ec89345235885",
+      "purpose": "第01期 Prefill/Decode 时间关系概念图",
+      "generation": "Codex built-in imagegen; concept diagram; prompt in notes/cover-prompt.md",
+      "path": "assets/generated/prefill-decode-zh.png",
+      "language": "zh"
+    },
+    {
+      "purpose": "第02期独立封面；分词与聊天模板概念插画",
+      "sha256": "f12ee62a1d254467dfe87bee2a55365fc4232fd19e4d43c934706be7a29e1415",
+      "language": "zh",
+      "path": "assets/generated/cover-02-zh.png",
+      "generation": "Codex built-in imagegen; prompt in notes/02-image-prompts.md"
+    },
+    {
+      "purpose": "第02期官方 Tokenizer 原始文本六段切分教学图源",
+      "sha256": "d8f3e12ad5eae4629e448271506f30815f94c89381b5a6abd2580a3b80e9b752",
+      "language": "zh",
+      "path": "assets/generated/token-split-zh.svg",
+      "generation": "deterministic SVG from official tokenizer output; assets/diagrams/generate-tokenizer-figures.mjs"
+    },
+    {
+      "purpose": "第02期官方 Tokenizer 原始文本六段切分讲解图",
+      "sha256": "db749584fb3a03699511faf4c7cc0b15324a2a00c41b62f1614a87d5e85f8beb",
+      "language": "zh",
+      "path": "assets/generated/token-split-zh.png",
+      "generation": "rendered from editable SVG with sharp"
+    },
+    {
+      "purpose": "第02期聊天模板 15 个位置教学图源",
+      "sha256": "1bf1ddff5acdbdec2189d563b50d23664cd29fa070dd9c561d7c22a41b780395",
+      "language": "zh",
+      "path": "assets/generated/chat-template-zh.svg",
+      "generation": "deterministic SVG from official tokenizer output; assets/diagrams/generate-tokenizer-figures.mjs"
+    },
+    {
+      "purpose": "第02期聊天模板 15 个位置讲解图",
+      "sha256": "47e91a89dd0074452ba3c4e86c39f7b45a3b876d9d91e5a03a74ccb58b789de3",
+      "language": "zh",
+      "path": "assets/generated/chat-template-zh.png",
+      "generation": "rendered from editable SVG with sharp"
+    },
+    {
+      "generation": "Codex built-in imagegen; prompt in notes/03-image-prompts.md",
+      "path": "assets/generated/cover-03-zh.png",
+      "purpose": "第03期独立封面；主 Embedding 索引和输出权重绑定概念",
+      "sha256": "1b832814a0173d82bf8d6425b3d0c44db1597f445eaa6aec7903a4f16a80a292",
+      "language": "zh"
+    },
+    {
+      "generation": "Codex built-in imagegen; prompt in notes/03-image-prompts.md",
+      "path": "assets/generated/embedding-shared-table-zh.png",
+      "purpose": "第03期主 Embedding 表输入查行与输出候选打分机制图",
+      "sha256": "d369e167f58211a45634018f02424a18608b9c38b70a3db220e4d6d7eb461f2a",
+      "language": "zh"
+    }
+  ],
+  "public_sources": [
+    {
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "purpose": "model family and parameter counts"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E4B-it/tree/ee0ef6023621cff504d758262d4e04895a5af4a2",
+      "purpose": "pinned E4B tokenizer/config"
+    },
+    {
+      "url": "https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4",
+      "purpose": "Gemma 4 implementation traced for diagrams"
+    }
+  ]
+}
