@@ -20,7 +20,7 @@
 | 09 | [PLE：一枚 Token 怎样给每层不同的输入](09-ple.md) | 中文精简改稿；封面、完整算法路径文生图与 PLE 局部 torchview 已配 |
 | 10 | [Prefill 与 Decode：同一模型的两种计算形态](10-prefill-decode.md) | 中文改稿；封面与讲解图已配 |
 | 11 | [KV Cache：保存什么，容量如何增长](11-kv-cache.md) | 中文改稿；封面、跨生成步骤复用图与单步读写图已配 |
-| 12 | [E4B 权重容量：为什么不能按有效参数估算](12-weights-ple-quantization.md) | 中文改稿；封面与讲解图已配 |
+| 12 | [E4B 权重与量化：从参数容量到芯片带宽](12-weights-ple-quantization.md) | 中文改稿；封面与两张讲解图已配 |
 | 13 | [分块 Attention：Online Softmax 如何减少中间访存](13-attention-acceleration.md) | 中文改稿；封面与讲解图已配 |
 | 14 | [数据搬运与 Roofline：权重复用如何改变瓶颈](14-compute-and-data-movement.md) | 中文改稿；封面与讲解图已配 |
 | 15 | [视觉输入：照片如何变成软 Token](15-vision-path.md) | 中文改稿；封面与两张原创 PPT 风格讲解图已配；英文暂缓 |

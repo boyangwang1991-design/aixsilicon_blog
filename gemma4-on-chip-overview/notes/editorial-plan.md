@@ -33,7 +33,7 @@
 | 09 | [PLE：一枚 Token 怎样给每层不同的输入](../09-ple.md) | `身份查表 + 输入投影 → 逐层切片 → 当前状态门控注入` | 每层专属输入、查表容量与存储代价 | 中文精简改稿；一张完整算法路径文生图已配 |
 | 10 | [Prefill 与 Decode：同一模型的两种计算形态](../10-prefill-decode.md) | `整段提示词 → 逐 token 生成` | 两种负载与延迟 | 中文内部改稿 |
 | 11 | [KV Cache：保存什么，容量如何增长](../11-kv-cache.md) | `新 K/V → 缓存 → 下一步读取` | KV 生命周期与容量 | 中文内部改稿 |
-| 12 | [E4B 权重容量：为什么不能按有效参数估算](../12-weights-ple-quantization.md) | `参数/位宽 → 容量预算` | DRAM/SRAM 与量化 | 中文内部改稿 |
+| 12 | [E4B 权重与量化：从参数容量到芯片带宽](../12-weights-ple-quantization.md) | `总参数/位宽 → 常驻容量 → 外存流量` | 权重量化与硬件数据流 | 中文内部改稿 |
 | 13 | [分块 Attention：Online Softmax 如何减少中间访存](../13-attention-acceleration.md) | `分块 Q/K/V → 在线 softmax → 输出` | Attention 中间 IO | 中文内部改稿 |
 | 14 | [数据搬运与 Roofline：权重复用如何改变瓶颈](../14-compute-and-data-movement.md) | `算子形状 → 运算量/字节量` | 带宽与 Roofline | 中文内部改稿 |
 | 15 | [视觉输入：照片如何变成软 Token](../15-vision-path.md) | `图像 → 特征 → 软 token` | 视觉工作区与上下文 | 中文内部改稿 |

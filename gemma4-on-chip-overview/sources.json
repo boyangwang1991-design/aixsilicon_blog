@@ -4,6 +4,13 @@
   "files": [],
   "generated_assets": [
     {
+      "path": "assets/generated/quantization-dataflow-12-zh.png",
+      "sha256": "3fdaf0d6ca44e05b7a7605e85b3b2f97986452daadf11be64ea81524329862df",
+      "language": "zh",
+      "purpose": "第12期讲解图：对比低比特权重保持打包到片上解包、与先展开为 BF16 存回外存两条路径的容量和带宽影响",
+      "generation": "Codex built-in imagegen; full prompt, assumptions and visual review in notes/12-quantization-image-prompt.md"
+    },
+    {
       "path": "assets/generated/prefill-decode-arithmetic-intensity-zh.png",
       "sha256": "66b36843ff7feab7b976c5d35b7754911e0b56733dbdc5ecf28f824e6e6f5915",
       "language": "zh",
