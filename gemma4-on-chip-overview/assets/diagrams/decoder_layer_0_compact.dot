@@ -1,0 +1,61 @@
+strict digraph decoder_layer_0_compact {
+  graph [ordering=in rankdir=TB pad="0.25" nodesep="0.2" ranksep="0.26"]
+  node [shape=box style="rounded,filled" fontname="Microsoft YaHei" fontsize=16 color="#b8cbd2" penwidth=1.4 margin="0.13,0.09"]
+  edge [color="#557080" penwidth=1.7 arrowsize=0.8]
+  0 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>X0 · 输入</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#fff8dc"]
+  1 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>本层 PLE</B></TD><TD WIDTH="30"></TD><TD>[1,2,256]</TD></TR></TABLE> > fillcolor="#fff8dc"]
+  2 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>RMSNorm</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#dff1f1"]
+  3 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>Gemma4TextAttention</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]  +  权重 [1,8,2,2]</TD></TR></TABLE> > fillcolor="#dff1f1"]
+  4 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>RMSNorm</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#dff1f1"]
+  5 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>add · X1</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#eaf2f8"]
+  6 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>RMSNorm</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#eee7fa"]
+  7 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>Gemma4TextMLP</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#eee7fa"]
+  8 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>RMSNorm</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#eee7fa"]
+  9 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>add · X2</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#eaf2f8"]
+  10 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>Linear · 门控</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560] → [1,2,256]</TD></TR></TABLE> > fillcolor="#fff0df"]
+  11 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>GELUTanh</B></TD><TD WIDTH="30"></TD><TD>[1,2,256]</TD></TR></TABLE> > fillcolor="#fff0df"]
+  12 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>mul · 门控 × PLE</B></TD><TD WIDTH="30"></TD><TD>[1,2,256]</TD></TR></TABLE> > fillcolor="#fff0df"]
+  13 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>Linear · 回投影</B></TD><TD WIDTH="30"></TD><TD>[1,2,256] → [1,2,2560]</TD></TR></TABLE> > fillcolor="#fff0df"]
+  14 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>RMSNorm</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#fff0df"]
+  15 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>add</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#eaf2f8"]
+  16 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>mul_ · layer_scalar</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#eaf2f8"]
+  17 [label=< <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="3"><TR><TD><B>X3 · 输出</B></TD><TD WIDTH="30"></TD><TD>[1,2,2560]</TD></TR></TABLE> > fillcolor="#fff8dc"]
+  subgraph cluster_attention {
+    label="01 ATTENTION\l从可见位置取信息\l"
+    labelloc=t labeljust=l fontname="Microsoft YaHei" fontsize=17 fontcolor="#176877"
+    color="#7bb8c0" fillcolor="#f1fafb" style="rounded,filled" penwidth=1.8 margin=18
+    2; 3; 4; 5
+  }
+  subgraph cluster_mlp {
+    label="02 MLP\l加工当前位置的特征\l"
+    labelloc=t labeljust=l fontname="Microsoft YaHei" fontsize=17 fontcolor="#604b8f"
+    color="#ad9bcd" fillcolor="#f7f3fc" style="rounded,filled" penwidth=1.8 margin=18
+    6; 7; 8; 9
+  }
+  subgraph cluster_ple {
+    label="03 PLE\l接入本层逐层输入\l"
+    labelloc=t labeljust=l fontname="Microsoft YaHei" fontsize=17 fontcolor="#a25f22"
+    color="#d5aa7e" fillcolor="#fff9f1" style="rounded,filled" penwidth=1.8 margin=18
+    1; 10; 11; 12; 13; 14; 15; 16
+  }
+  0 -> 2
+  0 -> 5 [label="残差直通" fontname="Microsoft YaHei" fontsize=12 fontcolor="#6b8390" color="#91a8b3"]
+  1 -> 12
+  2 -> 3
+  3 -> 4
+  4 -> 5
+  5 -> 6
+  5 -> 9 [label="残差直通" fontname="Microsoft YaHei" fontsize=12 fontcolor="#6b8390" color="#91a8b3"]
+  6 -> 7
+  7 -> 8
+  8 -> 9
+  9 -> 10
+  9 -> 15 [label="残差直通" fontname="Microsoft YaHei" fontsize=12 fontcolor="#6b8390" color="#91a8b3"]
+  10 -> 11
+  11 -> 12
+  12 -> 13
+  13 -> 14
+  14 -> 15
+  15 -> 16
+  16 -> 17
+}

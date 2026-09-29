@@ -1,0 +1,67 @@
+strict digraph decoder_attention_local {
+    graph [ordering=in rankdir=TB pad="0.28" nodesep="0.36" ranksep="0.5"]
+    node [align=left fontname="Arial" fontsize=16 height=0.2 margin=0 shape=plaintext style=filled]
+    edge [color="#476171" penwidth=1.8]
+    0 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="9">
+                        <TR><TD>X0 input-tensor</TD><TD>(1, 2, 2560)</TD></TR>
+                    </TABLE>> fillcolor=lightyellow]
+    2 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="9">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4RMSNorm</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 2, 2560) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 2, 2560) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+    3 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="9">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4TextAttention</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 2, 2560) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 2, 2560), (1, 8, 2, 2) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+    4 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="9">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4RMSNorm</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 2, 2560) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 2, 2560) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+    5 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="9">
+                    <TR>
+                        <TD ROWSPAN="2">add</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">2 x (1, 2, 2560) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 2, 2560) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+    0 -> 2
+    0 -> 5
+    2 -> 3
+    3 -> 4
+    4 -> 5
+  }

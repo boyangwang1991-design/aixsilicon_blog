@@ -45,7 +45,7 @@ Use case: scientific-educational. Asset type: final Chinese technical explainer 
 | 04 | `assets/generated/cover-decoder-04-zh.png` | Decoder 一层的三次更新 | Attention 取上下文、MLP 加工特征、PLE 从侧支路补入逐层信息；不要将 PLE 画在 Embedding 与 Decoder 之间。 |
 | 06 | `assets/generated/cover-06-zh.png` | Q、K、V 如何找到关联 | 一个当前位置向可见历史发出查询，Q/K 决定关联、V 携带内容。 |
 | 07 | `assets/generated/cover-07-zh.png` | 位置怎样改变匹配 | 二维坐标中的 Q/K 按位置旋转并形成相对角度；V 不旋转。 |
-| 08 | `assets/generated/cover-08-zh.png` | 五层局部，一层全局 | 五段近处窗口后接一段全局视野，表达混合注意力节奏。 |
+| 08 | `assets/generated/cover-08-v2-zh.png` | 五层局部，一层全局 | 同一条 token 历史时间线上，五层只连接近处位置，第六层连接完整可见历史；旧版 `cover-08-zh.png` 保留供编辑追溯。完整提示词和核对记录见 [第08期封面记录](08-cover-imagegen.md)。 |
 | 09 | `assets/generated/cover-09-zh.png` | PLE：每层的一份输入 | 一枚 token 的身份从参数表取出不同分层向量，作为 decoder 侧支路输入。 |
 | 10 | `assets/generated/cover-10-zh.png` | Prefill 与 Decode | 已知提示词成批处理，回答逐 token 接续生成；两阶段使用同一模型。 |
 | 11 | `assets/generated/cover-11-zh.png` | KV Cache 的增长 | K/V 历史状态随生成延续；局部窗口有界，全局历史可增长。 |

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1220" role="img" aria-labelledby="title desc">
+  <title id="title">一个查询头如何读取可见历史</title>
+  <desc id="desc">当前 Q 与可见 K 逐一匹配，经 mask 和 softmax 得到位置权重，再用这些权重汇聚对应 V。八个查询头各自完成这一流程，最后拼接并投影。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#517083"/>
+    </marker>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; fill:#183446; }
+      .title { font-size:40px; font-weight:700; }
+      .head { font-size:31px; font-weight:700; }
+      .body { font-size:27px; }
+      .small { font-size:23px; fill:#496678; }
+      .math { font-size:31px; font-weight:700; }
+      .card { fill:#ffffff; stroke:#cadbe5; stroke-width:2; }
+      .arrow { stroke:#517083; stroke-width:4; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1000" height="1220" fill="#f5f9fb"/>
+  <text x="50" y="72" class="title">一个查询头怎样读取上下文？</text>
+  <text x="50" y="113" class="small">以当前位置 t 为例；每个查询头各走一遍下列流程</text>
+
+  <rect x="46" y="145" width="908" height="210" rx="20" class="card"/>
+  <rect x="46" y="145" width="12" height="210" rx="6" fill="#348bb8"/>
+  <text x="80" y="197" class="head">1  生成 Q、K、V：提出问题，备好索引和内容</text>
+  <text x="82" y="244" class="body">Qₜ：当前位置要找什么    Kⱼ：各位置供匹配的特征</text>
+  <text x="82" y="290" class="body">Vⱼ：匹配到该位置后，实际带回的信息</text>
+  <text x="82" y="330" class="small">历史 K/V 可从缓存取；本步 K/V 由新位置生成</text>
+  <path d="M500 357 V389" class="arrow"/>
+
+  <rect x="46" y="395" width="908" height="205" rx="20" class="card"/>
+  <rect x="46" y="395" width="12" height="205" rx="6" fill="#5078ba"/>
+  <text x="80" y="447" class="head">2  用 Q 匹配可见 K，确定该读哪些位置</text>
+  <text x="82" y="496" class="math">分数ⱼ = Qₜ · Kⱼ</text>
+  <text x="82" y="542" class="body">mask 排除未来或窗外位置；softmax 把分数</text>
+  <text x="82" y="580" class="body">变成可见位置上的权重 aⱼ</text>
+  <path d="M500 602 V634" class="arrow"/>
+
+  <rect x="46" y="640" width="908" height="193" rx="20" class="card"/>
+  <rect x="46" y="640" width="12" height="193" rx="6" fill="#5b9a86"/>
+  <text x="80" y="692" class="head">3  按权重读取 V，得到这个头的结果</text>
+  <text x="82" y="745" class="math">头输出 = Σⱼ aⱼ Vⱼ</text>
+  <text x="82" y="798" class="body">K 用来决定读哪里；V 提供读回的内容</text>
+  <path d="M500 835 V867" class="arrow"/>
+
+  <rect x="46" y="873" width="908" height="158" rx="20" class="card"/>
+  <rect x="46" y="873" width="12" height="158" rx="6" fill="#816bb3"/>
+  <text x="80" y="925" class="head">4  合并各查询头，交回 decoder 主路</text>
+  <text x="82" y="976" class="body">8 个头各得到一份结果 → 拼接 → 输出投影</text>
+  <text x="82" y="1013" class="small">E4B 局部层：每 4 个 Q 头共用 1 组 K/V 头</text>
+
+  <rect x="46" y="1062" width="908" height="108" rx="17" fill="#e7f1f6"/>
+  <text x="76" y="1104" class="body">缓存保留的是历史 K/V；新查询 Qₜ 和本次位置权重</text>
+  <text x="76" y="1146" class="body">仍需在当前生成步重新计算。</text>
+</svg>

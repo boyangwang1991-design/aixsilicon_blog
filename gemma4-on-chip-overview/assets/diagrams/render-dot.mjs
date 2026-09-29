@@ -7,12 +7,13 @@ import { fileURLToPath } from 'node:url';
 
 const require = createRequire(import.meta.url);
 const packageDir = process.argv[2];
-if (!packageDir) throw new Error('Usage: node render-dot.mjs <node_modules path>');
+if (!packageDir) throw new Error('Usage: node render-dot.mjs <node_modules path> [diagram ...]');
 const { instance } = require(resolve(packageDir, '@viz-js/viz'));
 const sharp = require(resolve(packageDir, 'sharp'));
 const viz = await instance();
 const out = dirname(fileURLToPath(import.meta.url));
-for (const name of ['mlp', 'local_qkv', 'decoder_layer_0_depth_2']) {
+const names = process.argv.slice(3);
+for (const name of (names.length ? names : ['mlp', 'local_qkv', 'decoder_layer_0_depth_2'])) {
   const dot = (await readFile(resolve(out, `${name}.dot`), 'utf8'))
     .replace(/size="[^"]+"/, 'pad="0.45" nodesep="0.35"')
     .replaceAll('fontname="Linux libertine"', 'fontname="Arial"');

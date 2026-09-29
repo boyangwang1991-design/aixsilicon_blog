@@ -26,4 +26,4 @@ Create a wide landscape editorial cover for a Chinese engineering blog. Refined 
 2. matmul-04-zh：回答“一个输出怎样算出来”。输入 [2,3]，权重 [[1,4,2],[5,6,-1]]，输出 [17,26,1]；三列颜色与三个计算式对应。
 3. shared-weights-04-zh：回答“同时处理多个 token 会不会混合位置”。两行输入 [2,3] 与 [1,0]，输出 [17,26,1] 与 [1,4,2]；同一 W 分别连入两条计算路径，权重线绕开上方输出避免误解为串行依赖。
 
-逐张查看 PNG，核对中文文字、乘法结果、形状与箭头。正文目前引用 matmul-04-zh 与 shared-weights-04-zh；projection-role-04-zh 留作编辑备选，不随正文发布。封面标题及数字准确，四周有裁切余量。图片均为原理/概念示意，不代表真实权重、运行截图或测量结果。文件 SHA-256 记录在 sources.json。
+逐张查看 PNG，核对中文文字、乘法结果、形状与箭头。上述数字小例子图在 2026-09-28 的第 05 期逻辑改稿中已退出正文，资源留存供编辑追溯。现行正文的内积/外积和 Cube 分块图改由文生图制作，记录见 `05-matmul-image-prompts.md`。封面仍沿用 `cover-04-zh.png`；图片均为原理/概念示意，不代表真实权重、运行截图或测量结果。文件 SHA-256 记录在 `sources.json`。

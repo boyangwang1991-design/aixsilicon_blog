@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 790" role="img" aria-labelledby="title desc">
+  <title id="title">KV Cache：下一步为何能直接读取历史 K/V</title>
+  <desc id="desc">以同一层的三个连续位置为例。此前位置零和位置一的 K/V 已算好并保存。当前新位置二重新算 Q/K/V，新的 K/V 加入缓存；Q2 从可见 K 算出权重，再读取对应 V。下一步复用缓存，重新计算新的 Q 和权重。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#547286"/></marker>
+    <style>
+      text { font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif; fill:#183446; }
+      .title { font-size:42px; font-weight:700; }
+      .sub { font-size:25px; fill:#496678; }
+      .head { font-size:31px; font-weight:700; }
+      .label { font-size:27px; font-weight:700; }
+      .body { font-size:24px; }
+      .small { font-size:22px; fill:#496678; }
+      .card { fill:#fff; stroke:#c8d9e3; stroke-width:2; }
+      .line { stroke:#547286; stroke-width:4; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1600" height="790" fill="#f5f9fb"/>
+  <text x="54" y="70" class="title">KV Cache：历史 K/V 为什么能直接用？</text>
+  <text x="56" y="113" class="sub">同一 Attention 层，按时间生成 · 下标表示位置编号；位置 0、1 已处理，现在计算位置 2</text>
+
+  <rect x="50" y="158" width="704" height="257" rx="22" class="card"/>
+  <rect x="50" y="158" width="13" height="257" rx="7" fill="#338eb9"/>
+  <text x="83" y="209" class="head">此前：历史位置已经算完</text>
+  <text x="83" y="253" class="body">位置 0、1 的状态不会被后来的位置改写</text>
+  <rect x="82" y="278" width="639" height="88" rx="16" fill="#e5f3fa"/>
+  <text x="105" y="315" class="label">同层 KV Cache</text>
+  <text x="105" y="351" class="body">K₀、K₁  ｜  V₀、V₁</text>
+  <text x="83" y="393" class="small">保存数值张量；不保存 Q、注意力权重或原文</text>
+
+  <rect x="846" y="158" width="704" height="257" rx="22" class="card"/>
+  <rect x="846" y="158" width="13" height="257" rx="7" fill="#806cb4"/>
+  <text x="879" y="209" class="head">本步：只处理新位置 2</text>
+  <text x="879" y="253" class="body">从当前位置状态生成新的 Q₂、K₂、V₂</text>
+  <rect x="878" y="278" width="639" height="88" rx="16" fill="#efeaf8"/>
+  <text x="900" y="315" class="label">Q₂ 用来发起本次查询</text>
+  <text x="900" y="351" class="body">K₂、V₂ 加入这一层的缓存</text>
+  <text x="879" y="393" class="small">历史 K/V 无需为了位置 2 再算一遍</text>
+
+  <path d="M406 418 V462 H700 V486" class="line"/>
+  <path d="M1194 418 V462 H900 V486" class="line"/>
+  <rect x="260" y="500" width="1080" height="168" rx="22" fill="#fff" stroke="#bed6cb" stroke-width="3"/>
+  <text x="303" y="549" class="head">当前位置怎样读取？</text>
+  <text x="303" y="592" class="body">Q₂ 匹配可见的 K₀、K₁、K₂ → 重新算位置权重</text>
+  <text x="303" y="634" class="body">再按这些权重读取对应的 V₀、V₁、V₂ → 得到位置 2 的输出</text>
+
+  <rect x="50" y="696" width="1500" height="60" rx="16" fill="#dfeef5"/>
+  <text x="78" y="735" class="body">下一步位置 3：复用已保存的 K/V；重新计算 Q₃ 和权重。局部窗口、因果 mask 仍决定哪些位置可读。</text>
+</svg>

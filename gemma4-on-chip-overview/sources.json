@@ -4,24 +4,171 @@
   "files": [],
   "generated_assets": [
     {
+      "path": "assets/generated/prefill-decode-arithmetic-intensity-zh.png",
+      "sha256": "66b36843ff7feab7b976c5d35b7754911e0b56733dbdc5ecf28f824e6e6f5915",
+      "language": "zh",
+      "purpose": "第10期存算比讲解图：同一张 E4B gate 权重在 128 行 Prefill 与单请求 Decode 中的理想算术强度和硬件关注点",
+      "generation": "Python Pillow; source assets/diagrams/draw-prefill-decode-arithmetic-intensity.py; assumptions and review in notes/10-arithmetic-intensity-figure.md"
+    },
+    {
+      "path": "assets/generated/ple-full-path-09-zh.png",
+      "sha256": "03a3e9f623ff507d2e1166912bcccd7af29037efa152f498f6e8651e1fdd1918",
+      "language": "zh",
+      "purpose": "第09期图1：E4B PLE 身份查表、输入投影、逐层取片、层内门控与收益/代价的完整算法示意",
+      "generation": "Codex built-in imagegen; full prompt and review in notes/09-ple-image-prompt.md"
+    },
+    {
+      "path": "assets/generated/rope-relative-position-slide-07-zh.png",
+      "sha256": "c1299d76e4d3b49312ee43078f13dbc535a0b1108f5aa8aa82899cf5e7afc46f",
+      "language": "zh",
+      "purpose": "第07期图1：Q/K 分别按绝对位置旋转、共同旋转抵消、分数由内容与相对位移共同决定的横向教学图",
+      "generation": "Codex built-in imagegen; initial text corrected by imagegen edit; prompts and verification in notes/07-rope-image-prompts.md"
+    },
+    {
+      "path": "assets/generated/rope-partial-slide-07-zh.png",
+      "sha256": "fdd8cbc58bfcb5d66e02cd5ba32da17c51df24a765699685827b0f8a198fc3a4",
+      "language": "zh",
+      "purpose": "第07期图2：E4B 局部层与全局层的 Q/K 旋转范围、V 与 mask 分工的横向教学图",
+      "generation": "Codex built-in imagegen; prompt and verification in notes/07-rope-image-prompts.md"
+    },
+    {
+      "path": "assets/generated/matmul-inner-outer-05-zh-v2.png",
+      "sha256": "98cab749c85d3260f80276f133a7aa085b0e6f1fbf09337eb71f89cde953d451",
+      "language": "zh",
+      "purpose": "第05期图2现用版：外积的一次贡献覆盖整个 Y[M,N]，并对照内积的单格累加",
+      "generation": "Codex built-in imagegen edit of matmul-inner-outer-05-zh.png; prompt and inspection in notes/05-matmul-image-prompts.md"
+    },
+    {
+      "path": "assets/generated/matmul-inner-outer-05-zh.png",
+      "sha256": "260f2e05ed91877a0b32e3859cf8729ae350946ee63cc0fe7a954b68d69eda65",
+      "language": "zh",
+      "purpose": "第05期图2初版，外积贡献高亮仅覆盖 Y 的部分区域；已由 v2 替换，留作追溯",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/05-matmul-image-prompts.md"
+    },
+    {
+      "path": "assets/generated/matmul-tiling-cube-05-zh.png",
+      "sha256": "7d324f0090e0a7ac8d096d8b9d368799e205422b398f5c9e8d960a12665b53ad",
+      "language": "zh",
+      "purpose": "第05期图3：M/N/K 分块进入 Cube、片上部分和以及 Prefill/Decode 的 M 维差异",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/05-matmul-image-prompts.md"
+    },
+    {
+      "path": "assets/generated/cover-rmsnorm-zh.png",
+      "sha256": "7e510272f61ccefdd2e70261f213f23419c42f3bcdb3c9832ded5bd9534ba4e5",
+      "language": "zh",
+      "purpose": "第04A期中文独立概念封面；以多维向量共用尺度表现 RMSNorm，不表示实测",
+      "generation": "Codex built-in imagegen; prompt in notes/04a-rmsnorm-sources.md"
+    },
+    {
+      "path": "assets/generated/rmsnorm-vs-layernorm-zh.png",
+      "sha256": "20a414b5ea7751433dbb4b40099f14f98c677fd8f564d6c0ad7e91b7e473ef69",
+      "language": "zh",
+      "purpose": "第04A期中文讲解图：RMSNorm/LayerNorm 对照、E4B 归约宽度和端侧数据依赖",
+      "generation": "Codex built-in imagegen; prompt and source verification in notes/04a-rmsnorm-sources.md"
+    },
+    {
+      "path": "assets/diagrams/decoder_layer_0_compact.png",
+      "sha256": "c79043f04a0d9860affeb207735db30cd52fe2ab2c7bf127945a00a0a5cc94be",
+      "language": "neutral",
+      "purpose": "第04期正文图1：以分组框表示 Attention、MLP、PLE 各段所含运算的 torchview 压缩总图",
+      "generation": "assets/diagrams/render-decoder-compact-trace.mjs; source assets/diagrams/decoder_layer_0_depth_2.dot"
+    },
+    {
+      "path": "assets/diagrams/decoder_layer_0_compact.svg",
+      "sha256": "dd637b109382e361475d75412db2cd26465cc75e5cac5eaaaf04d285edd7a53e",
+      "language": "neutral",
+      "purpose": "第04期 torchview 压缩实现图的可缩放 SVG",
+      "generation": "assets/diagrams/render-decoder-compact-trace.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder_layer_0_compact.dot",
+      "sha256": "dbeb888a070d72471f15a305ab67ac9fce4d2b7eb2fac603ec3751fc3b84ca29",
+      "language": "neutral",
+      "purpose": "第04期 torchview 压缩实现图的可编辑 DOT",
+      "generation": "assets/diagrams/render-decoder-compact-trace.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder-attention-local.png",
+      "sha256": "c8a5fd4c21e7d88aa48b145d3759448e7fdc020db04ca9a96e315532afc2d6ca",
+      "language": "neutral",
+      "purpose": "第04期图2：从第0层 torchview 完整追踪截取 Attention 与第一次残差",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs; source assets/diagrams/decoder_layer_0_depth_2.dot"
+    },
+    {
+      "path": "assets/diagrams/decoder-attention-local.svg",
+      "sha256": "f7be38ebdc52e6531cdfdf770eaadfe190856d586399e203138b6def4e8d5cae",
+      "language": "neutral",
+      "purpose": "第04期 Attention 局部图的 SVG 成图",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder-attention-local.dot",
+      "sha256": "c42912a2da5c3c3247af62389c9db745d4fa6ce98a81c1f14f60778dd9419fcf",
+      "language": "neutral",
+      "purpose": "第04期 Attention 局部图的可编辑 DOT",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder-mlp-local.png",
+      "sha256": "2c14e0348138e7d3c95f8f13b59cbadc5c84d563070911a73e60063d7ed231ce",
+      "language": "neutral",
+      "purpose": "第04期图3：从第0层 torchview 完整追踪截取 MLP 与第二次残差",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs; source assets/diagrams/decoder_layer_0_depth_2.dot"
+    },
+    {
+      "path": "assets/diagrams/decoder-mlp-local.svg",
+      "sha256": "e51f583f92e26fce294210571d3b23665e112549c5f93b90cd2c18f6c7d01625",
+      "language": "neutral",
+      "purpose": "第04期 MLP 局部图的 SVG 成图",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder-mlp-local.dot",
+      "sha256": "df962bce44d6a3ef159f9769726706b24be26959738786202f43b9087c9783d4",
+      "language": "neutral",
+      "purpose": "第04期 MLP 局部图的可编辑 DOT",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder-ple-local.png",
+      "sha256": "e1fba3b3e98a3aa7f9469025403fa84f76214e75c7b7a1570dadbdd37fb40e65",
+      "language": "neutral",
+      "purpose": "第04期图4及第09期图2：从第0层 torchview 完整追踪截取 PLE、第三次残差与层缩放",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs; source assets/diagrams/decoder_layer_0_depth_2.dot"
+    },
+    {
+      "path": "assets/diagrams/decoder-ple-local.svg",
+      "sha256": "6ce569133ff3181253358f3dc7b1c8f537c376c5cafd7f589370f41ac641a550",
+      "language": "neutral",
+      "purpose": "第04期 PLE 局部图的 SVG 成图",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs"
+    },
+    {
+      "path": "assets/diagrams/decoder-ple-local.dot",
+      "sha256": "f7f0c134c1b46777c817c3a43008bcce7d7e98c66466d56735a12838687f5cb9",
+      "language": "neutral",
+      "purpose": "第04期 PLE 局部图的可编辑 DOT",
+      "generation": "assets/diagrams/extract-decoder-stage-traces.mjs"
+    },
+    {
       "path": "assets/diagrams/decoder-portrait-study.png",
       "sha256": "73b31b3df78da7a171ef0d5f84aec87eddc1631dcce9ca3bea3fceae9ecf07f4",
       "language": "zh",
-      "purpose": "第04期 Decoder 中文主图；已用于正文",
+      "purpose": "第04期先前使用的单列逻辑图 PNG；内容已并入 torchview 压缩总图",
       "generation": "Hand-laid SVG from official Gemma4TextDecoderLayer.forward, cross-checked against torchview depth-2 trace; rendered with sharp"
     },
     {
       "path": "assets/diagrams/decoder-portrait-study.svg",
       "sha256": "906ab3eaeb62246249b276c97038b2f38f3f34a6bbe504b68c355ee582ba6233",
       "language": "zh",
-      "purpose": "第04期 Decoder 中文主图的可编辑 SVG；已用于正文",
+      "purpose": "第04期先前使用的单列逻辑图 SVG；内容已并入 torchview 压缩总图，保留可编辑图源",
       "generation": "assets/diagrams/generate-decoder-portrait-study.mjs"
     },
     {
       "path": "assets/diagrams/decoder_layer_0_depth_2.png",
       "sha256": "07b8fed40d76e51ec98066a22bf7f047ebd2bf7c5b322d59ed3ee69caeac5864",
       "language": "zh",
-      "purpose": "第04期 E4B 第0层 Decoder 主干、三次残差和 PLE 支路",
+      "purpose": "第04期正文链接的未压缩 torchview 追踪图，供核对压缩图节点与形状",
       "generation": "torchview 0.2.7 of official Transformers 5.17.0 Gemma4TextDecoderLayer; meta tensors B=1 S=2; depth=2; hidden tensors omitted; no checkpoint; assets/diagrams/generate_decoder_torchview.py"
     },
     {
@@ -40,45 +187,143 @@
     },
     {
       "path": "assets/diagrams/mlp.png",
-      "sha256": "8491c796d2bbecc09332e6495015ea55a80f9e8c7a83444724ad01efef0b2ebb",
+      "sha256": "1fe5132630bfb58398605dd374743d456f3e3e40c59e740b00f8e5366ea68810",
       "language": "zh",
       "purpose": "第05期第0层门控 MLP",
-      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+      "generation": "torchview official Transformers module; meta tensors; intermediate hidden tensors omitted; no checkpoint"
     },
     {
       "path": "assets/diagrams/mlp.svg",
-      "sha256": "b3f4d6cfab56ff6ba2e438e3557ea34ddaf6c4ffd39a52bf8deef48a27002b92",
+      "sha256": "36b9685bcf66fe6354b48d6f685df135112b087b88ba8d2b9c9f16cfa7101f11",
       "language": "zh",
       "purpose": "第05期第0层门控 MLP",
-      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+      "generation": "torchview official Transformers module; meta tensors; intermediate hidden tensors omitted; no checkpoint"
     },
     {
       "path": "assets/diagrams/mlp.dot",
-      "sha256": "53a8bd39c06c104c2fc463f7e1cc064d88e4ba3a7817004322681d13dba0af28",
+      "sha256": "56c7fae513054ee05c92efa3ab33339255ad2cf1667fede0d4329f7bf5ca6e73",
       "language": "zh",
       "purpose": "第05期第0层门控 MLP",
-      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+      "generation": "torchview official Transformers module; meta tensors; intermediate hidden tensors omitted; no checkpoint"
     },
     {
       "path": "assets/diagrams/local_qkv.png",
-      "sha256": "9faac9db621cf1df61afaebe610fe1913319a58f1a7793dbc0e402d74cdb5afa",
+      "sha256": "cb0a79ac5733a2b42b6d9da6eddfceb05341fff8814ff7f487764a7057039963",
       "language": "zh",
-      "purpose": "第06期局部层 Q/K/V 投影与按头重排",
-      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+      "purpose": "第06期保留的局部 Q/K/V 追踪，不再作为正文主图",
+      "generation": "torchview official Transformers module; meta tensors; hidden-tensor omitted; no checkpoint"
     },
     {
       "path": "assets/diagrams/local_qkv.svg",
-      "sha256": "bb70c6bd61856272163419bf8b5f7cdddbc6ada6db296d5239b38ec25cb5dfe7",
+      "sha256": "06d2c0eaf6251dc6599e05da17629fbe0c2cb1faf8d758c566007725d50c8524",
       "language": "zh",
-      "purpose": "第06期局部层 Q/K/V 投影与按头重排",
-      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+      "purpose": "第06期保留的局部 Q/K/V 追踪，不再作为正文主图",
+      "generation": "torchview official Transformers module; meta tensors; hidden-tensor omitted; no checkpoint"
     },
     {
       "path": "assets/diagrams/local_qkv.dot",
-      "sha256": "f66041b289f1d4a67a537145ab76f11f7643a5ff2cc20b1d77a17db0765b22bc",
+      "sha256": "1bb15a69248930a316c7f96b136398d3415ac9b6996558e0fcead2dcc3a8c55f",
       "language": "zh",
-      "purpose": "第06期局部层 Q/K/V 投影与按头重排",
-      "generation": "torchview official Transformers module; meta tensors; no checkpoint"
+      "purpose": "第06期保留的局部 Q/K/V 追踪图源",
+      "generation": "torchview official Transformers module; meta tensors; hidden-tensor omitted; no checkpoint"
+    },
+    {
+      "path": "assets/diagrams/attention_layer_0_full.dot",
+      "sha256": "6dcef7eff171da2d5a74b2c030b0ce6ae12bc6a27a6d33080f5e3ea2727e8ff5",
+      "language": "neutral",
+      "purpose": "第06期第0层完整局部 Attention 的原始 torchview 追踪",
+      "generation": "assets/diagrams/generate_attention_torchview.py; meta tensors; hide_inner_tensors=True; no cache or checkpoint"
+    },
+    {
+      "path": "assets/diagrams/attention_layer_0_full.svg",
+      "sha256": "e59a66f043882b259311544ece69a707b2e877f8a8582032b9ca95288557913d",
+      "language": "neutral",
+      "purpose": "第06期完整 Attention 原始追踪的可缩放成图",
+      "generation": "assets/diagrams/render-dot.mjs; source attention_layer_0_full.dot"
+    },
+    {
+      "path": "assets/diagrams/attention_layer_0_full.png",
+      "sha256": "d237ebe73e857ed6b13b1b2f8f514b2298e2af7d92b7d941112e40a5f9f730d2",
+      "language": "neutral",
+      "purpose": "第06期完整 Attention 原始追踪 PNG",
+      "generation": "assets/diagrams/render-dot.mjs; source attention_layer_0_full.dot"
+    },
+    {
+      "path": "assets/diagrams/attention_layer_0_full_compact.dot",
+      "sha256": "53e40ef9fa14ddc013c25b44f35488c80ee6e15ef43ad1c586a44052f7bc5947",
+      "language": "zh",
+      "purpose": "第06期完整 Attention 追踪的压缩讲解图源",
+      "generation": "From attention_layer_0_full.dot; groups RoPE arithmetic and shape operations"
+    },
+    {
+      "path": "assets/diagrams/attention_layer_0_full_compact.svg",
+      "sha256": "cdc94a8f8a72ef4358049f297951eb43834cdd04aaec07c45c05091b6f1913b7",
+      "language": "zh",
+      "purpose": "第06期正文完整 Attention torchview 压缩图 SVG",
+      "generation": "assets/diagrams/render-dot.mjs; source attention_layer_0_full_compact.dot"
+    },
+    {
+      "path": "assets/diagrams/attention_layer_0_full_compact.png",
+      "sha256": "1f6ddb5d32a987b29fe628229f3581532b60ce90dfa313ca8145cced0f1d55ae",
+      "language": "zh",
+      "purpose": "第06期正文完整 Attention torchview 压缩图 PNG",
+      "generation": "assets/diagrams/render-dot.mjs; source attention_layer_0_full_compact.dot"
+    },
+    {
+      "path": "assets/diagrams/attention-gqa-zh.svg",
+      "sha256": "95df24dda7017578e3d96be03253e6322d5fa34599c3251a31053cb69e171c03",
+      "language": "zh",
+      "purpose": "第06期图3：8个Q头分两组共用2组K/V的可编辑横向示意图",
+      "generation": "Manually composed SVG from pinned E4B layer 0 config and Gemma4TextAttention"
+    },
+    {
+      "path": "assets/diagrams/attention-gqa-zh.png",
+      "sha256": "a620857801a74f665086c0bea7afc2ba6bdd79a539ae58da18d0f4a6ffa6973c",
+      "language": "zh",
+      "purpose": "第06期图3早期矢量示意图 PNG；当前正文使用 imagegen 版本",
+      "generation": "assets/diagrams/render-concept-svg.mjs; source attention-gqa-zh.svg"
+    },
+    {
+      "path": "assets/diagrams/attention-kv-cache-zh.svg",
+      "sha256": "ff42faafaa853412aa9abe1b091a2ca97ce0ae245db237391214fa701d99354c",
+      "language": "zh",
+      "purpose": "第06期图5：同层历史K/V缓存和新位置读取的可编辑横向示意图",
+      "generation": "Manually composed SVG from pinned Gemma4TextAttention and causal decoding behavior"
+    },
+    {
+      "path": "assets/diagrams/attention-kv-cache-zh.png",
+      "sha256": "ff9bd84e0536f8abe28bc45e73d44805d4a606f0f05c5f0c7e7238a801602ac4",
+      "language": "zh",
+      "purpose": "第06期图5早期矢量示意图 PNG；当前正文使用 imagegen 版本",
+      "generation": "assets/diagrams/render-concept-svg.mjs; source attention-kv-cache-zh.svg"
+    },
+    {
+      "path": "assets/generated/attention-gqa-imagegen-zh.png",
+      "sha256": "7f9d0d3beb84a81516b4155b8d8320eb928f653fc118aafbee3b4660b33484c3",
+      "language": "zh",
+      "purpose": "第06期图3：GQA八个Q头共用两组KV且各算权重的横向教学图",
+      "generation": "Codex built-in image_gen; reference assets/diagrams/attention-gqa-zh.png; prompt and inspection in notes/06-attention-imagegen.md"
+    },
+    {
+      "path": "assets/generated/attention-kv-cache-imagegen-zh.png",
+      "sha256": "d556ee3b98e04b2361bf898ae157dfa34251c1d7f967ee89c448ec5b2c634628",
+      "language": "zh",
+      "purpose": "原为第06期图5，现用于第11期图1：历史KV缓存、本步更新与下一步复用",
+      "generation": "Codex built-in image_gen; reference assets/diagrams/attention-kv-cache-zh.png; prompt and inspection in notes/06-attention-imagegen.md"
+    },
+    {
+      "path": "assets/diagrams/attention-step-zh.svg",
+      "sha256": "e9b18f9740804417dfc4c802950caef32ed2c608fc87cc80ab1a3474d3068c1b",
+      "language": "zh",
+      "purpose": "第06期单个查询头完成 Attention 的可编辑算法图",
+      "generation": "Editable SVG composed from the pinned Gemma4TextAttention algorithm"
+    },
+    {
+      "path": "assets/diagrams/attention-step-zh.png",
+      "sha256": "063a53d6a9cc96b69403659ad189228a567dfbd1881c30ec37112b0e946d16af",
+      "language": "zh",
+      "purpose": "第06期单个查询头算法图 PNG",
+      "generation": "Rasterized from attention-step-zh.svg with sharp"
     },
     {
       "sha256": "b78fe1130b2e09080ad5b5de75e2b5374b10d02d0d6271ea6be50e7ece300d49",
@@ -204,7 +449,7 @@
       "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
       "path": "assets/generated/attention-flow-zh.png",
       "sha256": "a1b15b7cc9057547d85546ca6ec2827dcb25453fe71bb38899b5ca0cd1608a7a",
-      "purpose": "第06期单个查询位置 Attention 原理示意"
+      "purpose": "第06期早期单个查询位置示意；正文已改用可编辑的 attention-step-zh.svg/png"
     },
     {
       "language": "zh",
@@ -274,7 +519,35 @@
       "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
       "path": "assets/generated/cover-08-zh.png",
       "sha256": "3cd0d2686bbb33e799a80d367756459e8e408ba8457f8bd2ae7df6da7262136e",
-      "purpose": "第08期中文独立概念封面"
+      "purpose": "第08期旧版中文概念封面，保留供编辑追溯"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/08-cover-imagegen.md",
+      "path": "assets/generated/cover-08-v2-zh.png",
+      "sha256": "2f2a8bf3f43ade33d55bb10ad457141b4973d6d8b14f4f418c11a0f8c4d2eab6",
+      "purpose": "第08期中文独立概念封面：五层局部、一层全局的直接可见范围"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in image_gen; prompt and inspection in notes/08-hybrid-imagegen.md",
+      "path": "assets/generated/hybrid-layer-schedule-zh.png",
+      "sha256": "bc1e9e41f06a4d419c3a575c83604404478f391ce412d9b274aecf00430b6b55",
+      "purpose": "第08期图1：E4B七组六层节奏与局部全局可见范围"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in image_gen; prompt, corrective edit, and inspection in notes/08-hybrid-imagegen.md",
+      "path": "assets/generated/hybrid-sliding-relay-zh.png",
+      "sha256": "df33834e6f4195f38f7c47c399aaf89c017dfdd3d1b3eeff9e33cad1f55b7d5e",
+      "purpose": "第08期图2：滑动窗口移动、层间信息接力与比较数"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in image_gen; prompt and inspection in notes/08-hybrid-imagegen.md",
+      "path": "assets/generated/hybrid-kv-sharing-zh.png",
+      "sha256": "58701810423e4042e8a1550d727aab504e714c8f2b078b9f53d2f83b13e960fe",
+      "purpose": "第08期图3：局部全局头配置及第22/23层到共享层的KV来源"
     },
     {
       "language": "zh",
@@ -327,10 +600,38 @@
     },
     {
       "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/15-vision-imagegen.md",
+      "path": "assets/generated/vision-path-overview-15-zh.png",
+      "sha256": "0d703ec4bed6f9fec58de70ca397e9c705f8cae108739b32a9e1faf48ce0c632",
+      "purpose": "第15期图1：E4B视觉输入的完整路径与图文合流"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/15-vision-imagegen.md",
+      "path": "assets/generated/vision-budget-pooling-15-zh.png",
+      "sha256": "0d6463e69162f7cda132752b5063f61fa47fe0ccbf0c02564115e672d1e760d1",
+      "purpose": "第15期图2：视觉预算、初始patch上限与3×3空间汇聚"
+    },
+    {
+      "language": "zh",
       "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
       "path": "assets/generated/cover-16-zh.png",
       "sha256": "33209150b8ffe98a85b83678ce48edeee714dcb95aeb76ccc62d6033a359b348",
       "purpose": "第16期中文独立概念封面"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/16-audio-imagegen.md",
+      "path": "assets/generated/audio-path-overview-16-zh.png",
+      "sha256": "2f6a884a10dd3c2878bc38cd753fc0c359738283373337f414d79beca9bfa9b4",
+      "purpose": "第16期图1：波形到音频软token及语言Decoder的完整路径"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/16-audio-imagegen.md",
+      "path": "assets/generated/audio-mel-explainer-16-zh.png",
+      "sha256": "f17e37d19c7c95b3fe9bb23a40f394aa1610ee3fa793e2873ea710a0ed3d3073",
+      "purpose": "第16期图2：短时窗、频率分析与Mel频谱的含义"
     },
     {
       "language": "zh",

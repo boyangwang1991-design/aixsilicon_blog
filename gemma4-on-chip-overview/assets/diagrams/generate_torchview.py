@@ -57,14 +57,14 @@ class LocalQKVProjection(nn.Module):
         return q, k, v
 
 
-def write_view(name, model, data, depth):
+def write_view(name, model, data, depth, hide_inner_tensors=False):
     graph = draw_graph(
         model,
         input_data=data,
         device="meta",
         depth=depth,
         show_shapes=True,
-        hide_inner_tensors=False,
+        hide_inner_tensors=hide_inner_tensors,
         save_graph=False,
         graph_name=name,
     )
@@ -79,8 +79,8 @@ def main():
     qkv.eval()
 
     # B=1, S=2 limits the displayed example. D/head dimensions are E4B's.
-    write_view("mlp", mlp, torch.empty(1, 2, 2560, device="meta"), 2)
-    write_view("local_qkv", qkv, torch.empty(1, 2, 2560, device="meta"), 2)
+    write_view("mlp", mlp, torch.empty(1, 2, 2560, device="meta"), 2, hide_inner_tensors=True)
+    write_view("local_qkv", qkv, torch.empty(1, 2, 2560, device="meta"), 2, hide_inner_tensors=True)
 
 
 if __name__ == "__main__":

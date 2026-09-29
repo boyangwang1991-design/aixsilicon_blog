@@ -1,0 +1,39 @@
+// Compressed layout of attention_layer_0_full.dot, traced from the official
+// Gemma4TextAttention on meta tensors. Low-level view/transpose/reshape and
+// individual RoPE arithmetic nodes are grouped by purpose. No cache is used.
+digraph attention_layer_0_full_compact {
+  graph [rankdir=TB, bgcolor="white", pad="0.35", nodesep="0.48", ranksep="0.54", splines=polyline, fontname="Microsoft YaHei", labelloc=t, label="E4B 第 0 层 · 完整 Attention 路径（torchview 压缩）", fontsize=27];
+  node [shape=box, style="rounded,filled", color="#97b0bf", penwidth=1.4, fontname="Microsoft YaHei", fontsize=20, margin="0.18,0.13", width=3.8];
+  edge [color="#557383", penwidth=1.6, arrowsize=0.8];
+
+  input [label="输入 X\n[1,2,2560]", fillcolor="#e8f0f5"];
+  qproj [label="Q 投影\n8 头 × 256", fillcolor="#d7edfa"];
+  kproj [label="K 投影\n2 头 × 256", fillcolor="#e2dcf5"];
+  vproj [label="V 投影\n2 头 × 256", fillcolor="#def1e7"];
+  qnorm [label="Q RMSNorm", fillcolor="#d7edfa"];
+  knorm [label="K RMSNorm", fillcolor="#e2dcf5"];
+  vnorm [label="V RMSNorm", fillcolor="#def1e7"];
+  qrope [label="Q RoPE 位置旋转", fillcolor="#d7edfa"];
+  krope [label="K RoPE 位置旋转", fillcolor="#e2dcf5"];
+  qhead [label="Q 排列为 [1,8,2,256]", fillcolor="#d7edfa"];
+  khead [label="K 排列为 [1,2,2,256]", fillcolor="#e2dcf5"];
+  vhead [label="V 排列为 [1,2,2,256]", fillcolor="#def1e7"];
+  kshare [label="K：每组 4 个 Q 头共用", fillcolor="#e2dcf5"];
+  vshare [label="V：每组 4 个 Q 头共用", fillcolor="#def1e7"];
+  score [label="Q × Kᵀ：匹配分数\n[1,8,2,2]", fillcolor="#fff0cc"];
+  mask [label="mask：可见性输入", fillcolor="#fff0cc"];
+  softmax [label="softmax：位置权重", fillcolor="#fff0cc"];
+  gather [label="权重 × V：汇入信息\n每头 256 维", fillcolor="#d5f2ed"];
+  concat [label="合并 8 个头\n[1,2,2048]", fillcolor="#e8f0f5"];
+  oproj [label="输出投影\n[1,2,2560]", fillcolor="#dcebe8"];
+  output [label="Attention 更新\n交回 decoder 残差", fillcolor="#dcebe8"];
+
+  {rank=same; qproj; kproj; vproj}
+  input -> qproj;
+  input -> kproj;
+  input -> vproj;
+  qproj -> qnorm -> qrope -> qhead -> score;
+  kproj -> knorm -> krope -> khead -> kshare -> score;
+  vproj -> vnorm -> vhead -> vshare -> gather;
+  score -> mask -> softmax -> gather -> concat -> oproj -> output;
+}
