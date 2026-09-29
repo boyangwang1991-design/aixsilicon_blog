@@ -7,7 +7,7 @@
       "filename": "README.md",
       "title": "SoC Studio：让芯片设计，走出文件的孤岛",
       "category": "SoC Studio",
-      "status": "草稿：待补 5 组真实界面截图，发布前核对能力边界"
+      "status": "中文已补真实截图与讲解图；英文待同步，尚未发布审阅"
     }
   ],
   "files": [
@@ -75,5 +75,110 @@
       "date": "2026-09-26",
       "prompt_record": "notes/cover-en-4x3-prompt.md"
     }
-  ]
+  ],
+  "chinese_revision": {
+    "date": "2026-09-29",
+    "status": "zh draft with six real screenshots and five revised AI Native conceptual figures; en pending synchronization",
+    "screenshot_origin": "running local SoC Studio UI, aurora_rtl_candidate revision 70c47e4e26d5, Edge 1600x1000",
+    "diagrams": "five Codex imagegen edits of the five user-provided conceptual figures; see notes/ai-native-imagegen-zh.md",
+    "notes": "notes/screenshot-production-zh.md",
+    "assets": [
+      {
+        "destination": "README.md",
+        "sha256": "120b61bcd9ff6b6edc1ee727ffb1c666d779025cd76cc9ce17f7084b881956c0"
+      },
+      {
+        "destination": "assets/screenshots/01-aurora-bus.png",
+        "sha256": "1e248247d40b440837112515381c5c71d5590b2f2f172a589d0467c634eb3222"
+      },
+      {
+        "destination": "assets/screenshots/02-address-map.png",
+        "sha256": "8df1e3b6bbc89a76f195bf246b3013d58ac6764a77395a34a0b2fdf2750bc925"
+      },
+      {
+        "destination": "assets/screenshots/03-irq-view.png",
+        "sha256": "59a73e2d252ea2331eaedf0d9aec0fd39d4871cd09c219d7b62f0b2f842263c3"
+      },
+      {
+        "destination": "assets/screenshots/04a-output-scope.png",
+        "sha256": "773954c00e5463556095d8d4519828492d1229cc77c2188e220ac15e230a84fe"
+      },
+      {
+        "destination": "assets/screenshots/04-output-products.png",
+        "sha256": "676b79091c90869580479b238a6919d5a8d715fa55f09c6c32b69ce911ef4a8e"
+      },
+      {
+        "destination": "assets/screenshots/05-aurora-demo.png",
+        "sha256": "b8bf6126780560a442da588ea713d71217b9d835fe57221304523408c90375ca"
+      },
+      {
+        "destination": "assets/generated/ChatGPT 图像 2026年9月29日 03_53_30-1.png",
+        "sha256": "729615a01dded40ff944f94306bbc36f270f6cd9cf124760716edd27aac4924f",
+        "purpose": "Chinese conceptual explanatory figure",
+        "origin": "user-provided ChatGPT image; exact generation prompt unavailable"
+      },
+      {
+        "destination": "assets/generated/ChatGPT 图像 2026年9月29日 03_53_31-2.png",
+        "sha256": "997d35aa0d4e162a70478f99ec551714f631e262b4a3b90a6b45463803c17275",
+        "purpose": "Chinese conceptual explanatory figure",
+        "origin": "user-provided ChatGPT image; exact generation prompt unavailable"
+      },
+      {
+        "destination": "assets/generated/ChatGPT 图像 2026年9月29日 03_53_31-3.png",
+        "sha256": "71cba0f4e36a7e4b61a7780a7e8757457e2052f479a2e8bb2f40bb6db1610a67",
+        "purpose": "Chinese conceptual explanatory figure",
+        "origin": "user-provided ChatGPT image; exact generation prompt unavailable"
+      },
+      {
+        "destination": "assets/generated/ChatGPT 图像 2026年9月29日 03_53_32-4.png",
+        "sha256": "d32b975e6f5e7b167b947c4a4ac33b816f4a388079c2cad1a56c986725bb788e",
+        "purpose": "Chinese conceptual explanatory figure",
+        "origin": "user-provided ChatGPT image; exact generation prompt unavailable"
+      },
+      {
+        "destination": "assets/generated/ChatGPT 图像 2026年9月29日 03_53_33-5.png",
+        "sha256": "570ed54e8c84f4dcd545f1e275d0db73118c61e679dbf4bafd674e83dfa23779",
+        "purpose": "Chinese conceptual explanatory figure",
+        "origin": "user-provided ChatGPT image; exact generation prompt unavailable"
+      },
+      {
+        "destination": "assets/generated/ai-native-01-engineering-model-zh.png",
+        "sha256": "1e0c02715dd684414ae4de51bdda0cbca542e4d801662a625e585c8e79909cfa",
+        "purpose": "Chinese AI Native conceptual explanatory figure",
+        "origin": "Codex built-in imagegen edit of user-provided original",
+        "prompt_record": "notes/ai-native-imagegen-zh.md"
+      },
+      {
+        "destination": "assets/generated/ai-native-02-architecture-zh.png",
+        "sha256": "077c4647bf61317bbe0baa7d3748b24f2cf7f23c7b3d17126bac7e329ac0f675",
+        "purpose": "Chinese AI Native conceptual explanatory figure",
+        "origin": "Codex built-in imagegen edit of user-provided original",
+        "prompt_record": "notes/ai-native-imagegen-zh.md"
+      },
+      {
+        "destination": "assets/generated/ai-native-03-multiple-views-zh.png",
+        "sha256": "1ccb0210008f17d70fd67b67d600053d8435cdc816cd714ecb5a69f7faa17ddf",
+        "purpose": "Chinese AI Native conceptual explanatory figure",
+        "origin": "Codex built-in imagegen edit of user-provided original",
+        "prompt_record": "notes/ai-native-imagegen-zh.md"
+      },
+      {
+        "destination": "assets/generated/ai-native-04-ip-reuse-zh.png",
+        "sha256": "51af6ac35c6bae1b15ca08ba9695d0f7c7865b275b4eb5899c0d123012f3343b",
+        "purpose": "Chinese AI Native conceptual explanatory figure",
+        "origin": "Codex built-in imagegen edit of user-provided original",
+        "prompt_record": "notes/ai-native-imagegen-zh.md"
+      },
+      {
+        "destination": "assets/generated/ai-native-05-evidence-chain-zh.png",
+        "sha256": "3028bbb7a341ea91b00211c297d01e743984365689b0e3a3523570d9ca3fefdb",
+        "purpose": "Chinese AI Native conceptual explanatory figure",
+        "origin": "Codex built-in imagegen edit of user-provided original",
+        "prompt_record": "notes/ai-native-imagegen-zh.md"
+      }
+    ],
+    "current_title": "AI Native SoC Studio，为什么先做工程模型？",
+    "editorial_scope": "AI Native co-design, standard IP Repo/import, graphical configuration, context-aware generation and regression, Tcl replay, design history/Git, DRC/AI proposals and generation chain; current Aurora facts separated from target capabilities",
+    "feature_audit": "notes/feature-audit-zh.md"
+  }
 }

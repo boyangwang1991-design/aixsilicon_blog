@@ -26,7 +26,7 @@
 | IP / SPI2APB | [用一条 SPI 链路访问片内外设：AI 辅助 SPI2APB 设计与验证](ai-assisted-spi2apb-ip-development/README.md) | 图文齐备；待发布审阅 | [Reaching On-Chip Peripherals over SPI: AI-Assisted SPI2APB Design and Verification](ai-assisted-spi2apb-ip-development/README.en.md) | 图文齐备；待发布审阅 |
 | IP / PQC | [我让 AI 设计后量子密码加速器：从一条命令，到可验证的电路](ai-pqc-rtl/README.md) | 图文齐备；待发布审阅 | [Designing a Post-Quantum Cryptographic Accelerator with AI: From Commands to Verified RTL](ai-pqc-rtl/README.en.md) | 图文齐备；待发布审阅 |
 | VIP / AXI4 | [AI 辅助开发 AXI4 VIP：让验证代码成为可复用的工程资产](ai-assisted-vip-development-and-reuse/README.md) | 图文齐备；待发布审阅 | [AI-Assisted AXI4 VIP Development: Making Verification Code Reusable](ai-assisted-vip-development-and-reuse/README.en.md) | 图文齐备；待发布审阅 |
-| SoC Studio | [SoC Studio：让芯片设计，走出文件的孤岛](soc-studio-from-diagram-to-design/README.md) | 草稿；待补 5 组真实截图 | [SoC Studio: Bringing the Whole Chip Design Together](soc-studio-from-diagram-to-design/README.en.md) | 草稿；待补 5 组真实截图 |
+| SoC Studio | [AI Native SoC Studio，为什么先做工程模型？](soc-studio-from-diagram-to-design/README.md) | 中文已补真实截图与五张文生图；待发布审阅 | [SoC Studio: Bringing the Whole Chip Design Together](soc-studio-from-diagram-to-design/README.en.md) | 旧稿；待与新版中文同步 |
 
 既有 12 篇文章的英文封面另备 [4:3 版本预览与下载](notes/covers-en-4x3.md)，文件名统一为各篇 `assets/generated/cover-en-4x3.png`。
 
@@ -63,7 +63,7 @@ aixsilicon_blog/
 
 初始迁移保留了原文及相关配图，后续按篇优化。历史稿件仍含上游工程链接和内部编辑资料入口；由于这些工程不会公开，发布前须将必要说明融入正文，并清理这些引用。内部来源记录继续保留，不能把当前迁移状态视为已满足发布要求。
 
-SoC Studio 中英文稿均保留 5 组真实截图待补标记；拍摄指导已移入内部 notes。文章中的测试、PPA 数据与功能状态均对应原稿快照，发布前应重新核对，保留模型、估算和未验证能力的限制说明。
+SoC Studio 中文稿已补真实网页截图和机制图；英文仍为旧稿，待同步后才能作为双语发布。文章中的功能状态与非 EDA 验证边界在发布前仍需复核。
 
 本次检索了 7 个已解压参考仓库；`aixsilicon_skill_repo` 和 `wenwang-edgenpu` 未发现独立博客稿。其余 README、需求、设计和报告未作为博客收录。外层仓库 ZIP 包不重复导入；PQC 博客单独封装在工程内的 `docs/ai-pqc-blog-publish.zip`，已补充提取，其压缩包路径、内部条目及哈希记录在 [PQC 来源记录](ai-pqc-rtl/sources.json)。后续检索也需检查嵌套发布包。
 

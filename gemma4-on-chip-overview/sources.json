@@ -4,10 +4,17 @@
   "files": [],
   "generated_assets": [
     {
+      "path": "assets/generated/quantization-dataflow-12-zh-v2.png",
+      "sha256": "eb83301c1bd372822d61efd5bdc7c96b598f9a6390c5dd38f3643f257067602e",
+      "language": "zh",
+      "purpose": "第12期现用讲解图：低比特权重保持打包、片上转 INT8 与激活量化后整数乘加，并对照提前展开 BF16 的路径",
+      "generation": "Codex built-in imagegen edit of quantization-dataflow-12-zh.png; prompt and review in notes/12-quantization-image-prompt.md"
+    },
+    {
       "path": "assets/generated/quantization-dataflow-12-zh.png",
       "sha256": "3fdaf0d6ca44e05b7a7605e85b3b2f97986452daadf11be64ea81524329862df",
       "language": "zh",
-      "purpose": "第12期讲解图：对比低比特权重保持打包到片上解包、与先展开为 BF16 存回外存两条路径的容量和带宽影响",
+      "purpose": "第12期讲解图初版；片上执行路径被误画成 BF16 乘加，已由 v2 替换，保留供追溯",
       "generation": "Codex built-in imagegen; full prompt, assumptions and visual review in notes/12-quantization-image-prompt.md"
     },
     {
@@ -474,6 +481,20 @@
     },
     {
       "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/11-kv-storage-imagegen.md",
+      "path": "assets/generated/kv-storage-hierarchy-11-zh.png",
+      "sha256": "fe43a2ce343028f6d993e5c941d84f42c04c4fe468c9b2b72eed625f51df7a73",
+      "purpose": "第11期图4：KV Cache在大容量存储、片上SRAM及并发请求中的布局与搬运"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/11-kv-capacity-imagegen.md",
+      "path": "assets/generated/kv-capacity-traffic-11-zh.png",
+      "sha256": "d4b5368d409b56881cd7c0d409d115bf04191332417c3b3a3512f942cc592a59",
+      "purpose": "第11期图3：局部与全局KV长期占用及单步写入读取净荷对照"
+    },
+    {
+      "language": "zh",
       "generation": "Codex built-in imagegen; notes/hardware-imagegen-2026-09-29.md",
       "path": "assets/generated/weight-budget-zh.png",
       "sha256": "06339f016430cb679dbf583f1bb2fb7c629bf77fa4d0a235d6261b59260498b7",
@@ -485,6 +506,13 @@
       "path": "assets/generated/online-softmax-zh.png",
       "sha256": "a8c6b1630f4055e2556e67eb0f5a54455e1cb1e7cc4b78a9107774f39cd69c6b",
       "purpose": "第13期 online softmax 分块状态示意"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; original prompt, corrective edit and inspection in notes/13-attention-acceleration-imagegen.md",
+      "path": "assets/generated/attention-acceleration-map-13-zh.png",
+      "sha256": "afcb213fb0d6288e5350a09086a8109f12a6cf2a550e41f77015c716a923cbe3",
+      "purpose": "第13期 Attention 加速路线图：模型可见范围与 KV 份数、Prefill 分块融合、Decode 单 query 与 Split-K、分页缓存管理"
     },
     {
       "language": "zh",
@@ -679,6 +707,14 @@
     {
       "url": "https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4",
       "purpose": "Gemma 4 implementation traced for diagrams"
+    },
+    {
+      "url": "https://arxiv.org/abs/2205.14135",
+      "purpose": "FlashAttention primary paper for blockwise transfer between large memory and on-chip SRAM"
+    },
+    {
+      "url": "https://arxiv.org/abs/2309.06180",
+      "purpose": "PagedAttention primary paper for block allocation and KV-cache fragmentation"
     }
   ],
   "reference_snapshots": [

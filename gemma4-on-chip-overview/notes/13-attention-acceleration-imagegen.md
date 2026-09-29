@@ -1,0 +1,17 @@
+# 第 13 期 Attention 加速路线图生成记录
+
+2026-09-29 使用 Codex 内置 imagegen 文生图，随后针对两处会误导读者的数据路径做定点编辑。最终采用 `assets/generated/attention-acceleration-map-13-zh.png`，SHA-256 为 `afcb213fb0d6288e5350a09086a8109f12a6cf2a550e41f77015c716a923cbe3`。图用于解释机制与选型，不是模型运行截图或芯片性能实测。
+
+核对结果：局部窗口 512；GQA 为 8Q→2KV；局部和全局 KV 共享各自沿同类型层传递；Prefill 分块与 online softmax 不落地完整分数/概率表；局部 Decode 单 query 直接处理短窗口，全局长历史才进入 Split-K；PagedAttention 独立表示多请求缓存管理。首稿中示例层号会被误解为 E4B 实际层号，且局部 Decode 箭头也进入 Split-K，已在采用版修正。图内其余小字以正文为准。
+
+## 原始文生图提示词
+
+```text
+Use case: scientific-educational. Asset type: Chinese teaching infographic embedded in a Gemma 4 E4B engineering blog, wide 16:9 slide composition. Create ONE coherent, information-rich but mobile-readable raster infographic. Title exactly: “E4B Attention 加速：先少算，再少搬，最后并行”. Organize as a left-to-right decision flow with three visually distinct stages, clean navy/cream/teal/orange palette, precise matrix and memory diagrams, restrained PPT-quality typography. Stage 1 heading exactly “模型结构：少算、少存”; show (a) two attention score maps: local causal sliding band labelled “局部 512 窗口” versus full causal triangle labelled “全局完整历史”; (b) 8 Q heads grouped into 2 KV heads labelled “GQA：8Q → 2KV”; (c) early KV-producing layers feeding later consumer layers labelled “跨层 KV 共享”. Stage 2 heading exactly “Prefill：少搬中间表”; show many query rows, Q/K/V tiles entering a small on-chip SRAM box, online softmax state “m、l、o”, output O, and a large faint S×S score table crossed out; caption exactly “分块融合：不落地分数/概率表”. For local path, visually skip all tiles outside the 512-token band, NOT merely mask after computation. Stage 3 heading exactly “Decode：读 KV、补并行”; show one new Q reading a short rolling local KV window and a long global KV history; long global history divides into several parallel Split-K segments whose partial results ALL converge into one merge node then one output O; add a separate small page stack labelled “PagedAttention：多请求缓存管理”, clearly separate from Split-K computation. At bottom, one short conclusion strip exactly “局部：滑窗 + 分块融合  |  全局 Prefill：分块融合  |  长全局 Decode：按需 Split-K”. Make arrows unambiguous and technically accurate. All labels and explanations in simplified Chinese except Q/K/V, SRAM, Prefill, Decode, GQA, Split-K, PagedAttention and variables. Large text, no invented benchmark numbers, no logos, no photorealistic chips, no decorative circuit wallpaper, no dense paragraphs, no SVG-like flat minimalism; polished editorial infographic with subtle dimensional depth and crisp legible labels.
+```
+
+## 定点编辑提示词
+
+```text
+Edit this existing Chinese technical infographic, preserve its overall layout, colors, title, top and middle panels, typography, and all other content. Make ONLY TWO technical corrections. (1) In panel 1(c) 跨层 KV 共享, remove all fictional concrete layer numbers such as 第1层/第2层/第3层/第10层/第20层/第30层. Replace with a concise accurate two-lane diagram: “局部 KV 生产层” points to “后续局部共享层”; “全局 KV 生产层” points to “后续全局共享层”. Do not cross local and global arrows. Retain caption “一次生成，多层使用”. (2) In panel 3 Decode, visually separate the two paths: short local rolling KV window flows directly through a small “单 query 融合” box to output O; ONLY long global KV history flows into the four Split-K segments, all segments converge into merge node and then output O. Keep the PagedAttention page stack separate as cache management, no arrows suggesting it changes attention math. Make all Chinese text crisp and legible. Do not alter any other visual or wording.
+```

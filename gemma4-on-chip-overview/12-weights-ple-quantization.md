@@ -42,13 +42,17 @@ E4B 的表项说明为什么不能只用 effective 参数数估算容量。若�
 
 对单请求 Decode，投影权重每步服务的输入行很少，权重读取难以摊薄。如果低比特权重在外存保持打包，搬到计算阵列附近才按块解包、取 scale，外存带宽需求才有机会下降。若运行时先把整张权重展开为 BF16 并长期放回外存，模型文件虽然小，每步读权重的带宽账却可能重新接近 BF16。量化收益发生在哪一级存储，取决于实际数据流。
 
-![量化权重保持打包与先展开存回外存的两条数据流对比](assets/generated/quantization-dataflow-12-zh.png)
+![量化权重片上转为 INT8 计算与先展开 BF16 存回外存的两条数据流对比](assets/generated/quantization-dataflow-12-zh-v2.png)
 
-*图：构造的 gate 权重例子。上路保持压缩格式直到片上解包，外存读取量才有机会下降；下路若先展开并存回外存，后续仍可能搬运 BF16 规模的权重。50 MiB、13.3 MiB 和理想算术强度来自公式估算，非官方量化格式或设备测量。*
+*图：构造的 gate 权重例子。上路展示一种端侧整数执行路径：外存保持打包权重，片上解包为 INT8 计算值，激活量化为 INT8 后进入乘加，输出按 scale 重定标；下路若先展开 BF16 并存回外存，后续仍可能搬运 BF16 规模的权重。图中 50 MiB、13.3 MiB 和理想算术强度来自公式估算；具体 E4B 后端未必采用图中路径。*
 
-计算侧也有代价：实现可以边读取边将低比特值转换为较高精度，再做乘加；也可以由支持相应格式的单元直接处理低比特数据。解包吞吐、scale 供给、片上 SRAM、阵列支持的精度与累加方式必须配套。Prefill 有较多输入行复用一个权重块，Decode 更依赖持续供给，因此同一量化格式在两阶段未必带来相同收益，更不能从 16 bit 降到 4 bit 就直接宣称四倍 token/s 或四倍能效。
+在面向整数乘加的端侧实现里，压缩权重可在片上解包成 INT8 计算值。这一步主要是展开码值，**不必先把整张权重反量化成 BF16**。激活可以承接上一量化算子的 INT8 输出，也可以在进入矩阵乘前按自身 scale 量化到 INT8。随后做 INT8×INT8 乘加，以 INT32 等较宽位数保存累加结果。
 
-PLE 与主 Embedding 的大表则按 ID 取行，主要先影响常驻容量，不会在每个 token 上顺序读取整张表。表项与 scale 的布局、单次读取粒度和缓存命中会决定查表带宽。KV Cache 又随历史长度增长：只量化权重，不会自动降低长上下文的 KV 读取量。权重、激活和 KV 的位宽必须分别说明；例如 `W4A16` 是 4 bit 权重配 16 bit 激活，不能据此推断 KV 也是 4 bit。
+若权重按组量化，不同组的部分和还要按各自 scale 重定标后合并，并处理激活 scale 与可能的零点。输出按下一算子的需要再量化为 INT8，或反量化到较高精度，例如交给需要较高精度的归约。量化与反量化沿算子边界安排，不等于每一步都生成一份完整的 BF16 权重。[LiteRT 的 INT8 算子规范](https://developers.google.com/edge/litert/conversion/tensorflow/quantization/quantization_spec)给出了这种整数输入、权重与宽位累加的一个公开例子。
+
+这条整数路径还要有相配套的硬件：4 bit 解包、激活量化、INT8 乘加、宽位累加、按 scale 重定标，以及容纳权重块和中间结果的片上存储。任何一段供给不足都可能让阵列等待。另一类 `W4A16` 是 4 bit 权重配 16 bit 激活，可以在读取低比特权重后转换到较高精度进行乘加；[Google 同时提供这类格式与面向移动设备的 `wNa8o8` 格式](https://ai.google.dev/gemma/docs/core)。因此，不能把图中的 INT8 路径当作所有 E4B 发布格式的统一执行方式。Prefill 还能让一个权重块服务较多行，Decode 更依赖持续供给，实际收益仍要分阶段测。
+
+PLE 与主 Embedding 的大表则按 ID 取行，主要先影响常驻容量，不会在每个 token 上顺序读取整张表。表项与 scale 的布局、单次读取粒度和缓存命中会决定查表带宽。KV Cache 又随历史长度增长：只量化权重，不会自动降低长上下文的 KV 读取量。权重、激活、累加结果和 KV 的位宽都要分别说明；从权重位宽无法推断其余数据的表示。
 
 ## 最后用四项结果决定格式
 
@@ -56,4 +60,4 @@ PLE 与主 Embedding 的大表则按 ID 取行，主要先影响常驻容量，�
 
 权重误差会经过多层计算传递，KV 量化还会改变后续每一步读取的历史数值。比较方案时要固定 checkpoint、量化方法、测试集、上下文、batch 与目标硬件，再看质量是否可接受，以及装载峰值、首 token 延迟、后续 token/s 是否符合要求。本章的参数算术和数据流分析没有替代这些测量。下一章转向另一类访存：Attention 的分数与概率中间表，能否不完整写回外存。
 
-资料：[Google Gemma 4 模型卡](https://ai.google.dev/gemma/docs/core/model_card_4) · [Gemma 4 模型概览与量化格式](https://ai.google.dev/gemma/docs/core) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers Gemma 4 源码](https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4)
+资料：[Google Gemma 4 模型卡](https://ai.google.dev/gemma/docs/core/model_card_4) · [Gemma 4 模型概览与量化格式](https://ai.google.dev/gemma/docs/core) · [LiteRT INT8 量化规范](https://developers.google.com/edge/litert/conversion/tensorflow/quantization/quantization_spec) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers Gemma 4 源码](https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4)
