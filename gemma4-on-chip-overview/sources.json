@@ -4,6 +4,34 @@
   "files": [],
   "generated_assets": [
     {
+      "path": "assets/generated/series-theme-input-zh.png",
+      "sha256": "408afd82bf3b61d83dcb5d71bfe418ca58d52f304905af604cf1111530dc241c",
+      "language": "zh",
+      "purpose": "系列引言主题1：可见文字经模板、Tokenizer、Embedding 变成有序输入位置",
+      "generation": "Codex built-in imagegen; prompt and review in notes/series-intro-imagegen.md"
+    },
+    {
+      "path": "assets/generated/series-theme-decoder-zh.png",
+      "sha256": "6de7bfd94cbe810027a08bc977d5f590f013bf689975b96bf7918d92ce2e7231",
+      "language": "zh",
+      "purpose": "系列引言主题2：Decoder 单层 Attention、MLP、PLE 依次残差更新主状态",
+      "generation": "Codex built-in imagegen; prompt and review in notes/series-intro-imagegen.md"
+    },
+    {
+      "path": "assets/generated/series-theme-hardware-zh.png",
+      "sha256": "dfd8f7905ce857918abbf104d3f7f406381e2dc00396783b9f8403b51502685d",
+      "language": "zh",
+      "purpose": "系列引言主题3：同一模型在 Prefill 和 Decode 的形状、复用与搬运差异",
+      "generation": "Codex built-in imagegen; prompt and review in notes/series-intro-imagegen.md"
+    },
+    {
+      "path": "assets/generated/series-theme-media-device-zh.png",
+      "sha256": "5f51bffcc30408d2caabc67363ad9c6c3598c59d9d600a1c6577a8c23b62af04",
+      "language": "zh",
+      "purpose": "系列引言主题4：媒体前端产生软 Token，端侧运行受功率、热积累与供电约束",
+      "generation": "Codex built-in imagegen; prompt and review in notes/series-intro-imagegen.md"
+    },
+    {
       "path": "assets/generated/cover-series-zh.png",
       "sha256": "e705e23180e4c997947b3aab7198eae323f226bf37e660c5c54b70996944a7f7",
       "language": "zh",

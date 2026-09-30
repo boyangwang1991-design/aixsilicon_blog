@@ -23,3 +23,43 @@ Use case: infographic-diagram. Asset type: original high-information Chinese tea
 ```
 
 图中上层为模型数据路径，中层为同一模型的两种执行形态，下层是资源核算类别。`42 层`是 E4B 配置事实；方块数、流程长度和硬件图标均为教学示意。图注保留这个边界。
+
+## 四个主题各一张讲解图（2026-09-29）
+
+四图均由 Codex 内置 imagegen 文生图生成，原始生成文件留在本机生成目录，成图复制到 `assets/generated/`。逐张检查了主要中文标签、输入输出方向、主状态残差、Prefill/Decode 的 KV 接续、媒体前端与设备边界。图片为原理示意，图中的方块数量、视频帧间隔、设备仪表均不代表实测。
+
+### 输入先变成什么
+
+- 路径：`assets/generated/series-theme-input-zh.png`
+- 提示词：
+
+```text
+Create an original high-information Chinese educational infographic, 16:9 wide PPT slide, for a Gemma 4 E4B technical blog. Question: 屏幕上的输入先变成什么？ Exact large title: '输入先变成有序位置'. A clear left-to-right three-stage teaching diagram: 1) left, visible user message plus chat-template role/control markers, labeled '可见文字' and '聊天模板'; 2) middle, tokenizer maps the resulting text to a row of discrete token IDs, labeled 'Tokenizer → Token ID', then embedding lookup changes each ID into a vector strip, labeled 'Embedding → 2560维向量'; 3) right, an ordered sequence of vector strips labeled 'Decoder 输入位置'. Include a small separate bottom note that image/video and audio later take their own frontend paths and join as soft-token vectors, without implying that image or audio is tokenized as text. Make the key distinction very readable: '字数 ≠ token 数 ≠ 输入位置数'. Show sequencing by different counts of abstract boxes, but do not use numerical example counts. Strictly correct arrow directions, no unrelated mathematical symbols. Editorial engineering diagram with warm off-white background, navy typography, teal input path, restrained purple and amber accents, clear large simplified Chinese text, generous spacing, legible when enlarged on a phone, no logo, no watermark, no fake device or measurement. This is a conceptual illustration.
+```
+
+### Decoder 一层怎样工作
+
+- 路径：`assets/generated/series-theme-decoder-zh.png`
+- 提示词：
+
+```text
+Create an original Chinese 16:9 PPT-style high-information educational diagram for a Gemma 4 E4B technical blog, consistent with a refined editorial engineering series: warm off-white background, navy type, teal main state line, purple context, amber per-layer input. Exact title: 'Decoder 一层怎样更新状态'. Main question: what distinct work do Attention, MLP and PLE do to the same token state? Show ONE continuous horizontal main state ribbon entering and leaving a decoder layer, with three successive residual additions clearly attached to that same ribbon. First branch: 'RMSNorm → Attention → 残差', annotation '从可见的上下文读取信息' and small Q/K/V context fan-in. Second branch: 'RMSNorm → MLP → 残差', annotation '在当前位置重组特征' and a widened feature-channel illustration. Third branch: 'RMSNorm → PLE 门控 → 残差', annotation '同一 token 的逐层可学习输入，按当前状态调节'; show a distinct learned per-layer embedding entering a gate controlled by current state, not an unconditional constant addition. Label boundary main states '输入状态' and '输出状态', and a small accurate legend '残差：把分支结果加回主状态'. Above or below, show the same layer repeated vertically as 'Decoder ×42层' but keep the three update branches of one enlarged layer as the main focus. Avoid implying RMSNorm centers by subtracting the mean. No fake code screenshot, no unrelated numbers, no watermark, no logos. All simplified Chinese labels crisp and readable on a phone when enlarged, arrows technically accurate, information-rich without small clutter. Conceptual mechanism illustration, not a runtime trace or measured chart.
+```
+
+### 同一模型为何有不同的硬件瓶颈
+
+- 路径：`assets/generated/series-theme-hardware-zh.png`
+- 提示词：
+
+```text
+Create an original Chinese high-information 16:9 PPT educational diagram for a Gemma 4 E4B on-device inference blog, consistent warm off-white, navy, teal, purple, amber editorial engineering visual language. Exact title: '同一模型，为何瓶颈会变？'. The main diagram is a side-by-side comparison of two execution phases operating the SAME Decoder weights. LEFT teal column 'Prefill｜整段输入': a tall multi-row activation matrix times one shared weight tile; show several input positions computed together, weight reused across rows, KV cache established; labels '多行矩阵乘', '权重复用', '建立 KV'. RIGHT amber column 'Decode｜逐步生成': a single or few new activation rows times the same weights, previous KV history read and one new KV entry appended, next token loop; labels '每步少量新行', '重复读权重', '读取历史 KV'. Between them show continuity Prefill-created KV flowing into Decode history. Bottom is a compact three-row hardware-account comparison, with icons and directional flow, not fabricated numeric values: '静态权重：容量与供数', '动态 KV：写入与历史读取', '片上工作区：Tile、部分和、归约'. Add one crisp takeaway band: '输入长度、batch 与历史长度改变复用和搬运，瓶颈要按负载判断'. Do not assert every Prefill is compute-bound or every Decode is bandwidth-bound. No throughput numbers, no fake measured chart, no device photo, no logo or watermark. Large legible simplified Chinese, precise arrows and clean coherent layout, conceptual figure rather than experiment.
+```
+
+### 媒体输入与真实设备边界
+
+- 路径：`assets/generated/series-theme-media-device-zh.png`
+- 提示词：
+
+```text
+Create an original Chinese high-information wide 16:9 PPT educational infographic for a Gemma 4 E4B on-device inference technical series. Exact title: '媒体输入与真实设备边界'. One coherent left-to-right causal flow in the same editorial visual language as other figures: warm off-white, navy text, teal for inputs, purple for media soft tokens, amber for generated output. LEFT region with TWO clearly separate input paths: '图像 / 视频' → '抽帧或图像 patch' → '视觉前端' → '视觉软 token'; and '音频波形' → 'Log-Mel 特征' → '音频前端' → '音频软 token'. For video add small timestamp and frame markers as a conceptual cue; do not imply precise frame sampling. CENTER region: media soft tokens join ordered text positions in a shared '语言输入序列' then enter 'E4B Decoder'; explicitly note '媒体增加输入位置，也增加前端计算'. RIGHT region: generated text runs over time on a generic phone/edge device silhouette, with three separate transparent constraint gauges labeled '功率预算', '热积累', '供电瞬态'; arrows from execution to those constraints and back to sustainable operating point, with the concise takeaway '短时峰值 ≠ 持续体验'. At bottom show a small family-model branching reminder '换型号：结构与资源账重算' without listing unverified model-specific numbers. Must distinguish media frontends from language Decoder, and must not show image/audio as text transcription. No fake temperature curve, fake measured values, real product screenshot, logo or watermark. Large accurate simplified Chinese lettering, clean arrow directions, high information but not microscopic text, conceptual explanatory illustration.
+```
