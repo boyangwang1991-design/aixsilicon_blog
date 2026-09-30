@@ -4,6 +4,41 @@
   "files": [],
   "generated_assets": [
     {
+      "path": "assets/generated/data-movement-map-14-zh.png",
+      "sha256": "d2a55d6434d4fd00b76e0695dbd7a9d6043d69f04e33205a0bfa2bce66e18e86",
+      "language": "zh",
+      "purpose": "第14期权重、历史KV、当前激活的数据流与三类推理场景的概念资源地图；用户指定采用",
+      "generation": "Codex built-in imagegen; selection and visual review in notes/14-data-movement-imagegen.md"
+    },
+    {
+      "path": "assets/generated/power-thermal-pi-boundaries-17-zh.png",
+      "sha256": "0a1bf6d3c54cd1abdf6a21d4f492644e566f0df070bdeab6950a68a4d36638e5",
+      "language": "zh",
+      "purpose": "第17期功率预算、热积累与供电瞬态三种边界的因果对照图",
+      "generation": "Codex built-in imagegen; prompt and review in notes/17-power-thermal-pi-imagegen-prompt.md"
+    },
+    {
+      "path": "assets/generated/gemma4-family-map-18-zh.png",
+      "sha256": "b295ddc369d4ae9807e8a99f9feb9282efd3184f750224a4fb3be7b6b5d43d55",
+      "language": "zh",
+      "purpose": "第18期五型号家族地图：输入模态、结构差异与资源账读法",
+      "generation": "Codex built-in imagegen; prompt and visual review in notes/18-family-imagegen-prompt.md"
+    },
+    {
+      "path": "assets/generated/gemma4-moe-18-zh.png",
+      "sha256": "2d2ce96934315dc14007981011aeec93596aa78b5bc63e20ab1f8a26733d30a5",
+      "language": "zh",
+      "purpose": "第18期26B A4B共享MLP、Router与专家路径及存算差异讲解图",
+      "generation": "Codex built-in imagegen; prompt and visual review in notes/18-family-imagegen-prompt.md"
+    },
+    {
+      "path": "assets/generated/gemma4-mtp-18-zh.png",
+      "sha256": "9fd6b1d47f88dc76b4df8de2dd7ce840f5d69c60b7f1788739af08a57e1853d6",
+      "language": "zh",
+      "purpose": "第18期草稿模型顺序提议和目标模型并行验证的概念流程图",
+      "generation": "Codex built-in imagegen; prompt and visual review in notes/18-family-imagegen-prompt.md"
+    },
+    {
       "path": "assets/generated/quantization-dataflow-12-zh-v2.png",
       "sha256": "eb83301c1bd372822d61efd5bdc7c96b598f9a6390c5dd38f3643f257067602e",
       "language": "zh",
@@ -649,6 +684,34 @@
     },
     {
       "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/15-video-vision-record.md",
+      "path": "assets/generated/video-processor-timeline-15-zh.png",
+      "sha256": "d49405600d62a98bbf793c68d8b7abd258dc351cbd723c5fab09ed22ba99fba2",
+      "purpose": "第15期图3：视频抽帧、时间戳字符串与视觉占位槽的概念示意"
+    },
+    {
+      "language": "zh",
+      "generation": "torchview 0.2.7 of official Transformers 5.17.0 vision classes; constructed CPU input, no checkpoint; assets/diagrams/generate_video_vision_torchview.py; rendered with render-dot.mjs",
+      "path": "assets/diagrams/video_vision_2frames_e4b.png",
+      "sha256": "4bc6ba32ea108d0ce2a7d91efcffdbd0610a5621f6c5045eb8d067a12e7b9443",
+      "purpose": "第15期图4：E4B视频帧展平、共享视觉编码器、空间汇聚和投影的torchview追踪"
+    },
+    {
+      "language": "zh",
+      "generation": "rendered from torchview DOT with @viz-js/viz; assets/diagrams/render-dot.mjs",
+      "path": "assets/diagrams/video_vision_2frames_e4b.svg",
+      "sha256": "bed559256ff1a4197fd3abbf7c6c3762ac6a3e6cd4aca2280ce49e3ae59b3382",
+      "purpose": "第15期图4的可缩放SVG"
+    },
+    {
+      "language": "zh",
+      "generation": "assets/diagrams/generate_video_vision_torchview.py",
+      "path": "assets/diagrams/video_vision_2frames_e4b.dot",
+      "sha256": "b14044d43812813af3f97d7bf346311db770dd81e890b7b7ffdb1720c9076d07",
+      "purpose": "第15期图4的可编辑torchview DOT图源"
+    },
+    {
+      "language": "zh",
       "generation": "Codex built-in imagegen; prompt in notes/cover-prompt.md",
       "path": "assets/generated/cover-16-zh.png",
       "sha256": "33209150b8ffe98a85b83678ce48edeee714dcb95aeb76ccc62d6033a359b348",
@@ -667,6 +730,55 @@
       "path": "assets/generated/audio-mel-explainer-16-zh.png",
       "sha256": "f17e37d19c7c95b3fe9bb23a40f394aa1610ee3fa793e2873ea710a0ed3d3073",
       "purpose": "第16期图2：短时窗、频率分析与Mel频谱的含义"
+    },
+    {
+      "language": "zh",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/16-audio-trace-record.md",
+      "path": "assets/generated/audio-processor-slots-16-zh.png",
+      "sha256": "63a96360131ba3fe818d8387c07061b8f4fe61aabebf39f29132eb55346c446d",
+      "purpose": "第16期图3：Processor准备Log-Mel特征、有效帧mask与语言占位槽的概念示意"
+    },
+    {
+      "language": "zh",
+      "generation": "torchview 0.2.7 with E4B audio modules; compact rendering checks raw DOT; see notes/16-audio-trace-record.md",
+      "path": "assets/diagrams/audio_path_16mel_e4b_compact.png",
+      "sha256": "12d5ef2bb2e78727f91ee97669d237b5c0acf6ac06505baf2da09a57fc136238",
+      "purpose": "第16期图4：E4B音频塔、mask支路和语言宽度投影的手机阅读版torchview追踪"
+    },
+    {
+      "language": "zh",
+      "generation": "assets/diagrams/render-audio-compact-trace.mjs from raw torchview DOT",
+      "path": "assets/diagrams/audio_path_16mel_e4b_compact.svg",
+      "sha256": "77ff4f79f548336ed08cf6514384d51b19e94d65df56c9452c22cef2196a4f0c",
+      "purpose": "第16期图4压缩追踪的可缩放SVG"
+    },
+    {
+      "language": "zh",
+      "generation": "assets/diagrams/render-audio-compact-trace.mjs from raw torchview DOT",
+      "path": "assets/diagrams/audio_path_16mel_e4b_compact.dot",
+      "sha256": "e2801ecc10b90e5fead5cde83afa89cc4525cb3e3c2193abbf7c70f823997fb5",
+      "purpose": "第16期图4压缩追踪的可编辑DOT图源"
+    },
+    {
+      "language": "zh",
+      "generation": "assets/diagrams/generate_audio_path_torchview.py; rendered with render-dot.mjs",
+      "path": "assets/diagrams/audio_path_16mel_e4b.png",
+      "sha256": "a061ee3fb98f75b2d4fb32596b4f2819b648a922e1fbb71c37b3b8492f4c1265",
+      "purpose": "第16期音频模型完整torchview追踪，供放大核对"
+    },
+    {
+      "language": "zh",
+      "generation": "render-dot.mjs from raw torchview DOT",
+      "path": "assets/diagrams/audio_path_16mel_e4b.svg",
+      "sha256": "1353fc70cf6a0e50afc1a466936bdaa5c7ff45f2b9d094e0640f202a7bab28d8",
+      "purpose": "第16期完整torchview追踪的可缩放SVG"
+    },
+    {
+      "language": "zh",
+      "generation": "assets/diagrams/generate_audio_path_torchview.py",
+      "path": "assets/diagrams/audio_path_16mel_e4b.dot",
+      "sha256": "78507d8b4d0b0c3c67ec07fdc6f81c78bd6b89fa6e7610da3a13b9b068ab7d8f",
+      "purpose": "第16期完整torchview追踪的可编辑DOT图源"
     },
     {
       "language": "zh",
@@ -715,6 +827,34 @@
     {
       "url": "https://arxiv.org/abs/2309.06180",
       "purpose": "PagedAttention primary paper for block allocation and KV-cache fragmentation"
+    },
+    {
+      "url": "https://community.arm.com/cfs-file/__key/telligent-evolution-components-attachments/01-1998-00-00-00-00-68-16/White-Paper_2D00_-Strategic-Analog-Power-Management-IP-for-Systems-on-a-Chip.pdf",
+      "purpose": "chapter 17 dynamic and leakage power relation"
+    },
+    {
+      "url": "https://www.ti.com/video/6243719539001",
+      "purpose": "chapter 17 thermal resistance and capacitance explanation"
+    },
+    {
+      "url": "https://www.ti.com/lit/an/sprac76g/sprac76g.pdf",
+      "purpose": "chapter 17 processor PDN impedance and transient voltage droop"
+    },
+    {
+      "url": "https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-tensorrt-developer-guide/best-practices.html",
+      "purpose": "chapter 17 distinction between power and thermal throttling and logging practice"
+    },
+    {
+      "url": "https://digicoll.lib.berkeley.edu/record/136692/files/EECS-2008-134.pdf",
+      "purpose": "chapter 14 original Roofline model"
+    },
+    {
+      "url": "https://docs.nvidia.com/cutlass/latest/media/docs/cpp/efficient_gemm.html",
+      "purpose": "chapter 14 hierarchical tiling and reuse across memory levels"
+    },
+    {
+      "url": "https://docs.nvidia.com/deeplearning/tensorrt-rtx/latest/performance/best-practices.html",
+      "purpose": "chapter 14 inference benchmarking and per-layer profiling guidance"
     }
   ],
   "reference_snapshots": [

@@ -22,15 +22,31 @@
 
 10 ms 是帧沿时间轴前进的步长，意味着一秒语音通常形成百帧量级的 Mel 特征；这不是“一秒已经变成 100 个语言 token”。帧数还受窗口边界、填充和有效时长影响。处理器同时给出 `input_features_mask`，标记哪些帧来自有效音频，防止补齐批次长度的部分被当作语音内容。
 
+## Processor 还要准备多少个占位槽
+
+音频塔尚未运行时，提问的语言输入序列就需要留出音频向量的位置。Processor 因此做两件并行的事：一边交给音频塔 `Log-Mel 特征 + 有效帧 mask`，一边根据有效长度**预估两次下采样之后的有效位置数**，在提问中安排同样数量的音频占位槽。它模拟的是长度变化，不是在 Processor 里提前跑一遍卷积或生成声学向量。
+
+![波形经 Log-Mel 特征与有效帧 mask，Processor 预估音频占位槽的概念图](assets/generated/audio-processor-slots-16-zh.png)
+
+*图 3：Processor 侧的概念示意。青色表示有效 Mel 帧，灰色表示为批处理补齐的位置；根据有效长度推算的占位槽数，要与音频塔最终留下的有效向量数一致。图中的条块数量只用于说明关系，不是某段录音的真实测量。*
+
+这里先不要把占位槽当作“听写结果”。它们只是语言输入中预留的位置；等音频塔产出向量，模型才会用这些向量替换占位槽。这样，`mask` 不只决定音频编码时哪些帧有效，还关系到后面能否把音频特征与语言序列严丝合缝地接上。
+
 ## 音频编码器先缩短时间，再理解片段
 
 Mel 频谱仍是一串密集的数值帧。E4B 音频塔先用两层时间步长为 2 的卷积做下采样：直观上，每经过一层，时间位置约减半，两层之后约为原来的四分之一。这个动作降低后续编码器要处理的序列长度；卷积同时提取邻近帧的局部声学模式，并非单纯扔掉每四帧中的三帧。
 
 随后，音频编码器的注意力让当前编码位置参考此前有限范围的片段，局部卷积继续捕捉相邻声音的变化。固定 E4B 配置的音频注意力右侧上下文为 0，因此不能把这一路画成“当前片段直接读取后续片段”的双向窗口。编码器输出仍是连续的**音频特征**，不是识别后的文字。前面的时间缩短解释了 [Google 音频说明](https://ai.google.dev/gemma/docs/capabilities/audio)中“一秒约 25 个音频 token”的量级：10 ms 一帧约为每秒 100 帧，再经过约四倍时间下采样。准确的有效 token 数仍要由这段录音的处理结果与 mask 确定。
 
+图 4 用真正的 E4B 音频模块做 `torchview` 追踪。输入是构造的 `[1,16,128]` Mel 特征与 `[1,16]` 有效帧 mask；两层 stride-2 卷积后得到 `[1,4,1024]` 和 `[1,4]` mask。12 层音频编码保持这 4 个时间位置，音频塔输出投影到 1536 维，接着 RMSNorm 与 Linear 把它们映射到语言主宽度 2560。
+
+![E4B 音频塔与语言宽度投影的 torchview 追踪压缩图](assets/diagrams/audio_path_16mel_e4b_compact.png)
+
+*图 4：根据实际 `torchview` 追踪压缩排版，12 个连续的 `Gemma4AudioLayer` 节点合并为一格，保留原始模块顺序、mask 支路与关键形状；[完整追踪图](assets/diagrams/audio_path_16mel_e4b.png)供放大核对。这里的 16 帧是为读图构造的小输入，初始化参数只用于核对结构和形状，未加载 E4B 权重，也未做语音识别。相对位置表示的长度 13 是编码器的内部上下文表示，不是 13 个音频软 token。*
+
 ## 音频软 token 怎样进入文字序列
 
-音频塔输出特征后，多模态映射先做 RMSNorm，再用 Linear 投影到 E4B 语言主宽度 2560。处理器预先在输入中留出与有效音频软 token 数对应的槽位；模型剔除 padding 对应的编码输出，检查特征数量和槽位数量一致，然后将向量写入这些位置。这样，语言 Decoder 读取的仍是一条统一的输入序列，只是其中一段位置来自音频，其他位置来自提示文字。音频软 token 不是词表中一串被“听写”出来的词。
+图 4 中投影后的 `[1,4,2560]` 仍带着对应的 `[1,4]` 有效性 mask。处理器预先在输入中留出与有效音频软 token 数对应的槽位；模型剔除 padding 对应的编码输出，检查剩余特征数量和槽位数量一致，然后将向量写入这些位置。这样，语言 Decoder 读取的仍是一条统一的输入序列，只是其中一段位置来自音频，其他位置来自提示文字。音频软 token 不是词表中一串被“听写”出来的词。
 
 沿整条链至少要分别数三个长度：原始波形的采样点、Mel 特征帧、最终占据语言序列位置的有效音频软 token。波形和 Mel 帧影响输入缓冲与音频塔临时工作区；软 token 增加语言 Prefill 的长度，并可能影响后续上下文和 KV Cache。只按录音文件大小估算 Decoder 内存，或者只按最后的软 token 数估算整个音频前端，都会漏掉一部分工作。
 
@@ -38,4 +54,4 @@ Mel 频谱仍是一串密集的数值帧。E4B 音频塔先用两层时间步长
 
 和上一章的图片路径相比，音频最特别的是**时间轴一直在推进**。Mel 频谱让声音的频率结构显现，卷积让密集帧变短，编码器把局部声学线索连起来，软 token 再把这些结果交给语言模型。下一步评估端侧实现，就要把音频前端、语言模型和持续运行时的带宽与功耗放到同一条时间线上。
 
-资料：[Google Gemma 4 音频说明](https://ai.google.dev/gemma/docs/capabilities/audio) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers 音频特征提取](https://github.com/huggingface/transformers/blob/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/feature_extraction_gemma4.py) · [Transformers Gemma 4 实现](https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4)
+资料：[Google Gemma 4 音频说明](https://ai.google.dev/gemma/docs/capabilities/audio) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers 音频特征提取](https://github.com/huggingface/transformers/blob/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/feature_extraction_gemma4.py) · [音频模型实现](https://github.com/huggingface/transformers/blob/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/modeling_gemma4.py) · [多模态 Processor](https://github.com/huggingface/transformers/blob/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/processing_gemma4.py)

@@ -1,10 +1,10 @@
-# 视觉输入：照片如何变成软 Token
+# 视觉输入：照片与视频帧如何变成软 Token
 
 ![照片被切成 patch，与文字一起进入语言模型的概念封面](assets/generated/cover-15-zh.png)
 
 [系列索引](README.md) · 第 15 期
 
-问模型“这张图片里有什么”，问题中的字可以按普通文本处理，图片却不能直接按字节送进词表。Gemma 4 E4B 先把图片处理成 patch，经视觉编码器提取特征，再将特征变为语言模型主宽度的**视觉软 token**。这些软 token 占据输入序列中的位置，和问题的文字一起进入语言 Decoder。它们是向量，不是模型暗中写出的一段图片说明。
+问模型“这张图片里有什么”，问题中的字可以按普通文本处理，图片却不能直接按字节送进词表。Gemma 4 E4B 先把图片处理成 patch，经视觉编码器提取特征，再将特征变为语言模型主宽度的**视觉软 token**。这些软 token 占据输入序列中的位置，和问题的文字一起进入语言 Decoder。它们是向量，不是模型暗中写出的一段图片说明。视频沿用这条视觉路径，但多了抽帧、时间标记和多帧顺序的组织。
 
 ![从图片预处理、视觉编码、空间汇聚到图文序列合流的五步流程](assets/generated/vision-path-overview-15-zh.png)
 
@@ -40,6 +40,24 @@ Processor 先根据视觉 token 预算调整图片尺寸，尽量保持原有长
 
 这也解释了图像为什么会影响资源预算。上传到看见回答之前，可能经历图片解码与预处理、视觉编码、图文 Prefill，随后才是逐 token 的文本生成。视觉前端要占权重和临时工作区；有效软 token 增加语言序列长度，影响 Prefill 和后续上下文占用。估算峰值内存时要看哪些数据在同一阶段同时存在，不能把原图、全部中间特征和 KV Cache 的各自最大值直接相加，也不能只按最终输出字数估算。
 
-本章讨论的是 E4B 的独立视觉编码路径。看懂它，最重要的是分清两个位置系统和两个长度变化：图片内部用 `(x,y)` 保留几何关系；进入语言 Decoder 后，软 token 占据语言序列的位置。预算决定前端能看多细，`3×3` 汇聚决定最终要送入多少视觉向量。下一章沿声音的时间轴看另一条媒体输入链。
+## 视频：先排好帧的时间，再复用图片编码路径
 
-资料：[Google Gemma 4 视觉说明](https://ai.google.dev/gemma/docs/capabilities/vision) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers Gemma 4 实现](https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4)
+视频不能把全部原始画面原封不动送进视觉编码器。`Gemma4VideoProcessor` 先按采样策略选帧，对选中的每帧做缩放、归一化和 16×16 patch 切分，并给 patch 建立帧内 `(x,y)` 坐标。`Gemma4Processor` 再按帧的时间顺序，把**时间戳字符串和该帧所需的视频占位槽**放进提问文本。图 3 只说明这种组织关系；选了几帧、每帧有多少有效软 token，取决于实际输入和处理配置。
+
+![视频抽帧、时间标记与视觉占位槽如何排进语言输入序列的概念图](assets/generated/video-processor-timeline-15-zh.png)
+
+*图 3：Processor 阶段的概念示意。画中三帧和 `t₁/t₂/t₃` 只是为了看清顺序，并非固定抽帧数、采样间隔或实际时间戳格式。每帧后面是一组占位槽，数量应与该帧产生的视觉软 token 对齐。*
+
+进入模型后，视频没有单独的时序视觉编码器。源码中的 `get_video_features` 把 `[视频数, 帧数, patch 数, patch 像素]` 的前两维展平，将各帧当作一批图片送入**同一个视觉编码器**；编码、空间汇聚、RMSNorm 和投影到语言宽度，与静态图片共享主要模块。图 4 是按 E4B 配置运行的 `torchview` 结构追踪，不是手绘流程图。
+
+![E4B 视频帧展平、视觉编码、空间汇聚与语言宽度投影的 torchview 追踪](assets/diagrams/video_vision_2frames_e4b.png)
+
+*图 4：真实模块路径的 `torchview` 追踪。为让形状可读，输入构造为 1 段视频、2 帧、每帧 3×3 个 patch：像素块 `[1,2,9,768]` 和二维坐标 `[1,2,9,2]` 展平为批量 2；视觉编码器输出每帧的 patch 特征，3×3 汇聚后每帧留下 1 个 768 维向量，投影结果为 `[2,2560]`。图中 `Gemma4VisionEncoder` 折叠了实际 16 层。使用初始化参数和构造输入，只核对模块与张量形状，不加载 E4B 权重，也不表示实际视频一定每帧只有 9 个 patch 或 1 个软 token。*
+
+这里有一个容易误读的边界：**展平帧维是为了复用视觉编码器的批量处理，不代表帧与帧已经在视觉编码器内部相互注意。** 时间戳和帧的先后次序在 Processor 构造的语言输入序列里；投影后的视觉向量按占位槽写回，语言 Decoder 才能把文字、时间标记和各帧内容放在同一条序列中关联。`torchview` 能画模型内张量怎样流过模块，却不会自动画出抽帧、格式化时间戳和构造文本占位槽等 Processor 操作，所以两张图需要合起来读。
+
+硬件账也随之变化：多一帧就多一次视觉编码工作和一组可能进入语言 Prefill 的软 token；增加帧数与提高每帧视觉预算是两种不同的成本。先确定任务需要多密的时间采样、每帧要看多细，再估算视觉前端工作量和语言序列长度，不能把“一段视频”当成固定数量的 token。
+
+本章最重要的是分清两套位置：图片或单帧内部用 `(x,y)` 保留几何关系；多帧进入语言 Decoder 后，时间标记与视觉软 token 在序列中保留先后关系。下一章沿声音的时间轴看另一条媒体输入链。
+
+资料：[Google Gemma 4 视觉说明](https://ai.google.dev/gemma/docs/capabilities/vision) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers Gemma 4 模型实现](https://github.com/huggingface/transformers/blob/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/modeling_gemma4.py) · [视频处理器](https://github.com/huggingface/transformers/blob/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/video_processing_gemma4.py) · [多模态 Processor](https://github.com/huggingface/transformers/blob/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4/processing_gemma4.py)

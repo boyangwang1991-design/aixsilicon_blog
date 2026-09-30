@@ -1,0 +1,469 @@
+strict digraph audio_path_16mel_e4b {
+	graph [ordering=in rankdir=TB size="26.4,26.4"]
+	node [align=left fontname="Linux libertine" fontsize=10 height=0.2 margin=0 ranksep=0.1 shape=plaintext style=filled]
+	edge [fontsize=10]
+	0 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                        <TR><TD>input-tensor<BR/>depth:0</TD><TD>(1, 16, 128)</TD></TR>
+                    </TABLE>> fillcolor=lightyellow]
+	1 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                        <TR><TD>input-tensor<BR/>depth:0</TD><TD>(1, 16)</TD></TR>
+                    </TABLE>> fillcolor=lightyellow]
+	2 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioSubSampleConvProjection<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 16, 128), (1, 16) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 4) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	3 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioRelPositionalEncoding<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 13, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	4 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">to<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	5 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">add<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(4,) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(4,) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	6 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">add<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(4,) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(4,) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	7 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">custom_function_call<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">() </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	8 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">to<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">() </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">() </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	9 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">__and__<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">() </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">() </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	10 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">mul<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1,) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1,) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	11 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">__getitem__<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1,) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 1) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	12 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">__getitem__<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(24,) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 24) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	13 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">add<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 1), (1, 24) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 24) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	14 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">__getitem__<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 24) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 1, 1, 1, 24) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	15 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">expand<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 1, 1, 1, 24) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 1, 1, 12, 24) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	16 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">gather<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 1, 1, 12, 24) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 1, 1, 12, 24) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=aliceblue]
+	17 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	18 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	19 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	20 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	21 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	22 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	23 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	24 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	25 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	26 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	27 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	28 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4AudioLayer<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024), (1, 1, 1, 12, 24), (1, 13, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	29 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Linear<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1024) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1536) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	30 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                        <TR><TD>output-tensor<BR/>depth:0</TD><TD>(1, 4)</TD></TR>
+                    </TABLE>> fillcolor=lightyellow]
+	31 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Gemma4RMSNorm<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1536) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 1536) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	32 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                    <TR>
+                        <TD ROWSPAN="2">Linear<BR/>depth:2</TD>
+                        <TD COLSPAN="2">input:</TD>
+                        <TD COLSPAN="2">(1, 4, 1536) </TD>
+                    </TR>
+                    <TR>
+                        <TD COLSPAN="2">output: </TD>
+                        <TD COLSPAN="2">(1, 4, 2560) </TD>
+                    </TR>
+                    </TABLE>> fillcolor=darkseagreen1]
+	33 [label=<
+                    <TABLE BORDER="0" CELLBORDER="1"
+                    CELLSPACING="0" CELLPADDING="4">
+                        <TR><TD>output-tensor<BR/>depth:0</TD><TD>(1, 4, 2560)</TD></TR>
+                    </TABLE>> fillcolor=lightyellow]
+	0 -> 2
+	1 -> 2
+	2 -> 4
+	2 -> 3
+	2 -> 17
+	3 -> 17
+	3 -> 18
+	3 -> 19
+	3 -> 20
+	3 -> 21
+	3 -> 22
+	3 -> 23
+	3 -> 24
+	3 -> 25
+	3 -> 26
+	3 -> 27
+	3 -> 28
+	4 -> 7
+	7 -> 8
+	8 -> 9
+	10 -> 11
+	11 -> 13
+	12 -> 13
+	13 -> 14
+	14 -> 15
+	15 -> 16
+	16 -> 17
+	16 -> 18
+	16 -> 19
+	16 -> 20
+	16 -> 21
+	16 -> 22
+	16 -> 23
+	16 -> 24
+	16 -> 25
+	16 -> 26
+	16 -> 27
+	16 -> 28
+	17 -> 18
+	18 -> 19
+	19 -> 20
+	20 -> 21
+	21 -> 22
+	22 -> 23
+	23 -> 24
+	24 -> 25
+	25 -> 26
+	26 -> 27
+	27 -> 28
+	28 -> 29
+	4 -> 30
+	29 -> 31
+	31 -> 32
+	32 -> 33
+}

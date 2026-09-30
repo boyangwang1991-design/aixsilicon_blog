@@ -2,9 +2,11 @@
 
 > 中文内部改稿，保存在公开 GitHub 仓库中，尚未完成正式发布审阅。Maarten Grootendorst 的原图放在 `assets/draft-newsletter/` 供逐章核对；正式用于公众号等平台前仍需取得图片使用许可或替换。英文版和英文配图暂缓。
 
+另有按主题重新写作的 [11 篇精简版](condensed/README.md)。原有 19 章保持在本目录，供事实和配图核对；精简版直接引用本目录已有图片。
+
 第 01 期建立 Gemma 4 的多模态与生成全景，第 02 期沿官方 Tokenizer 追踪一句话的真实输入，第 03 期接着看 ID 怎样进入主 Embedding 表。第 04 期用合并实现与逻辑说明的 `torchview` 总图解释 decoder 主线，第 04A 期展开其中反复出现的 RMSNorm。其余章节按这条主线逐步拆解，当前仍在中文编辑阶段。
 
-如果你不熟悉 Transformer，可以从第 01 期读起。第 01–03 期看推理、Tokenizer 和 Embedding；第 04 期进入 E4B 的 decoder 层，第 04A 期解释 RMSNorm，第 05 期再拆开层内的矩阵乘；第 06–09 期继续看 Attention、RoPE、局部/全局层与 PLE；第 10–14 期追踪 Prefill、Decode、KV Cache、权重和数据搬运；最后接入图像、音频，并讨论端侧持续运行和家族型号的差异。各期使用同一 E4B 案例，标题和顺序服务于这条故事线。
+如果你不熟悉 Transformer，可以从第 01 期读起。第 01–03 期看推理、Tokenizer 和 Embedding；第 04 期进入 E4B 的 decoder 层，第 04A 期解释 RMSNorm，第 05 期再拆开层内的矩阵乘；第 06–09 期继续看 Attention、RoPE、局部/全局层与 PLE；第 10–14 期追踪 Prefill、Decode、KV Cache、权重和数据搬运；最后接入图像、视频和音频，并讨论端侧持续运行和家族型号的差异。各期使用同一 E4B 案例，标题和顺序服务于这条故事线。
 
 | 期 | 中文章节 | 状态 |
 | --- | --- | --- |
@@ -22,11 +24,11 @@
 | 11 | [KV Cache：保存什么，容量如何增长](11-kv-cache.md) | 中文改稿；封面、跨步复用、单步读写、容量流量对照与硬件存储层级图已配 |
 | 12 | [E4B 权重与量化：从参数容量到芯片带宽](12-weights-ple-quantization.md) | 中文改稿；封面与两张讲解图已配 |
 | 13 | [E4B Attention 加速：分块、滑窗与长上下文 Decode 怎样分工](13-attention-acceleration.md) | 中文重梳；按层类型与推理阶段说明加速选型，封面与讲解图已配 |
-| 14 | [数据搬运与 Roofline：权重复用如何改变瓶颈](14-compute-and-data-movement.md) | 中文改稿；封面与讲解图已配 |
-| 15 | [视觉输入：照片如何变成软 Token](15-vision-path.md) | 中文改稿；封面与两张原创 PPT 风格讲解图已配；英文暂缓 |
-| 16 | [音频输入：波形如何变成软 Token](16-audio-path.md) | 中文改稿；封面与两张原创 PPT 风格讲解图已配；英文暂缓 |
-| 17 | [功耗、散热与供电：端侧推理能否持续输出](17-power-thermal-pi.md) | 中文改稿；封面与讲解图已配 |
-| 18 | [Gemma 4 型号比较：结构变化怎样重算资源需求](18-family-and-next-steps.md) | 中文改稿；封面与草稿讲解图已配 |
+| 14 | [数据搬运与 Roofline：端侧 NPU 什么时候在等数据](14-compute-and-data-movement.md) | 中文重梳；封面与数据流资源地图已配；英文暂缓 |
+| 15 | [视觉输入：照片与视频帧如何变成软 Token](15-vision-path.md) | 中文改稿；封面、照片讲解图、视频 Processor 概念图与 torchview 追踪图已配；英文暂缓 |
+| 16 | [音频输入：波形如何变成软 Token](16-audio-path.md) | 中文改稿；封面、三张原创原理图与音频塔 torchview 追踪已配；英文暂缓 |
+| 17 | [功耗、散热与供电：端侧推理为什么会越跑越慢](17-power-thermal-pi.md) | 中文重梳；封面、时间线与三种边界对照图已配；英文暂缓 |
+| 18 | [Gemma 4 家族：换一个型号，资源账为什么要重算](18-family-and-next-steps.md) | 中文重梳；封面与 3 张原创 imagegen 讲解图已配；英文暂缓 |
 
 ## 读图约定
 

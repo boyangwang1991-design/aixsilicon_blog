@@ -1,0 +1,46 @@
+{
+  "edition": "11-article Chinese editing version; assets linked from parent folder",
+  "chapter_sources": {
+    "01-inputs-and-representations.md": [
+      "01-input-to-next-token.md",
+      "02-tokenizer.md",
+      "03-embedding.md"
+    ],
+    "02-decoder-state.md": [
+      "04-decoder-layer.md",
+      "04a-rmsnorm.md",
+      "09-ple.md"
+    ],
+    "03-matmul-cube.md": [
+      "05-tensor-matmul-basics.md"
+    ],
+    "04-attention-and-position.md": [
+      "06-attention-tensors.md",
+      "07-rope-position.md"
+    ],
+    "05-hybrid-attention-kv-cache.md": [
+      "08-hybrid-attention.md",
+      "11-kv-cache.md"
+    ],
+    "06-prefill-decode-acceleration.md": [
+      "10-prefill-decode.md",
+      "13-attention-acceleration.md"
+    ],
+    "07-weights-quantization-data.md": [
+      "12-weights-ple-quantization.md",
+      "14-compute-and-data-movement.md"
+    ],
+    "08-vision-path.md": [
+      "15-vision-path.md"
+    ],
+    "09-audio-path.md": [
+      "16-audio-path.md"
+    ],
+    "10-power-thermal-pi.md": [
+      "17-power-thermal-pi.md"
+    ],
+    "11-family.md": [
+      "18-family-and-next-steps.md"
+    ]
+  }
+}
