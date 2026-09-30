@@ -7,7 +7,7 @@
       "filename": "README.md",
       "title": "SoC Studio：让芯片设计，走出文件的孤岛",
       "category": "SoC Studio",
-      "status": "中文已补真实截图与讲解图；英文待同步，尚未发布审阅"
+      "status": "中文已补十张真实截图与五张 AI Native 讲解图；英文待同步，尚未发布审阅"
     }
   ],
   "files": [
@@ -78,14 +78,14 @@
   ],
   "chinese_revision": {
     "date": "2026-09-29",
-    "status": "zh draft with six real screenshots and five revised AI Native conceptual figures; en pending synchronization",
+    "status": "zh draft with ten real screenshots and five revised AI Native conceptual figures; en pending synchronization",
     "screenshot_origin": "running local SoC Studio UI, aurora_rtl_candidate revision 70c47e4e26d5, Edge 1600x1000",
     "diagrams": "five Codex imagegen edits of the five user-provided conceptual figures; see notes/ai-native-imagegen-zh.md",
     "notes": "notes/screenshot-production-zh.md",
     "assets": [
       {
         "destination": "README.md",
-        "sha256": "120b61bcd9ff6b6edc1ee727ffb1c666d779025cd76cc9ce17f7084b881956c0"
+        "sha256": "59fd19d634adf379b9215754e91c12ec23069db99996fbb36e5cb88f5eed8df1"
       },
       {
         "destination": "assets/screenshots/01-aurora-bus.png",
@@ -175,6 +175,30 @@
         "purpose": "Chinese AI Native conceptual explanatory figure",
         "origin": "Codex built-in imagegen edit of user-provided original",
         "prompt_record": "notes/ai-native-imagegen-zh.md"
+      },
+      {
+        "destination": "assets/screenshots/06-history.png",
+        "sha256": "404c61560ce7a0725f54a09ef73c5286fac7dd6e72a24a341ad098ac822a5b7a",
+        "purpose": "real SoC Studio interface screenshot",
+        "origin": "running local SoC Studio UI, aurora_rtl_candidate revision 70c47e4e26d5, Edge 1600x1000"
+      },
+      {
+        "destination": "assets/screenshots/07-ip-repo.png",
+        "sha256": "d48732a3e4436b62c72ef56023c1f1ed2fc0836a98ee8fee7424cbeef7696357",
+        "purpose": "real SoC Studio interface screenshot",
+        "origin": "running local SoC Studio UI, aurora_rtl_candidate revision 70c47e4e26d5, Edge 1600x1000"
+      },
+      {
+        "destination": "assets/screenshots/08-tcl-console.png",
+        "sha256": "3f7d7edb294142d5d94196c51c30444a692c8b12473f0fce1c54c876e4155b18",
+        "purpose": "real SoC Studio interface screenshot",
+        "origin": "running local SoC Studio UI, aurora_rtl_candidate revision 70c47e4e26d5, Edge 1600x1000"
+      },
+      {
+        "destination": "assets/screenshots/10-runs.png",
+        "sha256": "755ac7d9aa1e9dff2f8e82eff27f1f50c1769184565c6e68b291c74df9441e4b",
+        "purpose": "real SoC Studio interface screenshot",
+        "origin": "running local SoC Studio UI, aurora_rtl_candidate revision 70c47e4e26d5, Edge 1600x1000"
       }
     ],
     "current_title": "AI Native SoC Studio，为什么先做工程模型？",

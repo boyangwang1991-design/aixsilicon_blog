@@ -1164,3 +1164,15 @@ Thermal / Power Limit
 然后文章突然停住：
 
 > **如果这些就是运行 Gemma 4 必须面对的问题，那么我们应该设计一颗怎样的芯片？**
+
+
+
+C:/Users/boyang-lab/Desktop/aixsilicon_blog/notes/gemma_on_chip_tutorial_plan.md 是我对gemma4 这个系列blog的规划，请协助我规划这期系列化材料；C:\Users\boyang-lab\Desktop\wenwang_edgenpu 你可以在这个路径找到gemma的一些代码；所有材料放到同一个文件夹下，有些地方，如果可以用python直接生图，比如torchview，或者存储计算对比之类的，可以用python脚本生图；
+可以用torchview这类工具来绘制model图形用于配图，但是要注意配图的范围，避免图片过大，无法局部观看；为了讲清楚，可以构造torchview；但是要将每条线上的数据结构讲清楚；
+每一章节都放一个markdown，然后用一个整体的README索引
+先不用做英文版，先不用生图，先把中文材料写出来，生图的地方可以先预留图片提示词作为占位符
+从头到尾从算法入手，将GEMMA大模型，对于端侧硬件的一些诉求讲清楚；而不是受限于如何实现它们；
+你的目标很简单，就是讲gemma4模型讲透彻，结合torchview，等一些工具，将每一步干了啥，都讲清楚；当特定算法对硬件产生关键需求的时候，要讲清楚；也可以单开一期讲清楚；
+请先完成规划，规划直接写到gemma的文件夹下
+
+
