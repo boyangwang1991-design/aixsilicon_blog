@@ -2,7 +2,7 @@
 
 ![Attention 分块计算与片上累积的概念封面](assets/generated/cover-13-zh.png)
 
-[系列索引](README.md) · 第 13 期
+[系列索引](README.md) · 第 14 期
 
 同样是 Attention，Prefill 要同时处理整段输入里的许多 query，Decode 通常只为新 token 处理一个 query。前者容易生成巨大的分数与概率中间表；后者的中间表很短，却可能要反复读取越来越长的 KV Cache。若再把 E4B 的 512 token 局部窗口与全局层混在一起谈，“用某个加速算法”就成了一句没有执行条件的话。
 

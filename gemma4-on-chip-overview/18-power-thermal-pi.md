@@ -2,7 +2,7 @@
 
 ![持续输出受到供电与散热约束的概念封面](assets/generated/cover-17-zh.png)
 
-[系列索引](README.md) · 第 17 期
+[系列索引](README.md) · 第 18 期
 
 一台设备刚开始生成时很快，连续运行后每秒输出的 token 却变少了。模型权重没有变，算法也没有变，问题可能出在设备允许它以多高的频率持续工作。前面章节算出的乘加量、权重读取量和 KV Cache 容量，到了真实设备上，还要经过三道边界：**可用功率、排热能力、瞬态供电**。它们影响推理的方式不同，需要分开看。
 
@@ -40,6 +40,6 @@ Prefill 一次处理整段输入，矩阵单元可能在一段时间内持续工
 
 先固定同一套任务和运行条件：模型与量化版本、输入/输出 token 数、是否有图像或音频、batch、并发、环境温度和设备电源模式。接着记录三组同步信息：推理阶段与 token 时间戳；设备的功率、频率、温度及限制标志；若要讨论 PI，再加足够带宽的供电波形或可信仿真。板级总功率和芯片单元功率不是同一个量，测量位置必须注明。
 
-这样才能区分几种容易混淆的结论：峰值 TOPS 说明算力上限，不说明稳态 token/s；平均瓦数不能说明瞬态压降；温度升高不自动证明性能下降由热限频造成。若想改善持续输出，先定位限制来自哪里，再决定是减少数据搬运、调整频率电压、改善散热，还是处理供电网络。第 18 期再把同一套核算方法带到 Gemma 4 的其他型号；本章没有给出某款设备的功耗、温升或电压实测值。
+这样才能区分几种容易混淆的结论：峰值 TOPS 说明算力上限，不说明稳态 token/s；平均瓦数不能说明瞬态压降；温度升高不自动证明性能下降由热限频造成。若想改善持续输出，先定位限制来自哪里，再决定是减少数据搬运、调整频率电压、改善散热，还是处理供电网络。第 19 期再把同一套核算方法带到 Gemma 4 的其他型号；本章没有给出某款设备的功耗、温升或电压实测值。
 
 资料：[Arm：SoC 功耗组成](https://community.arm.com/cfs-file/__key/telligent-evolution-components-attachments/01-1998-00-00-00-00-68-16/White-Paper_2D00_-Strategic-Analog-Power-Management-IP-for-Systems-on-a-Chip.pdf) · [TI：热动态](https://www.ti.com/video/6243719539001) · [TI：处理器供电网络](https://www.ti.com/lit/an/sprac76g/sprac76g.pdf) · [NVIDIA：推理时的功率与热限制](https://developer.nvidia.com/docs/drive/drive-os/7.0.3/public/drive-os-tensorrt-developer-guide/best-practices.html)

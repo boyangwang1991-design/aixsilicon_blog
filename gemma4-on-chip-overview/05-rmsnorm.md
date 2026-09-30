@@ -2,7 +2,7 @@
 
 ![RMSNorm 控制向量尺度的概念封面](assets/generated/cover-rmsnorm-zh.png)
 
-[系列索引](README.md) · 第 04A 期
+[系列索引](README.md) · 第 05 期
 
 在上一期的 decoder 层图里，Attention 和 MLP 前后各有一次 RMSNorm，PLE 更新加回主状态前还有一次。图上这些节点没有改变张量形状，却反复出现在计算主线上。它们究竟对一条向量做了什么？若只把它们当作“数值整理”，后面读 Q/K/V 的计算与估算端侧代价时，就会漏掉关键一步。
 

@@ -2,7 +2,7 @@
 
 ![Prefill 与 Decode 两种节奏的概念封面](assets/generated/cover-10-zh.png)
 
-[系列索引](README.md) · 第 10 期
+[系列索引](README.md) · 第 11 期
 
 同样调用一套 Gemma 4 权重，用户发送提示词的那一刻与模型持续吐字时，计算形状并不一样。提示词已经全部给定，模型可以一次处理其中许多位置。这段叫 Prefill：线性层接收多行 `[S_prompt,D]`，同一权重服务多行，Attention 为后续生成准备所需的 K/V。首个回答 token 的等待时间通常包含这段工作。首个 token 选出后，模型才知道下一步要喂回哪个 ID；batch=1 的典型 Decode 步在线性层只有一行 `[1,D]`。一条回答的各个生成步因此有前后依赖。
 
@@ -34,6 +34,6 @@ Prefill 处理已知提示词，通常由末尾 logits 选出首个回答 token�
 
 测量首 token 延迟时，还要说明是否把模板、Tokenizer、设备传输和输出解码算进去。第二个 token 开始的 Decode 速率也应给出上下文长度，因为全局 K/V 的可见历史会随长度增长。一个 `tokens/s` 数字若没有这些条件，很难跨设备或跨模型比较。
 
-可选的多 token 预测（MTP）会改变后续前向的安排，第 18 期结合 drafter 再谈。这里先留下一个关键问题：后续一步只输入一个新 token，前面那些 K/V 从哪里来？
+可选的多 token 预测（MTP）会改变后续前向的安排，第 19 期结合 drafter 再谈。这里先留下一个关键问题：后续一步只输入一个新 token，前面那些 K/V 从哪里来？
 
 资料：[Google Gemma 4 模型卡](https://ai.google.dev/gemma/docs/core/model_card_4) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers Gemma 4 源码](https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4)

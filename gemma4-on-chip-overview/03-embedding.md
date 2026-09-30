@@ -53,6 +53,6 @@ E4B 的配置启用了输入主 Embedding 与输出 `lm_head` 的权重绑定。
 
 如果同一句话里两次出现 ID `141370`，两次主查表拿到的原始行相同。它们在序列中的位置不同、之前能读到的上下文不同；后续 Attention 会让两条路径分开。E4B 并没有在这张主表里为“第 1 个天空”和“第 20 个天空”各存一行位置专属参数。位置怎样进入 Q/K 的比较，要等讲 RoPE 时再展开。
 
-主表也不是 E4B 唯一的嵌入参数。它还有给不同 decoder 层使用的逐层嵌入 PLE，查表和合并方式与这里的主流不同；第 09 期会单独拆开。图像、音频软 token 则由各自前端产生向量并投影到文本宽度，不应被当作普通文字 ID 来解释。此处先抓住主线：从 `[B,S]` 的整数，按行读出并缩放为 `[B,S,2560]`。这组数直接进入 decoder 层；下一期沿着它看一层里有哪些计算路径。
+主表也不是 E4B 唯一的嵌入参数。它还有给不同 decoder 层使用的逐层嵌入 PLE，查表和合并方式与这里的主流不同；第 10 期会单独拆开。图像、音频软 token 则由各自前端产生向量并投影到文本宽度，不应被当作普通文字 ID 来解释。此处先抓住主线：从 `[B,S]` 的整数，按行读出并缩放为 `[B,S,2560]`。这组数直接进入 decoder 层；下一期沿着它看一层里有哪些计算路径。
 
 资料：[Google Gemma 4 模型卡](https://ai.google.dev/gemma/docs/core/model_card_4) · [E4B 固定配置](https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json) · [Transformers Gemma 4 源码](https://github.com/huggingface/transformers/tree/8445b13cd24961e47f25a649fb113580f71a8d11/src/transformers/models/gemma4)
