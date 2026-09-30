@@ -1,4 +1,15 @@
-# 第 01 期配图生成记录
+# Gemma 4 系列与第 01 期配图生成记录
+
+## 系列总引言封面（2026-09-29）
+
+- 工具：Codex 内置 imagegen。
+- 路径：`assets/generated/cover-series-zh.png`；SHA-256：`e705e23180e4c997947b3aab7198eae323f226bf37e660c5c54b70996944a7f7`。
+- 用途：系列 `README.md` 的横向独立封面。中文标题和副标题已核对；图中模型与存储仅为概念意象，不是芯片实物或测量结果。正文讲解图另见 `notes/series-intro-imagegen.md`。
+- 最终提示词：
+
+```text
+Use case: scientific-educational. Asset type: original Chinese wide 16:9 cover for the Gemma 4 from algorithm to on-device chip blog series, suitable for a WeChat article header and phone thumbnail. A single compelling engineering visual: at left a compact ordered ribbon of text, image and audio input symbols flows into one luminous layered inference corridor; inside the corridor a clear matrix-compute grid and a distinct memory ribbon for weights and growing KV history; at right one text token emerges and feeds a subtle next-token loop. The image should convey that model mathematics becomes data movement and hardware constraints. Refined editorial PPT illustration, precise geometric depth, not a real silicon die or product UI. Navy foundation, teal data paths, restrained amber output and purple memory. Large simplified Chinese title exactly 'Gemma 4 从算法到端侧芯片'. One small subtitle exactly '看懂计算，也看懂数据怎样流动'. Keep both text lines crisp, correct and within generous crop-safe margins. Strong single focal point; no extra labels, no benchmark numbers, no logos, no watermark, no fake performance claim. The cover is conceptual and must not appear to be a measurement or chip photograph.
+```
 
 生成方式：Codex 内置 imagegen。三张图片均为中文概念图，不是模型运行截图、芯片实测或真实产品界面。日期：2026-09-28。图 2 的第一次生成含不自然的示例 token 和不完整的 KV 箭头，未纳入文章；文中使用重新生成的版本。
 

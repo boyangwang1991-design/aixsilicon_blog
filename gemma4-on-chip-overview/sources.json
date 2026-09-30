@@ -4,6 +4,20 @@
   "files": [],
   "generated_assets": [
     {
+      "path": "assets/generated/cover-series-zh.png",
+      "sha256": "e705e23180e4c997947b3aab7198eae323f226bf37e660c5c54b70996944a7f7",
+      "language": "zh",
+      "purpose": "Gemma 4 系列引言的独立中文封面：多模态输入、矩阵计算、权重与 KV 数据流",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/series-intro-imagegen.md"
+    },
+    {
+      "path": "assets/generated/series-four-resource-accounts-zh.png",
+      "sha256": "0619a33594a003e3a72b6613a6ce1c245d35221afa0fb112f3bdea3b4b0f4dae",
+      "language": "zh",
+      "purpose": "系列引言图1：输入路径、Prefill/Decode 与权重、KV、片上工作区、持续运行四笔资源账",
+      "generation": "Codex built-in imagegen; prompt and inspection in notes/series-intro-imagegen.md"
+    },
+    {
       "path": "assets/generated/data-movement-map-14-zh.png",
       "sha256": "d2a55d6434d4fd00b76e0695dbd7a9d6043d69f04e33205a0bfa2bce66e18e86",
       "language": "zh",
