@@ -1,0 +1,458 @@
+{
+  "scope": "functional-safety-series chapter 16–30 Chinese body figures",
+  "recordType": "editorial prompt specifications and selected ImageGen output records; non-verbatim call text",
+  "note": "The verbatim tool-call prompts and revision requests are retained in the task conversation. SVG counterparts are editable planning drafts, not the figures selected by the Markdown chapters. All 30 selected assets received a targeted body-figure layout edit after the new AGENTS.md guidance; chapter 23 release stop and chapter 29 FTTI were explicitly corrected; chapter 25 decorative signal-direction art was removed.",
+  "generatedAt": "2026-10-01",
+  "figures": [
+    {
+      "chapter": 16,
+      "purpose": "调试掩码残留如何使真实 UE 告警静默？显示 UE 已屏蔽（mask=1）、源端事件仍产生、升级通路被截断、独立检查及恢复步骤。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-16-configuration-trap-imagegen.png",
+      "sha256": "a71ccb9cb66fc676d1650db03901c3c8e5d4c19e322baa4dc910872877688c9c",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1560116,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。调试掩码残留如何使真实 UE 告警静默？显示 UE 已屏蔽（mask=1）、源端事件仍产生、升级通路被截断、独立检查及恢复步骤。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 16,
+      "purpose": "多源错误（ECC、watchdog、时钟、总线）怎样经过事件锁存、分类、路由到 IRQ/NMI、状态和受控动作？画正常与故障路径、屏蔽/升级条件及共因边界；箭头左到右。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-16-error-manager-imagegen.png",
+      "sha256": "ef784f15249be68fc6cc9617716f8a82bf94289e232b4716e3c7141f4820e700",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1630417,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。多源错误（ECC、watchdog、时钟、总线）怎样经过事件锁存、分类、路由到 IRQ/NMI、状态和受控动作？画正常与故障路径、屏蔽/升级条件及共因边界；箭头左到右。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 17,
+      "purpose": "一次故障注入从激活、传播、检测、报告到最终动作应留下什么证据？分出独立观察与四种结果，勿把注入成功当成系统成功。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-17-injection-chain-imagegen.png",
+      "sha256": "3b72f2ada33db2ac846104205d20e29939d5198816582b5e9019b0486687c2e9",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1512511,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。一次故障注入从激活、传播、检测、报告到最终动作应留下什么证据？分出独立观察与四种结果，勿把注入成功当成系统成功。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 17,
+      "purpose": "以记录表比较注入位置、触发、观察、误判和正确归类；给出字段与失败样本，使读者理解源端 PASS 不等于最终动作。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-17-result-ledger-imagegen.png",
+      "sha256": "5f06f3393963ad37bba290307cacf54ae3802a9c7bbcebb959320d3a42c206be",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1726433,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。以记录表比较注入位置、触发、观察、误判和正确归类；给出字段与失败样本，使读者理解源端 PASS 不等于最终动作。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 18,
+      "purpose": "故意破坏 DUT 的安全性质后 checker 应如何失败？重点画 UE 时正常 valid 必须为 0、变异测试与检查器漏报风险。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-18-checker-mutation-imagegen.png",
+      "sha256": "7eaec71ec986b5051e777b84ba4d08d67d30c4f30052a86ca2b42d9d4d78d173",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1636587,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。故意破坏 DUT 的安全性质后 checker 应如何失败？重点画 UE 时正常 valid 必须为 0、变异测试与检查器漏报风险。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 18,
+      "purpose": "Safety VIP 怎样把正常事务与故障注入并行送入 DUT？分别画安全 checker、覆盖记录与独立需求依据，不把实现和检查器一致当独立验证。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-18-safety-vip-imagegen.png",
+      "sha256": "5d6388643c872e22a5ddc3f228c86d58c06ae61d10f947f32c1768e8c4b04508",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1516917,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。Safety VIP 怎样把正常事务与故障注入并行送入 DUT？分别画安全 checker、覆盖记录与独立需求依据，不把实现和检查器一致当独立验证。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 19,
+      "purpose": "按 SG 与故障模式 λi 画决策树，区分 SPF、RF、S、MPF,DP、MPF,L；DFA 作为独立性审查侧栏，不列为失效率类别。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-19-classification-imagegen.png",
+      "sha256": "8d0d1187fec3ea3ac2fc83614bc628ef7c84b475f5a296e426506747fe7d7077",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1635459,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。按 SG 与故障模式 λi 画决策树，区分 SPF、RF、S、MPF,DP、MPF,L；DFA 作为独立性审查侧栏，不列为失效率类别。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 19,
+      "purpose": "用正文 100 FIT 教学账本解释 SPF、RF、已检出/潜伏 MPF 和安全故障的分母与 SPFM/LFM 算法；注明非产品指标。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-19-metric-ledger-imagegen.png",
+      "sha256": "41d12910a4aec9706a203f4d6efff34335ffecf540d20efcd6f7e47808d82656",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1473457,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。用正文 100 FIT 教学账本解释 SPF、RF、已检出/潜伏 MPF 和安全故障的分母与 SPFM/LFM 算法；注明非产品指标。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 20,
+      "purpose": "一行 FMEDA 的范围、失效率来源、模式分布、诊断有效性和分类如何追溯？分层展示证据边界。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-20-fmeda-provenance-imagegen.png",
+      "sha256": "7c10383861f34fd296667bcde5e767ce87e8168934267ed4a3583dc22539803e",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 2028108,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。一行 FMEDA 的范围、失效率来源、模式分布、诊断有效性和分类如何追溯？分层展示证据边界。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 20,
+      "purpose": "比较 DC、SPFM、LFM、PMHF 与系统性失效分析的输入、所能支持的结论和不能推导的结论。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-20-metric-boundaries-imagegen.png",
+      "sha256": "93f7ce1c8a0557d020950b28ebfa3fde36da3aafe9daafe9703daae76bd6f912",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 2003712,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。比较 DC、SPFM、LFM、PMHF 与系统性失效分析的输入、所能支持的结论和不能推导的结论。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 21,
+      "purpose": "错误报告时限从两个周期改为一个周期，TSC、RTL、验证、FMEDA、HSI 哪些要重核？用变更影响矩阵。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-21-change-impact-imagegen.png",
+      "sha256": "a3575555bc3752377b5fc1b470c0b521dfda2e6d109a8ed060dabf6b6fb2c777",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1742707,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。错误报告时限从两个周期改为一个周期，TSC、RTL、验证、FMEDA、HSI 哪些要重核？用变更影响矩阵。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 21,
+      "purpose": "从 SG/FSR 到 TSC、IP 可控行为、RTL、验证、Safety Manual 的需求证据链；展示标识、配置和观察点。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-21-requirement-trace-imagegen.png",
+      "sha256": "fffd3bd9c8cbbcfb22cc47520f8d4dfa764ecd7726189314bca440eb9acf9382",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1922739,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。从 SG/FSR 到 TSC、IP 可控行为、RTL、验证、Safety Manual 的需求证据链；展示标识、配置和观察点。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 22,
+      "purpose": "主 SoC 与安全岛监督关系；电源、时钟/复位、总线、存储/配置和物理邻近是逐项核对的共因候选，受控输出需独立验证。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-22-island-dependencies-imagegen.png",
+      "sha256": "92802d3ddd63bb6c9348e760afb0a59f3b68a6853551408b4af95425ee526cf4",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1798976,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。主 SoC 与安全岛监督关系；电源、时钟/复位、总线、存储/配置和物理邻近是逐项核对的共因候选，受控输出需独立验证。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 22,
+      "purpose": "五种安全岛故障情境以故障、观察者、依赖资源和最终核对组成信息卡，强调岛自身故障、握手超时和受控路径。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-22-scenarios-imagegen.png",
+      "sha256": "2f79587c07d6b6d47e7ca5445f05ec5fe9a74329304317591339103429db0701",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1621249,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。五种安全岛故障情境以故障、观察者、依赖资源和最终核对组成信息卡，强调岛自身故障、握手超时和受控路径。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 23,
+      "purpose": "A/B 更新掉电的五阶段状态矩阵：A 旧版、B 新版和重启选择；提交原子性、NVM 掉电读法和双份无效的处理边界。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-23-ab-update-imagegen.png",
+      "sha256": "1b1496896f0204b63110afaad5fd6743acba66964403268ae18d224b330a97ee",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1563051,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。A/B 更新掉电的五阶段状态矩阵：A 旧版、B 新版和重启选择；提交原子性、NVM 掉电读法和双份无效的处理边界。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 23,
+      "purpose": "Flash/OTP 启动信任链：ECC 只处理限定随机位错，内容/来源验证与版本/标定策略另行核对；ECC 通过但旧版本不得放行。失败分支止于禁止放行。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-23-nvm-trust-imagegen.png",
+      "sha256": "8fe35ab84bf9d483b86777016b5752982403d555d3af1d4d2e21a43506629505",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1350163,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。Flash/OTP 启动信任链：ECC 只处理限定随机位错，内容/来源验证与版本/标定策略另行核对；ECC 通过但旧版本不得放行。失败分支止于禁止放行。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 24,
+      "purpose": "传感器到软件的模拟数字链，逐环列出量程内错误来源；共享参考、校准数据和检查器自身是跨域风险。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-24-adc-chain-imagegen.png",
+      "sha256": "f1c9c4c185f7d6a29b252336aeca5a1f08fa87008c860150e8f6d575218359ad",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1584986,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。传感器到软件的模拟数字链，逐环列出量程内错误来源；共享参考、校准数据和检查器自身是跨域风险。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 24,
+      "purpose": "ADC 五类故障对照范围检查不足、候选观察点和限制；共享坏参考可能让双通道一致，候选诊断不等于已证覆盖率。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-24-adc-matrix-imagegen.png",
+      "sha256": "ff48e3765b8c9edddbb174794ed474dc389e5aabf4ce17b60721d207ee935404",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1613309,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。ADC 五类故障对照范围检查不足、候选观察点和限制；共享坏参考可能让双通道一致，候选诊断不等于已证覆盖率。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 25,
+      "purpose": "IP 安全需求写成要求、可控制行为、验证观察点和集成责任四列；覆盖 UE、阻断坏数据、及时上报、初始化与测试模式。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-25-ip-contract-imagegen.png",
+      "sha256": "0cf345800b7bce70ff656875083c768add36b65ca5b7bb8cf8828be5d59233de",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1352545,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。IP 安全需求写成要求、可控制行为、验证观察点和集成责任四列；覆盖 UE、阻断坏数据、及时上报、初始化与测试模式。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 25,
+      "purpose": "SRAM 加 ECC 后仍须把 SG/假设、TSC 时间预算、IP UE/valid 行为、Error Manager 和系统受控动作分配清楚。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-25-tsc-allocation-imagegen.png",
+      "sha256": "1dcb996fd95124fd3854ea7b03507a9a69b01b4286a9d5608e8833e48d2c9fda",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1593729,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。SRAM 加 ECC 后仍须把 SG/假设、TSC 时间预算、IP UE/valid 行为、Error Manager 和系统受控动作分配清楚。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 26,
+      "purpose": "DFMEA、FTA、DFA、FMEDA 各自的入口问题、典型发现与回写目标；四法交叉核对不等于安全目标已满足。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-26-analysis-roles-imagegen.png",
+      "sha256": "ccf434b7ffddc5834685be1f86f091243a36ebec57e2f8b0d8c950560d89f30b",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1449458,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。DFMEA、FTA、DFA、FMEDA 各自的入口问题、典型发现与回写目标；四法交叉核对不等于安全目标已满足。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 26,
+      "purpose": "错误 SRAM 数据被正常使用的顶事件如何在 FTA、DFMEA、DFA、FMEDA 中交叉核对并回写架构；提示自洽错误、系统性错误和变更。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-26-cross-check-imagegen.png",
+      "sha256": "f4a8905a137596a01aa70543042333fe1e46b5466cfab6deaaf0a5a2f49f5fdc",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1531173,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。错误 SRAM 数据被正常使用的顶事件如何在 FTA、DFMEA、DFA、FMEDA 中交叉核对并回写架构；提示自洽错误、系统性错误和变更。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 27,
+      "purpose": "五项 AoU 的供应条件、SoC 动作、观察证据和不满足时处理；初始化、UE 路由、CPU 失效、配置和定期测试。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-27-aou-checklist-imagegen.png",
+      "sha256": "63b6c3e6c4c4d02c3b0cfc5b084f2af3c7d7bc50bcb3b7e8a07254cf4fabf51d",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1519230,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。五项 AoU 的供应条件、SoC 动作、观察证据和不满足时处理；初始化、UE 路由、CPU 失效、配置和定期测试。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 27,
+      "purpose": "IP 的 UE 告警经 Safety Manual、SoC 集成、故障注入和受限系统结论的交接链；DIA 和基线一致性不可省。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-27-safety-manual-handoff-imagegen.png",
+      "sha256": "253a064f92ad6f358cbc55bcf36d4442498d3363e71d206752ddad4613e830f0",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1732224,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。IP 的 UE 告警经 Safety Manual、SoC 集成、故障注入和受限系统结论的交接链；DIA 和基线一致性不可省。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 28,
+      "purpose": "Safety Case 的限定主张、论证理由、设计依据、验证分析和受限结论；展示 ECC 位错覆盖不足、IRQ 屏蔽和版本错配反例。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-28-claim-evidence-imagegen.png",
+      "sha256": "12215cb062320648dc94a9af952273f7191bf4723680d6a1338167a94fd3085a",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1866246,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。Safety Case 的限定主张、论证理由、设计依据、验证分析和受限结论；展示 ECC 位错覆盖不足、IRQ 屏蔽和版本错配反例。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 28,
+      "purpose": "对照确认审阅、功能安全审核、功能安全评估、第三方证书、量产交接的对象、典型问题和不能替代的工作。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-28-review-types-imagegen.png",
+      "sha256": "d72c7ae90d946e43e71d0cf414f6f1f8d4aa6f4f296ba70053cbd82aeb28bf31",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1759287,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。对照确认审阅、功能安全审核、功能安全评估、第三方证书、量产交接的对象、典型问题和不能替代的工作。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 29,
+      "purpose": "Mini Safety SoC 的 SRAM UE 分成数据阻断与错误/受控动作两条路径；内部 data_valid=0 与 AXI RVALID/RRESP 语义分开，最终输出可观察，CPU 失效的备用路径需核对。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-29-mini-soc-imagegen-v2.png",
+      "sha256": "7ffc0858ef7238f35a9d1ecd35d2d1753b433b62bd5d6f9ec29e5a289ed738d4",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1869141,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。Mini Safety SoC 的 SRAM UE 分成数据阻断与错误/受控动作两条路径；内部 data_valid=0 与 AXI RVALID/RRESP 语义分开，最终输出可观察，CPU 失效的备用路径需核对。",
+      "revisionRecord": "2026-10-01 ImageGen targeted technical edit: distinguished internal data_valid from AXI RVALID, retained an error read handshake, changed SRAM UE response example to SLVERR rather than DECERR; inspected full-size output. Final verbatim prompt in chapter-29-technical-audit-imagegen.md."
+    },
+    {
+      "chapter": 29,
+      "purpose": "时间轴从故障激活、等待读取、ECC 检测、事件路由、决策执行到受控输出；最坏时间之和加裕量需小于 FTTI。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-29-time-budget-imagegen-v2.png",
+      "sha256": "95ce235d5d83f14e671b710ffded0c1d51e8761c111e75682d4412f1b666864e",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1476848,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。时间轴从故障激活、等待读取、ECC 检测、事件路由、决策执行到受控输出；最坏时间之和加裕量需小于 FTTI。",
+      "revisionRecord": "2026-10-01 ImageGen targeted technical edit: separated activation/exposure latency from read wait and made actual controlled-output effect the FTTI endpoint, with register/log only as evidence; inspected full-size output. Final verbatim prompt in chapter-29-technical-audit-imagegen.md."
+    },
+    {
+      "chapter": 30,
+      "purpose": "AI 建议、工具反馈和工程师决定贯穿需求、架构、RTL/VIP、故障分析与证据审阅；三条证据轨道保留原始要求、失败样本和决定理由。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-30-ai-workflow-imagegen.png",
+      "sha256": "f88c6dd675987682ec6788bf0ea43a8645c51851daacc5ee85b2db1ab4871845",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1638879,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。AI 建议、工具反馈和工程师决定贯穿需求、架构、RTL/VIP、故障分析与证据审阅；三条证据轨道保留原始要求、失败样本和决定理由。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    },
+    {
+      "chapter": 30,
+      "purpose": "UE=1 时同笔 valid=0 的原始要求；DUT 与 checker 同源遗漏导致全绿，独立审阅补断言，变异 UE=1/valid=1 时正确 checker 必须 FAIL。",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "finalPath": "assets/generated/chapter-30-shared-omission-imagegen.png",
+      "sha256": "f9ab3d11255432c955005d95cced878f88bc4a30bf4e9920137af0288fb2cb22",
+      "sizePx": [
+        1672,
+        941
+      ],
+      "bytes": 1733823,
+      "promptSpecification": "简体中文、接近16:9横向工程讲解图；深海军蓝主结构，浅色内容底，青色检测/受控，琥珀故障传播，红色危险；清晰模块和箭头，手机可读；不伪造产品截图或测量结果。UE=1 时同笔 valid=0 的原始要求；DUT 与 checker 同源遗漏导致全绿，独立审阅补断言，变异 UE=1/valid=1 时正确 checker 必须 FAIL。",
+      "revisionRecord": "ImageGen body-figure edit: removed prominent full-page headline/branding and decorative slide furniture; enlarged engineering content; inspected arrow and text relationships."
+    }
+  ]
+}

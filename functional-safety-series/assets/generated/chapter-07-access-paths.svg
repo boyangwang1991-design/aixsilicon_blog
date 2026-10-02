@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SRAM 控制器中的访问、巡检与错误报告路径</title>
+  <desc id="desc">总线请求经过地址与初始化门控、访问仲裁、ECC 编解码和 SRAM 阵列。巡检复用访问仲裁。ECC 的数据和状态经响应门控返回，错误事件另行送到 Error Manager。MBIST 和 repair 为可选能力。</desc>
+  <defs>
+    <marker id="navy" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#17375e"/></marker>
+    <marker id="teal" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#087f83"/></marker>
+    <marker id="amber" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#bd7510"/></marker>
+    <style>
+      text{font-family:'Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;fill:#17375e}
+      .box{fill:#f7fbfd;stroke:#17375e;stroke-width:3;rx:19}
+      .boxTeal{fill:#e4f7f4;stroke:#087f83;stroke-width:3;rx:19}
+      .boxAmber{fill:#fff4de;stroke:#bd7510;stroke-width:3;rx:19}
+      .title{font-size:34px;font-weight:700}
+      .sub{font-size:23px}
+      .small{font-size:21px}
+      .arrow{fill:none;stroke:#17375e;stroke-width:5;marker-end:url(#navy)}
+      .tealArrow{fill:none;stroke:#087f83;stroke-width:5;marker-end:url(#teal)}
+      .amberArrow{fill:none;stroke:#bd7510;stroke-width:5;marker-end:url(#amber)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#fcfdfd"/>
+  <rect x="55" y="90" width="230" height="150" class="box"/>
+  <text x="170" y="153" text-anchor="middle" class="title">总线请求</text>
+  <text x="170" y="196" text-anchor="middle" class="sub">地址 · 数据 · 事务</text>
+  <rect x="355" y="90" width="240" height="150" class="box"/>
+  <text x="475" y="150" text-anchor="middle" class="title">地址检查</text>
+  <text x="475" y="194" text-anchor="middle" class="sub">初始化门控</text>
+  <rect x="665" y="90" width="220" height="150" class="boxAmber"/>
+  <text x="775" y="151" text-anchor="middle" class="title">访问仲裁</text>
+  <text x="775" y="194" text-anchor="middle" class="sub">业务与巡检</text>
+  <rect x="955" y="90" width="240" height="150" class="box"/>
+  <text x="1075" y="150" text-anchor="middle" class="title">ECC 编解码</text>
+  <text x="1075" y="194" text-anchor="middle" class="sub">数据 + 校验位</text>
+  <rect x="1265" y="90" width="265" height="150" class="box"/>
+  <text x="1397" y="150" text-anchor="middle" class="title">SRAM 阵列</text>
+  <text x="1397" y="194" text-anchor="middle" class="sub">完整存储码字</text>
+  <path d="M285 165 H344" class="arrow"/><path d="M595 165 H654" class="arrow"/><path d="M885 165 H944" class="arrow"/>
+  <path d="M1195 137 H1254" class="arrow"/><path d="M1265 194 H1206" class="tealArrow"/>
+  <text x="1229" y="104" text-anchor="middle" class="small">写入</text><text x="1229" y="231" text-anchor="middle" class="small">读取</text>
+  <rect x="550" y="345" width="245" height="145" class="boxTeal"/>
+  <text x="672" y="406" text-anchor="middle" class="title">巡检</text>
+  <text x="672" y="447" text-anchor="middle" class="sub">读取 · 纠正 · 回写</text>
+  <path d="M772 345 V258" class="tealArrow"/>
+  <text x="812" y="304" class="small">回写再仲裁</text>
+  <rect x="970" y="345" width="250" height="145" class="boxTeal"/>
+  <text x="1095" y="404" text-anchor="middle" class="title">响应门控</text>
+  <text x="1095" y="448" text-anchor="middle" class="sub">数据 · valid · 错误态</text>
+  <path d="M1075 240 V334" class="tealArrow"/>
+  <path d="M970 420 H920 V535 H170 V251" class="tealArrow"/>
+  <text x="396" y="521" text-anchor="middle" class="small">同笔事务返回总线</text>
+  <rect x="1225" y="345" width="295" height="145" class="boxAmber"/>
+  <text x="1372" y="404" text-anchor="middle" class="title">错误锁存</text>
+  <text x="1372" y="448" text-anchor="middle" class="sub">地址 · 类型 · 计数</text>
+  <path d="M1130 240 V288 H1372 V334" class="amberArrow"/>
+  <rect x="1225" y="600" width="295" height="132" class="boxAmber"/>
+  <text x="1372" y="655" text-anchor="middle" class="title">Error Manager</text>
+  <text x="1372" y="697" text-anchor="middle" class="sub">分类 · 通知 · 响应</text>
+  <path d="M1372 490 V589" class="amberArrow"/>
+  <rect x="65" y="600" width="475" height="132" fill="#f5f7f9" stroke="#8798a7" stroke-width="3" stroke-dasharray="13 9" rx="18"/>
+  <text x="302" y="652" text-anchor="middle" class="title">MBIST / repair</text>
+  <text x="302" y="696" text-anchor="middle" class="sub">可选能力，按实例核对</text>
+  <text x="795" y="818" text-anchor="middle" class="sub">概念示意：不可纠正时的数据有效性、报警与系统动作需按接口验证</text>
+</svg>

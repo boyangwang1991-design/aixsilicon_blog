@@ -6,7 +6,7 @@
 
 ## 文章索引
 
-功能安全专题已建立[《芯片功能安全：从原理到 IP 实战》中文主索引](functional-safety-series/INDEX.md)、[设计到评估的全流程地图](functional-safety-series/PROCESS-MAP.md)及 30 章独立中文主线初稿。当前只做中文正文和配图提示词占位，尚未完成工程素材与发布审阅；英文全文和配图后续补齐。
+功能安全专题已建立[《芯片功能安全：从原理到 IP 实战》中文主索引](functional-safety-series/INDEX.md)、[设计到评估的全流程地图](functional-safety-series/PROCESS-MAP.md)及 30 章独立中文主线初稿。全部 30 章现有中文讲解图；按当前要求未制作英文版与封面，工程素材、技术审稿和发布审阅仍待完成。
 
 目前总索引收录 **14 篇文章及 Gemma 4、功能安全、APB VIP、AXI VIP、AXI4-Stream VIP、AHB VIP 六个系列**。APB VIP 系列已有 8 章中文内容稿及 29 张讲解图；AXI VIP 和 AXI4-Stream VIP 系列各有 8 章中文内容稿及 6 张讲解图，分别围绕读写事务与流传输展开 AI 研发、可信证据、接入实践和反馈改进。AHB VIP 系列已有 8 章中文内容稿和 4 张讲解图，以地址/数据流水和四端口自验证为主线。四个 VIP 系列均待补真实波形、英文版与发布审阅。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
 

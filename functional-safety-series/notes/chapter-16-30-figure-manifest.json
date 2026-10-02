@@ -1,0 +1,216 @@
+{
+  "generatedAt": "2026-10-01",
+  "generator": "assets/diagrams/build-chapters-16-30.mjs",
+  "figures": [
+    {
+      "path": "assets/generated/chapter-16-configuration-trap.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "调试掩码残留导致真实错误无系统动作的教学故障链",
+      "sha256": "ecb1ca5f7ea2bf644010b2bb0ffe210f21301c9811afaa6afe54c7186459864c"
+    },
+    {
+      "path": "assets/generated/chapter-16-error-manager.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "错误管理器的事件锁存 分类 路由 与受控动作概念图",
+      "sha256": "7a92cf64e6abc09baf8336f6ffb701a4344e4937758f98c0df54390532bd0e8f"
+    },
+    {
+      "path": "assets/generated/chapter-17-injection-chain.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "故障注入从位置选择到激活检测报告动作的完整观察链",
+      "sha256": "7bef4725b557fa82bb8912b67a79587a95c1f85b320f55f9957e7f992d16ae35"
+    },
+    {
+      "path": "assets/generated/chapter-17-result-ledger.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "故障注入记录字段和分类口径示意",
+      "sha256": "44566cbb95984f40341341ba59a44c2223ded2bb142776a00cefcfe995a0be02"
+    },
+    {
+      "path": "assets/generated/chapter-18-checker-mutation.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "四条安全检查和变异测试对应关系",
+      "sha256": "50dd8a88ac8f6c5f6802bbb837a3ffa8430539cd5fa79c2c0ef819940573ccc2"
+    },
+    {
+      "path": "assets/generated/chapter-18-safety-vip.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "Safety VIP 的事务和故障并行进入 DUT 后独立检查与覆盖收集",
+      "sha256": "b1c205d0ff817928c9b40a174bf32a627f8626179ab30aa6aac9edc0cf8b75a0"
+    },
+    {
+      "path": "assets/generated/chapter-19-classification.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "按指定安全目标和独立故障条件分类 SPF RF MPF 与安全故障",
+      "sha256": "570ce9a591e25825df7afffd9b034f9b28196e7959274010433cd0216d87d020"
+    },
+    {
+      "path": "assets/generated/chapter-19-metric-ledger.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "一百 FIT 教学账本与 SPFM LFM 的分母和边界",
+      "sha256": "93778a02542b24ad4ee8623f746dfeba1134a4e0e130840fbd9b956a023406de"
+    },
+    {
+      "path": "assets/generated/chapter-20-fmeda-provenance.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "FMEDA 每行的对象来源失效模式诊断时限分类和追溯链",
+      "sha256": "689f2b5ed8126509cc42ba56b588cc7b12c05b8959c1bf91f4945a641f911d78"
+    },
+    {
+      "path": "assets/generated/chapter-20-metric-boundaries.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "诊断覆盖 SPFM LFM PMHF 与系统性失效的不同输入和含义",
+      "sha256": "7c476687557c29f0e7d031f527e877877d40d03762c1d456cfc1550763c07a28"
+    },
+    {
+      "path": "assets/generated/chapter-21-change-impact.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "错误报告时限从两个周期缩为一个周期时的追踪矩阵",
+      "sha256": "07793e2cafde78551d7b3422faf6cead50e14ddc65a8eaaf446af1d7bd55250b"
+    },
+    {
+      "path": "assets/generated/chapter-21-requirement-trace.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "安全目标经系统与 IP 要求落到接口实现验证和集成证据",
+      "sha256": "ea261266e64bf089bad2682520c4b48c1addff6032013ecf164fc6f41e756353"
+    },
+    {
+      "path": "assets/generated/chapter-22-island-dependencies.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "主 SoC 安全岛 共享资源 共因风险和最终隔离路径",
+      "sha256": "993601ae55c76489cab69747165f6e48c8bdf090775be5d1cfbcb41c45a55a6b"
+    },
+    {
+      "path": "assets/generated/chapter-22-scenarios.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "安全岛五个故障场景的观察资源动作与剩余风险矩阵",
+      "sha256": "0d69fb692f778c923ead87b9d2415a7b9b0703b0fa6ce67a546816e7c8f7ce94"
+    },
+    {
+      "path": "assets/generated/chapter-23-ab-update.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "A B 参数更新各阶段掉电后的重启选择边界",
+      "sha256": "9fa84b80129a36a48b53ef473a786d9f35448ae4a1c21c75cfb772935c3254c7"
+    },
+    {
+      "path": "assets/generated/chapter-23-nvm-trust.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "非易失数据从码字到版本选择逐层建立可信边界",
+      "sha256": "c32043e4b76295fc0f1d001ef0dda4eb2963ae70d7274f24589d1cbfca7ce54c"
+    },
+    {
+      "path": "assets/generated/chapter-24-adc-chain.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "传感器到软件的模拟数字链和各诊断观察边界",
+      "sha256": "959567093b1fdcae931222c93df8a47deac2044e8d5b91a387ee5dd7edbf13b1"
+    },
+    {
+      "path": "assets/generated/chapter-24-adc-matrix.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "ADC 六种量程内外故障和候选诊断观察条件",
+      "sha256": "b4027fabfe4fbb2777ade25f797b816c56b6244614c850f9f5aa2a4236a58ca9"
+    },
+    {
+      "path": "assets/generated/chapter-25-ip-contract.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "SRAM Controller 教学安全要求与接口验证及集成责任",
+      "sha256": "325a4fc51af18a1690fcb75aeda9207c854b17e8e5274f268616a0e27395ebb7"
+    },
+    {
+      "path": "assets/generated/chapter-25-tsc-allocation.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "安全目标通过 TSC 分配给 SRAM 控制器 错误管理器 软件和硬件隔离",
+      "sha256": "60ac9bd9bd798218afa058c47538ddb4135d2f4ea89754083eca6d6ff2129d10"
+    },
+    {
+      "path": "assets/generated/chapter-26-analysis-roles.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "DFMEA FTA DFA FMEDA 的入口问题输出和相互核对",
+      "sha256": "c744916572e35a875581eb10d0ac82f5526e3dcd5ec22093f646f34f3fed137c"
+    },
+    {
+      "path": "assets/generated/chapter-26-cross-check.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "SRAM 坏数据被正常使用的顶事件怎样在四种分析之间交叉核对",
+      "sha256": "d711673c9e06901b68d06130b118e93340924057e9fdce2c6249fc3430e4fe7e"
+    },
+    {
+      "path": "assets/generated/chapter-27-aou-checklist.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "安全手册使用假设到目标 SoC 检查的示例矩阵",
+      "sha256": "a92ea00e7c2cadaeb8846de4fd1e7a25160080ae649a5e56f65f8a297ac1b95f"
+    },
+    {
+      "path": "assets/generated/chapter-27-safety-manual-handoff.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "IP 安全手册把能力边界和使用假设交给 SoC 集成验证",
+      "sha256": "5ffaf9d546e93747f2122f950a2e683174b044b70334ab490c9fdbdf837cc507"
+    },
+    {
+      "path": "assets/generated/chapter-28-claim-evidence.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "带范围的安全主张由需求设计分析验证集成证据共同支撑",
+      "sha256": "b883c56ef4ccee399cf938f11966757ae3b3c15a2661071ef0d57c7cb67f78eb"
+    },
+    {
+      "path": "assets/generated/chapter-28-review-types.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "确认审阅 审核 评估和商业证书的对象与边界",
+      "sha256": "b2eeed0233a379170ec9a5500918c27d48dfa83b91a71f5c536db2027689410d"
+    },
+    {
+      "path": "assets/generated/chapter-29-mini-soc.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "Mini Safety SoC 的不可纠正数据阻断与错误响应双路径",
+      "sha256": "c0d6d90ad1cdc36588cf1a4ecf6242bcc25e237b3e3c90f5394fe17e6265cab4"
+    },
+    {
+      "path": "assets/generated/chapter-29-time-budget.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "故障激活到受控动作的分段最坏时间与 FTTI 比较",
+      "sha256": "c17a7085b800e0735dcacc4f3cb6000fdeffcb15d7dfd0de97bfb3d533a51511"
+    },
+    {
+      "path": "assets/generated/chapter-30-ai-workflow.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "AI 辅助需求架构实现验证分析和证据审阅的人机工具分工",
+      "sha256": "4a5f5ce72ef573e56a29a1a8bf4b92b7e9b50775044d2a96540937bf0fa2c33a"
+    },
+    {
+      "path": "assets/generated/chapter-30-shared-omission.svg",
+      "language": "zh-CN",
+      "kind": "教学概念图",
+      "purpose": "AI 同源生成 DUT 与 checker 时遗漏 data valid 约束的反例",
+      "sha256": "30dfa4a43a08a65aad5f262bf39fee3073d5a7be6c7576e1ba220ab9d73004ac"
+    }
+  ]
+}
