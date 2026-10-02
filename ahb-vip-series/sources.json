@@ -1,0 +1,91 @@
+{
+  "title": "AHB VIP 系列",
+  "kind": "original-series",
+  "date": "2026-10-02",
+  "language_status": "zh-CN draft complete; en pending",
+  "files": [],
+  "editorial_sources": [
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/README.md",
+      "sha256": "2c8b8f57f8f8fdcd425f539a6443805d00c406d7ffca643c909e3ef0f732138d"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/docs/architecture.md",
+      "sha256": "29c0d4ad3b9751f3435bc744d092fee2d79abc6830579e8f4c5e7025779790cb"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/docs/user-guide.md",
+      "sha256": "e321cb56c968aeecc9a3e27b63505a0219337eae93ff5099d106af0650cd7cf1"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/reports/qualification.md",
+      "sha256": "68a33906cf730fd627116b829641c10cd9b9b0b5fa347f5c19a173b51f8b966e"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/reports/latest.md",
+      "sha256": "d81af9793bf19f898e4de60b194158205e173cbbf77da1e80334c49cc5a4d1d5"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/reports/regression.md",
+      "sha256": "a1a471f8d1b40b301d162faa52f6c727c3e7270d816e328cb14d86a3224f51eb"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/reports/coverage.md",
+      "sha256": "dc1f69364a201c971d496e383b16395093b66d07783c30a6fdbd5ed34b93e065"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/reports/mutation.md",
+      "sha256": "7f3a62e8b4d21b2285c57b90062ad6c00ad0a3e372fa2729591a9fc57d351b79"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/config/release-plan.yaml",
+      "sha256": "bafc7bb6b6dccdb71ddd4f37d9331bc1700378a4aceb5b1a7b896fe92288c447"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/src/agent/ahb_agent.sv",
+      "sha256": "bdf7ea87d7590a3e55637805b0af0db0de059e79c3ad55fa7d24522edeae286f"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/self_test/tb/ahb_vectors_tb.sv",
+      "sha256": "07f5fb442c2840bdf9a92ab44ed93ede8171540a6cfebba50b2b685a79738548"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/self_test/tb/ahb_system_tb.sv",
+      "sha256": "811d0ec742e5e0879a367d0388081ac376702d2ac8d85ac292526bfe6a1e7cc2"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/self_test/Makefile",
+      "sha256": "a9ade9342fb0d3c00e05062034bec552bb5c012207b1d22cf56e9a109e501f52"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/ahb/tools/mutate.py",
+      "sha256": "3ec983646345c6d8de0ad25f9f996845e256963b28217cc95b51a0f9220e833c"
+    }
+  ],
+  "images": [
+    {
+      "path": "assets/generated/phase-ownership-zh.png",
+      "language": "zh-CN",
+      "purpose": "地址数据归属",
+      "sha256": "18b1dcf3f5db6062d3911cdb6cfd3b851cd95622acb248a2de3db95053c4aff2"
+    },
+    {
+      "path": "assets/generated/architecture-zh.png",
+      "language": "zh-CN",
+      "purpose": "组件架构",
+      "sha256": "70b2fbacaaef36a4df779c390c07c77dcc9f32419ed5f7601ab8b52feb96c375"
+    },
+    {
+      "path": "assets/generated/system-fixture-zh.png",
+      "language": "zh-CN",
+      "purpose": "四端口自验证",
+      "sha256": "2063de74c25309b9a4f71770e985034d819c005778b236a0655543475703c9f0"
+    },
+    {
+      "path": "assets/generated/evidence-zh.png",
+      "language": "zh-CN",
+      "purpose": "证据范围",
+      "sha256": "f0e2bc0ab3fc573d5c8086bdfedab7ad033bd74471bfdad534c5dbca8b8cfd53"
+    }
+  ]
+}

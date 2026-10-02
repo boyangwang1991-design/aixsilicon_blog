@@ -1,0 +1,151 @@
+{
+  "created_on": "2026-10-02",
+  "title": "AI 辅助芯片验证：AXI VIP 的研发与实战",
+  "language": "zh-CN",
+  "english_status": "pending per Chinese-first series workflow",
+  "note": "Internal editorial provenance. Original prose, not a source import. Reference files are read-only and are not public citation targets. Existing reports were reviewed; EDA simulations were not rerun.",
+  "baseline": {
+    "version": "1.0.0",
+    "run_id": "axi4-v1-final-20260929-a",
+    "source_fingerprint": "fa3bab582f949fe7dfda1a7a3d3dc4042fa39adfac25b65226b7ffee9638765e",
+    "simulator": "VCS W-2024.09-SP1",
+    "uvm": "1.2",
+    "historical_consumer_record": "2026-09-04 x2p tc_sanity and tc_burst; not a run of the latest frozen release"
+  },
+  "editorial_sources": [
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/README.md",
+      "sha256": "b5bda3f45ce73826f8a1f3c0fd0816b3210458742a3dc6ac5c2f3bcc39a8dacd",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/docs/user-guide.md",
+      "sha256": "062b52e729f3cb78964b2d6c37974ec659510b1fae6d2d71adc1e398c10eab17",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/docs/architecture.md",
+      "sha256": "9efa9d444eff8b4261fa52231743c1f14479e469d88392995fcf7d063aa87351",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/reports/qualification.md",
+      "sha256": "badfea5261b19bb9cb9c3555bab3e1072a5a86733ac97dda7e26e82314b3ebd5",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/reports/regression.md",
+      "sha256": "9ee175d324383c31b49c20ec06a034eebd1bf1cb6d0d663d200a130d6df6e62b",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/reports/coverage.md",
+      "sha256": "aed1396d5e8c4583aab3ea2ed5e400b92db67fcd8ac2fb3c76379e5adb89590d",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/reports/mutation.md",
+      "sha256": "d983ecbb1aefa92a063e295b8a3225bf9eff233d6feef0a700774500b16395c3",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/reports/gate_status.md",
+      "sha256": "e87f28dc4214e62fc3cebe643c71715b9fbc1ee4807ec0571c4ec6f73f11b083",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/reports/run_log.md",
+      "sha256": "2dd488efe6eb8275736157415ba9c99893a017beaea91a49bdd022a4a160a2eb",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/src/env/axi4_env.sv",
+      "sha256": "24d89b145a8ffebb116f7f333c722f8fb3c9b23bc453fc0aae0e289e7ed51cc1",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/src/agent/axi4_agent.sv",
+      "sha256": "c539488d0cf5b769d24912b2248421402f8fa6f89d2f06f13cb8315fb55626a1",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/src/agent/axi4_driver.sv",
+      "sha256": "f38dfd239851102bc1ed3e9d0d90063638419fa4a598f9a9e9197f3bb1be1d9f",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/src/axi4_configuration.sv",
+      "sha256": "679de6879c2c4aae24c36738cbc7817e91500b85d7e42db2df3cef3be963fc3b",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/src/axi4_if.sv",
+      "sha256": "10956cd24021b7133251fca8d6fe3291c5aa0d6e6d1a3f4ef12bf86dd5960eec",
+      "use": "Read-only editorial verification; not copied into public content"
+    },
+    {
+      "source": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/unit_test/axi4_unit_memory.sv",
+      "sha256": "cb6e4edbd93b3b2bec72ce266e686e9d27c935c055c838d2532532c418ef6d82",
+      "use": "Read-only editorial verification; not copied into public content"
+    }
+  ],
+  "public_sources": [
+    {
+      "title": "Arm AMBA AXI and ACE Protocol Specification IHI 0022H",
+      "url": "https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/IHI0022H_amba_axi_protocol_spec.pdf",
+      "checked_on": "2026-10-02",
+      "use": "A3 handshake, channel dependencies, burst and ID rules; B1 AXI4-Lite profile"
+    }
+  ],
+  "images": [
+    {
+      "file": "assets/generated/series-loop-zh.png",
+      "sha256": "175c033f7ab127030151209863f5d8e70c6756d91fb096205caf730a7b841285",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "prompt_record": "notes/imagegen-manifest.json",
+      "id": "series-loop-zh"
+    },
+    {
+      "file": "assets/generated/five-channels-zh.png",
+      "sha256": "7459af12f72a6fe1d3e355ba7d83f5362c734467af1efa6752efc3fbf321b97d",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "prompt_record": "notes/imagegen-manifest.json",
+      "id": "five-channels-zh"
+    },
+    {
+      "file": "assets/generated/vip-architecture-zh.png",
+      "sha256": "238ce1d6d9dc6e9a49e7baf58e1e57c6b8959c992901bc1e1a956e0831c13ce6",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "prompt_record": "notes/imagegen-manifest.json",
+      "id": "vip-architecture-zh"
+    },
+    {
+      "file": "assets/generated/byte-lanes-zh.png",
+      "sha256": "b246131f20f50fab67674d64ac6ed0dbe7bc0154a83a41e407a71b70d29e347e",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "prompt_record": "notes/imagegen-manifest.json",
+      "id": "byte-lanes-zh"
+    },
+    {
+      "file": "assets/generated/evidence-zh.png",
+      "sha256": "d05fa04a161f580e364a25b75956dac72c7a0ed35ab6eb5a3738d5eb271c794b",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "prompt_record": "notes/imagegen-manifest.json",
+      "id": "evidence-zh"
+    },
+    {
+      "file": "assets/generated/bridge-integration-zh.png",
+      "sha256": "fcbf81a82e3adc88ad9c2697261d79bdd1cbba74f4892cd4636e525cc0563725",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "prompt_record": "notes/imagegen-manifest.json",
+      "id": "bridge-integration-zh"
+    }
+  ],
+  "files": []
+}

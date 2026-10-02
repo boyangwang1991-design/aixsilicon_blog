@@ -8,12 +8,16 @@
 
 功能安全专题已建立[《芯片功能安全：从原理到 IP 实战》中文主索引](functional-safety-series/INDEX.md)、[设计到评估的全流程地图](functional-safety-series/PROCESS-MAP.md)及 30 章独立中文主线初稿。当前只做中文正文和配图提示词占位，尚未完成工程素材与发布审阅；英文全文和配图后续补齐。
 
-目前索引包含 **14 篇文章和 1 个 Gemma 4 系列中文改稿**。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
+目前总索引收录 **14 篇文章及 Gemma 4、功能安全、APB VIP、AXI VIP、AXI4-Stream VIP、AHB VIP 六个系列**。APB VIP 系列已有 8 章中文内容稿及 29 张讲解图；AXI VIP 和 AXI4-Stream VIP 系列各有 8 章中文内容稿及 6 张讲解图，分别围绕读写事务与流传输展开 AI 研发、可信证据、接入实践和反馈改进。AHB VIP 系列已有 8 章中文内容稿和 4 张讲解图，以地址/数据流水和四端口自验证为主线。四个 VIP 系列均待补真实波形、英文版与发布审阅。下列顺序按主题编排，不代表发表时间；“已提取”不等于已完成发布审核。
 
 原有 14 篇文章均提供中文与英文全文，以及对应语言的独立封面。Gemma 4 系列已有 19 章中文改稿，各章已配中文独立封面和正文讲解图，其中部分外部原图仍作为待授权或替换的 draft 资源保留；英文正文与英文配图按当前安排暂缓。封面采用概念插画，具体机制与工程证据见正文。
 
 | 主题 | 中文版 | 中文状态 | English edition | 英文状态 |
 | --- | --- | --- | --- | --- |
+| AHB / VIP / AI 辅助流水总线验证 | [AI 辅助芯片验证：AHB VIP 的研发与实战](ahb-vip-series/README.md) | 8 章中文内容稿；4 张讲解图；待补波形与发布审阅 | 待补 | 待补 |
+| AXI4-Stream / VIP / AI 辅助流接口验证 | [AI 辅助芯片验证：AXI4-Stream VIP 的研发与实战](axi-stream-vip-series/README.md) | 8 章中文内容稿；6 张讲解图；待补波形与发布审阅 | 待补 | 待补 |
+| AXI / VIP / AI 辅助研发与复用 | [AI 辅助芯片验证：AXI VIP 的研发与实战](axi-vip-series/README.md) | 8 章中文内容稿；6 张讲解图；待补波形与发布审阅 | 待补 | 待补 |
+| APB / VIP / AI 辅助研发与复用 | [AI 辅助芯片验证：APB VIP 的研发与实战](apb-vip-series/README.md) | 8 章中文内容稿；29 张讲解图；待补波形与发布审阅 | 待补 | 待补 |
 | Gemma 4 / 端侧芯片 / 系列中文稿 | [Gemma 4 从算法到端侧芯片](gemma4-on-chip-overview/README.md) | 19 章中文改稿；各章封面与讲解图已配；外部原图仍为 draft | 待补 | 待补 |
 | IP / 工程交付 / AI | [为什么 AI 写 RTL 容易，做一个真正可交付的 IP 很难？](why-ai-rtl-is-not-deliverable-ip/README.md) | 图文齐备；待发布审阅 | [Why Is Generating RTL with AI Easier Than Delivering a Reusable IP?](why-ai-rtl-is-not-deliverable-ip/README.en.md) | 图文齐备；待发布审阅 |
 | IP / AI-Native / 研发方法 | [从 Spec 到 RTL：我正在尝试一种 AI-Native IP 研发流程](spec-to-rtl-ai-native-ip-workflow/README.md) | 图文齐备；待发布审阅 | [From Spec to RTL: Building an AI-Native IP Development Workflow](spec-to-rtl-ai-native-ip-workflow/README.en.md) | 图文齐备；待发布审阅 |

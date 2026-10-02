@@ -1,0 +1,451 @@
+{
+  "recorded_on": "2026-10-02",
+  "generator": "Codex built-in ImageGen",
+  "language": "zh-CN",
+  "identity": "conceptual illustrations, not simulation evidence",
+  "figures": [
+    {
+      "chapter": 2,
+      "path": "assets/generated/chapter-02-vip-architecture-zh.png",
+      "sha256": "5319ad5c7b2f82cea70ab9cad32587a24c030097e6b14b97deeb15dd29fb1887",
+      "prompt": "Use case: infographic-diagram. 为中文技术博客绘制可直接嵌入正文的工程讲解图，横向约16:9，清晰简体中文，高对比、大字号、留白充足、无整页大标题、无页眉页脚、无Chapter编号、无品牌、无封面、无装饰芯片照片、无真实软件界面、无波形。深海军蓝表示结构，白或极浅底色，青色表示观察与验证路径，琥珀色表示待检查或反馈问题，中性灰表示边界。不是幻灯片截图。简洁局部标签比解释文字大。图为原理示意，不含性能或验证通过数字。 本图回答：请求端模式下，一笔事务如何穿过APB VIP并被观察？左侧大边界标注“APB VIP / 请求端模式”，右侧独立边界“DUT / APB外设”。主线从左上“Sequence / 访问意图”到“Sequencer”到“Driver / 驱动请求”到居中的“apb_if / 物理接口”再指向右侧DUT，请求箭头明确向右，响应箭头从DUT返回接口再返回Driver。接口框内下部小块“SVA / 逐周期检查”。从接口向下有青色箭头到唯一“Monitor / 实际观察”，从Monitor分三路向下分别到“Checker / 事务检查”“Coverage / 场景统计”“Predictor / 可选寄存器预测”。Predictor旁灰色小标签“绑定 RAL map 后更新”。底部一行局部边界说明“外设功能预期由项目模型负责”。不要画从Sequence到Monitor的捷径。不要画从Checker或Coverage驱动DUT。不要画Slave Driver与当前Master同时在一个接口上驱动。箭头不得经过框中文字。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-1fbd4ce3-96e8-42f2-8338-c0b00682871d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "review": "Selected first generation; checked labels and major technical relationships.",
+      "selected": true
+    },
+    {
+      "chapter": 4,
+      "path": "assets/generated/chapter-04-independent-checks-zh.png",
+      "sha256": "4d81a6c6dd31880c1c58d99a4ede6bd57f4ec31aa36807c4fdfec800220e5ef0",
+      "prompt": "生成中文技术博客正文概念图，横向16:9，白底、海军蓝结构、青色有效写入、灰色保持。不要整页大标题、页眉页脚、口号、幻灯片装饰。准确表达一个32位普通存储的部分写独立预期。左侧占60%：四列由高字节到低字节，列标签依次 [31:24] [23:16] [15:8] [7:0]。四行标签及值严格为：原值 11 22 33 44；写入值 AA BB CC DD；PSTRB 0 1 0 1；预期 11 BB 33 DD。高字节和第1字节用灰色垂直引线表示原值保持；第2字节及最低字节用青色引线表示写入替换。左下简短条件“普通存储语义；逐字节独立推导”。右侧占40%：上方框“固定预期 0x11BB33DD”，下面框“实现输出 实际读回值”，两框分别用青色箭头指向右下的“比较”框。固定预期必须从左侧预期行连接过来。旁边小灰注“预期不调用被测合并函数”。文字大且清晰，四字节表格是主体，留足间距，图只解释独立预期的来源，不绘制回环架构、不制造通过标记或仿真截图。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-fd734411-9164-40a1-855d-cc9ea6f6d75a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "review": "Original and one edited loop comparison rejected for misleading arrow relationship. Replaced with independently derived byte-strobe example. Selected only final image.",
+      "selected": true
+    },
+    {
+      "chapter": 5,
+      "path": "notes/retired-figures/chapter-05-watchdog-reuse-zh.png",
+      "sha256": "21c6f2305657eeb5e177ee99d2ab1b66924f091f01f0d8f2192d6082447cdb75",
+      "prompt": "Use case: infographic-diagram. 为中文技术博客绘制可直接嵌入正文的工程讲解图，横向约16:9，清晰简体中文，高对比、大字号、留白充足、无整页大标题、无页眉页脚、无Chapter编号、无品牌、无封面、无装饰芯片照片、无真实软件界面、无波形。深海军蓝表示结构，白或极浅底色，青色表示观察与验证路径，琥珀色表示待检查或反馈问题，中性灰表示边界。不是幻灯片截图。简洁局部标签比解释文字大。图为原理示意，不含性能或验证通过数字。 本图回答：APB VIP与Watchdog产品验证如何分工？分左右两个边界，左“复用 APB VIP”，右“Watchdog 项目验证”，中下DUT标注“Watchdog RTL”。左上“访问序列 / RAL”向“APB Driver”再向DUT的APB端口，DUT总线信号向“APB Monitor”。APB Monitor向左下“协议检查与覆盖”，向右侧“产品参考模型”，另一路向左小框“RAL Predictor / 寄存器镜像”。右侧有“控制激励”箭头到DUT，DUT产品信号箭头到“Watchdog Monitor”；Watchdog Monitor分两路，一路向“产品参考模型”标注“观察”，一路向“Scoreboard”标注“实际”；产品参考模型向Scoreboard标注“预期”；Scoreboard向“产品功能覆盖”标注“匹配结果”。如果空间拥挤请利用两层排列但不要省略实际与预期独立来源。所有箭头方向正确，不把predictor画为DUT状态本体。没有AI机器人或装饰。少字、大标签。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-bcbc9ec5-3fa0-4bb8-84aa-812f0b7d90db.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "review": "Selected first generation; checked labels and major technical relationships.",
+      "selected": false,
+      "retirement_reason": "2026-10-02 用户要求复用案例集中到 Secure Demux；旧图保留在内部编辑资料，不参与公开正文。"
+    },
+    {
+      "chapter": 7,
+      "path": "assets/generated/chapter-07-feedback-improvement-zh.png",
+      "sha256": "f96d64c9fbed4e226efddd8fa56c4edf7719bd2135e114d36a0213337672a6ac",
+      "prompt": "请新生成一张简体中文技术博客正文图，横向16:9，白底海军蓝结构，青色表示验证和改进路径，琥珀色只用于问题输入，灰色表示项目专用分支。禁止整页大标题、页眉页脚、口号横幅、Chapter字样。不要很多小字，只画下面指定的6个主框以及一个分支框，模块标签大、手机阅读清晰。主线分两行：上行从左到右三个框，分别“项目反馈”（小字：现象・需求）、“复现问题”（小字：固定版本・输入条件）、“判断职责”（小字：协议规则・产品约定）。上行第三个框向下箭头连接下行右侧框“修改 VIP”（小字：通用行为），下行从右到左依次连接“测试与回归”（小字：专项用例・相关配置）、“返回项目”（小字：固定新版本・消费方验证）。返回项目向上用细线回到项目反馈，标注“新的运行经验”。判断职责还用灰色分支向最右侧一个独立灰框“调整项目模型”（小字：产品专属行为），灰框不纳入通用VIP主线。底部仅一行普通小注“AI：定位与实现；工程师：规则、范围与预期审查”。这是方法示意，不是实际运行报告，不要成功打勾、不写自动发布、不写保证正确。文字严格按给定标签生成，箭头方向清楚，避免交叉。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-b1c0ee41-5c51-4316-a957-ba965d3505e5.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "review": "Regenerated with fewer labels after targeted correction failed; final labels, branch and return arrows verified.",
+      "initial_prompt": "Use case: infographic-diagram. 为中文技术博客绘制可直接嵌入正文的工程讲解图，横向约16:9，清晰简体中文，高对比、大字号、留白充足、无整页大标题、无页眉页脚、无Chapter编号、无品牌、无封面、无装饰芯片照片、无真实软件界面、无波形。深海军蓝表示结构，白或极浅底色，青色表示观察与验证路径，琥珀色表示待检查或反馈问题，中性灰表示边界。不是幻灯片截图。简洁局部标签比解释文字大。图为原理示意，不含性能或验证通过数字。 本图回答：一次IP运行反馈如何变成可复用VIP改进？横向分三个区域，局部标签依次“消费方 IP”“VIP 改进”“返回项目”。左侧“运行现象 + 使用需求”向“固定版本与最小复现”。中间“规则与责任判断”分两支：主支青色到“通用 VIP 修改”，灰色下支到“项目模型调整”；主支继续到“专项测试 + 相关回归”，再到“更新接入说明”。右侧“固定新版本”到“消费方复归”；右侧反馈弧线回左侧表示下一次经验。中间上方小框“AI：定位、修改、测试整理”与“工程师：规则、范围、预期审查”并排，用无方向细线连接主工作区说明协作而非审批流水。底部短注“方法示意；每次结论绑定实际版本和结果”。不写自动修复保证、不写100%、不画无人工判断的自动发布。未修复项不画成通过。",
+      "revision_history": [
+        {
+          "prompt": "Use case: infographic-diagram. 为中文技术博客绘制可直接嵌入正文的工程讲解图，横向约16:9，清晰简体中文，高对比、大字号、留白充足、无整页大标题、无页眉页脚、无Chapter编号、无品牌、无封面、无装饰芯片照片、无真实软件界面、无波形。深海军蓝表示结构，白或极浅底色，青色表示观察与验证路径，琥珀色表示待检查或反馈问题，中性灰表示边界。不是幻灯片截图。简洁局部标签比解释文字大。图为原理示意，不含性能或验证通过数字。 本图回答：一次IP运行反馈如何变成可复用VIP改进？横向分三个区域，局部标签依次“消费方 IP”“VIP 改进”“返回项目”。左侧“运行现象 + 使用需求”向“固定版本与最小复现”。中间“规则与责任判断”分两支：主支青色到“通用 VIP 修改”，灰色下支到“项目模型调整”；主支继续到“专项测试 + 相关回归”，再到“更新接入说明”。右侧“固定新版本”到“消费方复归”；右侧反馈弧线回左侧表示下一次经验。中间上方小框“AI：定位、修改、测试整理”与“工程师：规则、范围、预期审查”并排，用无方向细线连接主工作区说明协作而非审批流水。底部短注“方法示意；每次结论绑定实际版本和结果”。不写自动修复保证、不写100%、不画无人工判断的自动发布。未修复项不画成通过。",
+          "record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-e8b0a772-4ca9-49e7-b2d9-791e69a308e1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+          "status": "rejected: missing character in key label"
+        },
+        {
+          "prompt": "对这张图做一次局部文字纠错：左侧第二个框的分组文字现在错误地写成了“固定版本 与最复现”，请准确改为两行“固定版本”“与最小复现”。其余文字、模块、箭头、构图和配色保持原样。不要增加标题、标识或装饰。",
+          "record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-f7bf1f5c-0661-4369-9f06-6817bac87cd1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+          "status": "rejected: targeted edit did not correct label"
+        }
+      ],
+      "selected": true
+    },
+    {
+      "chapter": 1,
+      "path": "assets/generated/chapter-01-development-loop-zh.png",
+      "sha256": "54231ba37ad59e750df9331518799b0ab65c3716b1f511183faad98d15abd012",
+      "language": "zh-CN",
+      "selected": true,
+      "purpose": "系列全貌：协议、AI开发、可信依据、Secure Demux复用、反馈与两类积累",
+      "prompt": "制作中文工程博客正文概念图，横向16:9，白底深海军蓝主结构、青色验证与改进、琥珀色问题反馈、灰色项目专属边界。字大清楚，结构紧凑，信息丰富而非长段文字，不做幻灯片，不加整页标题、页眉页脚、Chapter、logo、口号、虚构通过标记。\n主线顶行四个等宽卡片从左到右单向连接：\n“理解 APB”：读写与握手 / 等待与错误 / 版本与可选信号。\n“AI 辅助开发 VIP”：需求与组件职责 / 事务与驱动实现 / 编译与仿真调试；底部小字“工程师审查规则与取舍”。\n“建立可信依据”：独立预期 / 检查与故障注入 / 配置矩阵与回归；底部小字“绑定版本与运行条件”。\n“Secure Demux 接入”：CSR 寄存器配置 / Master 与 Slave 协作 / 路由与权限验证。\n下半部右侧框“运行反馈”：新场景 / 新需求 / 可复现失配。由Secure Demux接入框向下箭头进入。\n下半部中间框“复现与责任判断”：固定版本 / 定位触发条件 / 区分通用与产品行为。运行反馈向左单向箭头进入它。\n下半部左侧大框“留下两类积累”，内部上下两个子框：“公共 VIP：实现、测试、接入说明”和“研发方法：任务约定、检查步骤”。复现与责任判断框向左箭头进入此框。\n唯一返回箭头：从“留下两类积累”大框顶部向上，连接顶行第二个“AI 辅助开发 VIP”底部，标注“用于下一轮研发”。不得连接复现框或直接绕过验证连到Secure Demux。\n“复现与责任判断”框下方一个小灰框，单向细灰箭头向下指入，小框文字“产品专属行为 → 项目模型”。\n所有箭头端点清楚。不要漏掉复现框，不把新需求自动等同缺陷，不画已完成运行的含义。图的目的：从协议到VIP研发、验证、单个IP复用，再把使用反馈变成组件和方法积累。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-6623e22c-d641-4de5-b997-67830518004d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "revision_history": [
+        {
+          "prompt": "Use case: infographic-diagram。为中文工程技术博客制作正文讲解图，横向约16:9，高清，简体中文，模块标签大而清晰，补充文字每项尽量短。信息量相当于一张结构清晰的工程教学图，但不能有幻灯片边框、整页大标题、Chapter编号、页眉页脚、品牌或口号。白或极浅灰背景，深海军蓝表示主结构，青色表示检查、受控改进和复用路径，琥珀色只表示问题反馈，中性灰表示范围和条件。箭头不能穿过文字，分组层次分明，四周留边，不用无关芯片摆件、装饰光效或机器人。是概念/方法示意，不冒充真实工程截图、仿真波形或已完成的验证结果，不使用PASS徽章或虚构数字。\n工程问题：APB知识怎样经过AI辅助VIP研发，成为可在其他IP项目使用、并能持续改进的验证资产？\n画面上半部四个等宽分组，按左到右主线连接，准确文字如下：\n第一组“理解 APB”，内部三项“读写与握手”“等待与错误”“版本与可选信号”，底部小标签“明确可观察行为”。\n第二组“AI 辅助开发 VIP”，内部三项“需求与组件职责”“事务与驱动实现”“编译与仿真调试”，底部“工程师审查规则与取舍”。\n第三组“建立可信依据”，内部三项“独立预期”“协议检查与故障注入”“配置矩阵与回归”，底部“结论绑定版本和条件”。\n第四组“接入 IP 验证”，内部三项“Watchdog：寄存器与计数”“桥接：两侧事务对应”“Demux：路由与访问控制”，底部“VIP + 产品参考模型”。\n\n从第四组向下琥珀箭头到下半部最右侧框“运行反馈”（两行小字“新场景 / 新需求”“可复现的失配”）。下半部中间框“复现与责任判断”，运行反馈指向此框。此框左方分两条青色箭头到上下两个框：上框“改进公共 VIP”（小字“实现 · 专项测试 · 接入说明”），下框“更新研发方法”（小字“任务约定 · 独立预期 · 消费者检查”）。公共VIP框用回向箭头连接上半部第二组，再经过第三组检查后到第四组，不允许直接跳过回归。更新方法框用另一细箭头回到第二组，标注“用于下一轮任务”。责任判断框旁边灰色小分支框“产品专属行为 → 项目模型”，不能误画成所有产品行为都进入VIP。不要夸大为自动闭环无人审查。充分利用画面，字大，不要另加标题或大段结论。",
+          "record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-14416418-07c8-459b-8b23-0e2646015fe0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+          "status": "未选：多案例方向；方法返回箭头需修订"
+        },
+        {
+          "prompt": "修改这张图，保持现有16:9版面、中文字体、四列主线及下半部反馈分组。只修改以下关系和文字：1 右上“接入 IP 验证”内部三项改成“Secure Demux：寄存器配置”“Master / Slave：请求与响应”“放行 / 拒绝：路由与权限”，不得保留Watchdog、桥接、PQC。2 删除中部那条从“AI辅助开发VIP”直接绕到“接入IP验证”的下方捷径及“经回归检查后发布”文字；只保留顶行经过“建立可信依据”后再到“接入IP验证”的主线。3 删除最底部“更新研发方法”与“复现与责任判断”之间双向弯箭头，改为从“更新研发方法”左侧出发，沿画面左侧留白向上，再汇入“AI辅助开发VIP”底部的单向青色箭头，标注“用于下一轮任务”；此箭头不得指向复现框。保留“改进公共VIP”到“AI辅助开发VIP”的回向路径，两条线可合并但方向必须明确向上。4 所有内容保持概念/方法示意，无大标题，不增加未经说明的检查结果。",
+          "record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-b056c569-368a-45de-9d29-ea6843ef230d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+          "status": "未选：编辑误移除责任判断框；简化布局重新生成"
+        }
+      ],
+      "review": "原尺寸核对文字与技术关系；640像素缩放核对主标签和箭头。概念/方法示意，不是仿真结果。"
+    },
+    {
+      "chapter": 1,
+      "path": "assets/generated/chapter-01-secure-demux-reuse-zh.png",
+      "sha256": "3943edc0a85a89e5cade157d8abcbe8c686079d0cd80616cb257bab29322b4e1",
+      "language": "zh-CN",
+      "selected": true,
+      "purpose": "单案例实际角色：共同上游APB、Master/Slave、身份侧带、目标模型与周期检查",
+      "prompt": "中文技术博客正文工程概念图，16:9横向，白底，深海军蓝主结构，青色验证路径，琥珀色只用于反馈输入，灰色边界。文字大，信息丰富但只用以下指定内容，不自行加小字，不加全页标题、Chapter、页眉页脚、口号。没有真实波形、界面或通过率。\n图回答：一个Secure Demux案例怎样同时复用APB VIP请求端和响应端，并加入产品验证？\n上半部占约60%画面，从左到右三个区域。\n左边框“上游 Master VIP”，内两项“配置 CSR”“发起业务访问”。框上方有小框“项目 sequence”，标注“同步驱动身份与请求”，连向master框；一条另行侧带线从sequence直达DUT标注“master_id / valid”，这是项目侧带，不能画成APB标准信号。\n中间大框“Secure Demux / DUT”，内含上方“CSR 配置与策略”，下方“地址译码与权限判断”。上游master与DUT间只有一条公共APB请求连接，标“同一 APB 接口”，另有反向细箭头标“响应”。大框下方灰色注“CSR 本地处理；允许的业务访问转发”。\n右边框“下游目标环境 × N”，内部两个上下模块“Slave VIP：等待 / 错误”“目标模型：读数据 / 完成时副作用”。DUT向此框箭头“选中端口的请求”，此框返回DUT箭头“响应”。不画每端口同时被选择。\n\n下半部约40%：左侧“观察与比较”区域，三个横向小框“上下游 Monitor”“独立产品参考模型”“逐周期 Checker”。Monitor仅说明“事务记录”，不能画monitor.analysis直接连接checker（实际项目checker取control_if逐周期信号）。在这三个框上方用横向短注“接口与项目侧带 → 周期观察；规则与输入 → 预期”，从独立参考模型到Checker单向箭头标“预期”，从DUT区域向Checker单向箭头标“实际”。Checker框内列“放行与拒绝”“选通与响应”“策略生效与隔离”。\n下半部右侧三个紧凑职责条：“AI：接入、实现、定位”“工程师：规则与预期审查”“工具：编译、仿真、回归”。底部无大横幅。确保请求与响应方向相反、MASTERID是项目侧带、只有一个上游APB入口，图是抽象结构，不声称完整验证已通过。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-90953c2a-5b0a-41b7-a0a8-ded7cd52df74.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "revision_history": [
+        {
+          "prompt": "Use case: infographic-diagram。为中文工程技术博客制作正文讲解图，横向约16:9，高清，简体中文，模块标签大而清晰，补充文字每项尽量短。信息量相当于一张结构清晰的工程教学图，但不能有幻灯片边框、整页大标题、Chapter编号、页眉页脚、品牌或口号。白或极浅灰背景，深海军蓝表示主结构，青色表示检查、受控改进和复用路径，琥珀色只表示问题反馈，中性灰表示范围和条件。箭头不能穿过文字，分组层次分明，四周留边，不用无关芯片摆件、装饰光效或机器人。是概念/方法示意，不冒充真实工程截图、仿真波形或已完成的验证结果，不使用PASS徽章或虚构数字。\n工程问题：复用APB VIP时，哪些东西能被下个项目直接采用，哪些仍由产品负责，AI和人怎样借助工具检查？\n画面上部约三分之二是三个分组横向组织。\n左侧分组“可复用的 APB VIP”，内部四个清晰模块“请求 / 响应驱动”“总线观察与协议检查”“场景覆盖”“寄存器访问适配”。下沿小字“按角色、参数和版本接入”。\n中间分组“新 IP 的验证环境”，内部上方左框“产品规格”指向右框“产品参考模型”；下方左框“DUT / 产品 RTL”，下方右框“结果比较”。产品参考模型向结果比较箭头标“预期”，DUT向结果比较箭头标“实际”。左侧VIP分组向DUT箭头标“协议刺激”；DUT返回左侧VIP分组细箭头标“总线响应”；左侧VIP的观察输出向产品参考模型细箭头标“实际访问”。不要把DUT实际结果直接接到模型当作预期。\n右侧分组“持续留下的资产”，三个卡片“组件：实现与接口”“证据：用例与运行记录”“方法：任务说明与检查步骤”。用一条从中间分组指向右侧的箭头，标“验证与复盘后沉淀”。不是暗示运行后自动成功。\n\n画面下部约三分之一，沿横向放三块相邻但独立的职责卡片，无需逐一连接上部避免拥挤：\n“AI”下面三项“整理需求”“实现与定位”“生成定向测试”；\n“工程师”下面三项“确认规则”“审查独立预期”“决定改动范围”；\n“验证工具”下面三项“编译与仿真”“断言与结果比较”“覆盖与回归反馈”。\n用小灰字在中间组内标清“寄存器副作用、计数、中断由产品模型判断”。所有箭头含义准确，重点突出公共协议能力与产品语义的分工，图不声称这些抽象组合在每一个项目都已完整运行。不要重复第一张流程图，不画无信息的大圆环。",
+          "record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-af4edb25-a60e-4f90-849a-89f5bee75d6f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+          "status": "未选：按用户新要求从通用示意改为Secure Demux，未采用其中自动扩写的后门访问描述"
+        }
+      ],
+      "review": "原尺寸核对文字与技术关系；640像素缩放核对主标签和箭头。概念/方法示意，不是仿真结果。"
+    },
+    {
+      "chapter": 5,
+      "path": "assets/generated/chapter-05-response-roles-zh.png",
+      "prompt": "为中文技术博客生成正文工程概念图，接近16:9横向，白底，海军蓝模块边界，青色响应与检查路径，琥珀色等待条件，灰色注释。不要整页标题、Chapter、页眉页脚、演示文稿装饰、芯片摆件或波形截图。简体中文清晰大字，信息充分而不拥挤。回答：Secure Demux验证环境中，下游slave VIP和目标模型怎样分工？画左侧大模块“Secure Demux”，右侧上下两个独立模块：上“Slave VIP”“控制等待与错误”，下“目标模型”“提供读数据与状态”。从左模块一个标有“下游请求”的出口分两支箭头分别到两个右模块。从Slave VIP向左画响应箭头，标签“PREADY / PSLVERR”。从目标模型向左画另一返回箭头标签“PRDATA”。从Slave VIP到目标模型画短箭头标签“完成与错误条件”。在右下目标模型内部写三行“普通存储”“BASE+8：读清”“BASE+12：写触发”，下面小注“项目测试目标，非 Demux CSR”。底部单独宽的观察区“最终接口观察”，用三条短标签“请求”“PREADY / PSLVERR”“PRDATA”汇入“Monitor / 项目 Checker”，表现它观察最终接口，不能反过来驱动DUT。右下局部条件框写“状态更新：完成后按目标规则处理”“等待期间不重复提交”。箭头有明确方向，避免交叉和穿字，不要画第二个上游配置口，不要声称slave VIP提供此模型最终PRDATA。准确保留英文信号名。图为概念说明，不含PASS数字。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-362d0de2-dadb-4f1d-948f-8570be5e81e0.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "首版选用；已检查原尺寸与640px手机缩放。主标签、箭头与正文技术关系一致。概念图，不作为仿真结果。",
+      "sha256": "dc0f11b88b88329e802ee2ee76e55b82d581f39a39615d3e40a93a318500e0ab"
+    },
+    {
+      "chapter": 6,
+      "path": "assets/generated/chapter-06-policy-commit-zh.png",
+      "prompt": "中文技术博客正文工程概念图，横向接近16:9，白底海军蓝结构、青色受控生效与允许、琥珀色拒绝检查、灰色未生效状态。无整页大标题、无Chapter、无页眉页脚、无口号、无封面、无虚构波形。简体中文，大而清晰局部标签。回答：Secure Demux权限修改何时影响后续访问，如何检查？采用两条横向轨道、从左向右三个清晰阶段，三个局部列标签“写入 shadow”“提交端口 P”“后续业务访问”。上轨局部标签“策略状态”：左框“shadow：新权限”“active：旧权限”；中框“COMMIT_MASK 选择 P”并用青色箭头指向“active：更新后的权限”；右框“地址 + 身份 + 方向 + PPROT”“按 active 判权”，分两条分支向右“允许：转发目标端口”和“拒绝：本地错误响应”。拒绝框小字“不向下游发起访问”。下轨局部标签“检查预期”：左框“提交前：旧策略仍生效”，中框“只更新选中的端口”，右框“允许：核对选通与返回”“拒绝：核对错误与无下游选通”。底部灰色边界注“CSR 与业务共用一个上游 APB，依次执行”“图示为策略生效关系，非仿真波形”。右上或右下独立小卡片清晰写“权限例：0x02”“读 / prot[1:0]=01 → 位 1：允许”“写 / prot[1:0]=01 → 位 5：拒绝”“前提：其他准入条件满足”。不画同时占用同一上游的配置与业务访问。不画shadow写入立即改变active。不要把侧带身份当APB标准信号，不画具体master_id信号。文字不要密集挤到边缘，模块间留白、箭头方向明确，端口P提交不应指向所有端口。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-81d3ad4d-e2d7-4840-92ed-30abffa7b9eb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "首版选用；已检查原尺寸与640px手机缩放。主标签、箭头与正文技术关系一致。概念图，不作为仿真结果。",
+      "sha256": "13d4e7db8f2b4adae9a10d721ff16092eee96564ef71aa51b7ca44c82c25e948"
+    },
+    {
+      "chapter": 3,
+      "path": "assets/generated/chapter-03-ai-development-feedback-zh.png",
+      "prompt": "Use case: infographic-diagram。生成中文APB VIP技术博客正文讲解图，横向16:9，白底，海军蓝结构与标签，青色检查与受控路径，琥珀色失配反馈，灰色条件。不要整页大标题、Chapter编号、页眉页脚、口号、机器人、装饰芯片、演示文稿边框或假波形。局部标签大字，手机阅读友好，主流程清晰且有足够技术信息。问题：AI开发定向响应功能时，怎样让需求、独立预期、实现和工具反馈形成可审查的过程？\n布局：左边约28%为“行为约定”卡片，简短写“连续两笔读”“数据、错误、USER 逐笔对应”“等待设置：0 或 2 拍”。其下同列放小表“固定预期”，三列为“地址”“读数据”“错误”，两行严格为“0x1000 | 0x89AB1200 | 0”和“0x1004 | 0x89AB1201 | 1”。表下小字“工程师审查预期来源”。\n中间约35%上方卡片“AI 实现与定向测试”，下面三个小项“response sequence”“driver 交接与采样”“逐字段比较”。从行为约定向此卡片画箭头。中间下方卡片“编译与仿真”，从AI实现向下箭头，里面简短标“类型与连接”“总线行为 / 事务结果”。\n右边约30%中部卡片“预期与实际比较”，从左方固定预期走独立的底部路线到比较卡片，标“预期”；从中间编译与仿真到比较卡片箭头标“实际”。不要从实现输出反向生成固定预期，不要用实际结果替换预期。比较卡片向右下分为两个出口：青色“符合预期”到“保存证据”内含“版本 + 配置 + 结果”；琥珀色“出现失配”到“定位原因”内含“首个失配 + 最小场景”。从定位原因沿上方绕回AI实现卡片，标“区分采样、字段与配置问题”。失配不直接指向修改预期。预期变更需工程师依据规则重审，不画自动改答案。\n画面底部单独灰色短注“方法示意；固定向量来自本章用例，不表示本次运行结果”。所有箭头方向明确，不穿过文字。只采用这些关键内容，不扩写大量段落；表格数字精确。真实波形另行采集，本图不画信号波形。不使用PASS徽章或虚构覆盖率。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-f2504edc-bdcf-4bb5-a771-e8c2f19e4a09.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "首版选用；核对原尺寸与640px缩略图，数字、独立预期与实际观察路径、反馈方向正确。方法图，非仿真证据。",
+      "sha256": "f1e39abfc4ab32ab145510ebbf999e3b4929122052527971375bfaa40e78f08b"
+    },
+    {
+      "chapter": 2,
+      "path": "assets/generated/chapter-02-vip-roles-zh.png",
+      "prompt": "中文技术博客正文概念图，横向16:9白底，海军蓝结构、青色响应和观察、中性灰辅助说明，无整页标题、Chapter、页眉页脚、装饰、机器人、真实波形。回答：同一个APB VIP何时作为master、slave或被动观察？使用三条横向泳道，清晰大标签，足够留白，三条泳道彼此独立，不是一条大系统。第一条局部标签“主动请求端”，左框“VIP / Master”，右框“DUT / 外设”；左到右箭头“地址 / 读写 / 写数据”，右到左独立箭头“读数据 / 就绪 / 错误”。右侧短说明“测试决定访问内容”。第二条标签“主动响应端”，左框“DUT / APB 请求端”，右框“VIP / Slave”；左到右箭头“请求”，右到左箭头“数据 / 等待 / 错误”；右侧短说明“测试控制响应条件”。第三条标签“被动观察”，左框“真实请求端 RTL”，右框“真实响应端 RTL”，中间两条反向线标“请求”和“响应”；从这两条线向下各引一条青色细箭头到中下方“VIP / Monitor”“记录实际访问”，只能从总线指向Monitor，不能反向。旁注“只观察，不驱动”。底部灰色小注“角色按 DUT 端口选择；三行是不同使用场景”。各条泳道宽大，文字清晰，每条驱动方向准确。不要把被动Monitor画成串联代理，不画一个接口上两个主动master，不画多余的上层控制线。",
+      "final_edit_prompt": "只修复第三行“被动观察”的连线，其余文字、前两行、配色布局保持不变。第三行必须有两条贯通左右RTL的水平线：上面海军蓝请求箭头从左RTL直接到右RTL；下面青色响应箭头从右RTL直接到左RTL，响应线在中间绝不能断开、不能弯入Monitor。Monitor保持在两线下面。请求线上取一个小圆点，单独画细灰色折线向下进入Monitor左上边；响应线上取另一个小圆点，单独画细青色线向下进入Monitor右上边。分支箭头只指向Monitor，不要从Monitor指向RTL。为了避开交叉，两个取样点水平错开，取样支线不要改变两条主线的连续性。核心：两端直接通信，Monitor是旁路分支观察。不要再把青色响应线拆成两段各自向Monitor拐弯。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-7d604790-b917-473f-9428-6ffcacaf5d17.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "revision_history": [
+        {
+          "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-3e0c2e9f-9f6d-4414-b116-340abeb88b09.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+          "status": "未选初版；修正技术关系后选用最终图"
+        }
+      ],
+      "language": "zh-CN",
+      "selected": true,
+      "review": "已检查原尺寸与640px缩略图，主标签可读，箭头与正文一致。概念/方法示意，不是波形或实际运行结果。",
+      "sha256": "cda0f3a6dffe02143e1ff57b38bfecb50e90220c6c2af6217c56b3e8aa153e95"
+    },
+    {
+      "chapter": 4,
+      "path": "assets/generated/chapter-04-coverage-vs-checks-zh.png",
+      "prompt": "生成中文技术博客正文概念图，16:9横向白底，海军蓝分组、青色观察检查、中性灰未观察、琥珀色待分析。无整页大标题、Chapter、页眉页脚、演示装饰、真实波形、虚构运行PASS或覆盖率。问题：覆盖统计与正确性检查分别回答什么？画左右两栏，中间留白，顶部中间小框“Monitor：实际访问记录”，从此框分别向左右栏箭头。左栏局部标题“覆盖统计：哪些场景发生过？”，内有2行3列矩阵，行标签“读”“写”，列标签“零等待”“带等待”“错误响应”。读行第一和第二格用青色实点标“已观察”，其他格灰色空点标“未观察”；写行第三格青色实点标“已观察”，其余灰色。表下准确标“演示分类，可重叠；非本项目覆盖结果”。再下小框“空白类别 → 补充定向测试”。右栏标题“正确性检查：发生的行为对不对？”，上有独立两个框“规格推导的预期”和“实际访问”，分别用箭头指向“比较数据 / 状态 / 时序”；下面两条短说明“符合：保留检查记录”“失配：定位规则或实现”，失配用琥珀色。最底部跨两栏一个局部灰色结论条，文字“场景被观察到，不代表结果正确；比较通过，也不代表场景齐全”。图内中文字清晰大字，尤其表格，不要用100%或其他实测数字，不用绿色PASS打勾造成真实结果暗示。不将覆盖统计输出作为正确性预期。",
+      "final_edit_prompt": "保留整体图、所有框和箭头，只修正左侧覆盖矩阵的一个逻辑细节并增加小图例。将“写”行、“带等待”列的灰色空心圆改成青色实心圆。理由：示意中的错误写访问也应属于零等待或带等待之一；采用带等待错误写，两种类别同时命中。读行仍为青、青、灰；写行最终必须为灰、青、青。矩阵下原有“演示分类，可重叠；非本项目覆盖结果”保持，在其附近补清晰小图例“● 已观察  ○ 未观察”，实心圆为青色，空心圆为灰色。不要添加百分比或实测结果，不改变右侧内容。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-7f0c374e-f27e-41c5-be1f-f261ad6d3ace.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "revision_history": [
+        {
+          "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-055ebbef-7287-4eac-94bb-b71aa31e075d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+          "status": "未选初版；修正技术关系后选用最终图"
+        }
+      ],
+      "language": "zh-CN",
+      "selected": true,
+      "review": "已检查原尺寸与640px缩略图，主标签可读，箭头与正文一致。概念/方法示意，不是波形或实际运行结果。",
+      "sha256": "193994a4d8c5d71b8a6153536fe36246cd68355210fe435791114e541e49c2f7"
+    },
+    {
+      "chapter": 5,
+      "path": "assets/generated/chapter-05-secure-demux-overview-zh.png",
+      "prompt": "中文技术博客正文工程概念图，横向16:9，白底、海军蓝结构、青色允许与受控路径、琥珀色拒绝、中性灰未选端口。简体中文大字号、留白、箭头清楚。无整页大标题、无Chapter、无页眉页脚、无幻灯片装饰、无机器人或芯片摆件，不画波形或软件截图。问题：Secure APB Demux 在系统里做什么？左侧一个框“上游请求方”，箭头进入中央大边界“Secure APB Demux”，入口标签“同一个 APB 入口”。中央内部先“地址识别”，分两支：上支标“本地配置地址”到“本地 CSR”“配置权限 / 读取状态”；下支标“下游目标地址”到“权限判断”“身份 + 读写 + PPROT”。本地CSR用细青色箭头指向权限判断，标“生效策略”。权限判断右侧青色允许箭头到“选择目标端口”，再出中央边界到右侧三个竖排框“目标 0”“目标 1”“目标 2”，只到目标1为青色实线，目标0/2灰色连接与灰色框，表示本笔未选。权限判断下方琥珀色拒绝箭头到中央内部“本地错误响应”“不发起下游访问”，拒绝路径绝不能连到下游目标。下方用两条清晰返回路径回到上游请求方：目标1返回的青色细箭头标“数据 / 就绪 / 错误”；本地错误响应返回上游的琥珀色箭头标“拒绝响应”。配置读写也由本地CSR响应，可在CSR框内小字“本地处理并响应”即可不加复杂线。底部三个短说明卡片：“一路输入，按地址选出口”“配置与业务依次占用同一入口”“允许才转发；等待时保持当前访问”。局部灰注“端口数量为示意；身份由上游提供”。不要画多个上游接口，不要将请求者身份画成APB标准字段，不暗示加密或身份认证，不将拒绝箭头先到外设。",
+      "final_edit_prompt": "修正这张图的响应连线，保留文字、配色、整体布局和全部框。当前底部两条青色返回线都从下游请求分叉点折返，含义模糊，请删除这两条青色返回长线。在Demux大边界内底部、避开拒绝框的位置增加一个小框“响应返回”，从“目标1”框下边单独引出一条细青色箭头，绕到右下进入这个“响应返回”框，箭头标签“目标响应”；从该框向左离开Demux边界回到“上游请求方”，标签“数据 / 就绪 / 错误”。使目标响应明确从目标1出发并经过Demux内部。保留琥珀色拒绝响应回到上游的独立路径，允许与拒绝都不与文字交叉。图中请求分发的三个出口保持，目标0/2为灰色，目标1青色。不要改变任何其他技术内容，不要加整页标题。可适当扩大中央大边界向下留出响应返回模块空间，底部三说明卡片缩矮但仍可读。",
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-a84a3489-c5c3-4b58-9767-c110b0e25251.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "revision_history": [
+        {
+          "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-27f4f6c0-505b-420a-a59a-9b4a1ca94583.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+          "status": "未选初版；修正技术关系后选用最终图"
+        }
+      ],
+      "language": "zh-CN",
+      "selected": true,
+      "review": "已检查原尺寸与640px缩略图，主标签可读，箭头与正文一致。概念/方法示意，不是波形或实际运行结果。",
+      "sha256": "7f8ba6753bd565ba132eac35e76abc5406c6ca6b8f904624ec64c65d4a4f14c5"
+    },
+    {
+      "chapter": 8,
+      "path": "assets/generated/chapter-08-reusable-deliverables-zh.png",
+      "prompt": "中文技术博客正文信息图，横向16:9，白底海军蓝主结构，青色受控复用，中性灰新项目输入，琥珀色运行发现，无整页大标题、Chapter、页眉页脚、口号、幻灯片装饰、机器人、虚构运行结果或波形。问题：一次VIP研发完成后，下一次AI辅助IP验证究竟继承什么、还要新增什么？左侧约40%为三个上下排列清晰卡片，局部组名“已有成果”。卡片1“组件”“driver / monitor / 检查接口”；卡片2“证据”“固定预期 / 专项用例 / 版本与结果”；卡片3“方法”“接入说明 / 定位步骤 / 适用条件”。三卡各有细青色箭头汇入中央偏右框“下一次 AI 验证任务”“选择角色与参数”“组合已有能力”。中央框正上方一个灰色框“新 IP 的规格”“接口 / 寄存器 / 功能规则”，向下箭头到中央框。中央框右侧箭头到右边竖排两个步骤框，先“建立产品检查”“参考模型 + 新场景”，再向下到“运行并比较”“编译 / 仿真 / 原始失败复现”。右下小框“本项目的新证据”“绑定实际源码与配置”，从运行并比较指向这个框，箭头标签“记录结果”，不要假定自动通过。最下方从运行并比较向左回到已有成果的琥珀色长反馈箭头，中途一个小标签“发现 → 复现与判断 → 更新组件、用例或说明”。底部灰色小注“历史 PASS 属于原版本与配置；新组合需要自己的检查结果”。所有短标签大字，少量术语保留英文；三类资产与新IP规格明确分开，不暗示旧报告自动证明新IP正确。不要重复一张宏观开发圆环，强调具体可交接的材料与新任务输入。",
+      "final_edit_prompt": null,
+      "generation_record": "Generated images are saved to C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520 as C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-95d9a0df-76a3-48cb-889a-d89a807e518f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "revision_history": [],
+      "language": "zh-CN",
+      "selected": true,
+      "review": "已检查原尺寸与640px缩略图，主标签可读，箭头与正文一致。概念/方法示意，不是波形或实际运行结果。",
+      "sha256": "6184b48cd6b5acf682b9701946b0c1b1827f1929cb36c10992b5fa6012d62898"
+    },
+    {
+      "chapter": 1,
+      "path": "notes/retired-figures/chapter-01-reuse-boundary-zh.png",
+      "sha256": "7fa69cf7bd6220b8c0fb01070f7ce957f1ff24a2cdb3cd894542a3cca782838b",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：左右分层图。左上‘已有 APB VIP’内三块‘生成读写’‘观察访问’‘检查协议’，向右三个项目框分别‘计时器’‘控制寄存器’‘运算模块’送出复用箭头。各项目下方分别短标签‘计数与中断’‘字段与副作用’‘启动与结果’，上方分组‘本项目功能预期’。底部汇入‘实际行为与独立预期比较’。这些是教学示例，禁止 Secure Demux、通过率或效率数字。公共协议能力与项目功能模型明确分层。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-63f7ee76-6542-4cf1-a312-ffcc6b713da0.png",
+      "purpose": "公共 APB 协议能力与项目功能预期的分工",
+      "language": "zh-CN",
+      "selected": false,
+      "review": "Superseded: capability reuse incorrectly used a MUX-like symbol. See chapter-01-reuse-redraw-20261002.json."
+    },
+    {
+      "chapter": 1,
+      "path": "assets/generated/chapter-01-ai-human-tools-zh.png",
+      "sha256": "0b91193cb38d945622397c0ca90a1feaa82876ccd080f1b7ebc900667c3e5b48",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：三块环状但非口号图：‘工程师’下‘确认协议范围’‘审查独立预期’；‘AI’下‘实现组件与用例’‘分析首个失配’；‘工具’下‘编译与仿真’‘断言与结果比较’。箭头工程师→AI标‘规则与接口’，AI→工具标‘可执行产物’，工具→AI标‘错误与观察’，工具→工程师标‘结果与条件’。中间小框‘同一需求，三类可审查产物’。禁止成果数字、Secure Demux。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-aaa135a7-8de0-4908-8ab2-14d4a5009e62.png",
+      "purpose": "工程师、AI 与验证工具各自提供的判断依据",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 2,
+      "path": "assets/generated/chapter-02-apb-state-flow-zh.png",
+      "sha256": "b29e95fd1f4cb072d7dbb25183db7273c3274ce98be6474f542effdb3c0e382d",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：状态机，三圆角框 IDLE ‘PSEL=0’，SETUP ‘PSEL=1，PENABLE=0’，ACCESS ‘PSEL=1，PENABLE=1’。IDLE→SETUP标‘有请求’，SETUP→ACCESS标‘下一周期’，ACCESS自环标‘PREADY=0：等待’，ACCESS→SETUP标‘PREADY=1，继续访问’，ACCESS→IDLE标‘PREADY=1，无后续访问’。右侧注‘完成条件：PSEL & PENABLE & PREADY’。下侧灰框‘无等待仍包含 SETUP 与 ACCESS’。禁止画数字波形。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-35d278b7-e5a8-410b-9e05-adec7f7664e9.png",
+      "purpose": "APB 的 IDLE、SETUP 与 ACCESS 状态转换",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 2,
+      "path": "assets/generated/chapter-02-protocol-product-check-zh.png",
+      "sha256": "67f65ec793bf2b4d072eb20269954a3d0d1afb921f9e161c3049b13ca5bf1c3f",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：上方‘一笔 APB 写访问’分两条青色箭头到左右框。左‘协议检查’内‘阶段顺序正确’‘等待时请求保持’‘完成时采样响应’；右‘产品功能检查’内‘地址对应正确寄存器’‘字节使能影响正确字段’‘副作用只发生在规定时点’。两框底分别‘接口信号与协议规则’‘产品规格与独立预期’。下方左右各小结果框‘协议合法’和‘功能符合预期’，两者共同指向‘本场景检查结果’。无通过数据，不写协议合法必然数据正确。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-13350793-0e49-4fc8-9062-6759e31a5977.png",
+      "purpose": "同一笔 APB 访问分别接受协议检查与产品功能检查",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 3,
+      "path": "assets/generated/chapter-03-response-fields-zh.png",
+      "sha256": "bd754ecc586f8f35e207dcbdc76fa1f7560c741f20707223cba011bf3d9bec69",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：两行大卡片表，不要堆长文字。列‘请求地址’‘PRDATA’‘PSLVERR’‘PRUSER / PBUSER’。行1 0x1000 → 0x89AB1200，0，0x1001 / 0x5；行2 0x1004 → 0x89AB1201，1，0x1002 / 0x6。右边各独立箭头到‘逐笔比较’，不交叉。下方‘PRUSER：13 位’‘PBUSER：3 位’‘等待变体：0 或 2 拍’。灰注‘固定输入与预期；非仿真截图’。每字段必须准确无增添。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-98fa8707-3330-45e5-8b40-16167b803400.png",
+      "purpose": "两笔定向读响应的字段归属与逐项比较",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 3,
+      "path": "assets/generated/chapter-03-reset-lifecycle-zh.png",
+      "sha256": "a79df7f66b81e2bc77734b75d1a26f159911974787f7807ee4f69b017872ac4b",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：左‘当前访问进行中’分上下两轨。上轨‘总线状态’→复位箭头→‘恢复规定空闲状态’；下轨‘事务交接’→同一复位箭头→‘APB_ABORTED’→‘结束当前交接’。右侧两轨汇到‘复位释放’→‘执行下一笔访问’→‘检查正常完成’。下灰注‘不能把中止当成功写入’。无波形无状态值推测。两轨是同一复位影响，不要画必须先后执行的关系。",
+      "revision_prompt": "仅修正最右侧框中文字，将‘检查正常交成’改成‘检查正常完成’。其余全部保持。",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-e252a545-164b-437a-b4f1-8659639ebc11.png",
+      "purpose": "复位同时终止总线访问与 UVM 事务交接，随后验证恢复",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 4,
+      "path": "assets/generated/chapter-04-positive-negative-zh.png",
+      "sha256": "5ffa617d5d58779545bf3dfea1dbaf78215a50e30d1db2a069e2c91b8ca88b7a",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：三并列路径。左‘合法输入’→‘被测组件’→‘行为符合预期，无非预期报错’。中‘协议违规输入’→‘协议检查器’→‘指定规则被触发’。右‘植入指定实现错误’→‘既有测试’→‘触发预期失败判据’。颜色合法青色，违规与变异琥珀。下方灰框‘测试有效性：既能接受合法行为，也能识别指定错误’。不写覆盖100%、不虚构APB变异数量、不画编译错误即成功。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-b13716a2-1f74-4241-b50d-baf88bca3ccd.png",
+      "purpose": "正向、负向与故障注入分别检验什么",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 4,
+      "path": "assets/generated/chapter-04-evidence-identity-zh.png",
+      "sha256": "a60c8c3158c6f83dfd646c32f989dbdb3ef376f9ec24f94e64702e8b085c1b76",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：四张叠放但清晰卡片依次‘实现身份：版本 / 源文件哈希’‘执行条件：接口参数 / 工具 / seed’‘实际执行：用例 / 日志 / 退出状态’‘检查判据：独立预期 / 诊断 / 比较结果’。四路箭头汇入‘有范围的结论’。下方左右两框‘哈希一致 → 文件身份’和‘行为比较 → 功能证据’，明确不是互相代替。无具体数字，无伪日志，无公开仓库图标。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-0dfad48d-7ba8-4db1-8a02-20d61886001d.png",
+      "purpose": "测试结论需要绑定源代码、配置、执行与检查判据",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 5,
+      "path": "assets/generated/chapter-05-instance-binding-zh.png",
+      "sha256": "82523de2b24b53117b40e83b1c6a4aaa586d084f87b3321774e5c86cfe68feb4",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：中央‘Secure Demux’左端标‘上游 slave’，右两端标‘下游 master 0’‘下游 master 1’，说明端口数仅示意。左外‘master VIP’请求箭头进左端，下方专属‘upstream cfg + vif’虚线绑定左VIP。右外‘slave VIP 0’‘slave VIP 1’响应箭头回右端，各有单独‘cfg[0] + vif[0]’‘cfg[1] + vif[1]’虚线。观察器小框‘上下游 Monitor’只有接口到观察器箭头。下灰‘逐实例绑定，避免串用句柄’。不用具体不存在的代码路径。",
+      "revision_prompt": "修正响应箭头方向：右侧 slave VIP 0 与 slave VIP 1 旁的两条实线‘响应’箭头，必须由右侧 slave VIP 指向左侧 Secure Demux 的下游 master 端口，箭头尖在 Demux 端。两条改青色。其他内容保持。",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-fee5f3d0-b4e3-473d-91b5-1cac7ad197cc.png",
+      "purpose": "DUT 端口、VIP 角色、配置与接口句柄的对应",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 5,
+      "path": "assets/generated/chapter-05-identity-sideband-zh.png",
+      "sha256": "f227b7290467da88e973d860f66ffbabe1c4e5059c2945c0066354944fbaaddc",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：左‘项目 sequence / 身份适配’分两路：上‘APB 事务’含‘地址 / 读写 / PPROT’，下‘项目身份侧带’含‘master_id / 有效标志’。两路并行进入中央‘同一笔访问’框再入右‘Secure Demux 权限判断’，另有‘当前 active 策略’从右上进入权限判断。右下分支‘允许：转发’和‘拒绝：本地错误，禁止下游选通’。灰边界‘身份与属性由上游正确提供’。不把master_id放入APB标准事务框。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-ee47c28b-734f-4d08-9b7f-5142cb232951.png",
+      "purpose": "请求者身份侧带与 APB 事务共同进入权限判断",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 6,
+      "path": "assets/generated/chapter-06-deny-observation-zh.png",
+      "sha256": "818d52a94e35a064e0085197a7dab3f2c9d52aed86f50da65257e18a1b657833",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：左‘无权限写请求’箭头到中央‘Secure Demux 准入判断’，中央内部琥珀终点‘拒绝’，返回左‘上游错误响应’青色回箭头。中央到右‘下游目标’用灰虚线在边界青色阻断标‘不发起访问’，不画先到目标再拦截。底三观察框‘上游：收到错误’‘下游：无选通’‘目标：无本次访问副作用’，对应三个观察点向下箭头。无安全认证宣称。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-25c0f398-45ed-4c9a-9261-81d4ff9e987e.png",
+      "purpose": "拒绝访问需要同时检查上游错误、下游隔离与目标状态",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 6,
+      "path": "assets/generated/chapter-06-wait-side-effects-zh.png",
+      "sha256": "ab6b579b83ebdc7c3adc30d0ea81279dc21de11c9ca2aeaff7dd66127d78da34",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：左‘一笔已放行访问’→中‘ACCESS 等待’大框，框内自环‘PREADY=0：继续等待’，向右箭头‘满足模型规定的完成条件’→‘提交一次副作用’。下两小案例‘读清位置：返回本次读值，再更新状态’‘写触发位置：本次成功写使计数 +1’。灰注‘目标模型行为，不是 Demux 自身 CSR’。不画波形，不标任何错误访问强制提交，不把等待周期计数当提交次数。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-b782601f-d4bf-4c2c-9cf6-144bc8b5cd80.png",
+      "purpose": "等待周期不应重复产生目标模型的副作用",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 7,
+      "path": "assets/generated/chapter-07-wait-data-contract-zh.png",
+      "sha256": "ffe223a549cfe8e0b089da1575c841e6f2526a872d9e81dd3c03d41f6295a40a",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：两列对照左‘等待阶段’条件‘PSEL=1，PENABLE=1，PREADY=0’下‘APB：尚未完成，不以此时读值作为完成结果’再‘本产品：上游 PRDATA=0’。右‘完成阶段’条件‘PSEL=1，PENABLE=1，PREADY=1’下‘APB：采样有效响应’再‘本产品：上游数据匹配选中下游’。底独立框‘checker：先区分阶段，再按产品约定比较’。灰小注‘等待输出零不是所有 APB 设备的要求’。不画波形。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-2d61098a-fd07-42e6-80aa-05da0d00284e.png",
+      "purpose": "APB 完成采样要求与 Secure Demux 等待期输出约定的区别",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 7,
+      "path": "assets/generated/chapter-07-minimal-reproducer-zh.png",
+      "sha256": "b64d04429c133ed4cba32548fb3bf6b107bc8d2e4590834e0fe71bf712507d80",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：左大框‘原始失配’内‘版本 / 配置’‘目标 / 身份 / active 策略’‘等待设置 / 首个差异’→中‘删除无关流量，保留触发条件’→菱形‘仍复现同一失配？’。否箭头返回缩减前标‘恢复必要条件’，是分两个候选验证框‘仅 VIP 两端复现：检查公共路径’‘需要 DUT 才复现：保留产品条件’。灰注‘定位线索不是自动归责’。不画两者必然互斥或直接修复结论。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-85e12190-97c7-4816-9a2c-1d43dfecdfe5.png",
+      "purpose": "保留触发条件，把失配缩减为可判断的最小复现",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 8,
+      "path": "assets/generated/chapter-08-feedback-placement-zh.png",
+      "sha256": "74869a7f9d9e450b5c38864ecf4a552f30cd83fcf628d555f579259fb126f163",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：左‘一次可复现的项目发现’向右四条箭头到‘代码：保存必要修正’‘测试：固定输入与独立预期’‘接入说明：参数、角色与约定’‘AI 方法：适用条件、动作与证据’。底边界带‘公共协议问题 → 公共 VIP’‘产品专属规则 → 项目模型’。不暗示所有发现都要改公共代码。无效率数字。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-0e65dc17-7ac0-4aa2-af2f-45c304021ae6.png",
+      "purpose": "一次项目发现如何分别进入代码、测试、接入说明与 AI 方法",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 8,
+      "path": "assets/generated/chapter-08-upgrade-evidence-zh.png",
+      "sha256": "1a211315fd0c530d6ae7c50995fa656419b6efcf60f473dcb3e4b47ab9d404ad",
+      "prompt": "为中文工程博客绘制原理示意插图，16:9横向，白底，深海军蓝模块，青色用于正确检查/受控路径，琥珀用于待分析/错误，灰色边界。仅使用下面指定的简短标签，不擅自增加段落或数据。字体大、手机易读，留白充分。无整页大标题、Chapter、页眉页脚、口号、封面装饰。不是幻灯片截图，不是真实仿真截图。图回答一个具体问题：上下两条泳道。上‘旧 VIP 快照 + 旧项目配置’→‘旧项目运行记录’标灰色‘仅属于旧组合’。下‘新 VIP 快照 + 当前项目配置’→‘公共专项检查’→‘原场景与相关产品回归’→‘新组合结果’青色。上记录到下结果画一条明确被阻断灰虚线标‘不能直接继承通过结论’。左下小框‘比较版本、接口参数、工具与测试范围’。不强求所有改动全量回归，不写未经执行的新结果已通过。",
+      "revision_prompt": null,
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-b16b6527-c846-40e9-9975-4ce66021b3e0.png",
+      "purpose": "VIP 升级后重新建立公共测试与消费项目的证据对应",
+      "language": "zh-CN",
+      "selected": true,
+      "review": "Checked original labels, arrows, constants and boundaries. See chapter-expansion-figures-20261002.json."
+    },
+    {
+      "chapter": 1,
+      "path": "notes/retired-figures/chapter-01-reuse-boundary-v2-zh.png",
+      "sha256": "e271b9e9beca340e1c6a31d9b48d6a5a61c751d7823510f8519301da9e6b6f75",
+      "prompt": "彻底重新构图这张中文技术博客图，只沿用白底、海军蓝、青色视觉，移除原图全部内容。16:9，高信息密度但手机可读，大模块标签，次级文字适中。不用MUX梯形，不用任何多路选择符号，不用装饰图标、整页大标题、横幅、Chapter、页眉页脚。不画Secure Demux。\n工程问题：已有APB VIP进入一个新外设验证环境后，哪些可复用，哪些由项目补充，实际与预期如何比较？\n\n严格采用以下拓扑，连线必须方向准确。上部约65%架构，下部约30%独立教学小例。\n上部左侧蓝色虚线分组“公共 APB VIP”，右侧灰色虚线分组“本项目”；中间窄节点“APB 接口”在边界上。\n公共分组第一行“Sequence：访问意图”→“Driver：逐拍驱动”→APB接口，箭头标“请求”。接口→右侧“DUT：带 APB 的外设”，右向箭头标“请求”，DUT→接口独立左向箭头标“响应”。接口→Driver独立左向箭头标“响应”。\n公共分组第二行“Monitor：重建实际事务”，只接受APB接口向下再向左的箭头，标“信号采样”；Monitor→右下项目分组的“Scoreboard：结果比较”箭头标“实际读值与响应”。公共分组底部另有“协议检查：阶段 / 保持 / 完成”，从APB接口单独一条箭头给它标“接口规则检查”，不要让Driver给Monitor或checker提供真值。\n项目分组内右侧“寄存器规格”向下→“功能参考模型”，箭头标“独立定义行为”；Monitor另一路虚线→功能参考模型标“已完成的访问”；功能参考模型→Scoreboard箭头标“预期状态 / 读值”。注意功能模型不接DUT读值来生成预期，Monitor已完成访问输入可以用于建模状态，但规格独立。Scoreboard底部小标签“分别比较实际与预期”。\n\n下部浅色分组“教学例：普通可读写寄存器”，左小框“前提：32 位，初值 0，无副作用”，中间三个步骤“全字节写入 0x00000005”→“同地址读回”→“预期读值 0x00000005”。最下两条短判断并排“协议：阶段与完成条件正确”“功能：读回值符合寄存器规格”。这是教学假设，不是运行结果或真实产品地址；禁止虚构地址或通过数字。\n优化排版使连线绕行，尽量不交叉，箭头有明确源与终点，分组标签只是局部标签。保留技术关系，不复制旧图任何错误连线。",
+      "revision_prompt": "仅修正一条连线，其他图文布局保持。当前从 APB 接口右下方起点出发、标注‘已完成的访问’的青色虚线是错误的。删除该虚线在 APB 接口上的连接，让这条‘已完成的访问’虚线从左侧 Monitor 框的右边缘明确出发，向右经过空白区域，再进入右侧功能参考模型左边缘。可以绕行避开 APB 接口，交叉处不得连接到接口。Monitor→Scoreboard 的‘实际读值与响应’实线保持。最终功能模型收到两路输入：寄存器规格、Monitor已完成访问；物理接口仅连接DUT、Driver、Monitor与协议检查。",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-c1a50424-7af3-4df4-8bae-8cc294e8d80e.png",
+      "selected": false,
+      "review": "Superseded by v3: clarify series VIP asset and consumer IP project ownership."
+    },
+    {
+      "chapter": 1,
+      "path": "assets/generated/chapter-01-reuse-boundary-v3-zh.png",
+      "sha256": "60c3c5c3383de3908905437d6bfc549d5f5eaf6dbe464d0cad83cc8db4bb367b",
+      "prompt": "修改这张图的上半部架构，准确表达“本系列研发 APB VIP，其他 IP 项目实例化并复用它”。保留下方普通寄存器教学例和配色，横向16:9，简体中文大字号，无整页标题、页眉页脚、MUX或装饰图标。\n左侧约42%分组标签改为“本系列研发：APB VIP”。左侧展开组件：Sequence（基础访问序列）→Driver（协议驱动）；另有Monitor（事务观察）、协议检查（阶段 / 保持 / 完成）。这些是本系列研发资产的内部能力，左侧不直接连右侧DUT的物理信号。\n右侧约55%外框标签“复用方：IP 验证项目”。这个项目框内部必须包含：\n1.“项目测试场景”→“APB VIP 实例”标“调用已有能力”。\n2.“APB VIP 实例”与“DUT：待验证的 IP”通过“APB 接口”连接。请求由VIP实例→DUT，响应由DUT→VIP实例，两条箭头分开。\n3.“IP 规格”→“项目参考模型”标“独立预期依据”。\n4.“APB VIP 实例”→“项目参考模型”标“已完成访问”，以及“APB VIP 实例”→“Scoreboard”标“实际结果”；“项目参考模型”→“Scoreboard”标“预期结果”。\n左侧整个APB VIP分组用一条紫灰色虚线箭头指向右侧框内的“APB VIP 实例”，清楚标“实例化 / 复用（非信号连线）”。保证右侧的VIP实例确实在IP验证项目边界内部。左侧不重复画总线接口，不让左侧直接驱动DUT。能调整所有上部模块的位置以减少交叉。\n下方教学例保持：普通可读写寄存器，32位初值0无副作用，全字节写0x00000005→同地址读回→预期0x00000005；协议与功能分别判断。\n这张图强调工程归属与复用，非硬件层次图。不要把VIP画进DUT内部；不能把‘本项目’当作本博客开发的VIP工程。",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-05e113ec-0e51-4515-acb3-63a5d18cda48.png",
+      "selected": true,
+      "review": "左侧为本系列VIP资产，右侧项目内部实例化VIP；虚线为复用关系，实线为请求/响应与事务流。"
+    },
+    {
+      "date": "2026-10-02",
+      "chapter": 2,
+      "path": "assets/generated/chapter-02-version-compatibility-zh.png",
+      "language": "zh-CN",
+      "tool": "Codex built-in ImageGen",
+      "purpose": "APB3/4/5兼容机制",
+      "prompt": "中文技术博客讲解图，16:9白底，海军蓝结构，青色有效路径，琥珀色配置错误，灰边界，字体大。无整页标题、Chapter、页眉页脚、MUX、装饰图标或假波形。工程问题：同一套APB VIP如何按APB3/4/5配置复用？上半部三列卡片：‘APB3 配置’下‘关闭 PSTRB / PPROT 与后续扩展’；‘APB4 配置’下‘默认启用 PSTRB / PPROT’；‘APB5 配置’下‘USER / WAKEUP / PNSE / CHECK 按需配置’。三列下方细灰注‘这里列的是本 VIP 的版本配置行为’。中部两块并行框：左‘接口参数：HAS_* / WIDTH’下‘展开时确定接口能力与类型’，右‘运行配置：enable_* / USER 宽度’下‘创建配置 → 选择版本 → 应用默认值 → 设置选项’。两块各箭头汇入‘build 一致性校验’，再分青色箭头到‘共用 Driver / Monitor / Checker’，琥珀色分支到‘不匹配：配置报错’。公共组件框下‘SETUP → ACCESS → 等待或完成’。底两个独立小例：‘无 PSTRB：按全字节写语义’、‘enable_wakeup=1 且 HAS_PWAKEUP=0 → 报错’。底灰边界‘修改版本字段不会改变已实例化的接口；不代表任意版本端点可直接互连’。所有箭头只表示配置处理流程，非硬件数据选择。",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-54a98640-e8f5-4e3d-9adf-0ad6169dca67.png",
+      "selected": true,
+      "review": "版本默认值、构造后显式派生、接口占位、VIF_T一致性、无PSTRB全字节写均按实现核对。",
+      "sha256": "b07355596670f72b7f4f79af99088e6a33b2caed5c35baf6fe823e2b5b25cb2a",
+      "sources": [
+        {
+          "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_config.sv",
+          "sha256": "d9439e5a2646fcf81943790b3faf37e47cf239b172da111db0fb5894906db333"
+        },
+        {
+          "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_if.sv",
+          "sha256": "6433011963e87f3536264ae2eb93b2d690740580c1bfd3a0445b2c871909781a"
+        },
+        {
+          "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/env/apb_env.sv",
+          "sha256": "f4977ab03264a8cb5b88370ee145d8de5bce99cea15f090d62a5456e2b2bbee4"
+        },
+        {
+          "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_master_driver.sv",
+          "sha256": "075e98b84b59b55c6aede0564ada4b2c31bc0a7ec5ba34f44b4417332858b71f"
+        },
+        {
+          "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_monitor.sv",
+          "sha256": "f9cfb40e3312348df0dacb70cebfe183dc1ae81818e9e1f6e3275ebd0af04d94"
+        },
+        {
+          "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_slave_driver.sv",
+          "sha256": "47e428bbf1d5d72a0efda97416e852ef01c7e85dbdb4929ecf3b1f148ad0d76b"
+        },
+        {
+          "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/ral/apb_ral.sv",
+          "sha256": "998937b9b599aced6ed4336a3df88622baeb724d7d0b778dc81bd621f2ab15b7"
+        },
+        {
+          "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/docs/user-guide.md",
+          "sha256": "c96d0e1283868a8a89e6d7da8c1ecc38bd48823995b6d230c5a43eca7d5dfb90"
+        }
+      ]
+    }
+  ],
+  "updated_on": "2026-10-02"
+}

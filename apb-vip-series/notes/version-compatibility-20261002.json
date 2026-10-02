@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-02",
+  "chapter": 2,
+  "path": "assets/generated/chapter-02-version-compatibility-zh.png",
+  "language": "zh-CN",
+  "tool": "Codex built-in ImageGen",
+  "purpose": "APB3/4/5兼容机制",
+  "prompt": "中文技术博客讲解图，16:9白底，海军蓝结构，青色有效路径，琥珀色配置错误，灰边界，字体大。无整页标题、Chapter、页眉页脚、MUX、装饰图标或假波形。工程问题：同一套APB VIP如何按APB3/4/5配置复用？上半部三列卡片：‘APB3 配置’下‘关闭 PSTRB / PPROT 与后续扩展’；‘APB4 配置’下‘默认启用 PSTRB / PPROT’；‘APB5 配置’下‘USER / WAKEUP / PNSE / CHECK 按需配置’。三列下方细灰注‘这里列的是本 VIP 的版本配置行为’。中部两块并行框：左‘接口参数：HAS_* / WIDTH’下‘展开时确定接口能力与类型’，右‘运行配置：enable_* / USER 宽度’下‘创建配置 → 选择版本 → 应用默认值 → 设置选项’。两块各箭头汇入‘build 一致性校验’，再分青色箭头到‘共用 Driver / Monitor / Checker’，琥珀色分支到‘不匹配：配置报错’。公共组件框下‘SETUP → ACCESS → 等待或完成’。底两个独立小例：‘无 PSTRB：按全字节写语义’、‘enable_wakeup=1 且 HAS_PWAKEUP=0 → 报错’。底灰边界‘修改版本字段不会改变已实例化的接口；不代表任意版本端点可直接互连’。所有箭头只表示配置处理流程，非硬件数据选择。",
+  "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-54a98640-e8f5-4e3d-9adf-0ad6169dca67.png",
+  "selected": true,
+  "review": "版本默认值、构造后显式派生、接口占位、VIF_T一致性、无PSTRB全字节写均按实现核对。",
+  "sha256": "b07355596670f72b7f4f79af99088e6a33b2caed5c35baf6fe823e2b5b25cb2a",
+  "sources": [
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_config.sv",
+      "sha256": "d9439e5a2646fcf81943790b3faf37e47cf239b172da111db0fb5894906db333"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_if.sv",
+      "sha256": "6433011963e87f3536264ae2eb93b2d690740580c1bfd3a0445b2c871909781a"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/env/apb_env.sv",
+      "sha256": "f4977ab03264a8cb5b88370ee145d8de5bce99cea15f090d62a5456e2b2bbee4"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_master_driver.sv",
+      "sha256": "075e98b84b59b55c6aede0564ada4b2c31bc0a7ec5ba34f44b4417332858b71f"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_monitor.sv",
+      "sha256": "f9cfb40e3312348df0dacb70cebfe183dc1ae81818e9e1f6e3275ebd0af04d94"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_slave_driver.sv",
+      "sha256": "47e428bbf1d5d72a0efda97416e852ef01c7e85dbdb4929ecf3b1f148ad0d76b"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/ral/apb_ral.sv",
+      "sha256": "998937b9b599aced6ed4336a3df88622baeb724d7d0b778dc81bd621f2ab15b7"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/docs/user-guide.md",
+      "sha256": "c96d0e1283868a8a89e6d7da8c1ecc38bd48823995b6d230c5a43eca7d5dfb90"
+    }
+  ]
+}

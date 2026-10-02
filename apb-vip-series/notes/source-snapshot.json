@@ -1,0 +1,383 @@
+{
+  "recorded_on": "2026-10-02",
+  "purpose": "Internal writing reference snapshot; no simulation rerun",
+  "files": [
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/README.md",
+      "sha256": "0057db1d79bc0086de32525decdf1dfd258d7c546a9978ac6c1ced1f2d097441"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/docs/architecture.md",
+      "sha256": "447e77b204aa4e9b5d955e1cf7255b71080fa7a0c5623e80257d719aabf7b53e"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/docs/user-guide.md",
+      "sha256": "c96d0e1283868a8a89e6d7da8c1ecc38bd48823995b6d230c5a43eca7d5dfb90"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_if.sv",
+      "sha256": "6433011963e87f3536264ae2eb93b2d690740580c1bfd3a0445b2c871909781a"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_master_driver.sv",
+      "sha256": "075e98b84b59b55c6aede0564ada4b2c31bc0a7ec5ba34f44b4417332858b71f"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/ral/apb_ral.sv",
+      "sha256": "998937b9b599aced6ed4336a3df88622baeb724d7d0b778dc81bd621f2ab15b7"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/reports/integration_feedback_pqc_20260917.md",
+      "sha256": "6f2fdee218ab5a4babe2bac0b1daf471683fbed3ccc0f17e7111839ebbb0340c"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/reports/regression.md",
+      "sha256": "11c512a0332a85845a5d5ab1f67bb1d818152d3daf5dff483dc6261f718bef22"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/reports/coverage.md",
+      "sha256": "399171e371b49abb80e786144064b2eccf7c68c31bd5a2b02d5bb3389013bf55"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/reports/mutation.md",
+      "sha256": "25e0cae6513677bc99dc5d256e882ec99880c1757193338b373a46313d39a64b"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/reports/qualification.md",
+      "sha256": "c976dfe055159e6ed45da197b9ab80c327ef4b21c840ba26279f59296d385162"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/reports/run_log.md",
+      "sha256": "b48f024723b2e6aad0cd593d05c67c79405bb2fe6d169922f29c4a5c441662c8"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/reports/gate_status.md",
+      "sha256": "48ca4176e898cc3755135c1e3988c40a9302b1d93612fcabe388095ceb8ca301"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/transaction/apb_item.sv",
+      "sha256": "77e5bc34e24d93add4cccbe075d000acf4610edef72bf26a5b39330a80875c23"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_slave_driver.sv",
+      "sha256": "47e428bbf1d5d72a0efda97416e852ef01c7e85dbdb4929ecf3b1f148ad0d76b"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_monitor.sv",
+      "sha256": "f9cfb40e3312348df0dacb70cebfe183dc1ae81818e9e1f6e3275ebd0af04d94"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/coverage/apb_coverage.sv",
+      "sha256": "db61f83208c29cb6d0bcdf9e25c42fcaab0cef32e607c9582b98c67e83c4c43e"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/env/apb_env.sv",
+      "sha256": "f4977ab03264a8cb5b88370ee145d8de5bce99cea15f090d62a5456e2b2bbee4"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/check_positive_logs.py",
+      "sha256": "f77b0780d255a6e4db2e1f519080dab2017e5c98f7d09cef2471e315dfef94de"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/config/release-plan.yaml",
+      "sha256": "3e2a1de2ce6159f09e56f0d42be06872980666ba83b26413d6d3b3cf3d08c5e4"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/verification/env/watchdog_env.sv",
+      "sha256": "24153f8e42c591b301f9ba52031a66f14af891caac5fa36e2b783df379e27943"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/peripheral/timer/watchdog/reports/report.md",
+      "sha256": "831988138ba387f0baf45835fdfc6367b0f3fe41c78f4a2d498ce7b98670c9d5"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_demux/verification/env/apb_demux_env.sv",
+      "sha256": "0752a8286ff9d4e8ff71f85cce8c0441e8085ec7e75684deb92af03b8b454892"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_demux/reports/smoke/smoke_summary.md",
+      "sha256": "08ff6adac77d5d253d393dd37df5d405b09c339cda1b14c89179e46d1dd3d30c"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/cdc/apb_cdc_bridge/reports/quality/vip_integration_finding.md",
+      "sha256": "864339eca4b4a4d24e1a14c4e0af0a147dfe3b18b877ae50995f1517fc5caffd"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/cdc/apb_cdc_bridge/verification/env/apb_cdc_bridge_scoreboard.sv",
+      "sha256": "8835a1e2128deea6254ef3c386884fc16da5aad0a48d610b1713f5724adfd1b4"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/th/harness.sv",
+      "sha256": "47264c08805b09596e2fb5b2c61ebbce213ba0b959c2ad39455c7f2ed7925e9c"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/README.md",
+      "sha256": "aefbb6922eb66326e534ab9b06ada40294d5df368e28ed8c8f0bf280f736ea02"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/reports/run_log.md",
+      "sha256": "2dd488efe6eb8275736157415ba9c99893a017beaea91a49bdd022a4a160a2eb"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/axi4/docs/blog/ai-assisted-vip-development-and-reuse.md",
+      "sha256": "dd92d478e25a8588f2af4236c8103ac86bfa6bff11240b3df31c96ef7d8b14ab"
+    },
+    {
+      "path": "reference/aixsilicon_skill_repo-main/aixsilicon_skill_repo-main/skills/vip-development-suite/SKILL.md",
+      "sha256": "5e6f8ad87ef4994524a81119850cd55e5fa6975859a7695b45b80fff5e02e541"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_config.sv",
+      "sha256": "d9439e5a2646fcf81943790b3faf37e47cf239b172da111db0fb5894906db333"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_pkg.sv",
+      "sha256": "5bcb0b01b1a9df2e44b691503a90ebfba203d975ee9752723ca54a5b1c050266"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_sva_bind.sv",
+      "sha256": "fb3f64afbd5c2192e6bf6b58131d4c6953070b4c8b2aad059df86a357cf365d8"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_types_pkg.sv",
+      "sha256": "c6223fd8e8187a26f6bfea78f8c9b76723556a3ef8c67a2f15fa04f21b769fb2"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_agent.sv",
+      "sha256": "07509deac60692d88e37637c0291f138a2a713e560317d1ce6aad9301cbdf115"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_sequencer.sv",
+      "sha256": "8c7c54bb8004a2ea5650d9796d1af49755c9641cdf7a188d76c413a600811b6a"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/checker/apb_protocol_sva.sv",
+      "sha256": "4c9d46f1fffb3558832370ae00cc88ddb0654ea16cc6231ee0358fbeef753e22"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/checker/apb_violation.sv",
+      "sha256": "47041fb7e9ae52bdde56c400ba252f76e0c9b4c553166c9a533105c77da9bae6"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/sequences/apb_sequences.sv",
+      "sha256": "b263a7f5a3986cec879d2cbcf606eddbf3a5cd2262fd6fee33177c32400c0351"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_apb3_test.sv",
+      "sha256": "c16eabde8db69f1de09206ee3a459cf942bbd41bef190e1b8d8cab9d76c80991"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_apb5_parity_fi_test.sv",
+      "sha256": "d8033e9d49dc0ecdde38085ea3a6532ec79d6735c6947d1c5ed14d2f4cb3dda5"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_apb5_test.sv",
+      "sha256": "22ee8eea5980da160b38500842e985d8358b786c89179ad6809349d9b162a8d0"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_apb5_x_fi_test.sv",
+      "sha256": "5caeff8a05b52b0e580219dc9cca4416db80533009f1c8602e62c3fde06177b0"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_corner_test.sv",
+      "sha256": "89ac1603fa9a76e57c9bcaea5b7bf03cabd665e4edefda7b54ed7a96ecacc9e1"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_cov_sweep_test.sv",
+      "sha256": "3ec5753f39f55abc6eb0dc70fbc838ca32d5d9617fb1051553054d0d1ab8ff68"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_error_test.sv",
+      "sha256": "43a75a1c83b74f39ef157ad03a89b6154b57cb5ea93016b39145f8a46ea285be"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_feature_test.sv",
+      "sha256": "c418b4b54822e85923dc550c9a4bddf6321b9cef3facf84af9264ef40555a28f"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_fi_test.sv",
+      "sha256": "cb6d7d9152325176a31791833a14a7267c8db3bf0f1b9013862cff75bd75e747"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_predictor_guard_test.sv",
+      "sha256": "3377d420b48f391cf6bf325cad122b70d19105808d1c306750be03da6638bf24"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_ral_test.sv",
+      "sha256": "74fef3d6d9e1a9d0c1fba9f2302fab951d8e96871deea4399e6f3016b0cd0f5b"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_random_test.sv",
+      "sha256": "56c9536116ddb4e336743e3fb82a194b6c5297b6b4843a0e10e97d1621c15d8a"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_reset_test.sv",
+      "sha256": "fa57a804cef2f628da9d6868360af5be118aa03aa8dd045164ca4f2bd7a2cb55"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_rtl_drive_tb.sv",
+      "sha256": "a253cccff1606e14fa665eeb0ab4080e294d15c79aa0e67a1f6e37a1fe3f2d0a"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_scope_test.sv",
+      "sha256": "a3219f8bcc85f5136823a42686284d51118d4e85e7bcf5fea7055d298b2f69c7"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_seq_response_test.sv",
+      "sha256": "8fdf585812072bb186a6fadb6d52a829ac365926a8c79c04731ea98cf0f38796"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_smoke_env.sv",
+      "sha256": "07b7dc39a8a9850346e0a913b96f0d8945019ee1268a98063946d38627c4b4cf"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_smoke_tb.sv",
+      "sha256": "8ecd23923d7351fd1e44df840144380516a6794c2034099fa6044a2114f8da3d"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_smoke_tb3.sv",
+      "sha256": "95571609f3ee3896e008bf4de4f27e4cdcc584d56b1ddef922426de0cf78e92e"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_smoke_tb5.sv",
+      "sha256": "280a1483c1015be2e89abbef406c459d1953346a92c8b3b73480ec06c8aa2807"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_smoke_test.sv",
+      "sha256": "5bd74bf81594aa62ad17878937779b460509bfde77af9c05172496f5ea544ac1"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_unaligned_test.sv",
+      "sha256": "04f40f0a469b913727781b2a04315de082c479177ec9d950fb9f7d41f355f5e0"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_width_matrix_tb.sv",
+      "sha256": "6698b557ce522de84ccfa52c01a9627a60bdab7b87e35a53d0becefbe6abc3a1"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_width_matrix_test.sv",
+      "sha256": "79f288cf81537f6719c29ee683ea410f641ea9d1d200a448cd0232a7de8b8466"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_zerowait_rw_test.sv",
+      "sha256": "f1c16742568fa1097a7567a3e49308d0bd1b892b206ccc3bd75f67f29b356468"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/fusesoc_consumer/apb_consumer_tb.sv",
+      "sha256": "dc717d2dde023e82ebd89113524d468e228e0eb1e7be22397ca656de3fe4648f"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/README.md",
+      "sha256": "4b9ffb3836624bb1df0f71ff77f9d5397b43ee8c30e5fcdb433cc229c730c00c"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/env/apb_secure_demux_env.sv",
+      "sha256": "76965c9d7d0f213400ac321b7147664f62c26acb444b13fbaf3d8011f1046630"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/env/apb_secure_demux_virtual_sequence.sv",
+      "sha256": "69179d0579dddec335d2cda4228a14363a55499f636bc644a556f18ef9589e78"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/env/apb_secure_demux_checker.sv",
+      "sha256": "d55973379d70bf694dd938f7f8ea3cf65a04550316e64871d2cbcc10c7ef21ab"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/env/apb_secure_demux_rm.sv",
+      "sha256": "751a1a0b8244d8d35f425faae82269b24b52720bb6ad4a30338d70cf9817cd2e"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/reports/report.md",
+      "sha256": "cc9adf4101b5368f5799c0e647069a073a3367ad7ba11eb39618f932a4005110"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/reports/quality/rtl_leaves/events_ut_runs.json",
+      "sha256": "99037bf9a9909c4123e63c4607c3b4a5aeb9795a692305da43bbab88f6569f9d"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/reports/quality/rtl_leaves/policy_ut_before_reset_guard.json",
+      "sha256": "f0e42555f97cf53b7f984a739e6eb164eb6ed62f82dea18c8de7e510d459ab15"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/th/apb_secure_demux_target_model.sv",
+      "sha256": "e8371922d13158e913b24c03ce28c868fe834390cf858113e4d8fd3116f7a229"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/tc/tc_apb_secure_demux_apb.sv",
+      "sha256": "9b7fbbd1bdf5ad9c9a7828b28267d70384f1081c52b3974dd05c7d830f7c85c6"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/tc/tc_apb_secure_demux_acl.sv",
+      "sha256": "ac717e6808a2d610e1f264a09a490a3afe0b9bb484c16da78840d2016fd75147"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/tc/tc_apb_secure_demux_reset.sv",
+      "sha256": "96d821418ad532ef9d3f594de02d828e0aa6a40a75aa4c05c9185218a503bdc8"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/unit_test/ut_apb_secure_demux_events.sv",
+      "sha256": "6b2bbb2c123f7a83d6800f03b7103e263e575145d2c85406891afd1a50ed0bc6"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/rtl/apb_secure_demux.sv",
+      "sha256": "2a319f153eb9511e120bc53f4b6337bb4897dec9f412f4fabb00e7e2122f5acd"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/rtl/apb_secure_demux_access.sv",
+      "sha256": "649338ece7ed180a7b9ddc8f3b8f00b61714cfe65e4474a7ea0191fe37ca7980"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/fusesoc_consumer/consumer_core.yaml",
+      "sha256": "8426a661528a0c35d51a73a2aa7e107bac1ae1dd4955de4c6de51248d3ad87ed"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/aixsilicon_ip_apb_secure_demux.core",
+      "sha256": "4b9cfca0939d3feda1a34101ea4b64004df7768cd9b80bae657f4fedf07c03f4"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/env/apb_secure_demux_env_cfg.sv",
+      "sha256": "bf144c8150c2bfed7cfe75886ffe8ceb7513c4f82f4e0880bd71c5bec114f3cf"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/tc/tc_apb_secure_demux_apb_smoke.sv",
+      "sha256": "1f073091b3519dd27a23f8054a11193fd54d40ef76e13c472efda90a6f958aeb"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/tc/tc_apb_secure_demux_acl_smoke.sv",
+      "sha256": "4c9b8971ba7c443d41b66bd752609b06e53711002e894e8c925e1c1264d6455c"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/sim/regression_list.yaml",
+      "sha256": "079f6768dcb58de36ec86ca52c3be1550e3b85c2c244be8b19afcadc0ef39e57"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/scripts/run_uvm.py",
+      "sha256": "78f81f1173bd7003d9a19cd76c404369d37ad5e49bf6cdc617eaf9ec971f0950"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/scripts/prepare_uvm_dependencies.py",
+      "sha256": "09939654368514b9b029677aed2dc6a365a1aad31e1b9ef4982a99d90ff204cd"
+    },
+    {
+      "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/infrastructure/apb/apb_secure_demux/verification/tc/tc_base.sv",
+      "sha256": "65ffd1068d3559b2a726ba7c243f5632b026c650dcb323764f01d49b2580364c"
+    }
+  ],
+  "archive": {
+    "path": "reference/aixsilicon_ip_repo-main/aixsilicon_ip_repo-main/ips/security/crypto/pqc/docs/ai-pqc-blog-publish.zip",
+    "sha256": "1d7544dd0ae9f01a091852d273d1754ad9ff677fbf3c0198c47987690905a682",
+    "entries": [
+      {
+        "entry": "ai-pqc-rtl.md",
+        "sha256": "4c8cd951c98358cdc20740e5c54f622611fe8efcc5b6a0a47540f4c1ef1ed951",
+        "use": "inventory_only_not_extracted"
+      },
+      {
+        "entry": "ai-pqc-rtl.html",
+        "sha256": "f5820266e003f2a74afe473374391bd888ecefb7f8527d7c53b5b0961ff83b02",
+        "use": "inventory_only_not_extracted"
+      }
+    ]
+  },
+  "updated_on": "2026-10-02"
+}

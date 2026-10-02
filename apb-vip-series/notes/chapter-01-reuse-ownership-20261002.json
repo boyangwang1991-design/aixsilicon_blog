@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-02",
+  "tool": "Codex built-in ImageGen",
+  "language": "zh-CN",
+  "purpose": "明确本系列VIP研发与消费IP项目实例化关系",
+  "path": "assets/generated/chapter-01-reuse-boundary-v3-zh.png",
+  "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-05e113ec-0e51-4515-acb3-63a5d18cda48.png",
+  "prompt": "修改这张图的上半部架构，准确表达“本系列研发 APB VIP，其他 IP 项目实例化并复用它”。保留下方普通寄存器教学例和配色，横向16:9，简体中文大字号，无整页标题、页眉页脚、MUX或装饰图标。\n左侧约42%分组标签改为“本系列研发：APB VIP”。左侧展开组件：Sequence（基础访问序列）→Driver（协议驱动）；另有Monitor（事务观察）、协议检查（阶段 / 保持 / 完成）。这些是本系列研发资产的内部能力，左侧不直接连右侧DUT的物理信号。\n右侧约55%外框标签“复用方：IP 验证项目”。这个项目框内部必须包含：\n1.“项目测试场景”→“APB VIP 实例”标“调用已有能力”。\n2.“APB VIP 实例”与“DUT：待验证的 IP”通过“APB 接口”连接。请求由VIP实例→DUT，响应由DUT→VIP实例，两条箭头分开。\n3.“IP 规格”→“项目参考模型”标“独立预期依据”。\n4.“APB VIP 实例”→“项目参考模型”标“已完成访问”，以及“APB VIP 实例”→“Scoreboard”标“实际结果”；“项目参考模型”→“Scoreboard”标“预期结果”。\n左侧整个APB VIP分组用一条紫灰色虚线箭头指向右侧框内的“APB VIP 实例”，清楚标“实例化 / 复用（非信号连线）”。保证右侧的VIP实例确实在IP验证项目边界内部。左侧不重复画总线接口，不让左侧直接驱动DUT。能调整所有上部模块的位置以减少交叉。\n下方教学例保持：普通可读写寄存器，32位初值0无副作用，全字节写0x00000005→同地址读回→预期0x00000005；协议与功能分别判断。\n这张图强调工程归属与复用，非硬件层次图。不要把VIP画进DUT内部；不能把‘本项目’当作本博客开发的VIP工程。",
+  "supersedes": "assets/generated/chapter-01-reuse-boundary-v2-zh.png",
+  "review": "左侧为本系列VIP资产，右侧项目内部实例化VIP；虚线为复用关系，实线为请求/响应与事务流。",
+  "sha256": "60c3c5c3383de3908905437d6bfc549d5f5eaf6dbe464d0cad83cc8db4bb367b"
+}

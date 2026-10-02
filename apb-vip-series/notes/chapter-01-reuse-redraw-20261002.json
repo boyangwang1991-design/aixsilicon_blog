@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-02",
+  "tool": "Codex built-in ImageGen",
+  "language": "zh-CN",
+  "purpose": "公共VIP驱动/观察/协议检查与项目功能预期的拓扑",
+  "path": "assets/generated/chapter-01-reuse-boundary-v2-zh.png",
+  "initial_generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-24a03a3c-2cb2-4beb-a7a0-cf98f2d68183.png",
+  "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-c1a50424-7af3-4df4-8bae-8cc294e8d80e.png",
+  "prompt": "彻底重新构图这张中文技术博客图，只沿用白底、海军蓝、青色视觉，移除原图全部内容。16:9，高信息密度但手机可读，大模块标签，次级文字适中。不用MUX梯形，不用任何多路选择符号，不用装饰图标、整页大标题、横幅、Chapter、页眉页脚。不画Secure Demux。\n工程问题：已有APB VIP进入一个新外设验证环境后，哪些可复用，哪些由项目补充，实际与预期如何比较？\n\n严格采用以下拓扑，连线必须方向准确。上部约65%架构，下部约30%独立教学小例。\n上部左侧蓝色虚线分组“公共 APB VIP”，右侧灰色虚线分组“本项目”；中间窄节点“APB 接口”在边界上。\n公共分组第一行“Sequence：访问意图”→“Driver：逐拍驱动”→APB接口，箭头标“请求”。接口→右侧“DUT：带 APB 的外设”，右向箭头标“请求”，DUT→接口独立左向箭头标“响应”。接口→Driver独立左向箭头标“响应”。\n公共分组第二行“Monitor：重建实际事务”，只接受APB接口向下再向左的箭头，标“信号采样”；Monitor→右下项目分组的“Scoreboard：结果比较”箭头标“实际读值与响应”。公共分组底部另有“协议检查：阶段 / 保持 / 完成”，从APB接口单独一条箭头给它标“接口规则检查”，不要让Driver给Monitor或checker提供真值。\n项目分组内右侧“寄存器规格”向下→“功能参考模型”，箭头标“独立定义行为”；Monitor另一路虚线→功能参考模型标“已完成的访问”；功能参考模型→Scoreboard箭头标“预期状态 / 读值”。注意功能模型不接DUT读值来生成预期，Monitor已完成访问输入可以用于建模状态，但规格独立。Scoreboard底部小标签“分别比较实际与预期”。\n\n下部浅色分组“教学例：普通可读写寄存器”，左小框“前提：32 位，初值 0，无副作用”，中间三个步骤“全字节写入 0x00000005”→“同地址读回”→“预期读值 0x00000005”。最下两条短判断并排“协议：阶段与完成条件正确”“功能：读回值符合寄存器规格”。这是教学假设，不是运行结果或真实产品地址；禁止虚构地址或通过数字。\n优化排版使连线绕行，尽量不交叉，箭头有明确源与终点，分组标签只是局部标签。保留技术关系，不复制旧图任何错误连线。",
+  "revision_prompt": "仅修正一条连线，其他图文布局保持。当前从 APB 接口右下方起点出发、标注‘已完成的访问’的青色虚线是错误的。删除该虚线在 APB 接口上的连接，让这条‘已完成的访问’虚线从左侧 Monitor 框的右边缘明确出发，向右经过空白区域，再进入右侧功能参考模型左边缘。可以绕行避开 APB 接口，交叉处不得连接到接口。Monitor→Scoreboard 的‘实际读值与响应’实线保持。最终功能模型收到两路输入：寄存器规格、Monitor已完成访问；物理接口仅连接DUT、Driver、Monitor与协议检查。",
+  "supersedes": "assets/generated/chapter-01-reuse-boundary-zh.png",
+  "review": "移除错误MUX；明确请求/响应、Monitor实际事务、规格独立预期、Scoreboard比较。教学例非工程运行结果。",
+  "sha256": "e271b9e9beca340e1c6a31d9b48d6a5a61c751d7823510f8519301da9e6b6f75"
+}

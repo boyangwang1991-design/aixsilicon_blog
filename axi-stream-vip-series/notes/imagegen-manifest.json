@@ -1,0 +1,103 @@
+{
+  "note": "内部图源、提示词与修订记录，不链接自公开正文；仅选定图片存入assets。",
+  "images": [
+    {
+      "id": "series-loop-zh",
+      "chapter": 1,
+      "question": "Stream VIP如何在AI研发和项目反馈中积累",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "中文技术博客正文讲解图，宽幅约16:9，白底，海军蓝标题和结构，青色为有效数据、检查、受控路径，灰色为条件和边界，琥珀色只用于异常或问题反馈。高对比，手机阅读大标签，合理留白。不要整页大标题、Chapter编号、logo、封面、页眉页脚、口号、演示文稿外框，不模拟真实界面或仿真波形。以下限定的模块和文字是全部可见信息；不要自行扩写说明，不把绘制指令写进图里。箭头不穿文字，数字与信号逐字准确。上方一条四阶段路径，从左到右四个模块：「协议语义与产品契约」→「AI 辅助研发」→「AXI4-Stream VIP」→「流式 IP 验证」。每模块仅两行小标签，分别「握手、字节、包」「变换与复位约定」；「实现与测试」「人工审阅」；「驱动、观察、比较」「版本与回归」；「独立产品预期」「实际接口观察」。中下方独立青色框「判断依据」，三个子块「手算字节与边界」「独立 RTL 夹具」「语义变异与总线注入」，青色箭头向上进入AI研发和VIP验收。右下从流式IP验证出发琥珀箭头到「最小复现」再到「修正 + 定向用例」再返回AI研发，箭头标签「消费方复归」。最下灰色边界条「复用组件，也复用经过检查的约定」。不要任何芯片或机器人装饰。",
+      "revisions": [
+        "保持现有工程流程图的所有模块、文字和箭头不变。删除最底部占整行的灰色口号横幅「复用组件，也复用经过检查的约定」及其灰色边框底色，用白色留白替代。该横幅不是技术信息，博客要求不带口号横幅。其余技术内容不动，保留宽幅比例。"
+      ],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-9ae2b2ab-847a-4904-bda8-ec05553df776.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-ba538825-731f-4abf-9971-31a6e213e756.png",
+      "file": "assets/generated/series-loop-zh.png",
+      "review": "已核对原尺寸与640像素宽缩放图：关键分类、数值、连线、条件和边界与正文一致；主标签可读。总览删除口号横幅，其余未因装饰差异重生。",
+      "sha256": "1cb512e5d086565aa96ac22b6ba4a2e5c2b568fef9c793ded1512f002e913a36"
+    },
+    {
+      "id": "byte-semantics-zh",
+      "chapter": 2,
+      "question": "TKEEP TSTRB与TLAST分别保留什么信息",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "中文技术博客正文讲解图，宽幅约16:9，白底，海军蓝标题和结构，青色为有效数据、检查、受控路径，灰色为条件和边界，琥珀色只用于异常或问题反馈。高对比，手机阅读大标签，合理留白。不要整页大标题、Chapter编号、logo、封面、页眉页脚、口号、演示文稿外框，不模拟真实界面或仿真波形。以下限定的模块和文字是全部可见信息；不要自行扩写说明，不把绘制指令写进图里。箭头不穿文字，数字与信号逐字准确。主体上部四张并列卡片，每张大号位值和分类。第一：「TKEEP=1  TSTRB=1」「DATA」「保留字节值与顺序」青色；第二：「TKEEP=1  TSTRB=0」「POSITION」「保留位置，不比较该字节数据值」蓝白；第三：「TKEEP=0  TSTRB=0」「NULL」「可从逻辑流移除」浅灰；第四：「TKEEP=0  TSTRB=1」「保留组合」「不作为合法组合使用」琥珀。下部独立横向示例：「一次已握手的拍」框内「TKEEP 全 0」「TSTRB 全 0」「TLAST=1」箭头到「0 个 DATA 字节」和更右一块「仍保留 END_PACKET」。从TLAST=1画青色箭头直达END_PACKET，强调边界不会被删除。底部灰色注「握手：时钟上升沿 TVALID && TREADY」「全 NULL 不等于没有包边界」。不画波形，不新增十六进制例子。",
+      "revisions": [],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-64ee8693-6151-4cd0-b6c6-d69f9945006b.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-64ee8693-6151-4cd0-b6c6-d69f9945006b.png",
+      "file": "assets/generated/byte-semantics-zh.png",
+      "review": "已核对原尺寸与640像素宽缩放图：关键分类、数值、连线、条件和边界与正文一致；主标签可读。总览删除口号横幅，其余未因装饰差异重生。",
+      "sha256": "1801361bf9e37e702ca0499a94dad4653d6640de174884240db9732560c337e8"
+    },
+    {
+      "id": "architecture-zh",
+      "chapter": 3,
+      "question": "双侧环境怎样分离驱动观察检查比较",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "中文技术博客正文讲解图，宽幅约16:9，白底，海军蓝标题和结构，青色为有效数据、检查、受控路径，灰色为条件和边界，琥珀色只用于异常或问题反馈。高对比，手机阅读大标签，合理留白。不要整页大标题、Chapter编号、logo、封面、页眉页脚、口号、演示文稿外框，不模拟真实界面或仿真波形。以下限定的模块和文字是全部可见信息；不要自行扩写说明，不把绘制指令写进图里。箭头不穿文字，数字与信号逐字准确。上方真实数据路径三模块左中右：「Source Agent」→「DUT」→「Sink Agent」。左模块小字「Sequencer → Driver」，右模块小字「Sink Driver：仅驱动 TREADY」。Source→DUT上箭头「TVALID + payload」，DUT→Source细反向箭头「TREADY」。DUT→Sink上箭头「TVALID + payload」，Sink→DUT细反向「TREADY」。下方两侧各一个青色观察框「输入 Monitor」「输出 Monitor」，从各自物理链路向下箭头到对应Monitor，标签「独立采样」。两个Monitor再向下分别输入底部中央「Scoreboard」框，线标签「input_imp」「output_imp」；Scoreboard框内三行「EXACT_BEAT」「LOGICAL_STREAM」「CUSTOM」。每侧Monitor外侧各一小块「Checker / SVA」，直接从同侧物理链路观察输入，不从driver缓存输入。Checker向下连对应「Coverage」；Monitor也向对应Coverage连线标「beat_ap」。不要Coverage反向到Checker。底部灰色两条短注：「时钟与复位：顶层统一驱动」「Passive：仅观察；产品变换由明确契约决定」。不需要画所有类或端口，不加其他箭头。",
+      "revisions": [],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-0a84bce7-75b9-4e59-af4f-333b2d266c4b.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-0a84bce7-75b9-4e59-af4f-333b2d266c4b.png",
+      "file": "assets/generated/architecture-zh.png",
+      "review": "已核对原尺寸与640像素宽缩放图：关键分类、数值、连线、条件和边界与正文一致；主标签可读。总览删除口号横幅，其余未因装饰差异重生。",
+      "sha256": "d9ed8bd3e280de23f5294240d3a60ed733591d48dba68e779762a414a8153280"
+    },
+    {
+      "id": "logical-compare-zh",
+      "chapter": 4,
+      "question": "不同拍数怎样表达相同逻辑数据",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "中文技术博客正文讲解图，宽幅约16:9，白底，海军蓝标题和结构，青色为有效数据、检查、受控路径，灰色为条件和边界，琥珀色只用于异常或问题反馈。高对比，手机阅读大标签，合理留白。不要整页大标题、Chapter编号、logo、封面、页眉页脚、口号、演示文稿外框，不模拟真实界面或仿真波形。以下限定的模块和文字是全部可见信息；不要自行扩写说明，不把绘制指令写进图里。箭头不穿文字，数字与信号逐字准确。两行数据布局加下面公共比较结果。上行标「教学输入：32 位，两拍」，第一拍4格分别「11」「22」「33」「44」，下标签「TKEEP=1111  TLAST=0」；第二拍4格分别「55」「NULL」「NULL」「NULL」，下标签「TKEEP=0001  TLAST=1」。所有lane按左到右lane0至lane3。第二行标「教学输出：64 位，一拍」，8格左到右「11」「22」「33」「44」「55」「NULL」「NULL」「NULL」，下标签「TKEEP=00011111  TLAST=1」。数据格青色，NULL灰色。右侧小注「TSTRB 与 TKEEP 相同」。从两行分别向下汇聚到共同序列「DATA(11) → DATA(22) → DATA(33) → DATA(44) → DATA(55) → END_PACKET」。共同序列须大且可读。底部两块对比「逐拍组织不同：2 拍 ≠ 1 拍」「逻辑字节与包边界相同」。最小灰注「转换原理示意，不代表新增异宽仿真结果」。不要真实波形，不要PASS，不把NULL画成00。",
+      "revisions": [],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-47a3ba63-9598-4cee-bf74-8f4e2f368b1b.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-47a3ba63-9598-4cee-bf74-8f4e2f368b1b.png",
+      "file": "assets/generated/logical-compare-zh.png",
+      "review": "已核对原尺寸与640像素宽缩放图：关键分类、数值、连线、条件和边界与正文一致；主标签可读。总览删除口号横幅，其余未因装饰差异重生。",
+      "sha256": "e24137f1cc2e9b34d1304ccb2813bc1c565d0ca5a009dd9aed17e70fc495309d"
+    },
+    {
+      "id": "register-slice-zh",
+      "chapter": 6,
+      "question": "单级寄存器怎样在背压下保持并实现同沿替换",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "中文技术博客正文讲解图，宽幅约16:9，白底，海军蓝标题和结构，青色为有效数据、检查、受控路径，灰色为条件和边界，琥珀色只用于异常或问题反馈。高对比，手机阅读大标签，合理留白。不要整页大标题、Chapter编号、logo、封面、页眉页脚、口号、演示文稿外框，不模拟真实界面或仿真波形。以下限定的模块和文字是全部可见信息；不要自行扩写说明，不把绘制指令写进图里。箭头不穿文字，数字与信号逐字准确。上半部左「Source VIP」，中央大模块「寄存器切片 / DUT」内两个清楚分区「r_valid」「数据 + KEEP / STRB / LAST / ID / DEST / USER」，右「Sink VIP」。Source到DUT、DUT到Sink向右青色箭头标「有效拍」，READY从右向左细箭头，DUT左侧READY标「s_tready」，右侧「m_tready」。中央下方公式「s_tready = !r_valid || m_tready」。下半部3个横向并列条件卡片，各独立不画状态时间序列：1「空槽」「r_valid=0」「可以接收新拍」；2「满槽 + 下游暂停」「r_valid=1，m_tready=0」「输出保持，暂停输入」；3「满槽 + 下游接收」「r_valid=1，m_tready=1」「同一边沿：旧拍输出，新拍可写入」。底部灰色边界条「数据经过寄存器；READY 仍有组合路径」。不要画回归结果或波形。",
+      "revisions": [],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-60a224ce-52a2-47e4-b217-884c8900e570.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-60a224ce-52a2-47e4-b217-884c8900e570.png",
+      "file": "assets/generated/register-slice-zh.png",
+      "review": "已核对原尺寸与640像素宽缩放图：关键分类、数值、连线、条件和边界与正文一致；主标签可读。总览删除口号横幅，其余未因装饰差异重生。",
+      "sha256": "0297154e90b61241141c0f0ca40f2d1ca30458b3aff668b41838147262dac77c"
+    },
+    {
+      "id": "lifecycle-zh",
+      "chapter": 7,
+      "question": "取消等待握手复位怎样改变拍状态",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "中文技术博客正文讲解图，宽幅约16:9，白底，海军蓝标题和结构，青色为有效数据、检查、受控路径，灰色为条件和边界，琥珀色只用于异常或问题反馈。高对比，手机阅读大标签，合理留白。不要整页大标题、Chapter编号、logo、封面、页眉页脚、口号、演示文稿外框，不模拟真实界面或仿真波形。以下限定的模块和文字是全部可见信息；不要自行扩写说明，不把绘制指令写进图里。箭头不穿文字，数字与信号逐字准确。主线左到右三块：「排队未发」「TVALID 已有效」「握手完成」，箭头第一到第二「开始呈现」，第二到第三「TVALID && TREADY」。第一块向下一个灰色分支「cancel_pending」→「发送前取消」，仅此分支允许取消。第二块下方青色回环「TREADY=0：保持当前拍」。旁边琥珀框「watchdog 超阈值」仅一条箭头到「报告；继续等待或由测试策略终止仿真」，绝对不连握手完成。最下方独立灰色复位分支从「TVALID 已有效」向下到「复位」再到「ABORTED_BY_RESET」再到「epoch 更新 + 按契约结算」，不要通过watchdog触发复位。底部注「取消和中止是软件状态，不是接口响应」「复位结算须接入实际环境」。不画信号波形，不标一切超时为协议错误。",
+      "revisions": [],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-f5b7a899-e0ae-48f7-a298-cb06e827fb55.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-f5b7a899-e0ae-48f7-a298-cb06e827fb55.png",
+      "file": "assets/generated/lifecycle-zh.png",
+      "review": "已核对原尺寸与640像素宽缩放图：关键分类、数值、连线、条件和边界与正文一致；主标签可读。总览删除口号横幅，其余未因装饰差异重生。",
+      "sha256": "7ad13097836d4f0b9e40184050ee8b98a874aa0f75fb7a1d6d75e57869b0250b"
+    }
+  ]
+}

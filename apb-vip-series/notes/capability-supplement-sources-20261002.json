@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-02",
+  "purpose": "Capability audit; no simulation rerun",
+  "files": [
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_config.sv",
+      "sha256": "d9439e5a2646fcf81943790b3faf37e47cf239b172da111db0fb5894906db333"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/apb_types_pkg.sv",
+      "sha256": "c6223fd8e8187a26f6bfea78f8c9b76723556a3ef8c67a2f15fa04f21b769fb2"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/transaction/apb_item.sv",
+      "sha256": "77e5bc34e24d93add4cccbe075d000acf4610edef72bf26a5b39330a80875c23"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_master_driver.sv",
+      "sha256": "075e98b84b59b55c6aede0564ada4b2c31bc0a7ec5ba34f44b4417332858b71f"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_slave_driver.sv",
+      "sha256": "47e428bbf1d5d72a0efda97416e852ef01c7e85dbdb4929ecf3b1f148ad0d76b"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/agent/apb_monitor.sv",
+      "sha256": "f9cfb40e3312348df0dacb70cebfe183dc1ae81818e9e1f6e3275ebd0af04d94"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/src/checker/apb_violation.sv",
+      "sha256": "47041fb7e9ae52bdde56c400ba252f76e0c9b4c553166c9a533105c77da9bae6"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_fi_test.sv",
+      "sha256": "cb6d7d9152325176a31791833a14a7267c8db3bf0f1b9013862cff75bd75e747"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_apb5_parity_fi_test.sv",
+      "sha256": "d8033e9d49dc0ecdde38085ea3a6532ec79d6735c6947d1c5ed14d2f4cb3dda5"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_apb5_x_fi_test.sv",
+      "sha256": "5caeff8a05b52b0e580219dc9cca4416db80533009f1c8602e62c3fde06177b0"
+    },
+    {
+      "path": "reference/aixsilicon_vip_repo-main/vip/amba/apb/self_test/apb_unaligned_test.sv",
+      "sha256": "04f40f0a469b913727781b2a04315de082c479177ec9d950fb9f7d41f355f5e0"
+    }
+  ]
+}

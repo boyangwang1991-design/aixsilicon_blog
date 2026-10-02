@@ -1,0 +1,46 @@
+{
+  "tool": "Codex built-in ImageGen",
+  "date": "2026-10-02",
+  "images": [
+    {
+      "language": "zh-CN",
+      "purpose": "地址数据归属",
+      "path": "assets/generated/phase-ownership-zh.png",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-201cf771-80e4-4c8c-b21d-ce155c152738.png",
+      "initial_generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-b0e57f7e-dcfb-4dee-8e47-48595fef041a.png",
+      "prompt": "生成一张中文技术博客原理示意图，横向16:9，白色底、深海军蓝结构标题、青色有效控制与检查、琥珀色等待/错误，灰色边界。信息丰富但手机可读，简体中文准确清晰。无整页大标题、无页眉页脚、无Chapter编号、无封面、无芯片装饰，不模拟真实波形或工具截图。问题：AHB同一时刻的地址与数据属于谁？主体左右两块，左块上层‘地址阶段 B’，标签‘HADDR / HTRANS / HWRITE’，箭头指向‘下一笔请求’；左块下层‘数据阶段 A’，标签‘HWDATA 或 HRDATA / HRESP’，箭头指向‘已经接受的请求’。右块清晰条件分支：‘HREADY = 0’→‘A 继续等待’与‘B 尚未接受’；‘HREADY = 1’→‘完成 A’与‘接受有效 B’。下方小独立示例框‘B 指向目标 1，A 仍属于目标 0’，目标0响应青色箭头到‘返回选择’，目标1灰色；标‘返回路径由数据阶段目标决定’。接受有效B的条件注明‘选中且 HTRANS 为 NONSEQ / SEQ’。不暗示任何HREADY高无条件接收。",
+      "revision_prompt": "修正这张图中唯一技术歧义：右上 HREADY=0 分组将‘数据阶段保持不变’替换为‘写数据保持；读数据可尚未有效’，将‘地址阶段信息保持，但不被接受’替换为‘普通有效传输等待时，地址与控制保持’，分组标题‘（等待）’改为‘（普通等待示例）’，补短注‘ERROR / BUSY 按专门规则处理’。底部目标0与返回选择的连线只从目标0指向返回选择，去掉指向目标0的箭头。其余保留。",
+      "review": "已检查原尺寸：阶段归属、角色、数字与条件；非真实波形。"
+    },
+    {
+      "language": "zh-CN",
+      "purpose": "组件架构",
+      "path": "assets/generated/architecture-zh.png",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-cd5552c0-10c7-4c9e-a17a-f3832ec0b54f.png",
+      "initial_generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-cd5552c0-10c7-4c9e-a17a-f3832ec0b54f.png",
+      "prompt": "生成一张中文技术博客原理示意图，横向16:9，白色底、深海军蓝结构标题、青色有效控制与检查、琥珀色等待/错误，灰色边界。信息丰富但手机可读，简体中文准确清晰。无整页大标题、无页眉页脚、无Chapter编号、无封面、无芯片装饰，不模拟真实波形或工具截图。问题：AHB VIP的激励、独立观察和设备模型如何协作？中间‘AHB 接口’，左上‘序列’→‘Manager 驱动’→接口；右上接口→‘Subordinate 驱动’→‘存储模型’，旁注‘成功完成才提交’。接口向下独立箭头到‘Monitor：地址记录 + 数据关联’，再分支到三框‘协议检查与覆盖’、‘项目 Scoreboard’、‘RAL 预测器’。Monitor不从Manager驱动接数据。下方两小分组：‘请求事件：地址已接受’、‘完成事件：结果已确定’。最右灰框‘Passive：只观察，不驱动’。Manager和Subordinate是两端角色，不暗示一个agent同时驱动两端。RAL框标‘仅成功事务更新’。",
+      "revision_prompt": null,
+      "review": "已检查原尺寸：阶段归属、角色、数字与条件；非真实波形。"
+    },
+    {
+      "language": "zh-CN",
+      "purpose": "四端口自验证",
+      "path": "assets/generated/system-fixture-zh.png",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-5b1c3a68-eb41-4188-a2fd-9b34a665b5ff.png",
+      "initial_generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-03bc001f-2dbb-48c6-a080-f6056ec3ff8c.png",
+      "prompt": "生成一张中文技术博客原理示意图，横向16:9，白色底、深海军蓝结构标题、青色有效控制与检查、琥珀色等待/错误，灰色边界。信息丰富但手机可读，简体中文准确清晰。无整页大标题、无页眉页脚、无Chapter编号、无封面、无芯片装饰，不模拟真实波形或工具截图。问题：四发起端四目标AHB自验证如何组织？左侧四框Manager 0/1/2/3，中间大分组‘每个端口独立的地址译码与数据阶段返回选择’，右侧四框‘目标 0｜等待 0’ ‘目标 1｜等待 1’ ‘目标 2｜等待 2’ ‘目标 3｜等待 3’。右下四个存储小块标‘4 个共享存储模型’，说明‘每个目标：跨端口共享模型’；主箭头左→中→右，返回青色箭头右→中→左明确标响应。中间小标签‘地址选择：HADDR[13:12]’和‘返回选择：锁存的 data_target’。底部两个分组‘每端口：32 次写入 + 32 次读回’、‘每目标：32 次成功写提交’。边界灰色短注‘各发起端使用不同地址区间；不代表同址仲裁验证’。这是自验证连接示意，不是产品互连结构图，不能画共享仲裁器。",
+      "revision_prompt": "修正本图地址信息，布局保持。左侧四个Manager框删除目前所有地址区间，分别改成‘目标内偏移：0x000 + k×4’、‘目标内偏移：0x100 + k×4’、‘目标内偏移：0x200 + k×4’、‘目标内偏移：0x300 + k×4’。中央地址选择下说明改为‘每个端口轮流访问目标 0 / 1 / 2 / 3’，不要写高2位。左下框第一条改为‘轮流访问四个目标，k = 0…7’，第二三条保留但HRESP = OK改为HRESP = OKAY。这是每个发起端都访问所有四个目标的示意，不能暗示一对一绑定，其余不变。",
+      "review": "已检查原尺寸：阶段归属、角色、数字与条件；非真实波形。"
+    },
+    {
+      "language": "zh-CN",
+      "purpose": "证据范围",
+      "path": "assets/generated/evidence-zh.png",
+      "generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-42772ad4-0fe0-4092-b33f-806f429bf106.png",
+      "initial_generated_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-2024550d-7c84-4a1f-a9f2-c2983d27337a.png",
+      "prompt": "生成一张中文技术博客原理示意图，横向16:9，白色底、深海军蓝结构标题、青色有效控制与检查、琥珀色等待/错误，灰色边界。信息丰富但手机可读，简体中文准确清晰。无整页大标题、无页眉页脚、无Chapter编号、无封面、无芯片装饰，不模拟真实波形或工具截图。问题：AI生成的AHB VIP凭什么可信？三列分别‘独立预期’、‘执行检查’、‘范围明确的结论’。左列‘人工可核算地址/数据向量’‘直接驱动总线，绕开 VIP driver’；中列‘Monitor 重建事务’‘21 个规则负向见证’‘6/6 源码变异检出’；右列‘13/13 主回归’‘Lite32：48/48 组合’‘三配置有限范围’。左→中→右青色箭头。下方一条琥珀色反馈弧线右向左，标‘失败用例 → 修正实现 → 固定回归’。右列附小字‘AHB5_128 / Classic32：定向能力’。底部灰小框‘2026-09-30｜VCS W-2024.09-SP1｜UVM 1.2｜seed 1’。没有百分比饼图，不写全协议认证，不画伪日志。",
+      "revision_prompt": "对这张图做精确文字纠正，其余布局保留：右列Lite32下‘读写 × 长度 × 对齐 × 突发’改为‘读写 × 8 种 burst × 3 种 size’，下一行改‘48 项组合命中并检查地址与有效字节’；右列13/13下两行改为‘13 组主回归通过’及‘包括独立向量等检查’；右列标题下‘在限定范围内可信、可复现’改为‘证据绑定配置与执行批次’；右列三配置下‘结论成立、可复现’改为‘不扩大为全协议认证’；左下‘独立 BFMs / 手写序列’改为‘独立过程式总线向量’；中下‘全部被检测出并定位’改为‘全部触发预期失败判据’。",
+      "review": "已检查原尺寸：阶段归属、角色、数字与条件；非真实波形。"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "note": "内部图源与提示词记录，不作为公开正文附件；仅最终选定图纳入assets。",
+  "images": [
+    {
+      "id": "series-loop-zh",
+      "chapter": 1,
+      "question": "研发与消费方反馈怎样积累为公共VIP",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "为中文技术博客生成一张信息丰富但清晰的工程概念插图，横向约16:9。白色或极浅灰底，深海军蓝结构及模块名，青色表示观察、检查与受控路径，琥珀色只表示问题反馈，灰色表示边界。简体中文准确，必要英文信号名保留。模块标签大且清晰，正文嵌入式插图，留白和安全边距，手机缩小时主标签可读。不要整页大标题、Chapter、页眉页脚、logo、封面、口号、装饰芯片、光效；不是PPT截图，不模拟真实软件界面或波形。不添加未给定的成功数据。主线横向四组：左「协议与项目契约」小标签「通道 / ID / lane」「接口角色与位宽」；第二「AI 辅助研发」小标签「实现、用例、修正」；第三「公共 AXI VIP」小标签「版本 + 配置 + 回归」；右「IP 验证环境」小标签「AXI-to-APB 桥」「产品模型 + scoreboard」。箭头左到右。下层中间独立青色区域「独立判断依据」内三项「字节预期」「逐沿观察」「合法测试 + 故障注入」，箭头向上进入研发及组件验收。下方从右侧IP环境用琥珀色返回箭头，经过「最小复现」→「修正 + 定向回归」，最终返回AI研发；返回箭头旁小字「消费方复归确认」。左下小块「人工审阅」指向协议契约和独立判断依据。清楚分开AI写实现与独立判断，不画AI自己决定全部答案。",
+      "revisions": [
+        "保留图中主线、独立判断依据、反馈环和全部其余内容，仅修正右上「IP 验证环境」面板：当前DUT芯片图标与AXI-to-APB桥被画成两个相连对象，容易误解。改成一个矩形模块写「AXI-to-APB 桥（DUT）」；它就是被测设计，不要另画DUT图标。此模块下面另一个矩形写「产品模型 + scoreboard」，两者之间不要画代表预期来源的箭头，只用小字「观察实际行为，对照独立预期」。其他面板保持不变。"
+      ],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-2fda5fb8-5ebb-4286-9c45-82216d0b3494.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-63489c96-d12f-423c-84a8-95a4cb0d335a.png",
+      "file": "assets/generated/series-loop-zh.png",
+      "review": "已逐张核对原尺寸及640像素宽缩放图；主标签、数字、关键箭头清晰；细节由正文解释。初版技术错误已定向修正；仅选定版本进入assets。",
+      "sha256": "175c033f7ab127030151209863f5d8e70c6756d91fb096205caf730a7b841285"
+    },
+    {
+      "id": "five-channels-zh",
+      "chapter": 2,
+      "question": "五通道各承载什么且如何组成读写事务",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "为中文技术博客生成一张信息丰富但清晰的工程概念插图，横向约16:9。白色或极浅灰底，深海军蓝结构及模块名，青色表示观察、检查与受控路径，琥珀色只表示问题反馈，灰色表示边界。简体中文准确，必要英文信号名保留。模块标签大且清晰，正文嵌入式插图，留白和安全边距，手机缩小时主标签可读。不要整页大标题、Chapter、页眉页脚、logo、封面、口号、装饰芯片、光效；不是PPT截图，不模拟真实软件界面或波形。不添加未给定的成功数据。上方写路径：左大模块「Master」，右大模块「Slave」。三条平行带，AW向右「AW 写地址 / 地址、ID、长度」，W向右「W 写数据 / 数据、WSTRB、WLAST」，B向左「B 写响应 / BID、BRESP」。各带payload箭头旁一个细灰反向箭头标「READY」，粗箭头标「VALID + payload」。下方读路径同样左右Master Slave，两带AR向右「AR 读地址 / 地址、ID、长度」，R向左「R 读数据与响应 / RID、RDATA、RRESP、RLAST」。底部三个简洁青色说明框：「握手：上升沿 VALID && READY」「等待：VALID 与 payload 保持」「B：地址与最后 W 已接收」。AW与W带之间灰色小注「AW / W 可先后到达」，R旁小注「逐拍返回」。不要画AW-W固定时间顺序，不要把B/R的READY方向弄反。不要波形。",
+      "revisions": [
+        "保留整张图布局、五通道箭头和全部标签。仅修正底部中间说明框的协议错误：当前写着 Master 需保持 VALID 和 payload 不变，应改为「源端需保持 VALID 和 payload 不变」。源端在AW/W/AR为Master，在B/R为Slave。框内可写两行：「当 VALID 为高而 READY 为低时，」「源端保持 VALID 与 payload 不变。」不要改成接收端或只写Master。其他区域保持不变。"
+      ],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-e0affc4b-bb97-4cc5-8eeb-e29a6ba9bcd9.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-f1407ef8-3a5b-4b8c-a765-e6df82192397.png",
+      "file": "assets/generated/five-channels-zh.png",
+      "review": "已逐张核对原尺寸及640像素宽缩放图；主标签、数字、关键箭头清晰；细节由正文解释。初版技术错误已定向修正；仅选定版本进入assets。",
+      "sha256": "7459af12f72a6fe1d3e355ba7d83f5362c734467af1efa6752efc3fbf321b97d"
+    },
+    {
+      "id": "vip-architecture-zh",
+      "chapter": 3,
+      "question": "当前AXI VIP驱动观察检查职责怎样分开",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "为中文技术博客生成一张信息丰富但清晰的工程概念插图，横向约16:9。白色或极浅灰底，深海军蓝结构及模块名，青色表示观察、检查与受控路径，琥珀色只表示问题反馈，灰色表示边界。简体中文准确，必要英文信号名保留。模块标签大且清晰，正文嵌入式插图，留白和安全边距，手机缩小时主标签可读。不要整页大标题、Chapter、页眉页脚、logo、封面、口号、装饰芯片、光效；不是PPT截图，不模拟真实软件界面或波形。不添加未给定的成功数据。职责分层架构，不声称逐类完整图。顶层「测试序列 / 配置」向下进入左区「主动 Master」内含「Sequencer」「Driver」「在途队列 / ID关联」。中央宽模块「AXI 物理接口 / AW · W · B · AR · R」。左区与接口标双向「请求 / 响应」。右区「主动 Slave」内含「响应调度」「字节内存 / 独占状态」，与接口双向连接；左区和右区旁灰色注「按 DUT 角色选择」，不要暗示一个主动env必同时创建两端。下层从物理接口两个青色向下观察箭头分别到「读写 Monitor / 重建事务」和「事件 Monitor / 握手、等待、复位」。读写Monitor向右到「Checker / 关联与规则」；Checker向下到「Coverage / 规则命中」；读写Monitor与事件Monitor也各连Coverage，箭头不穿越文本。小支路「错误注入」指向Master Driver。底部灰带「被动模式：只观察，不驱动总线、不改写内存」。底边小字「产品 scoreboard 另建转换与功能预期」。",
+      "revisions": [
+        "修正这张技术架构图的错误连线，保留上半部角色、接口、配色布局。重新安排下半部使箭头准确且不穿字：左「读写 Monitor / 重建事务」，中「Checker / 关联与规则」，右「事件 Monitor / 握手、等待、复位」，最下「Coverage / 字段、组合、事件、规则、场景」。AXI物理接口向下分别到读写Monitor和事件Monitor。读写Monitor→Checker；读写Monitor→Coverage；事件Monitor→Coverage；Checker→Coverage（标记违规）。必须是Checker向下到Coverage，严禁反向。删除原图Coverage向Checker的所有箭头和琥珀反馈环。删除事件Monitor到Checker的箭头。上半部Sequencer内文字改为「组织与仲裁请求」，序列才生成事务。上半部Master与Slave到物理接口只各保留一根双向箭头标「请求 / 响应」，以减少概念误导。其余文字及底部被动模式边界保留。",
+        "仅增加一条必要的青色单向观察连线：从中央「AXI 物理接口」框的右下角，先水平向右再垂直向下，箭头指向右下「事件 Monitor / 握手、等待、复位」框顶部。标签「逐沿观察」。这是独立事件Monitor直接从物理引脚采样的连线，必须画出来。现有物理接口到Checker和读写Monitor的连线、读写Monitor到Checker、三个模块到Coverage箭头全部保持。除了新增这一条连线外，不改变任何布局文字颜色或现有箭头。"
+      ],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-a8acfa80-a1b0-4f99-937c-f4493e298c17.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-f7ddd838-d9ba-4a7e-ac39-242ed24f3712.png",
+      "file": "assets/generated/vip-architecture-zh.png",
+      "review": "已逐张核对原尺寸及640像素宽缩放图；主标签、数字、关键箭头清晰；细节由正文解释。初版技术错误已定向修正；仅选定版本进入assets。",
+      "sha256": "238ce1d6d9dc6e9a49e7baf58e1e57c6b8959c992901bc1e1a956e0831c13ce6"
+    },
+    {
+      "id": "byte-lanes-zh",
+      "chapter": 4,
+      "question": "非对齐写如何避免把地址偏移重复计算",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "为中文技术博客生成一张信息丰富但清晰的工程概念插图，横向约16:9。白色或极浅灰底，深海军蓝结构及模块名，青色表示观察、检查与受控路径，琥珀色只表示问题反馈，灰色表示边界。简体中文准确，必要英文信号名保留。模块标签大且清晰，正文嵌入式插图，留白和安全边距，手机缩小时主标签可读。不要整页大标题、Chapter、页眉页脚、logo、封面、口号、装饰芯片、光效；不是PPT截图，不模拟真实软件界面或波形。不添加未给定的成功数据。主体为左右两个独立内存写例子，之间没有连续burst箭头。顶左标签「独立调用 A」「地址 0x0402」「数据 0xEE55_0000」「WSTRB 1100」。顶右「独立调用 B」「地址 0x0406」「数据 0x1122_0000」「WSTRB 1100」。各自向下指向四格字节布局，按地址从小到大左到右。左四格三行：lane 0/lane 1/lane 2/lane 3；0x0400/0x0401/0x0402/0x0403；00/00/55/EE。右四格三行：lane 0/lane 1/lane 2/lane 3；0x0404/0x0405/0x0406/0x0407；00/00/22/11。未更新lane0/1灰色，更新lane2/3青色。左下「总线字基址 0x0400」，右下「总线字基址 0x0404」。底部三个机制说明小块「初始字节均为 00」「字节地址 = 总线字基址 + lane」「独立预期核对：更新字节 + 未选中字节」。边界灰注「两个独立调用，不是一条 INCR burst 的连续两拍」。强调手工预期，不能写仿真PASS。",
+      "revisions": [
+        "保留图中所有地址、数据、lane、表格、箭头和布局。仅把右下方橙色的提示词式句子「请基于上述规则手工推导预期，不要写仿真 PASS。」替换成面向读者的说明：「图示为字节预期，不代表新增仿真结果。」除此之外不改变任何信息。"
+      ],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-c81074c7-2161-4a8a-9bfa-03cd180a8ceb.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-6625eb17-f7b7-4c8d-a2dc-947ce8b1487b.png",
+      "file": "assets/generated/byte-lanes-zh.png",
+      "review": "已逐张核对原尺寸及640像素宽缩放图；主标签、数字、关键箭头清晰；细节由正文解释。初版技术错误已定向修正；仅选定版本进入assets。",
+      "sha256": "b246131f20f50fab67674d64ac6ed0dbe7bc0154a83a41e407a71b70d29e347e"
+    },
+    {
+      "id": "evidence-zh",
+      "chapter": 5,
+      "question": "独立检查怎样避免实现与测试共享错误",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "为中文技术博客生成一张信息丰富但清晰的工程概念插图，横向约16:9。白色或极浅灰底，深海军蓝结构及模块名，青色表示观察、检查与受控路径，琥珀色只表示问题反馈，灰色表示边界。简体中文准确，必要英文信号名保留。模块标签大且清晰，正文嵌入式插图，留白和安全边距，手机缩小时主标签可读。不要整页大标题、Chapter、页眉页脚、logo、封面、口号、装饰芯片、光效；不是PPT截图，不模拟真实软件界面或波形。不添加未给定的成功数据。左侧两条独立输入带：上「合法场景」→中央「VIP 实现」→右上「行为符合预期」；下「指定变异」→中央「检查器」→右下「指定错误被检出」。在中下部独立青色区域「独立预期与观察」三个子块「字节向量」「逐沿握手」「待发请求意图」，三者向上接入结果比较节点，而不是由VIP实现产生。右下汇总「版本化证据」小标签「源码 / 配置 / 工具 / 运行批次」。底部并列三个简洁记录块「单元 119/119」「Full 48 项预期结果」「必选变异 17/17 检出」。其下灰色注「冻结批次：axi4-v1-final-20260929-a」「Full 含负向用例；功能覆盖不等于代码覆盖」。不画盾牌安全保证、不写绝对可信、不伪造日志窗口。",
+      "revisions": [],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-52cc5380-2f5a-4cfc-828f-5c3d3b613d72.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-52cc5380-2f5a-4cfc-828f-5c3d3b613d72.png",
+      "file": "assets/generated/evidence-zh.png",
+      "review": "已逐张核对原尺寸及640像素宽缩放图；主标签、数字、关键箭头清晰；细节由正文解释。初版技术错误已定向修正；仅选定版本进入assets。",
+      "sha256": "d05fa04a161f580e364a25b75956dac72c7a0ed35ab6eb5a3738d5eb271c794b"
+    },
+    {
+      "id": "bridge-integration-zh",
+      "chapter": 6,
+      "question": "桥接验证如何分开实际总线路径与独立产品预期",
+      "language": "zh-CN",
+      "kind": "AI-generated conceptual illustration",
+      "tool": "Codex built-in ImageGen",
+      "date": "2026-10-02",
+      "prompt": "为中文技术博客生成一张信息丰富但清晰的工程概念插图，横向约16:9。白色或极浅灰底，深海军蓝结构及模块名，青色表示观察、检查与受控路径，琥珀色只表示问题反馈，灰色表示边界。简体中文准确，必要英文信号名保留。模块标签大且清晰，正文嵌入式插图，留白和安全边距，手机缩小时主标签可读。不要整页大标题、Chapter、页眉页脚、logo、封面、口号、装饰芯片、光效；不是PPT截图，不模拟真实软件界面或波形。不添加未给定的成功数据。上半部从左到右三大模块：「AXI Master VIP」→「AXI-to-APB 桥 / DUT」→「APB Slave VIP」。左连接标「AXI 请求」，另反向箭头「B / R 响应」。右连接标「APB 访问」，另反向箭头「读数据 / 等待 / 错误」。桥模块内部仅概念标签「保存请求」「访问转换」「响应处理」，不绘制未证实RTL队列。中层左「AXI Monitor」、右「APB Monitor」分别由对应实际接口青色向下观察箭头进入。下层左「产品参考模型」输入来自AXI Monitor与独立灰色卡片「桥接规则 / 地址映射 / 错误语义」；模型向右箭头「预期访问与响应」到下层右「Scoreboard」。AXI Monitor和APB Monitor也各有青色箭头「实际观察」到Scoreboard。底部醒目但不是标题的灰色边界注「教学架构：协议 checker 检查接口，产品 scoreboard 检查转换」。必须让预期来自输入和规则，不要从DUT内部拉预期线。不要PASS数字，不冒充历史工程真实拓扑。",
+      "revisions": [],
+      "original_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-c702e0e1-5a0d-4bf6-8954-6d33ead7e9cf.png",
+      "generation_path": "C:\\Users\\wangb\\.codex\\generated_images\\01a0f7a4-e4da-72b3-af39-10e3676c7520\\exec-c702e0e1-5a0d-4bf6-8954-6d33ead7e9cf.png",
+      "file": "assets/generated/bridge-integration-zh.png",
+      "review": "已逐张核对原尺寸及640像素宽缩放图；主标签、数字、关键箭头清晰；细节由正文解释。初版技术错误已定向修正；仅选定版本进入assets。",
+      "sha256": "fcbf81a82e3adc88ad9c2697261d79bdd1cbba74f4892cd4636e525cc0563725"
+    }
+  ]
+}
